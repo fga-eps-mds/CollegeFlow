@@ -4,6 +4,7 @@ Descrição do projeto aqui
 Esta página contém documentos relevantes relacionados ao produto, seu gerenciamento e desenvolvimento, assim como guias de contribuição e conduta.
 
 <h1 class="display-1 sub-title2">Links</h1>
+<!--TODO(Mauricio-Machado)": Change link that redirect to repos-->
 
 - [Repositório do back-end](https://github.com/fga-eps-mds/2019.2-Acacia)
 - [Repositório do front-end](https://github.com/fga-eps-mds/2019.2-Acacia-Frontend)
@@ -13,7 +14,7 @@ Esta página contém documentos relevantes relacionados ao produto, seu gerencia
 <div class="container">
   <div class="row">
     <div class="col-sm container-img">
-        <img src="img/team/durval.jpg" alt="..." class="img-thumbnail image">
+        <img src="img/team/default-image.jpg" alt="..." class="img-thumbnail image">
             <div class="middle">
               <div class="text">
                 Mauricio Machado
@@ -21,76 +22,60 @@ Esta página contém documentos relevantes relacionados ao produto, seu gerencia
             </div>
     </div>
     <div class="col-sm container-img">
-      <img src="img/team/fabiola.jpg" alt="..." class="img-thumbnail image">    
+      <img src="img/team/default-image.jpg" alt="..." class="img-thumbnail image">    
           <div class="middle">
             <div class="text">
-              Fabíola Malta
+              Lucas Henrique
             </div>
           </div>
     </div>
     <div class="col-sm container-img">
-      <img src="img/team/flavio.jpg" alt="..." class="img-thumbnail image">
+      <img src="img/team/default-image.jpg" alt="..." class="img-thumbnail image">
         <div class="middle">
           <div class="text">
-            Flávio Vieira
+            Lucas Macedo
           </div>
         </div>
     </div>
     <div class="col-sm container-img">
-      <img src="img/team/hugo.jpg" alt="..." class="img-thumbnail image">
+      <img src="img/team/default-image.jpg" alt="..." class="img-thumbnail image">
         <div class="middle">
           <div class="text">
-            Hugo Sobral
-          </div>
-        </div>
-    </div>
-    <div class="col-sm container-img">
-      <img src="img/team/joao.jpg" alt="..." class="img-thumbnail image">
-        <div class="middle">
-          <div class="text">
-            João Pedro
+            Luan Melo
           </div>
         </div>
     </div>
   </div>
   <div class="row">
     <div class="col-sm container-img">
-        <img src="img/team/leonardo.jpg" alt="..." class="img-thumbnail image">
+        <img src="img/team/default-image.jpg" alt="..." class="img-thumbnail image">
             <div class="middle">
               <div class="text">
-                Leonardo Silva
+                Lucas Gabriel
               </div>
             </div>
     </div>
     <div class="col-sm container-img">
-      <img src="img/team/martha.jpg" alt="..." class="img-thumbnail image">    
+      <img src="img/team/default-image.jpg" alt="..." class="img-thumbnail image">    
           <div class="middle">
             <div class="text">
-              Martha Dantas
+              Wengel Rodrigues
             </div>
           </div>
     </div>
     <div class="col-sm container-img">
-      <img src="img/team/renato.jpg" alt="..." class="img-thumbnail image">
+      <img src="img/team/default-image.jpg" alt="..." class="img-thumbnail image">
         <div class="middle">
           <div class="text">
-            Renato Brito
+            Raphaela Guimarães
           </div>
         </div>
     </div>
     <div class="col-sm container-img">
-      <img src="img/team/shayane.jpeg" alt="..." class="img-thumbnail image">
+      <img src="img/team/default-image.jpg" alt="..." class="img-thumbnail image">
         <div class="middle">
           <div class="text">
-            Shayane Alcântara
-          </div>
-        </div>
-    </div>
-    <div class="col-sm container-img">
-      <img src="img/team/vitor.jpeg" alt="..." class="img-thumbnail image">
-        <div class="middle">
-          <div class="text">
-            Vitor Cardoso
+            Lucas de Lima
           </div>
         </div>
     </div>
