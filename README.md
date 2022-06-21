@@ -2,7 +2,6 @@
 
 - Tema do Trabalho:
 - Linguagens e Canais de Comunicação Utilizados:
-- Número de Encontros: 2
 
 # Integrantes do Squad 1
 
