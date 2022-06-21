@@ -1,4 +1,4 @@
-<p align="center">  <img src="img/identidade/wordmark_1.svg" width="400"></p>
+<!-- TODO(Mauricio-Machado): Inserir foto-logo do projeto -->
 
 <h1 class="display-1 sub-title2">Visão geral</h1>
 
@@ -10,19 +10,19 @@ Este repositório tem como objetivo o desenvolvimento, a manutenção e a evolu�
 
 Para contribuir com este projeto basta seguir:
 
--  [Guia de Contribuição](https://fga-eps-mds.github.io/2019.2-Acacia/#/contributing) 
+- [Guia de Contribuição](https://fga-eps-mds.github.io/2022-1-Squad2/#/contributing)
 
--  [Código de Conduta](https://fga-eps-mds.github.io/2019.2-Acacia/#/code_of_conduct)
+- [Código de Conduta](https://fga-eps-mds.github.io/2022-1-Squad2/#/code_of_conduct)
 
--  [Guia de Instalação](#guia-de-instalação)
+- [Guia de Instalação](#guia-de-instalação)
 
--  [Políticas de Contribuição](https://fga-eps-mds.github.io/2019.2-Acacia/#/policies)
+- [Políticas de Contribuição](https://fga-eps-mds.github.io/2022-1-Squad2/#/policies)
 
--  [Template para criação de issues](https://github.com/fga-eps-mds/2019.2-Acacia/tree/develop/.github/ISSUE_TEMPLATE)
+<!--TODO(Mauricio-Machado): Change Url references to issues and PRs templates -->
 
--  [Template para criação de pull requests](https://github.com/fga-eps-mds/2019.2-Acacia/blob/develop/.github/PULL_REQUEST_TEMPLATE.md)
+- [Template para criação de issues](https://github.com/fga-eps-mds/2019.2-Acacia/tree/develop/.github/ISSUE_TEMPLATE)
 
-  
+- [Template para criação de pull requests](https://github.com/fga-eps-mds/2019.2-Acacia/blob/develop/.github/PULL_REQUEST_TEMPLATE.md)
 
 ## Guia de Instalação
 
@@ -30,28 +30,23 @@ Essa aplicação tem seu ambiente configurado através de conteiners [Docker](ht
 
 Também é necessário ter o [Git](https://git-scm.com) instalado para clonar o repositório.
 
-
 #### Back-end:
 
 Clonar o repositório:
 
 `git clone https://github.com/fga-eps-mds/2019.2-Acacia.git`
 
-
-Execução do conteiner:  
+Execução do conteiner:
 
 `docker-compose up`
 
-
-Após esses passos a aplicação deverá estar acessível em:  
+Após esses passos a aplicação deverá estar acessível em:
 
 `localhost:8080`
-
 
 #### Front-end:
 
 Para instalar a camada front-end da aplicação basta seguir os passos de instalação descritos [aqui](https://github.com/fga-eps-mds/2019.2-Acacia-Frontend).
-
 
 <h2 class="display-1 sub-title2">Time</h2>
 
