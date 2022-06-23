@@ -1,9 +1,9 @@
 # 2022-1-Squad2
 
 - Tema do Trabalho:
-- Linguagens e Canais de Comunicação Utilizados:
+- Linguagens e Canais de Comunicação Utilizados: Telegram e Discord
 
-# Integrantes do Squad 1
+# Integrantes do Squad 2
 
 | Nome                                    | Usuário GitHub    |
 | --------------------------------------- | ----------------- |
