@@ -18,11 +18,11 @@
 
 ## 3. Quadro de Conhecimento
 
-![Quadro de Conhecimento](./quadro-conhecimento-sp01.png)
+![Quadro de Conhecimento](./Sprint01/quadro-conhecimento-sp01.png)
 
 ## 4. Feedbacks
 
-![Feedbacks](./feedbacks-sp01.png)
+![Feedbacks](./Sprint01/feedbacks-sp01.png)
 
 ## Análise da Scrum Master
 
