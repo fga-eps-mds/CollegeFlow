@@ -6,8 +6,8 @@ Esta página contém documentos relevantes relacionados ao produto, seu gerencia
 <h1 class="display-1 sub-title2">Links</h1>
 <!--TODO(Mauricio-Machado)": Change link that redirect to repos-->
 
-- [Repositório do back-end](https://github.com/fga-eps-mds/2019.2-Acacia)
-- [Repositório do front-end](https://github.com/fga-eps-mds/2019.2-Acacia-Frontend)
+- [Repositório do back-end](https://github.com/fga-eps-mds/2022-1-Squad2)
+- [Repositório do front-end](https://github.com/fga-eps-mds/2022-1-Squad2)
 
 <h2 class="display-1 sub-title2">Time</h2>
 
