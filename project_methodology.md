@@ -4,7 +4,7 @@
 
 | Data | Versão | Descrição | Autor(es) |
 | :--: | :----: | :-------: | :-------: |
-| - | - | Abertura do Documento | Martha Dantas |
+| - | - | Abertura do Documento | |
 | - | - | Descrição do conteúdo e estrutura do documento | - |
 | - | - | Definição dos processos e metodologias| - |
 | - | - | Esplanação de como equipe utilizará  metodologias e processos  | - |

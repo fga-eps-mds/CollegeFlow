@@ -1,6 +1,6 @@
 # Planning da Sprint 0
 
-- Período : 12/08 a 31/08
+
 
 - Objetivo: Essa sprint teve um tempo de duração atipico pois tinha como objetivo várias questões cruciais para o desenvolvimento do projeto. Tais como:
     - Escolha do Tema;
