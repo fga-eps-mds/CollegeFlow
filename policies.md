@@ -17,13 +17,26 @@ Aqui se encontram:
 
 ## Políticas de Branch
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+Branchs devem seguir as seguintes regras.
+
+- Branch **master** representa uma versão estável do produto, contendo código testado e versionado. Essa branch parte da branch **develop** através de pull requests aprovados no fim de cada release
+
+  Regras:
+
+  1. Existe apenas uma branch **master**.
+  2. Não são permitidos commits feitos diretamente na master.
+
+- Branch **develop** contém a versão mais atualizada do código que está sendo desenvolvido. Essa branch está sempre sincronizada com a **master** e é base para as branches **feat**.
+
+  Regras:
+
+  1. Existe apenas uma branch **develop**.
 
 ### Nomenclatura de branches
 
 Ao criar novas branches iremos dividí-las em 3 categorias: feat, refac, fix. Esses serão prefixos utilizados para criação da branch.
 
-> **Exemplo**: Criação de uma nova feature para adição de imagens. <pre><code>feat/add_images</code></pre>
+> **Exemplo**: Criação de uma nova feature para adição de imagens. <code>feat/add_images</code>
 
 > **FEAT**: Da palavra feature, representará todas as branchs que adicionam novos elementos ao projeto.
 
@@ -33,7 +46,13 @@ Ao criar novas branches iremos dividí-las em 3 categorias: feat, refac, fix. Es
 
 ## Políticas de Commits
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+Commits devem ser escritos de forma clara e breve, em inglês, descrevendo as alterações feitas.
+
+Regras para escrita das mensagens no commits:
+
+1. Utilizar prefixos feat, refac, fix, seguindo a lógica de **nomenclatura de branches**.
+2. Faça commits **pequenos**, não agrupe múltiplas funcionalidades em um commmit! Divida nos menore blocos de código possível.
+3. Em caso de commit realizado por mais de uma pessoa, utilize o [**coauthor**](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/creating-a-commit-with-multiple-authors) para dar créditos.
 
 ## Referências
 
