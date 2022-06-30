@@ -14,7 +14,7 @@ Esta página contém documentos relevantes relacionados ao produto, seu gerencia
 <div class="container">
   <div class="row">
     <div class="col-sm container-img">
-        <img src="img/team/default-image.jpg" alt="..." class="img-thumbnail image">
+        <img src="img/team/mauricio.png" alt="..." class="img-thumbnail image">
             <div class="middle">
               <div class="text">
                 Mauricio Machado
@@ -30,7 +30,7 @@ Esta página contém documentos relevantes relacionados ao produto, seu gerencia
           </div>
     </div>
     <div class="col-sm container-img">
-      <img src="img/team/default-image.jpg" alt="..." class="img-thumbnail image">
+      <img src="img/team/Lmacedo.png" alt="..." class="img-thumbnail image">
         <div class="middle">
           <div class="text">
             Lucas Macedo
@@ -38,7 +38,7 @@ Esta página contém documentos relevantes relacionados ao produto, seu gerencia
         </div>
     </div>
     <div class="col-sm container-img">
-      <img src="img/team/default-image.jpg" alt="..." class="img-thumbnail image">
+      <img src="img/team/luan.png" alt="..." class="img-thumbnail image">
         <div class="middle">
           <div class="text">
             Luan Melo
@@ -48,7 +48,7 @@ Esta página contém documentos relevantes relacionados ao produto, seu gerencia
   </div>
   <div class="row">
     <div class="col-sm container-img">
-        <img src="img/team/default-image.jpg" alt="..." class="img-thumbnail image">
+        <img src="img/team/Lgabriel.png" alt="..." class="img-thumbnail image">
             <div class="middle">
               <div class="text">
                 Lucas Gabriel
@@ -64,7 +64,7 @@ Esta página contém documentos relevantes relacionados ao produto, seu gerencia
           </div>
     </div>
     <div class="col-sm container-img">
-      <img src="img/team/default-image.jpg" alt="..." class="img-thumbnail image">
+      <img src="img/team/rapha.png" alt="..." class="img-thumbnail image">
         <div class="middle">
           <div class="text">
             Raphaela Guimarães
@@ -72,7 +72,7 @@ Esta página contém documentos relevantes relacionados ao produto, seu gerencia
         </div>
     </div>
     <div class="col-sm container-img">
-      <img src="img/team/default-image.jpg" alt="..." class="img-thumbnail image">
+      <img src="img/team/Lspinosa.png" alt="..." class="img-thumbnail image">
         <div class="middle">
           <div class="text">
             Lucas de Lima
