@@ -22,18 +22,18 @@ Esta página contém documentos relevantes relacionados ao produto, seu gerencia
             </div>
     </div>
     <div class="col-sm container-img">
-      <img src="img/team/default-image.jpg" alt="..." class="img-thumbnail image">    
-          <div class="middle">
-            <div class="text">
-              Lucas Henrique
-            </div>
-          </div>
-    </div>
-    <div class="col-sm container-img">
       <img src="img/team/Lmacedo.png" alt="..." class="img-thumbnail image">
         <div class="middle">
           <div class="text">
             Lucas Macedo
+          </div>
+        </div>
+    </div>
+    <div class="col-sm container-img">
+      <img src="img/team/Lspinosa.png" alt="..." class="img-thumbnail image">
+        <div class="middle">
+          <div class="text">
+            Lucas de Lima
           </div>
         </div>
     </div>
@@ -47,6 +47,14 @@ Esta página contém documentos relevantes relacionados ao produto, seu gerencia
     </div>
   </div>
   <div class="row">
+  <div class="col-sm container-img">
+      <img src="img/team/Wengel.png" alt="..." class="img-thumbnail image">    
+          <div class="middle">
+            <div class="text">
+              Wengel Rodrigues
+            </div>
+          </div>
+    </div>
     <div class="col-sm container-img">
         <img src="img/team/Lgabriel.png" alt="..." class="img-thumbnail image">
             <div class="middle">
@@ -56,14 +64,6 @@ Esta página contém documentos relevantes relacionados ao produto, seu gerencia
             </div>
     </div>
     <div class="col-sm container-img">
-      <img src="img/team/default-image.jpg" alt="..." class="img-thumbnail image">    
-          <div class="middle">
-            <div class="text">
-              Wengel Rodrigues
-            </div>
-          </div>
-    </div>
-    <div class="col-sm container-img">
       <img src="img/team/rapha.png" alt="..." class="img-thumbnail image">
         <div class="middle">
           <div class="text">
@@ -71,13 +71,7 @@ Esta página contém documentos relevantes relacionados ao produto, seu gerencia
           </div>
         </div>
     </div>
-    <div class="col-sm container-img">
-      <img src="img/team/Lspinosa.png" alt="..." class="img-thumbnail image">
-        <div class="middle">
-          <div class="text">
-            Lucas de Lima
-          </div>
-        </div>
+       <div class="col-sm container-img">
     </div>
   </div>
 </div>
