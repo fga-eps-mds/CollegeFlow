@@ -1,26 +1,13 @@
 # Histórico de Revisão
-| Data   | Versão | Modificação  | Autor  |
-| :- | :- | :- | :- |
-| 01/10/2019 | 1.0 | Criação do roadmap |  Fabíola |
-| 08/11/2019 | 2.0 | Atualização do roadmap e adição das histórias retiradas |  Fabíola |
 
+| Data       | Versão | Modificação                  | Autor            |
+| :--------- | :----- | :--------------------------- | :--------------- |
+| 07/06/2022 | 1.0    | Criação do documento inicial | Maurício Machado |
 
-## Roadmap do Produto 08/11
+## Roadmap do Produto 00/00
 
-Atualização do Roadmap, como ele consta durante a realização da Sprint 10.
-
-<img src="img/roadmap2.png">
-
-## Roadmap do Produto 01/10
-
-https://github.com/fga-eps-mds/2019.2-Acacia/projects/3
-
-<img src="img/roadmap.png">
-
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
 
 ## Histórias retiradas
 
-As histórias na imagem abaixo, embora consideradas pelo time como interessantes para que o produto completo, não entraram para o escopo durante o tempo da disciplina, que permite apenas a entregade de um Produto viável mínimo(MVP, sigla em inglês).
-
-<img src="img/archived.png">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.

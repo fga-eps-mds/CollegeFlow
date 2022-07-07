@@ -10,48 +10,31 @@ Este repositório tem como objetivo o desenvolvimento, a manutenção e a evolu�
 
 Para contribuir com este projeto basta seguir:
 
--  [Guia de Contribuição](https://fga-eps-mds.github.io/2019.2-Acacia/#/contributing) 
+<!-- TODO(Mauricio-Machado): Change link references -->
 
--  [Código de Conduta](https://fga-eps-mds.github.io/2019.2-Acacia/#/code_of_conduct)
+- [Guia de Contribuição](https://fga-eps-mds.github.io/2019.2-Acacia/#/contributing)
 
--  [Guia de Instalação](#guia-de-instalação)
+- [Código de Conduta](https://fga-eps-mds.github.io/2019.2-Acacia/#/code_of_conduct)
 
--  [Políticas de Contribuição](https://fga-eps-mds.github.io/2019.2-Acacia/#/policies)
+- [Guia de Instalação](#guia-de-instalação)
 
--  [Template para criação de issues](https://github.com/fga-eps-mds/2019.2-Acacia/tree/develop/.github/ISSUE_TEMPLATE)
+- [Políticas de Contribuição](https://fga-eps-mds.github.io/2019.2-Acacia/#/policies)
 
--  [Template para criação de pull requests](https://github.com/fga-eps-mds/2019.2-Acacia/blob/develop/.github/PULL_REQUEST_TEMPLATE.md)
+- [Template para criação de issues](https://github.com/fga-eps-mds/2019.2-Acacia/tree/develop/.github/ISSUE_TEMPLATE)
 
-  
+- [Template para criação de pull requests](https://github.com/fga-eps-mds/2019.2-Acacia/blob/develop/.github/PULL_REQUEST_TEMPLATE.md)
 
 ## Guia de Instalação
 
-Essa aplicação tem seu ambiente configurado através de conteiners [Docker](https://www.docker.com), portanto, tem como pré-requisitos a instalação do [Docker](https://www.docker.com/get-started) e [Docker-compose](https://docs.docker.com/compose/install/).
-
-Também é necessário ter o [Git](https://git-scm.com) instalado para clonar o repositório.
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
 
 #### Back-end:
 
-Clonar o repositório:
-
-`git clone https://github.com/fga-eps-mds/2019.2-Acacia.git`
-
-
-Execução do conteiner:  
-
-`docker-compose up`
-
-
-Após esses passos a aplicação deverá estar acessível em:  
-
-`localhost:8080`
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
 
 #### Front-end:
 
-Para instalar a camada front-end da aplicação basta seguir os passos de instalação descritos [aqui](https://github.com/fga-eps-mds/2019.2-Acacia-Frontend).
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
 
 <h2 class="display-1 sub-title2">Time</h2>
 
