@@ -1,86 +1,149 @@
 # Políticas do Repositório
-
 ## Histórico de versão
 
-| Data       | Versão | Modificação                       | Autor            |
-| :--------- | :----- | :-------------------------------- | :--------------- |
-| 26/06/2022 | 1.0    | Criação do documento de políticas | Maurício Machado |
-| 26/06/2022 | 1.1    | Adição políticas de commit        | Maurício Machado |
-| 26/06/2022 | 1.2    | Adição políticas de pull Request  | Maurício Machado |
+| Data | Versão | Modificação | Autor |
+| :- | :- | :- | :- |
+| 23/08/2019 | 1.0 | Criação da primeira versão do documento | Vítor Cardoso |
+| 03/09/2019 | 1.1 | Tradução do documento para português | Vítor Cardoso |
+| 01/11/2019 | 1.2 | Adição das políticas de migrações do django | Fabíola |
 
 ## Introdução
 
-Este documento tem como objetivo explicar os procedimentos a serem feitos para que as políticas deste repositório sejam seguidas adequadamente.
+Este documento tem como objetivo  explicar os procedimentos a serem feitos para que as políticas deste repositório sejam seguidas adequadamente.
 
 Aqui se encontram:
 
 - Política de Branch
 - Política de Commits
-- Política de Pull Requests
 
 ## Políticas de Branch
 
-Branchs devem seguir as seguintes regras.
+Branches devem seguir as seguintes regras explicadas neste tópico:
 
-- Branch **master** representa uma versão estável do produto, contendo código testado e versionado. Essa branch parte da branch **develop** através de pull requests aprovados no fim de cada release
+Breve explicação sobre o fluxo de trabalho:
+
+- A branch **master** representa uma versão estável do produto, contendo código já testado e versionado, pronto para ser entregue ao usuário final ou cliente. Essa branch parte da branch **develop** através de pull requests aprovados no fim de cada release.
 
   Regras:
 
   1. Existe apenas uma branch **master**.
-  2. Não são permitidos commits feitos diretamente na master.
+  2. **Não** são permitidos commits feitos diretamente na **master**.
 
-- Branch **develop** contém a versão mais atualizada do código que está sendo desenvolvido. Essa branch está sempre sincronizada com a **master** e é base para as branches **feat**.
+
+- A branch **develop** contém a versão mais atualizada do código que está sendo desenvolvido. Essa branch está sempre sincronizada com a **master** e é base para as branches **feature**.
 
   Regras:
 
   1. Existe apenas uma branch **develop**.
+  2. Essa branch está sempre sincronizada com a branch **master**.
 
-### Nomenclatura de branches
 
-Ao criar novas branches iremos dividí-las em 3 categorias: feat, refac, fix. Esses serão prefixos utilizados para criação da branch.
+- As branches **feature** representam as funcionalidades do sistema a serem desenvolvidas, elas devem ter a branch **develop** como sua origem e fim.
 
-> **Exemplo**: Criação de uma nova feature para adição de imagens. <code>feat/add_images</code>
+  Regras:
 
-> **FEAT**: Da palavra feature, representará todas as branchs que adicionam novos elementos ao projeto.
+  1. Essa branch sempre é criada a partir da branch **develop**.
+  2. Essa branch sempre é mesclada à branch **develop**.
 
-> **REFAC**: Da palavra refactory, remete as branchs que modificam elementos **já** presentes no projeto. Contudo, não são fixes e sim alterações pra uma melhor performance, escolha de design e outros nesse mesmo ambiente.
+  Regras de nomenclatura:
 
-> **FIX**: Branchs que consertam problemas/erros existentes no projeto.
+  `feature/issueID-titulo-da-issue`
+
+
+- A branch **release** representa o conjunto de funcionalidades provenientes de um ponto específico da branch **develop**. Essa branch contém funcionalidades prontas que, provavelmente, estarão presentes na próxima versão estável do produto. Apenas **bug fixes** são permitidos nessa branch.
+
+  Regras:
+
+  1. Essa branch sempre é criada a partir da branch **develop**.
+  2. Essa branch sempre é mesclada às branches **develop** e **master**.
+  3. Essa branch aceita apenas mesclagens de branches do tipo **bugfix**.
+
+  Regras de nomenclatura:
+
+  `release/vNúmero-da-versão`
+
+
+
+
+- As branches do tipo **bugfix** são utilizadas para implementar soluções para bugs, encontrados através de testes realizados em releases específicas, na branch **release**. Isso significa que a branch **bugfix** deve ter a branch **release** como sua origem e fim.
+
+  Regras:
+
+  1. Essa branch sempre é criada a partir da branch **release**.
+  2. Essa branch sempre é mesclada na branch **release**.
+
+  Regras de nomenclatura:
+
+  `bugfix/issueID-titulo-da-issue`
+
+
+
+  A branch **hotfix** é utilizada para implementar soluções para problemas urgentes encontrados no ambiente de produção. Isso significa que essa branch deve ter a branch **master** como sua orgigem e fim.
+
+
+- Regras:
+
+  1. Essa branch sempre é criada a partir da branch **master**.
+2. Essa branch sempre é mesclada à branch **master**.
+
+  Regras de nomenclatura:
+
+  `hotfix/issueID-titulo-da-issue`
+
+
+
+
+Observações: O título da issue utilizado no nome das branches deve ser mantido em português.
+
+
+ Imagens para ajudar a visualizar o fluxo de trabalho descrito:
+
+  ![](https://fpy.cz/pub/slides/git-workshop/images/gitflow.png)
+
+  ![](https://miro.medium.com/max/640/0*FTwKYpFGADX-5Y0O)
 
 ## Políticas de Commits
+Commits devem ser escritos de forma clara e breve, em Inglês, descrevendo as alterações feitas.
 
-Commits devem ser escritos de forma clara e breve, em inglês, descrevendo as alterações feitas.
+Regras para escrita das mensagens nos commits:
 
-Regras para escrita das mensagens no commits:
+``` 
+#issueID Mensagem breve descrevendo alterações
+	
+Mensagem mais detalhada sobre o que foi feito neste commit. (Opcional)
+```
 
-1. Utilizar prefixos feat, refac, fix, seguindo a lógica de **nomenclatura de branches**.
-2. Faça commits **pequenos**, não agrupe múltiplas funcionalidades em um commmit! Divida nos menore blocos de código possível.
-3. Em caso de commit realizado por mais de uma pessoa, utilize o [**coauthor**](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/creating-a-commit-with-multiple-authors) para dar créditos.
+É possível fechar uma issue automaticamente adicionando a palavra chave "Fix" antes do id da issue:
 
-## Políticas de Pull Request
+`Fix #issueID Concise Message`
 
-Pull Requests devem conter no título abordar a issue trabalhada. Na descrição é immportante prover todos os links necessários para termos um entendimento completo da task em questão.
-Estrutura básico para o nome do Pull request: <code>[#IssueCode/Prefix]: Problema principal</code>
+O caractere "#", por padrão, representa uma linha de comentário no arquivo de mensagem do commit. Para evitar problemas, é necessário alterar o caractere com o seguinte comando:
 
-> **Exemplo**: <code>[#53/FEAT]: Crud to Admin</code>
+`git config --local core.commentChar auto`
 
-Regras
+Caso deseje utilizar um outro caractere específico para definir uma linha de comentário, basta substituir a palavra "auto" pelo caractere desejado.
 
-1. Linkar quem participou do Pull request.
-2. Ter dois approves antes de dar mergear o Pull request.
-3. Ter aprovação nos testes.
-4. Linkar PR com a issue(es) relacionada(as).
+A mensagem principal do commit deve ser escrita no modo imperativo. Aqui estão alguns exemplos:
 
-Observações
+Maus exemplos:
 
-1. PRs devem ser pequenos para ter uma revisão de boa qualidade.
-2. Use stack de PRs.
-3. Evite PRs com múltiplas lógicas que podem ser separadas.
+`Renamed the iVars and removed the common prefix.`
+
+`Creating branch policies document `
+
+Bons exemplos:
+
+`Rename the iVars to remove the common prefix. `
+
+`Create branch policies document`
+
+
+# Política de migrações
+
+As migrações criadas automaticamente pelo Django devem ser adicionadas nos commits dos desenvolvedores, exceto quando possuirem "_auto_" ou "_merge_" em seu nome.
 
 ## Referências
 
-[Padrões e nomenclaturas no git](https://www.brunodulcetti.com/padroes-e-nomenclaturas-no-git/)
+[Git-flow Applied to a Real Project](https://medium.com/empathyco/git-flow-applied-to-a-real-project-c08037e28f88)
 
 [Writing git commit message](https://365git.tumblr.com/post/3308646748/writing-git-commit-messages)
-
-[Stack de Pull Requests](https://blog.logrocket.com/using-stacked-pull-requests-in-github/)

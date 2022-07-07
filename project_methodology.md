@@ -4,16 +4,16 @@
 
 | Data | Versão | Descrição | Autor(es) |
 | :--: | :----: | :-------: | :-------: |
-| - | - | Abertura do Documento | |
-| - | - | Descrição do conteúdo e estrutura do documento | - |
-| - | - | Definição dos processos e metodologias| - |
-| - | - | Esplanação de como equipe utilizará  metodologias e processos  | - |
-| - | - | Inclusão do plano de gamificação e do BCP  | - |
-| - | - | Inclusão do plano de comunicação e revisão dos tópicos ja existentes  | - |
-| - | - | Descrição de extreme programming e das tecnicas de gamificação e interação entre a equipe | - |
-| - | - | Inclusão do plano de Estimativa das issues do projeto | - |
-| - | - | Corrigindo erros | - |
-|- | - | Adicionando modificaçoes na forma de trabalho | - |
+| 03/09/2019 | 0.1 | Abertura do Documento | Martha Dantas |
+| 03/09/2019 | 0.1.1 | Descrição do conteúdo e estrutura do documento | Martha Dantas |
+| 05/09/2019 | 0.2 | Definição dos processos e metodologias| Martha Dantas |
+| 05/09/2019 | 0.3 | Esplanação de como equipe utilizará  metodologias e processos  | Martha Dantas |
+| 06/09/2019 | 0.4 | Inclusão do plano de gamificação e do BCP  | Martha Dantas |
+| 07/09/2019 | 0.5 | inclusão do plano de comunicação e revisão dos tópicos ja existentes  | Martha Dantas |
+| 07/09/2019 | 0.6 | Descrição de extreme programming e das tecnicas de gamificação e interação entre a equipe | Martha Dantas |
+| 07/09/2019 | 1.0 | inclusão do plano de Estimativa das issues do projeto | Martha Dantas |
+| 25/09/2019 | 1.2 | Corrigindo erros | Martha Dantas |
+| 05/10/2019 | 1.3 | Adicionando modificaçoes na forma de trabalho | Martha Dantas |
 
 ## 1. Introdução
 
@@ -84,10 +84,23 @@ Serão utilizados pela equipe as seguintes práticas:
 - Coding Standard: Padronização do código com folha de estilo.
 
 ## 3. Plano de Comunicação
- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+ o Plano de Comunicação vem para assegurar que as exista uma comunicação transparente entre a equipe, bem como documentar e organizar o conjunto de informações que a equipe gera durante todo o processo. Para que isto seja possível utilizaremos algumas ferramentar, tais como:
+ - Discord - dailys remotas
+ - Telegram - diálogo diaŕio e decisoes de baixo impacto
+ - Drive - informações da equipe e insumos para viabilizar o projeto
+ - Github- armazenamento de código fonte, transparência na realização de tarefas,documentação de iterações
 
 ## 4. Gamificação e a Interação entre Membros
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+> "Gamificação é a utilização de técnicas de design de jogos para incentivar produtividade e/ou mudanças de comportamento."
+
+Visando manter a produtividade, o Colaborativismo e a melhoria continua da relação entre membros a equipe utilizará de tecnicas de gamificação, tais como:
+
+- Sharing Knowledge: Incentivar compartilhamento de conhecimento.
+- Certificates: Reconhecimento atráves de certificados, medalhas e etc.
+
+Vale lembrar que algumas dessas tecnicas serão intrisicamente aplicadas pela equipe gestora.
+
+Obs.: As tecnicas foram escolhidas com base no perfil que foi traçado da equipe. Essa informação pode ser encontrada [aqui](https://docs.google.com/spreadsheets/d/1temwG93TrqvCTuy1u52Qbi-JIHFtpjNwILdbRSehMHg/edit?usp=sharing).
 
 ## 5. Referências
 
