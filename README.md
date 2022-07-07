@@ -2,9 +2,7 @@
 
 <h1 class="display-1 sub-title2">Visão geral</h1>
 
-Acácia propõe-se a facilitar a criação de uma comunidade voluntária em torno da agricultura urbana, diminuindo o desperdício de comida e difundindo conhecimento em plantio e colheita neste ambiente. Para tal, a ferramenta conecta pessoas que possuem plantas frutíferas em local urbano, voluntários de colheita e beneficiários que buscam doações de alimentos, para que estes possam trabalhar juntos, com colheita colaborativa.
-
-Este repositório tem como objetivo o desenvolvimento, a manutenção e a evolução do produto nomeado **Acácia**, uma aplicação web, que segue o conceito [Mobile first](https://digitalks.com.br/artigos/mobile-first-e-o-que-voce-realmente-precisa-saber-respeito/) e tem o intuito de auxiliar no processo de colheita colaborativa em áreas urbanas. Ele é baseado em um sistema já existente, o [Saskatoon](https://github.com/tiagovaz/saskatoon) utilizado pelo coletivo [LES FRUITS DÉFENDUS](https://santropolroulant.org/en/what-is-the-roulant/collectives/fruits-defendus/) em Montreal - que facilita a relação entre proprietários de árvores frutíferas, voluntários para colheita e beneficiários das doações dessas frutas, visando a redução do desperdício de comida.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
 
 ## Como contribuir
 

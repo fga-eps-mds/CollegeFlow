@@ -2,7 +2,7 @@
 <br>
 <br>
 
-<img src="img/identidade/gitpages/gitpage_logo.png" width="400" height="340">
+<img src="img/identidade/gitpages/default-image.jpg" width="400" height="400">
 
 <br>
 <br>
