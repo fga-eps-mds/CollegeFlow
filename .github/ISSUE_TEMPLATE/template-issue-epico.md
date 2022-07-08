@@ -1,7 +1,7 @@
-## Descrição
+# Descrição
 Breve resumo do que é esse Épico, seu objetivo e seu impacto no projeto.
 
-## Atividades relacionadas
+# Atividades relacionadas
 Especifique as Features e Histórias de usuário relacionadas a esse Épico.
 
 ### Features
