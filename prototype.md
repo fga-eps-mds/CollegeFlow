@@ -21,7 +21,7 @@ Os protótipos a seguir foram desenvolvidos a partir de vários outros criados p
 <img src="img\prototypes\PrototipoBaixa-v2_page-0001.jpg" width="400" height="400">
 
 ### Versão 3.0
-<img src="img\prototypes\PrototipoBaixa-v3_page-0001.jpg" width="400" height="400">
+<img src="img\prototypes\PrototipoBaixa-v3_page-0001.png" width="400" height="400">
 
 ## 3.Protótipo de Alta Fidelidade
 
