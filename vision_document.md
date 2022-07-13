@@ -1,40 +1,46 @@
 # Histórico de Revisão
 
-| Data | Versão | Modificação | Autor |
-| :--- | :----- | :---------- | :---- |
-| ---  | ---    | ---         | ---   |
+| Data     | Versão | Modificação               | Autor        |
+| 13/07/22 | 0.1    | Adição da seção introdução| Lucas Gabriel|
+| -------- | ------ | ------------------------- | ------------ |
 
 ## **1. Introdução**
 
-Este documento estará repleto de dados que sustentarão o propósito,
-o contexto e a visão geral do produto, permitindo assim o entendimento do
-escopo do projeto.
+Esse documento possui como objetivo exibir dados a respeito do projeto, permitindo assim a completa compreensão do mesmo em todos os âmbitos.
 
-Assim, será explicado o problema evidenciado, a oportunidade encontrada, a
-descrição dos principais envolvidos, uma possível solução, suas principais
-funcionalidades e seus requisitos, para assim obter uma melhor compreensão
-do escopo e diminuir os riscos envolvidos.
 
-### 1.1 Escopo
+### 1.1 Propósito
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+O atual documento propõe apresentar o projeto UnB Flow, evidenciando o contexto em que o projeto se encontra, apresentando uma descrição dos envolvidos e uma visão geral do produto, bem como seus recursos, restrições e requisitos.
 
-### 1.2 Definições, acrônimos e abreviações
+### 1.2 Escopo
 
-Estarão listadas neste tópico as definições, acrônimos e abreviações dos
-termos usados neste documento, para assim facilitar o compreendimento do
-público interessado no projeto
+O projeto objetiva auxiliar os alunos de graduação da UnB Campus Gama na escolha de matérias, facilitando ao aluno manter a aderência ao fluxo da faculdade, se organizar para o semestre e fazer essas escolhas de acordo com os seus interesses.  O projeto também conta com apresentação e avaliação dos docentes da instituição e um espaço para facilitar o networking com outros discentes.
+Todo o produto será desenvolvido em uma aplicação mobile, com objetivo de que os alunos da UnB Campus Gama tenham o maior rendimento possível em suas escolhas para o semestre.
+
+### 1.3 Definições, acrônimos e abreviações
+
+Lista de termos usados no documento com objetivo de que todos possam entender seu conteúdo.
 
 | **Sigla/Termo/Acrônimo** | **Definição**                                                                |
 | ------------------------ | ---------------------------------------------------------------------------- |
-| Saskatoon                | Sistema de gerenciamento de colheita desenvolvido pelo _Les Fruits Défendus_ |
-| Santropol Roulant        | Centro comunitário de alimentos situado em Montreal                          |
-| _Les Fruits Défendus_    | Projeto de colheita urbana voluntária organizada pela Santropol Roulant      |
-| ODS                      | Objetivos de Desenvolvimento Sustentável                                     |
-| MDS                      | Métodos de Desenvolvimento de <i>Software</i>                                |
-| EPS                      | Engenharia de Produto de <i>Software</i>                                     |
-| FGA                      | Faculdade do Gama                                                            |
 | UnB                      | Universidade de Brasília                                                     |
+
+### 1.4 Referências 
+
+IBM - Engineering Lifecycle Management - Vision Document. Disponível em: https://www.ibm.com/docs/pt-br/elm/6.0.5?topic=requirements-vision-document. Acessado em 13 jul 2022.
+
+### 1.5 Visão Geral
+
+O documento está dividido da seguinte forma:
+
+•Introdução: descrição geral do projeto
+•Posicionamento: contexto de negócio em que o projeto está
+•Descrição das partes interessadas e do usuário: apresenta todos envolvidos no projeto
+•Visão geral do produto: 
+•Recursos do produto:
+•Restrições:
+•Requisitos do produto:
 
 ## **2. Posicionamento**
 
