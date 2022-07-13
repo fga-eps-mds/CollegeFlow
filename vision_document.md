@@ -1,9 +1,9 @@
 # Histórico de Revisão
 
 | Data     | Versão | Modificação                    | Autor         |
+| -------- | ------ | -----------------------------  | ------------- |
 | 13/07/22 | 0.1    | Adição da seção introdução     | Lucas Gabriel |
 | 13/07/22 | 0.2    | Adição da secão posicionamento | Lucas Spinosa |
-| -------- | ------ | -----------------------------  | ------------- |
 
 ## **1. Introdução**
 
@@ -55,10 +55,9 @@ O UnB Flow busca solucionar o problema criando um ambiente em que alunos podem d
 
 ### 2.2 Descrição do problema
 
-| Problema     | Afeta | Impactos                    | Solução         |
-| falta de maiores informações sobre disciplinas ofertadas e seus docentes durante o período de matrícula em disciplinas.
-|  os alunos da UnB Campus Gama   |  escolha de disciplinas mal-otimizada, levando à maior chance reprovações, trancamentos e sobrecarga do aluno. Tudo isso agrava um outro problema já existente: vagas em escassez, pois um trancamento significa uma oportunidade perdida. | criar um ambiente confortável para alunos que já cursaram as disciplinas deixarem suas avaliações, críticas e comentários sobre o professor, dificuldades que passaram e indicações de materiais de estudo |
-| -------- | ------ | -----------------------------  | ------------- |
+| Problema     | Afeta                                                                               | Impactos                    | Solução         |
+| ------------ | ----------------------------------------------------------------------------------- | --------------------------- | --------------- |
+| Falta de maiores informações sobre disciplinas ofertadas e seus docentes durante o período de matrícula em disciplinas.| Os alunos da UnB Campus Gama |  Escolha de disciplinas mal-otimizada, levando à maior chance reprovações, trancamentos e sobrecarga do aluno. Tudo isso agrava um outro problema já existente: vagas em escassez, pois um trancamento significa uma oportunidade perdida | Criar um ambiente confortável para alunos que já cursaram as disciplinas deixarem suas avaliações, críticas e comentários sobre o professor, dificuldades que passaram e indicações de materiais de estudo |
 
 ### 2.3 Descrição da posição do produto
 
