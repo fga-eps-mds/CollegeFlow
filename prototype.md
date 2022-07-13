@@ -20,11 +20,8 @@ Os protótipos a seguir foram desenvolvidos a partir de vários outros criados p
 ### Versão 2.0
 <img src="img\prototypes\PrototipoBaixa-v2_page-0001.jpg" width="400" height="400">
 
-### 2.1 Fluxo de usuário
-
-### 2.2 Telas
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+### Versão 3.0
+<img src="img\prototypes\PrototipoBaixa-v3_page-0001.jpg" width="400" height="400">
 
 ## 3.Protótipo de Alta Fidelidade
 
