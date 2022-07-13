@@ -14,12 +14,11 @@ O protótipo de baixa fidelidade tem um viés de desenvolver estratégias e sint
 
 Os protótipos a seguir foram desenvolvidos a partir de vários outros criados pelo grupo, com o intuito de deliberar ideias entre os membros. Com isso, foram geradas 3 versões preliminares do protótipo de baixa fidelidade:
 
-<!-- TODO(Mauricio-Machado): Change links reference -->
+### Versão 1.0
+<img src="img\prototypes\PrototipoBaixa-v1_page-0001.jpg" width="400" height="400">
 
-- [Versão 1](https://github.com/fga-eps-mds/2019.2-TimeBolinho/issues/18#issuecomment-527721682)
-- [Versão 2.1](https://github.com/fga-eps-mds/2019.2-TimeBolinho/issues/18#issuecomment-528601858)
-- [Versão 2.2](https://github.com/fga-eps-mds/2019.2-TimeBolinho/issues/18#issuecomment-528914791)
-- [Versão 3](https://github.com/fga-eps-mds/2019.2-TimeBolinho/issues/18#issuecomment-530608104)
+### Versão 2.0
+<img src="img\prototypes\PrototipoBaixa-v2_page-0001.jpg" width="400" height="400">
 
 ### 2.1 Fluxo de usuário
 
