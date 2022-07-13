@@ -1,21 +1,15 @@
 ---
 name: Template issue de Feature
-about: "Breve descrição sobre a issue a ser trabalhada"
+about: Breve descrição sobre a issue a ser trabalhada
 title: freature
-labels: ""
-assignees:
+labels: enhancement
+assignees: ''
+
 ---
 
 # Descrição
 
 Descreva de forma detalhada e objetiva os objetivos propostos para a issue
-
-<!---
-# User Stories
-Descreve a user storie referente a issue, como exemplo:
-Eu como [Papel], quero [Meta] para que eu possa [Motivo].
-Exemplo: “Eu, como desenvolvedor, desejo realizar os testes funcionais das classificações, para garantir o devido funcionamento da aplicação”
--->
 
 # Tarefas
 
