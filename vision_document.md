@@ -1,8 +1,9 @@
 # Histórico de Revisão
 
-| Data     | Versão | Modificação               | Autor        |
-| 13/07/22 | 0.1    | Adição da seção introdução| Lucas Gabriel|
-| -------- | ------ | ------------------------- | ------------ |
+| Data     | Versão | Modificação                    | Autor         |
+| 13/07/22 | 0.1    | Adição da seção introdução     | Lucas Gabriel |
+| 13/07/22 | 0.2    | Adição da secão posicionamento | Lucas Spinosa |
+| -------- | ------ | -----------------------------  | ------------- |
 
 ## **1. Introdução**
 
@@ -44,19 +45,24 @@ O documento está dividido da seguinte forma:
 
 ## **2. Posicionamento**
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
-
 ### 2.1 Oportunidade de negócios
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+Um grande desafio enfrentado pelos estudantes da UnB é o período de matrículas em disciplinas, em que ele deve escolher qual irá cursar durante o período letivo e, além disso, a opção de professor que irá lecioná-la.
+
+Porém, apesar de importante, nota-se que essa decisão é feita com base em poucas informações, não se tendo conhecimento da didática do professor ou dificuldade da disciplina em si.
+
+O UnB Flow busca solucionar o problema criando um ambiente em que alunos podem deixar suas avaliações e observações com relação tanto às matérias quanto aos docentes
 
 ### 2.2 Descrição do problema
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+| Problema     | Afeta | Impactos                    | Solução         |
+| falta de maiores informações sobre disciplinas ofertadas e seus docentes durante o período de matrícula em disciplinas.
+|  os alunos da UnB Campus Gama   |  escolha de disciplinas mal-otimizada, levando à maior chance reprovações, trancamentos e sobrecarga do aluno. Tudo isso agrava um outro problema já existente: vagas em escassez, pois um trancamento significa uma oportunidade perdida. | criar um ambiente confortável para alunos que já cursaram as disciplinas deixarem suas avaliações, críticas e comentários sobre o professor, dificuldades que passaram e indicações de materiais de estudo |
+| -------- | ------ | -----------------------------  | ------------- |
 
 ### 2.3 Descrição da posição do produto
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+O produto poderá se posicionar no mercado como uma plataforma online útil para a comunidade da UnB Campus Gama, auxiliando e facilitando a vida de estudantes e também do corpo docente, que poderiam usar os relatos como base para se aperfeiçoarem, tudo isso em um ambiente seguro e confortável para ambas as partes.
 
 ## **3. Descrição dos Envolvidos e dos Usuários**
 
