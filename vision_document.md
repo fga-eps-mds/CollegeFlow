@@ -7,6 +7,9 @@
 | 15/07/22 | 0.3    | Adição da secão descrições das partes interessadas e usuários | Lucas Spinosa |
 | 15/07/22 | 0.4    | Adição da secão visão geral do produto | Lucas Gabriel |
 | 15/07/22 | 0.5    | Adição da secão de recursos do produto | Lucas Spinosa |
+| 15/07/22 | 0.6    | Adição da secão de restrições do produto | Lucas Gabriel |
+| 15/07/22 | 0.7    | Adição da secão de requisitos não-funcionais do produto | Lucas Spinosa |
+
 
 
 ## **1. Introdução**
@@ -40,13 +43,15 @@ IBM - Engineering Lifecycle Management - Vision Document. Disponível em: https:
 
 O documento está dividido da seguinte forma:
 
-•Introdução: descrição geral do projeto
-•Posicionamento: contexto de negócio em que o projeto está
-•Descrição das partes interessadas e do usuário: apresenta todos envolvidos no projeto
-•Visão geral do produto: 
-•Recursos do produto:
-•Restrições:
-•Requisitos do produto:
+| Seção                                     | Conteúdo                                                |
+| :-----------------------------------------| :--------------------------------------------------------|          
+| Introdução | Descrição geral do projeto |
+| Posicionamento| Contexto de negócio em que o projeto está |
+| Descrição das Partes Interessadas e do Usuário| Apresenta todos envolvidos no projeto|
+| Visão Geral do Produto| Apresenta o propósito e capacidades do produto | 
+| Recursos do produto | Expõe com mais detalhes quais são as funcionalidades do produto |
+| Restrições | Exibe as limitações tanto do próprio produto quanto também do desenvolvimento |
+| Requisitos do Produto | Detalha as exigências a serem satisfeitas pelo produto|
 
 ## **2. Posicionamento**
 
@@ -195,27 +200,28 @@ Adaptação do grupo com as tecnologias e metodologias de trabalho em equipe.
 
 Deve ser implementado utilizando Flutter no Front-end e Node.js no Back-end.
 
-
 ### 6.4 Restrições de Uso
 
-O aplicativo poderá ser acessado em celulares Android com acesso à internet .
+O aplicativo poderá ser acessado em celulares Android com acesso à internet.
 
 
 ## **7. Requisitos do Produto**
 
 Lista de categorias de prioridades para requisitos
 
-| Tipo          | Descrição                                                                                                                       |
-| :------------ | :------------------------------------------------------------------------------------------------------------------------------ |
-| Alta          | Requisitos indispensáveis para o funcionamento do sistema                                                                       |
-| Intermediária | Requisitos importantes para o sistema, mas caso não sejam implementados não resultará em um mal funcionamento do sistema        |
-| Útil          | Requtisitos que não são usados com anta frequência e não são tão significativos na satisfação que o usuário tem sobre o sistema |
+|    Tipo     |                                        Descrição                       |
+|:----------- | :--------------------------------------------------------------------- |
+| Alta        | Requisitos indispensáveis para o funcionamento do sistema              |
+| Média       | Requisitos importantes para o sistema, mas que possuem menor prioridade|
+| Baixa       | Requisitos que não possuem tanta relevância na visão geral do sistema  |
 
 Lista de requisitos
 
-| Identificador | Requisito | Depende de | Prioridade |
-| :------------ | :-------- | :--------- | :--------- |
-| ---           | ---       | ---        | ---        |
+| ID | Requisito                                                                       | Prioridade |
+| :- | :------------------------------------------------------------------------------ | :--------- |
+|RNF1| O software deve ser desenvolvido com Flutter no Front-end e Node.js no Back-end |   Alta     |
+|RNF2| O software deve ser desenvolvido para ambiente mobile                           |   Alta     |
+|RNF3| O software deve ter uma interface simples e intuitiva                           |   Alta     |
 
 ## Referências
 
