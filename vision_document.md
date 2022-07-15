@@ -1,14 +1,16 @@
 # Histórico de Revisão
 
-| Data     | Versão | Modificação                    | Autor         |
-| -------- | ------ | ------------------------------ | ------------- |
-| 13/07/22 | 0.1    | Adição da seção introdução     | Lucas Gabriel |
-| 13/07/22 | 0.2    | Adição da secão posicionamento | Lucas Spinosa |
+| Data     | Versão | Modificação                                                   | Autor         |
+| -------- | ------ | ------------------------------------------------------------- | ------------- |
+| 13/07/22 | 0.1    | Adição da seção introdução                                    | Lucas Gabriel |
+| 13/07/22 | 0.2    | Adição da secão posicionamento                                | Lucas Spinosa |
 | 15/07/22 | 0.3    | Adição da secão descrições das partes interessadas e usuários | Lucas Spinosa |
-| 15/07/22 | 0.4    | Adição da secão visão geral do produto | Lucas Gabriel |
-| 15/07/22 | 0.5    | Adição da secão de recursos do produto | Lucas Spinosa |
-| 15/07/22 | 0.6    | Adição da secão de restrições do produto | Lucas Gabriel |
-| 15/07/22 | 0.7    | Adição da secão de requisitos não-funcionais do produto | Lucas Spinosa |
+| 15/07/22 | 0.4    | Adição da secão visão geral do produto                        | Lucas Gabriel |
+| 15/07/22 | 0.5    | Adição da secão de recursos do produto                        | Lucas Spinosa |
+| 15/07/22 | 0.6    | Adição da secão de restrições do produto                      | Lucas Gabriel |
+| 15/07/22 | 0.7    | Adição da secão de requisitos não-funcionais do produto       | Lucas Spinosa |
+| 15/07/22 | 0.8    | Adição da secão de requisitos funcionais do produto           | Lucas Gabriel |
+|          |        |                                                               |               |
 
 
 
@@ -217,12 +219,23 @@ Lista de categorias de prioridades para requisitos
 
 Lista de requisitos
 
-| ID | Requisito                                                                       | Prioridade |
-| :- | :------------------------------------------------------------------------------ | :--------- |
-|RNF1| O software deve ser desenvolvido com Flutter no Front-end e Node.js no Back-end |   Alta     |
-|RNF2| O software deve ser desenvolvido para ambiente mobile                           |   Alta     |
-|RNF3| O software deve ter uma interface simples e intuitiva                           |   Alta     |
-
-## Referências
-
-- Texto descritivo sobre a estrutura e objetivo dos tópicos do documento de visão. https://www.ibm.com/support/knowledgecenter/pt-br/SSWMEQ_4.0.6/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.html. Acesso em 02 de setembro de 2019
+| ID   | Requisito                                                                                                       | Prioridade |
+| :--- | :-------------------------------------------------------------------------------------------------------------- | :--------- |
+| RF1  | Deve ser possível realizar o CRUD de usuário                                                                    | Alta       |
+| RF2  | Deve ser possível visualizar a descrição do curso                                                               | Alta       |
+| RF3  | Deve ser possível visualizar os fluxos disponíveis para um curso                                                | Baixa      |
+| RF4  | Deve ser possível visualizar a descrição da disciplina                                                          | Alta       |
+| RF5  | Deve ser possível realizar o CRUD de avaliação da disciplina com o docente relacionado                          | Alta       |
+| RF6  | Deve ser possível acessar ao ranking de disciplinas com o docente relacionado                                   | Alta       |
+| RF7  | Deve ser possível acessar à lista de alunos revisores de disciplinas                                            | Baixa      |
+| RF8  | Deve ser possível fazer busca por curso                                                                         | Alta       |
+| RF9  | Deve ser possível fazer busca por disciplina                                                                    | Alta       |
+| RF10 | Deve ser possível filtrar o ranking de disciplinas com o docente relacionado por professor, aluno ou disciplina | Baixa      |
+| RF11 | Deve ser possível buscar por pessoa cursando a mesma disciplina                                                 | Média      |
+| RF12 | Deve ser possível visualizar o FAQ                                                                              | Média      |
+| RF13 | Deve ser possível realizar o CRUD de fórum                                                                      | Média      |
+| RF14 | Deve ser possível realizar o CRUD de mensagem no fórum                                                          | Média      |
+| RNF1 | O software deve ser desenvolvido com Flutter no Front-end e Node.js no Back-end                                 | Alta       |
+| RNF2 | O software deve ser desenvolvido para ambiente mobile                                                           | Alta       |
+| RNF3 | O software deve ter uma interface simples e intuitiva                                                           | Alta       |
+|      |                                                                                                                 |            |
