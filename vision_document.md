@@ -5,6 +5,7 @@
 | 13/07/22 | 0.1    | Adição da seção introdução     | Lucas Gabriel |
 | 13/07/22 | 0.2    | Adição da secão posicionamento | Lucas Spinosa |
 | 15/07/22 | 0.3    | Adição da secão descrições das partes interessadas e usuários | Lucas Spinosa |
+| 15/07/22 | 0.4    | Adição da secão visão geral do produto | Lucas Gabriel |
 
 ## **1. Introdução**
 
@@ -126,21 +127,29 @@ Embora tenha certo grau de utilidade, nota-se que essa abordagem possui problema
 
 ### 4.1 Perspectiva do Produto
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+O projeto tem como objetivo auxiliar os alunos da UnB Campus Gama na escolha de disciplinas. Para isso, serão apresentadas informações acerca dos cursos e suas disciplinas, avaliações de professores e uma forma de realizar networking com alunos cursando a mesma disciplina, além de disponibilizar uma área com a resposta para algumas perguntas frequentes.
+
 
 ### 4.2 Resumo das capacidades
 
 | Benefício para o Usuário | Recursos de suporte |
 | :----------------------: | :-----------------: |
-|           ---            |         ---         |
+| O aluno poderá realizar escolhas de disciplinas de forma mais consciente | A aplicação fornecerá dados sobre as disciplinas |
+| O aluno poderá obter feedback sobre professores | A aplicação fornecerá a possibilidade de alunos que já cursaram a disciplina avaliarem os professores e fazerem comentários que ficarão disponíveis para futuros alunos |
+| Facilidade de networking entre os alunos que estão cursando a mesma disciplina | A aplicação disponibiliza fóruns para que alunos de uma mesma disciplina interajam entre si |
+| O professor poderá receber feedbacks | A aplicação permitirá comentários de alunos que já cursaram a disciplina, os quais ficarão disponíveis para os docentes |
+
 
 ### 4.3 Funções do Produto
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+O produto tem a função de auxiliar os alunos da UnB campus Gama na tarefa de escolher as matérias e maximizar as chances de bons resultados. Para isso,  contará com comentários de outros usuários, possibilidade de networking, além de permitir que professores também melhorem seu desempenho. As funcionalidades da plataforma são: login, cadastro, edição de perfil, descrição de cursos e matérias, seção de perguntas frequentes, avaliações de disciplinas e docentes, ranking e busca por cursos e disciplinas.
 
 ### 4.4 Suposições e dependências
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+•O usuário deverá possuir um celular com acesso à internet para poder ter acesso à aplicação.\
+•A aplicação mobile será utilizada por alunos e professores da UnB Campus Gama.\
+•A aplicação mobile irá ajudar ao aluno a obter melhores resultados durante o curso e aos professores a melhorarem sua didática por meio de feedbacks.
+
 
 ## **5. Recursos do Produto**
 
