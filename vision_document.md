@@ -3,13 +3,13 @@
 | Data     | Versão | Modificação                                                   | Autor         |
 | -------- | ------ | ------------------------------------------------------------- | ------------- |
 | 13/07/22 | 0.1    | Adição da seção introdução                                    | Lucas Gabriel |
-| 13/07/22 | 0.2    | Adição da secão posicionamento                                | Lucas Spinosa |
-| 15/07/22 | 0.3    | Adição da secão descrições das partes interessadas e usuários | Lucas Spinosa |
-| 15/07/22 | 0.4    | Adição da secão visão geral do produto                        | Lucas Gabriel |
-| 15/07/22 | 0.5    | Adição da secão de recursos do produto                        | Lucas Spinosa |
-| 15/07/22 | 0.6    | Adição da secão de restrições do produto                      | Lucas Gabriel |
-| 15/07/22 | 0.7    | Adição da secão de requisitos não-funcionais do produto       | Lucas Spinosa |
-| 15/07/22 | 0.8    | Adição da secão de requisitos funcionais do produto           | Lucas Gabriel |
+| 13/07/22 | 0.2    | Adição da seção posicionamento                                | Lucas Spinosa |
+| 15/07/22 | 0.3    | Adição da seção descrições das partes interessadas e usuários | Lucas Spinosa |
+| 15/07/22 | 0.4    | Adição da seção visão geral do produto                        | Lucas Gabriel |
+| 15/07/22 | 0.5    | Adição da seção de recursos do produto                        | Lucas Spinosa |
+| 15/07/22 | 0.6    | Adição da seção de restrições do produto                      | Lucas Gabriel |
+| 15/07/22 | 0.7    | Adição da seção de requisitos não-funcionais do produto       | Lucas Spinosa |
+| 15/07/22 | 0.8    | Adição da seção de requisitos funcionais do produto           | Lucas Gabriel |
 |          |        |                                                               |               |
 
 
