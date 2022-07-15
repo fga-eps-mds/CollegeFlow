@@ -6,6 +6,8 @@
 | 13/07/22 | 0.2    | Adição da secão posicionamento | Lucas Spinosa |
 | 15/07/22 | 0.3    | Adição da secão descrições das partes interessadas e usuários | Lucas Spinosa |
 | 15/07/22 | 0.4    | Adição da secão visão geral do produto | Lucas Gabriel |
+| 15/07/22 | 0.5    | Adição da secão de recursos do produto | Lucas Spinosa |
+
 
 ## **1. Introdução**
 
@@ -153,17 +155,30 @@ O produto tem a função de auxiliar os alunos da UnB campus Gama na tarefa de e
 
 ## **5. Recursos do Produto**
 
-### 5.1 Recursos de suporte ao voluntário
+### 5.1 Filtrar Pesquisa
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+Os usuários podem pesquisar com mais eficiência utilizando critérios como tags, semestre, curso, etc. 
 
-### 5.2 Recursos de suporte ao líder
+### 5.2 Avaliar Comentários
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+Os usuários podem avaliar as postagens de forma positiva ou negativa, adicionando pontos ou removendo-os. 
 
-### 5.3 Recursos de suporte ao proprietário
+### 5.3 Manter Anonimato
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+Caso deseje, o usuário pode postar suas opiniões, porém mantendo sua identidade em segredo. 
+
+### 5.4 Avaliar Disciplina e Professor 
+
+O usuário pode avaliar a disciplina em termos de dificuldade, em um sistema de 0 a 5 estrelas, em que quanto mais alto a dificuldade, maior o número de estrelas. De mesmo modo, pode também avaliar o respectivo docente. 
+
+### 5.5 Visualizar Ranking
+
+O usuário pode contemplar quais são as disciplinas e professores mais bem avaliados na plataforma. 
+
+### 5.6 Visualizar Perfis 
+
+O usuário pode ver informações de outros perfis, como opção de curso, histórico de disciplinas e semestre atual. 
+
 
 ## **6. Restrições**
 
