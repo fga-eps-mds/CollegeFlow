@@ -1,9 +1,10 @@
 # Histórico de Revisão
 
 | Data     | Versão | Modificação                    | Autor         |
-| -------- | ------ | -----------------------------  | ------------- |
+| -------- | ------ | ------------------------------ | ------------- |
 | 13/07/22 | 0.1    | Adição da seção introdução     | Lucas Gabriel |
 | 13/07/22 | 0.2    | Adição da secão posicionamento | Lucas Spinosa |
+| 15/07/22 | 0.3    | Adição da secão descrições das partes interessadas e usuários | Lucas Spinosa |
 
 ## **1. Introdução**
 
@@ -23,9 +24,10 @@ Todo o produto será desenvolvido em uma aplicação mobile, com objetivo de que
 
 Lista de termos usados no documento com objetivo de que todos possam entender seu conteúdo.
 
-| **Sigla/Termo/Acrônimo** | **Definição**                                                                |
-| ------------------------ | ---------------------------------------------------------------------------- |
-| UnB                      | Universidade de Brasília                                                     |
+| **Sigla/Termo/Acrônimo** | **Definição**                          |
+| ------------------------ | -------------------------------------- |
+| UnB                      | Universidade de Brasília               |
+| MDS                      | Métodos de Desenvolvimento de Software |
 
 ### 1.4 Referências 
 
@@ -55,72 +57,70 @@ O UnB Flow busca solucionar o problema criando um ambiente em que alunos podem d
 
 ### 2.2 Descrição do problema
 
-| Problema     | Afeta                                                                               | Impactos                    | Solução         |
-| ------------ | ----------------------------------------------------------------------------------- | --------------------------- | --------------- |
-| Falta de maiores informações sobre disciplinas ofertadas e seus docentes durante o período de matrícula em disciplinas.| Os alunos da UnB Campus Gama |  Escolha de disciplinas mal-otimizada, levando à maior chance reprovações, trancamentos e sobrecarga do aluno. Tudo isso agrava um outro problema já existente: vagas em escassez, pois um trancamento significa uma oportunidade perdida | Criar um ambiente confortável para alunos que já cursaram as disciplinas deixarem suas avaliações, críticas e comentários sobre o professor, dificuldades que passaram e indicações de materiais de estudo |
+| Problema                                                                                                                | Afeta                        | Impactos                                                                                                                                                                                                                                 | Solução                                                                                                                                                                                                    |
+| ----------------------------------------------------------------------------------------------------------------------- | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Falta de maiores informações sobre disciplinas ofertadas e seus docentes durante o período de matrícula em disciplinas. | Os alunos da UnB Campus Gama | Escolha de disciplinas mal-otimizada, levando à maior chance reprovações, trancamentos e sobrecarga do aluno. Tudo isso agrava um outro problema já existente: vagas em escassez, pois um trancamento significa uma oportunidade perdida | Criar um ambiente confortável para alunos que já cursaram as disciplinas deixarem suas avaliações, críticas e comentários sobre o professor, dificuldades que passaram e indicações de materiais de estudo |
 
 ### 2.3 Descrição da posição do produto
 
 O produto poderá se posicionar no mercado como uma plataforma online útil para a comunidade da UnB Campus Gama, auxiliando e facilitando a vida de estudantes e também do corpo docente, que poderiam usar os relatos como base para se aperfeiçoarem, tudo isso em um ambiente seguro e confortável para ambas as partes.
 
-## **3. Descrição dos Envolvidos e dos Usuários**
+## **3. Descrição das Partes Interessadas e dos Usuários**
 
-### 3.1 Resumo dos Envolvidos
+### 3.1 Resumo das Partes Interessadas
 
-| Nome                            | Descrição                                | Responsabilidade                                                                                  |
-| :------------------------------ | :--------------------------------------- | :------------------------------------------------------------------------------------------------ |
-| Avaliadores                     | Professores das disciplinas de MDS e EPS | Avaliar a qualidade do projeto desenvolvido pelos alunos de MDS e EPS                             |
-| Desenvolvedores                 | Estudantes da Disciplina MDS da UnB FGA  | Criar e manter documentos; Desenvolver e testar o software                                        |
-| Equipe de Engenharia de Produto | Estudantes da Disciplina EPS da UnB FGA  | Criar e manter documentos; Gerenciar os desenvolvedores; Tomada de decisões a respeito do produto |
+| Nome                      | Descrição         | Função                                                 |
+| :------------------------ | :---------------- | :----------------------------------------------------- |
+| Avaliador                 | Docente de MDS    | Orientar desenvolvedores e analisar o produto          |
+| Equipe de Desenvolvimento | Estudantes de MDS | Desenvolver o projeto e entregar  o produto finalizado |
 
-### 3.2 Descrição dos Usuários
+### 3.2 Resumo dos Usuários
 
-| Nome | Descrição |
-| :--- | :-------- |
-| ---  | ---       |
+| Nome                           | Descrição                                                                                       |
+| :----------------------------- | :---------------------------------------------------------------------------------------------- |
+| Alunos da UnB Campus Gama      | Pesquisar informações sobre disciplinas e relatar experiências com as mesmas e seus professores |
+| Professores da UnB Campus Gama | Visualizar as avaliações postadas na plataforma                                                 |
 
-### 3.3 Principais Necessidades dos Usuários e dos Envolvidos
+### 3.3 Ambiente dos Usuários
 
-| Usuário      | Necessidade          | Solução Atual                | Solução Proposta                            |
-| :----------- | :------------------- | :--------------------------- | :------------------------------------------ |
-| Beneficiário | Doações de alimentos | Doações de pessoas e de ONGs | Website para se candidatar a receber doação |
-| ---          | ---                  | ---                          | ---                                         |
+O usuário poderá utilizar o aplicativo em um dispositivo móvel com sistema Android.
 
-### 3.4 Ambiente dos Usuários
+### 3.4 Perfis das Partes Interessadas
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+#### 3.4.1 Avaliador 
 
-### 3.5 Perfis dos Envolvidos
+| Representantes           | Descrição | Tipo           | Responsabilidade                                                  | Critério de sucesso                                                            | Envolvimento |
+| :----------------------- | --------- | -------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------ | ------------ |
+| Carla Silva Rocha Aguiar | Avaliador | Docente de MDS | Orientar a equipe de desenvolvimento e avaliar o produto entregue | Lecionar com êxito e observar a utilização das metodologias de desenvolvimento | Alto         |
 
-#### 3.5.1 Equipe de Desenvolvimento de <i>Software</i>
+#### 3.4.2 Equipe de Desenvolvimento
 
-| Representantes | Tipo | Responsabilidade | Critério de sucesso | Envolvimento |
-| -------------- | ---- | ---------------- | ------------------- | ------------ |
-| ---            | ---  | ---              | ---                 |
+| Representantes                                                                                                                                                                                                   | Descrição                 | Tipo              | Responsabilidade                                                              | Critério de sucesso                                                                                                              | Envolvimento |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | ----------------- | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| Mauricio Machado Fernandes Filho, Lucas Macedo Barboza, Luan Melo Queiroz, Lucas de Lima Spinosa dos Santos, Lucas Gabriel Sousa Camargo Paiva, Wengel Rodrigues Farias, Raphaela Guimarães de Araujo dos Santos | Equipe de Desenvolvimento | Estudantes de MDS | Desenvolver e completar o projeto com qualidade dentro do prazo da disciplina | Conseguir desenvolver  o produto com todas as funcionalidades planejadas e requisitos atendidos utilizando as metodologias ágeis | Alto         |
 
-#### 3.5.2 Equipe de Engenharia de Produto de <i>Software</i>
 
-| Representantes | Tipo | Responsabilidade | Critério de sucesso | Envolvimento |
-| -------------- | ---- | ---------------- | ------------------- | ------------ |
-| ---            | ---  | ---              | ---                 |
+### 3.5 Perfis dos Usuários
 
-#### 3.5.3 Avaliadores
+#### 3.5.1 Estudantes
 
-| Representantes | Tipo | Responsabilidade | Critério de sucesso | Envolvimento |
-| -------------- | ---- | ---------------- | ------------------- | ------------ |
-| ---            | ---  | ---              | ---                 | ---          |
+| Descrição                 | Responsabilidades                                                                                             | Critérios de Sucesso                                                                                                                                              | Envolvimento |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| Alunos da Unb Campus Gama | Relatar suas experiências com os docentes e disciplinas, avaliar a dificuldade das matérias cursadas por eles | Conseguir pesquisar mais sobre as disciplinas e seus professores, adquirindo assim mais informações para fazer de forma otimizada suas matrículas para o semestre | Alto         |
 
-### 3.6 Perfis dos Usuários
+#### 3.5.2 Professores
 
-#### 3.6.1 Beneficiários
+| Descrição                      | Responsabilidades                                                                                           | Critérios de Sucesso                                                        | Envolvimento |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ------------ |
+| Professores da UnB Campus Gama | Contemplar os feedbacks feitos pelos estudantes com relação à sua didática e  usando-as para se aperfeiçoar | Melhorar sua forma de lecionar com base nas opiniões postadas na plataforma | Baixo        |
 
-| Representantes | Tipo | Responsabilidade | Critério de sucesso | Envolvimento |
-| -------------- | ---- | ---------------- | ------------------- | ------------ |
-| ---            | ---  | ---              | ---                 | ---          |
+### 3.6 Alternativas e Concorrências
 
-### 3.8 Alternativas e Concorrências
+#### Grupos no Facebook
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+Até então, uma forma que os discentes encontraram de obter mais informações é a criação e utilização de grupos no Facebook para avaliação dos professores.
+
+Embora tenha certo grau de utilidade, nota-se que essa abordagem possui problemas. Um deles é a falta de engajamento: muitas perguntas sobre determinados professores sequer são respondidas. Outro empecilho é a qualidade dos comentários. Muitos deles são rasos e carecem de informações relevantes, sendo poucos os que realmente poderiam fazer a diferença na tomada de decisão no período de matrícula.
 
 ## **4. Visão geral do Produto**
 
