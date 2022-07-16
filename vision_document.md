@@ -1,16 +1,16 @@
 # Histórico de Revisão
 
-| Data     | Versão | Modificação                                                   | Autor         |
-| -------- | ------ | ------------------------------------------------------------- | ------------- |
-| 13/07/22 | 0.1    | Adição da seção introdução                                    | Lucas Gabriel |
-| 13/07/22 | 0.2    | Adição da seção posicionamento                                | Lucas Spinosa |
-| 15/07/22 | 0.3    | Adição da seção descrições das partes interessadas e usuários | Lucas Spinosa |
-| 15/07/22 | 0.4    | Adição da seção visão geral do produto                        | Lucas Gabriel |
-| 15/07/22 | 0.5    | Adição da seção de recursos do produto                        | Lucas Spinosa |
-| 15/07/22 | 0.6    | Adição da seção de restrições do produto                      | Lucas Gabriel |
-| 15/07/22 | 0.7    | Adição da seção de requisitos não-funcionais do produto       | Lucas Spinosa |
-| 15/07/22 | 0.8    | Adição da seção de requisitos funcionais do produto           | Lucas Gabriel |
-|          |        |                                                               |               |
+| Data     | Versão | Modificação                                                   | Autor                                              |
+| -------- | ------ | ------------------------------------------------------------- | -------------------------------------------------- |
+| 13/07/22 | 0.1    | Adição da seção introdução                                    | [Lucas Gabriel](https://github.com/lucasgabriel-2) |
+| 13/07/22 | 0.2    | Adição da seção posicionamento                                | [Lucas Spinosa](http://github.com/LucasSpinosa)    |
+| 15/07/22 | 0.3    | Adição da seção descrições das partes interessadas e usuários | [Lucas Spinosa](http://github.com/LucasSpinosa)    |
+| 15/07/22 | 0.4    | Adição da seção visão geral do produto                        | [Lucas Gabriel](https://github.com/lucasgabriel-2) |
+| 15/07/22 | 0.5    | Adição da seção de recursos do produto                        | [Lucas Spinosa](http://github.com/LucasSpinosa)    |
+| 15/07/22 | 0.6    | Adição da seção de restrições do produto                      | [Lucas Gabriel](https://github.com/lucasgabriel-2) |
+| 15/07/22 | 0.7    | Adição da seção de requisitos não-funcionais do produto       | [Lucas Spinosa](http://github.com/LucasSpinosa)    |
+| 15/07/22 | 0.8    | Adição da seção de requisitos funcionais do produto           | [Lucas Gabriel](https://github.com/lucasgabriel-2) |
+| 15/07/22 | 0.9    | Adição de link do perfil no GitHub dos desenvolvedores        | [Lucas Spinosa](http://github.com/LucasSpinosa)    |
 
 
 
@@ -101,13 +101,13 @@ O usuário poderá utilizar o aplicativo em um dispositivo móvel com sistema An
 
 | Representantes           | Descrição | Tipo           | Responsabilidade                                                  | Critério de sucesso                                                            | Envolvimento |
 | :----------------------- | --------- | -------------- | ----------------------------------------------------------------- | ------------------------------------------------------------------------------ | ------------ |
-| Carla Silva Rocha Aguiar | Avaliador | Docente de MDS | Orientar a equipe de desenvolvimento e avaliar o produto entregue | Lecionar com êxito e observar a utilização das metodologias de desenvolvimento | Alto         |
+| Carla Silva Rocha Aguiar | Avaliador | Docente de MDS | Orientar a equipe de desenvolvimento e avaliar o produto entregue | Lecionar com êxito e observar a utilização das metodologias de desenvolvimento | Médio |
 
 #### 3.4.2 Equipe de Desenvolvimento
 
 | Representantes                                                                                                                                                                                                   | Descrição                 | Tipo              | Responsabilidade                                                              | Critério de sucesso                                                                                                              | Envolvimento |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | ----------------- | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------ |
-| Mauricio Machado Fernandes Filho, Lucas Macedo Barboza, Luan Melo Queiroz, Lucas de Lima Spinosa dos Santos, Lucas Gabriel Sousa Camargo Paiva, Wengel Rodrigues Farias, Raphaela Guimarães de Araujo dos Santos | Equipe de Desenvolvimento | Estudantes de MDS | Desenvolver e completar o projeto com qualidade dentro do prazo da disciplina | Conseguir desenvolver  o produto com todas as funcionalidades planejadas e requisitos atendidos utilizando as metodologias ágeis | Alto         |
+|[Mauricio Machado Fernandes Filho](https://github.com/MauricioMachadoFF),</br> [Lucas Macedo Barboza](https://github.com/luckx98),</br> [Luan Melo Queiroz](https://github.com/Luanmq),</br> [Lucas de Lima Spinosa dos Santos](http://github.com/LucasSpinosa),</br> [Lucas Gabriel Sousa Camargo Paiva](https://github.com/lucasgabriel-2),</br> [Wengel Rodrigues Farias](https://github.com/Wengel-Rodrigues),</br> [Raphaela Guimarães de Araujo dos Santos](https://github.com/raphaiela)</br> | Equipe de Desenvolvimento | Estudantes de MDS | Desenvolver e completar o projeto com qualidade dentro do prazo da disciplina | Conseguir desenvolver  o produto com todas as funcionalidades planejadas e requisitos atendidos utilizando as metodologias ágeis | Alto         |
 
 
 ### 3.5 Perfis dos Usuários
