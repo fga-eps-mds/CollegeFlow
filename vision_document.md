@@ -1,16 +1,17 @@
 # Histórico de Revisão
 
-| Data     | Versão | Modificação                                                   | Autor                                              |
-| -------- | ------ | ------------------------------------------------------------- | -------------------------------------------------- |
-| 13/07/22 | 0.1    | Adição da seção introdução                                    | [Lucas Gabriel](https://github.com/lucasgabriel-2) |
-| 13/07/22 | 0.2    | Adição da seção posicionamento                                | [Lucas Spinosa](http://github.com/LucasSpinosa)    |
-| 15/07/22 | 0.3    | Adição da seção descrições das partes interessadas e usuários | [Lucas Spinosa](http://github.com/LucasSpinosa)    |
-| 15/07/22 | 0.4    | Adição da seção visão geral do produto                        | [Lucas Gabriel](https://github.com/lucasgabriel-2) |
-| 15/07/22 | 0.5    | Adição da seção de recursos do produto                        | [Lucas Spinosa](http://github.com/LucasSpinosa)    |
-| 15/07/22 | 0.6    | Adição da seção de restrições do produto                      | [Lucas Gabriel](https://github.com/lucasgabriel-2) |
-| 15/07/22 | 0.7    | Adição da seção de requisitos não-funcionais do produto       | [Lucas Spinosa](http://github.com/LucasSpinosa)    |
-| 15/07/22 | 0.8    | Adição da seção de requisitos funcionais do produto           | [Lucas Gabriel](https://github.com/lucasgabriel-2) |
-| 15/07/22 | 0.9    | Adição de link do perfil no GitHub dos desenvolvedores        | [Lucas Spinosa](http://github.com/LucasSpinosa)    |
+| Data     | Versão | Modificação                                                   | Autor                                              |   Revisor   |
+| -------- | ------ | ------------------------------------------------------------- | -------------------------------------------------- | ----------- |
+| 13/07/22 | 0.1    | Adição da seção introdução                                    | [Lucas Gabriel](https://github.com/lucasgabriel-2) | ----------- |
+| 13/07/22 | 0.2    | Adição da seção posicionamento                                | [Lucas Spinosa](http://github.com/LucasSpinosa)    | ----------- |
+| 15/07/22 | 0.3    | Adição da seção descrições das partes interessadas e usuários | [Lucas Spinosa](http://github.com/LucasSpinosa)    | ----------- |
+| 15/07/22 | 0.4    | Adição da seção visão geral do produto                        | [Lucas Gabriel](https://github.com/lucasgabriel-2) | ----------- |
+| 15/07/22 | 0.5    | Adição da seção de recursos do produto                        | [Lucas Spinosa](http://github.com/LucasSpinosa)    | ----------- |
+| 15/07/22 | 0.6    | Adição da seção de restrições do produto                      | [Lucas Gabriel](https://github.com/lucasgabriel-2) | ----------- |
+| 15/07/22 | 0.7    | Adição da seção de requisitos não-funcionais do produto       | [Lucas Spinosa](http://github.com/LucasSpinosa)    | ----------- |
+| 15/07/22 | 0.8    | Adição da seção de requisitos funcionais do produto           | [Lucas Gabriel](https://github.com/lucasgabriel-2) | ----------- |
+| 15/07/22 | 0.9    | Adição de link do perfil no GitHub dos desenvolvedores        | [Lucas Spinosa](http://github.com/LucasSpinosa)    | ----------- |
+| 15/07/22 | 1.0    | Alteração na seção de requisitos                              | [Lucas Spinosa](http://github.com/LucasSpinosa)    | ----------- |
 
 
 
@@ -210,32 +211,32 @@ O aplicativo poderá ser acessado em celulares Android com acesso à internet.
 ## **7. Requisitos do Produto**
 
 Lista de categorias de prioridades para requisitos
-
-|    Tipo     |                                        Descrição                       |
-|:----------- | :--------------------------------------------------------------------- |
-| Alta        | Requisitos indispensáveis para o funcionamento do sistema              |
-| Média       | Requisitos importantes para o sistema, mas que possuem menor prioridade|
-| Baixa       | Requisitos que não possuem tanta relevância na visão geral do sistema  |
+   
+|    Tipo     |                                        Descrição                                                 |
+|:----------- | :----------------------------------------------------------------------------------------------- |
+|   Must      | Requisitos indispensáveis para o funcionamento do sistema                                        |
+|   Should    | Requisitos importantes para o sistema, mas que possuem menor prioridade                          |
+|   Could     | Requisitos que não são obrigatórios, mas não possuem tanta relevância na visão geral do sistema  |
+|   Won't     | Requisitos que não precisam ser implementados no momento, mas seriam futuras melhorias           |
 
 Lista de requisitos
 
-| ID   | Requisito                                                                                                       | Prioridade |
-| :--- | :-------------------------------------------------------------------------------------------------------------- | :--------- |
-| RF1  | Deve ser possível realizar o CRUD de usuário                                                                    | Alta       |
-| RF2  | Deve ser possível visualizar a descrição do curso                                                               | Alta       |
-| RF3  | Deve ser possível visualizar os fluxos disponíveis para um curso                                                | Baixa      |
-| RF4  | Deve ser possível visualizar a descrição da disciplina                                                          | Alta       |
-| RF5  | Deve ser possível realizar o CRUD de avaliação da disciplina com o docente relacionado                          | Alta       |
-| RF6  | Deve ser possível acessar ao ranking de disciplinas com o docente relacionado                                   | Alta       |
-| RF7  | Deve ser possível acessar à lista de alunos revisores de disciplinas                                            | Baixa      |
-| RF8  | Deve ser possível fazer busca por curso                                                                         | Alta       |
-| RF9  | Deve ser possível fazer busca por disciplina                                                                    | Alta       |
-| RF10 | Deve ser possível filtrar o ranking de disciplinas com o docente relacionado por professor, aluno ou disciplina | Baixa      |
-| RF11 | Deve ser possível buscar por pessoa cursando a mesma disciplina                                                 | Média      |
-| RF12 | Deve ser possível visualizar o FAQ                                                                              | Média      |
-| RF13 | Deve ser possível realizar o CRUD de fórum                                                                      | Média      |
-| RF14 | Deve ser possível realizar o CRUD de mensagem no fórum                                                          | Média      |
-| RNF1 | O software deve ser desenvolvido com Flutter no Front-end e Node.js no Back-end                                 | Alta       |
-| RNF2 | O software deve ser desenvolvido para ambiente mobile                                                           | Alta       |
-| RNF3 | O software deve ter uma interface simples e intuitiva                                                           | Alta       |
-|      |                                                                                                                 |            |
+| ID   | Requisito                                                                                                       | Prioridade  |
+| :--- | :-------------------------------------------------------------------------------------------------------------- | :---------- |
+| RF1  | Deve ser possível realizar o CRUD de usuário                                                                    | Must        |
+| RF2  | Deve ser possível visualizar a descrição do curso                                                               | Must        |
+| RF3  | Deve ser possível visualizar os fluxos disponíveis para um curso                                                | Could       |
+| RF4  | Deve ser possível visualizar a descrição da disciplina                                                          | Must        |
+| RF5  | Deve ser possível realizar o CRUD de avaliação da disciplina com o docente relacionado                          | Must        |
+| RF6  | Deve ser possível acessar ao ranking de disciplinas com o docente relacionado                                   | Must        |
+| RF7  | Deve ser possível acessar à lista de alunos revisores de disciplinas                                            | Could       |
+| RF8  | Deve ser possível fazer busca por curso                                                                         | Must        |
+| RF9  | Deve ser possível fazer busca por disciplina                                                                    | Must        |
+| RF10 | Deve ser possível filtrar o ranking de disciplinas com o docente relacionado por professor, aluno ou disciplina | Could       |
+| RF11 | Deve ser possível buscar por pessoa cursando a mesma disciplina                                                 | Should      |
+| RF12 | Deve ser possível visualizar o FAQ                                                                              | Should      |
+| RF13 | Deve ser possível realizar o CRUD de fórum                                                                      | Should      |
+| RF14 | Deve ser possível realizar o CRUD de mensagem no fórum                                                          | Should      |
+| RNF1 | O software deve ser desenvolvido com Flutter no Front-end e Node.js no Back-end                                 | Must        |
+| RNF2 | O software deve ser desenvolvido para ambiente mobile                                                           | Must        |
+| RNF3 | O software deve ter uma interface simples e intuitiva                                                           | Must        |
