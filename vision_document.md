@@ -14,6 +14,7 @@
 | 15/07/22 | 1.0    | Alteração na seção de requisitos                              | [Lucas Spinosa](http://github.com/LucasSpinosa)    | ----------- |
 | 15/07/22 | 1.0    | Alteração na seção de requisitos                              | [Lucas Spinosa](http://github.com/LucasSpinosa)    | ----------- |
 | 19/07/22 | 1.1    | Alteração na seção descrições das partes interessadas e usuários | [Lucas Spinosa](http://github.com/LucasSpinosa) | [Mauricio Machado Fernandes Filho](https://github.com/MauricioMachadoFF) |
+| 19/07/22 | 1.2    | Alteração na seção de visão geral do produto | [Lucas Spinosa](http://github.com/LucasSpinosa) | [Mauricio Machado Fernandes Filho](https://github.com/MauricioMachadoFF) |
 
 
 ## **1. Introdução**
@@ -149,6 +150,7 @@ O projeto tem como objetivo auxiliar os alunos da UnB Campus Gama na escolha de 
 | Benefício para o Usuário | Recursos de suporte |
 | :----------------------: | :-----------------: |
 | O aluno poderá realizar escolhas de disciplinas de forma mais consciente | A aplicação fornecerá dados sobre as disciplinas |
+| O aluno poderá escrever feedbacks sobre as suas matérias/professores | A aplicação terá uma ferramenta na página de visão da matéria ou do professor |
 | O aluno poderá obter feedback sobre professores | A aplicação fornecerá a possibilidade de alunos que já cursaram a disciplina avaliarem os professores e fazerem comentários que ficarão disponíveis para futuros alunos |
 | Facilidade de networking entre os alunos que estão cursando a mesma disciplina | A aplicação disponibiliza fóruns para que alunos de uma mesma disciplina interajam entre si |
 | O professor poderá receber feedbacks | A aplicação permitirá comentários de alunos que já cursaram a disciplina, os quais ficarão disponíveis para os docentes |
@@ -156,12 +158,20 @@ O projeto tem como objetivo auxiliar os alunos da UnB Campus Gama na escolha de 
 
 ### 4.3 Funções do Produto
 
-O produto tem a função de auxiliar os alunos da UnB campus Gama na tarefa de escolher as matérias e maximizar as chances de bons resultados. Para isso,  contará com comentários de outros usuários, possibilidade de networking, além de permitir que professores também melhorem seu desempenho. As funcionalidades da plataforma são: login, cadastro, edição de perfil, descrição de cursos e matérias, seção de perguntas frequentes, avaliações de disciplinas e docentes, ranking e busca por cursos e disciplinas.
+O produto tem a função de auxiliar os alunos da UnB campus Gama na tarefa de escolher as matérias e maximizar as chances de bons resultados. Para isso,  contará com comentários de outros usuários, possibilidade de networking, além de permitir que professores também melhorem seu desempenho. As funcionalidades da plataforma são: 
+
+• edição de perfil</br>
+• descrição de cursos e matérias</br>
+• seção de perguntas frequentes</br>
+• avaliações de disciplinas e docentes</br>
+• ranking</br>
+• busca por cursos e disciplinas
 
 ### 4.4 Suposições e dependências
 
 •O usuário deverá possuir um celular com acesso à internet para poder ter acesso à aplicação.\
 •A aplicação mobile será utilizada por alunos e professores da UnB Campus Gama.\
+•O usuário poderá realizar avaliações de forma anônima (para sua segurança), evitando que muitos deixem de fazer comentários por medo de pressão no ambiente acadêmico.\
 •A aplicação mobile irá ajudar ao aluno a obter melhores resultados durante o curso e aos professores a melhorarem sua didática por meio de feedbacks.
 
 
