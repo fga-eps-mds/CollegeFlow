@@ -12,7 +12,8 @@
 | 15/07/22 | 0.8    | Adição da seção de requisitos funcionais do produto           | [Lucas Gabriel](https://github.com/lucasgabriel-2) | ----------- |
 | 15/07/22 | 0.9    | Adição de link do perfil no GitHub dos desenvolvedores        | [Lucas Spinosa](http://github.com/LucasSpinosa)    | ----------- |
 | 15/07/22 | 1.0    | Alteração na seção de requisitos                              | [Lucas Spinosa](http://github.com/LucasSpinosa)    | ----------- |
-
+| 15/07/22 | 1.0    | Alteração na seção de requisitos                              | [Lucas Spinosa](http://github.com/LucasSpinosa)    | ----------- |
+| 19/07/22 | 1.1    | Alteração na seção descrições das partes interessadas e usuários | [Lucas Spinosa](http://github.com/LucasSpinosa) | [Mauricio Machado Fernandes Filho](https://github.com/MauricioMachadoFF) |
 
 
 ## **1. Introdução**
@@ -90,11 +91,12 @@ O produto poderá se posicionar no mercado como uma plataforma online útil para
 | Nome                           | Descrição                                                                                       |
 | :----------------------------- | :---------------------------------------------------------------------------------------------- |
 | Alunos da UnB Campus Gama      | Pesquisar informações sobre disciplinas e relatar experiências com as mesmas e seus professores |
-| Professores da UnB Campus Gama | Visualizar as avaliações postadas na plataforma                                                 |
+| Professores da UnB Campus Gama | Visualizar as avaliações postadas na plataforma |
+| Administrador da Plataforma    | Validar reviews e gerenciar usuários, banindo ou bloqueando aqueles que violam os termos de uso      |
 
 ### 3.3 Ambiente dos Usuários
 
-O usuário poderá utilizar o aplicativo em um dispositivo móvel com sistema Android.
+O usuário poderá utilizar o aplicativo em um dispositivo móvel com sistema Android ou IOS.
 
 ### 3.4 Perfis das Partes Interessadas
 
@@ -108,7 +110,9 @@ O usuário poderá utilizar o aplicativo em um dispositivo móvel com sistema An
 
 | Representantes                                                                                                                                                                                                   | Descrição                 | Tipo              | Responsabilidade                                                              | Critério de sucesso                                                                                                              | Envolvimento |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | ----------------- | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ------------ |
-|[Mauricio Machado Fernandes Filho](https://github.com/MauricioMachadoFF),</br> [Lucas Macedo Barboza](https://github.com/luckx98),</br> [Luan Melo Queiroz](https://github.com/Luanmq),</br> [Lucas de Lima Spinosa dos Santos](http://github.com/LucasSpinosa),</br> [Lucas Gabriel Sousa Camargo Paiva](https://github.com/lucasgabriel-2),</br> [Wengel Rodrigues Farias](https://github.com/Wengel-Rodrigues),</br> [Raphaela Guimarães de Araujo dos Santos](https://github.com/raphaiela)</br> | Equipe de Desenvolvimento | Estudantes de MDS | Desenvolver e completar o projeto com qualidade dentro do prazo da disciplina | Conseguir desenvolver  o produto com todas as funcionalidades planejadas e requisitos atendidos utilizando as metodologias ágeis | Alto         |
+|[Mauricio Machado Fernandes Filho](https://github.com/MauricioMachadoFF),</br> [Lucas Macedo Barboza](https://github.com/luckx98),</br> [Luan Melo Queiroz](https://github.com/Luanmq),</br> [Lucas de Lima Spinosa dos Santos](http://github.com/LucasSpinosa),</br> [Lucas Gabriel Sousa Camargo Paiva](https://github.com/lucasgabriel-2),</br> [Wengel Rodrigues Farias](https://github.com/Wengel-Rodrigues),</br> [Raphaela Guimarães de Araujo dos Santos](https://github.com/raphaiela)</br> | Equipe de Desenvolvimento | Estudantes de MDS | Desenvolver e completar o projeto com qualidade dentro do prazo da disciplina | Conseguir desenvolver  o produto com todas as funcionalidades planejadas e requisitos atendidos utilizando as metodologias ágeis | Alto |
+|[Mauricio Machado Fernandes Filho](https://github.com/MauricioMachadoFF)| Product Owner | Estudante de MDS | Responsável por ter a visão do produto como um todo, gestor dos backlogs, priorizar as necessidades, compreender as expectativas e representar o cliente do projeto | Conseguir guiar a equipe de desenvolvimento para o caminho correto na produção do produto final | Alto|
+|[Lucas Macedo Barboza](https://github.com/luckx98)| Scrum Master | Estudante de MDS | Responsável por gerir a equipe para que ela realize o trabalho, garantido que o SCRUM seja seguido corretamente| Garantir que a equipe tenha condições de realizar as sprints, auxiliando a eliminar ou reduzir os impeditivos | Alto 
 
 
 ### 3.5 Perfis dos Usuários
@@ -129,7 +133,7 @@ O usuário poderá utilizar o aplicativo em um dispositivo móvel com sistema An
 
 #### Grupos no Facebook
 
-Até então, uma forma que os discentes encontraram de obter mais informações é a criação e utilização de grupos no Facebook para avaliação dos professores.
+Até então, uma forma que os discentes encontraram de obter mais informações é a criação e utilização de grupos no Facebook, como o “Avaliação de Professores - UNB”, para avaliação dos professores.
 
 Embora tenha certo grau de utilidade, nota-se que essa abordagem possui problemas. Um deles é a falta de engajamento: muitas perguntas sobre determinados professores sequer são respondidas. Outro empecilho é a qualidade dos comentários. Muitos deles são rasos e carecem de informações relevantes, sendo poucos os que realmente poderiam fazer a diferença na tomada de decisão no período de matrícula.
 
