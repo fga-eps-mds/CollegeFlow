@@ -1,20 +1,21 @@
 # Histórico de Revisão
 
-| Data     | Versão | Modificação                                                   | Autor                                              |   Revisor   |
-| -------- | ------ | ------------------------------------------------------------- | -------------------------------------------------- | ----------- |
-| 13/07/22 | 0.1    | Adição da seção introdução                                    | [Lucas Gabriel](https://github.com/lucasgabriel-2) | ----------- |
-| 13/07/22 | 0.2    | Adição da seção posicionamento                                | [Lucas Spinosa](http://github.com/LucasSpinosa)    | ----------- |
-| 15/07/22 | 0.3    | Adição da seção descrições das partes interessadas e usuários | [Lucas Spinosa](http://github.com/LucasSpinosa)    | ----------- |
-| 15/07/22 | 0.4    | Adição da seção visão geral do produto                        | [Lucas Gabriel](https://github.com/lucasgabriel-2) | ----------- |
-| 15/07/22 | 0.5    | Adição da seção de recursos do produto                        | [Lucas Spinosa](http://github.com/LucasSpinosa)    | ----------- |
-| 15/07/22 | 0.6    | Adição da seção de restrições do produto                      | [Lucas Gabriel](https://github.com/lucasgabriel-2) | ----------- |
-| 15/07/22 | 0.7    | Adição da seção de requisitos não-funcionais do produto       | [Lucas Spinosa](http://github.com/LucasSpinosa)    | ----------- |
-| 15/07/22 | 0.8    | Adição da seção de requisitos funcionais do produto           | [Lucas Gabriel](https://github.com/lucasgabriel-2) | ----------- |
-| 15/07/22 | 0.9    | Adição de link do perfil no GitHub dos desenvolvedores        | [Lucas Spinosa](http://github.com/LucasSpinosa)    | ----------- |
-| 15/07/22 | 1.0    | Alteração na seção de requisitos                              | [Lucas Spinosa](http://github.com/LucasSpinosa)    | ----------- |
-| 15/07/22 | 1.0    | Alteração na seção de requisitos                              | [Lucas Spinosa](http://github.com/LucasSpinosa)    | ----------- |
-| 19/07/22 | 1.1    | Alteração na seção descrições das partes interessadas e usuários | [Lucas Spinosa](http://github.com/LucasSpinosa) | [Mauricio Machado Fernandes Filho](https://github.com/MauricioMachadoFF) |
-| 19/07/22 | 1.2    | Alteração na seção de visão geral do produto | [Lucas Spinosa](http://github.com/LucasSpinosa) | [Mauricio Machado Fernandes Filho](https://github.com/MauricioMachadoFF) |
+| Data     | Versão | Modificação                                                      | Autor                                              | Revisor                                                                  |
+| -------- | ------ | ---------------------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------------------------------ |
+| 13/07/22 | 0.1    | Adição da seção introdução                                       | [Lucas Gabriel](https://github.com/lucasgabriel-2) | -----------                                                              |
+| 13/07/22 | 0.2    | Adição da seção posicionamento                                   | [Lucas Spinosa](http://github.com/LucasSpinosa)    | -----------                                                              |
+| 15/07/22 | 0.3    | Adição da seção descrições das partes interessadas e usuários    | [Lucas Spinosa](http://github.com/LucasSpinosa)    | -----------                                                              |
+| 15/07/22 | 0.4    | Adição da seção visão geral do produto                           | [Lucas Gabriel](https://github.com/lucasgabriel-2) | -----------                                                              |
+| 15/07/22 | 0.5    | Adição da seção de recursos do produto                           | [Lucas Spinosa](http://github.com/LucasSpinosa)    | -----------                                                              |
+| 15/07/22 | 0.6    | Adição da seção de restrições do produto                         | [Lucas Gabriel](https://github.com/lucasgabriel-2) | -----------                                                              |
+| 15/07/22 | 0.7    | Adição da seção de requisitos não-funcionais do produto          | [Lucas Spinosa](http://github.com/LucasSpinosa)    | -----------                                                              |
+| 15/07/22 | 0.8    | Adição da seção de requisitos funcionais do produto              | [Lucas Gabriel](https://github.com/lucasgabriel-2) | -----------                                                              |
+| 15/07/22 | 0.9    | Adição de link do perfil no GitHub dos desenvolvedores           | [Lucas Spinosa](http://github.com/LucasSpinosa)    | -----------                                                              |
+| 15/07/22 | 1.0    | Alteração na seção de requisitos                                 | [Lucas Spinosa](http://github.com/LucasSpinosa)    | -----------                                                              |
+| 15/07/22 | 1.0    | Alteração na seção de requisitos                                 | [Lucas Spinosa](http://github.com/LucasSpinosa)    | -----------                                                              |
+| 19/07/22 | 1.1    | Alteração na seção descrições das partes interessadas e usuários | [Lucas Spinosa](http://github.com/LucasSpinosa)    | [Mauricio Machado Fernandes Filho](https://github.com/MauricioMachadoFF) |
+| 19/07/22 | 1.2    | Alteração na seção de visão geral do produto                     | [Lucas Spinosa](http://github.com/LucasSpinosa)    | [Mauricio Machado Fernandes Filho](https://github.com/MauricioMachadoFF) |
+| 19/07/22 | 1.3    | Alteração na seção de restrições                                 | [Lucas Gabriel](https://github.com/lucasgabriel-2) | [Mauricio Machado Fernandes Filho](https://github.com/MauricioMachadoFF) |
 
 
 ## **1. Introdução**
@@ -48,15 +49,16 @@ IBM - Engineering Lifecycle Management - Vision Document. Disponível em: https:
 
 O documento está dividido da seguinte forma:
 
-| Seção                                     | Conteúdo                                                |
-| :-----------------------------------------| :--------------------------------------------------------|          
-| Introdução | Descrição geral do projeto |
-| Posicionamento| Contexto de negócio em que o projeto está |
-| Descrição das Partes Interessadas e do Usuário| Apresenta todos envolvidos no projeto|
-| Visão Geral do Produto| Apresenta o propósito e capacidades do produto | 
-| Recursos do produto | Expõe com mais detalhes quais são as funcionalidades do produto |
-| Restrições | Exibe as limitações tanto do próprio produto quanto também do desenvolvimento |
-| Requisitos do Produto | Detalha as exigências a serem satisfeitas pelo produto|
+| Seção                                          | Conteúdo                                                                      |
+| :--------------------------------------------- | :---------------------------------------------------------------------------- |
+| Introdução                                     | Descrição geral do projeto                                                    |
+| Posicionamento                                 | Contexto de negócio em que o projeto está                                     |
+| Descrição das Partes Interessadas e do Usuário | Apresenta todos envolvidos no projeto                                         |
+| Visão Geral do Produto                         | Apresenta o propósito e capacidades do produto                                |
+| Recursos do produto                            | Expõe com mais detalhes quais são as funcionalidades do produto               |
+| Restrições                                     | Exibe as limitações tanto do próprio produto quanto também do desenvolvimento |
+| Requisitos do Produto                          | Detalha as exigências a serem satisfeitas pelo produto                        |
+|                                                |                                                                               |
 
 ## **2. Posicionamento**
 
@@ -92,8 +94,8 @@ O produto poderá se posicionar no mercado como uma plataforma online útil para
 | Nome                           | Descrição                                                                                       |
 | :----------------------------- | :---------------------------------------------------------------------------------------------- |
 | Alunos da UnB Campus Gama      | Pesquisar informações sobre disciplinas e relatar experiências com as mesmas e seus professores |
-| Professores da UnB Campus Gama | Visualizar as avaliações postadas na plataforma |
-| Administrador da Plataforma    | Validar reviews e gerenciar usuários, banindo ou bloqueando aqueles que violam os termos de uso      |
+| Professores da UnB Campus Gama | Visualizar as avaliações postadas na plataforma                                                 |
+| Administrador da Plataforma    | Validar reviews e gerenciar usuários, banindo ou bloqueando aqueles que violam os termos de uso |
 
 ### 3.3 Ambiente dos Usuários
 
@@ -204,22 +206,13 @@ O usuário pode ver informações de outros perfis, como opção de curso, hist�
 
 ## **6. Restrições**
 
-### 6.1 Restrições de Design
+• O design deve ser simples e com bom aspecto permitindo ao usuário uma navegação pelo aplicativo de forma intuitiva.
 
-O design deve ser simples e com bom aspecto permitindo ao usuário uma navegação pelo aplicativo de forma intuitiva.
+• Deve ser implementado utilizando Flutter no Front-end e Node.js no Back-end.
 
-### 6.2 Restrições Externas
+• O aplicativo poderá ser acessado em celulares Android ou IOS com acesso à internet.
 
-Adaptação do grupo com as tecnologias e metodologias de trabalho em equipe.
-
-
-### 6.3 Restrições de Implementação
-
-Deve ser implementado utilizando Flutter no Front-end e Node.js no Back-end.
-
-### 6.4 Restrições de Uso
-
-O aplicativo poderá ser acessado em celulares Android com acesso à internet.
+• O aplicativo deve estar pronto até o fim do período letivo
 
 
 ## **7. Requisitos do Produto**
