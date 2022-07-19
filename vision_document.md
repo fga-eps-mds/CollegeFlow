@@ -16,7 +16,7 @@
 | 19/07/22 | 1.1    | Alteração na seção descrições das partes interessadas e usuários | [Lucas Spinosa](http://github.com/LucasSpinosa)    | [Mauricio Machado Fernandes Filho](https://github.com/MauricioMachadoFF) |
 | 19/07/22 | 1.2    | Alteração na seção de visão geral do produto                     | [Lucas Spinosa](http://github.com/LucasSpinosa)    | [Mauricio Machado Fernandes Filho](https://github.com/MauricioMachadoFF) |
 | 19/07/22 | 1.3    | Alteração na seção de restrições                                 | [Lucas Gabriel](https://github.com/lucasgabriel-2) | [Mauricio Machado Fernandes Filho](https://github.com/MauricioMachadoFF) |
-
+| 19/07/22 | 1.4   | Alteração na seção de requisitos do produto                                 | [Lucas Gabriel](https://github.com/lucasgabriel-2) | [Mauricio Machado Fernandes Filho](https://github.com/MauricioMachadoFF) e [Luan Melo Queiroz](https://github.com/Luanmq)|
 
 ## **1. Introdução**
 
@@ -25,7 +25,7 @@ Esse documento possui como objetivo exibir dados a respeito do projeto, permitin
 
 ### 1.1 Propósito
 
-O atual documento propõe apresentar o projeto UnB Flow, evidenciando o contexto em que o projeto se encontra, apresentando uma descrição dos envolvidos e uma visão geral do produto, bem como seus recursos, restrições e requisitos.
+O atual documento propõe apresentar o projeto College Flow, evidenciando o contexto em que o projeto se encontra, apresentando uma descrição dos envolvidos e uma visão geral do produto, bem como seus recursos, restrições e requisitos.
 
 ### 1.2 Escopo
 
@@ -68,7 +68,7 @@ Um grande desafio enfrentado pelos estudantes da UnB é o período de matrícula
 
 Porém, apesar de importante, nota-se que essa decisão é feita com base em poucas informações, não se tendo conhecimento da didática do professor ou dificuldade da disciplina em si.
 
-O UnB Flow busca solucionar o problema criando um ambiente em que alunos podem deixar suas avaliações e observações com relação tanto às matérias quanto aos docentes
+O College Flow busca solucionar o problema criando um ambiente em que alunos podem deixar suas avaliações e observações com relação tanto às matérias quanto aos docentes
 
 ### 2.2 Descrição do problema
 
@@ -244,6 +244,13 @@ Lista de requisitos
 | RF12 | Deve ser possível visualizar o FAQ                                                                              | Should      |
 | RF13 | Deve ser possível realizar o CRUD de fórum                                                                      | Should      |
 | RF14 | Deve ser possível realizar o CRUD de mensagem no fórum                                                          | Should      |
+| RF15 | Deve ser possível ocultar/mostrar informações de perfil (toggle function)                                       | Could       |
+| RF16 | Deve ser possível filtrar a disciplina por semestre e curso                                                     | Should      |
+| RF17 | Deve ser possível visualizar informações sobre a disciplina, como título, média de avaliação pelos alunos e cursos a que pertence                                                          | Should      |
+| RF18 | Deve ser possível favoritar uma disciplina                                                                      | Could       |
+| RF19 | Deve ser possível visualizar informações do perfil dos usuários, como nome, foto de perfil, título, curso, disciplinas já feitas (e que estão cursando)                                                                                                                | Could       |
+| RF20 | Deve ser possível que os usuários ganhem pontos por comentários nos fóruns                                      | Should      |
+| RF21 |  Deve ser possível que o usuário ganhe títulos de acordo com os seus pontos nos fóruns                          | Should      |
 | RNF1 | O software deve ser desenvolvido com Flutter no Front-end e Node.js no Back-end                                 | Must        |
 | RNF2 | O software deve ser desenvolvido para ambiente mobile                                                           | Must        |
 | RNF3 | O software deve ter uma interface simples e intuitiva                                                           | Must        |
