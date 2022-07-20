@@ -39,33 +39,3 @@ Dívidas técnicas repontuadas
 # Quadro de Conhecimento
 
 <img src="../img/gerenciamento/QuadroConhecimento4.jpeg">
-
-<!-- PROXIMA SEMANA -->
-<!-- WIKI -->
-<!-- Retirar algumas pastas do projeto -->
-<!-- Protótipo de alta fidelidade -->
-
-<!-- Entrega Release 1
-
-A Release 1 é realizada no horário do almoço (11h30 -14h00) durante toda a semana. A ordem de apresentacao é sorteada, mas os grupos sao podem trocar entre si a ordem.
-
-Peso da R1 - 40% da nota de projeto
-
-Artefatos avaliados:
-(I) Documento de Visão do Projeto, _check_
-(IV) Configuração do repositório de acordo com os padrões de comunidade de software livre (Github), _check_
-(III) Especificação das historias de usuários (critérios de aceitação), _check_
-
-(I) Protótipo de alta fidelidade
-(II) Planejamento/Comunicação Interna e Externa (agenda de trabalho + ferramentas),
-(III) Documento de Arquitetura do Projeto, _URGENTE_
-(IV) Wiki atualizada
-
-Detalhamento da avaliação:
-Código-Fonte/entregas (30%),
-(II) Coerência entre a documentação e implementação (10%),
-(III) Documentação: Doc. visão (15%), _check_
-doc arq (15%),
-Requisitos Especificados (10%),
-Protótipo (10%),
-(IV) critério extra(10%) -->
