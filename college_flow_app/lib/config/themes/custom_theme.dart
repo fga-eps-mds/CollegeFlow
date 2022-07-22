@@ -1,21 +1,19 @@
-import 'package:college_flow_app/config/themes/colors.dart';
+import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
 import 'package:flutter/material.dart';
 
 //TODO(Mauricio-Machado): Insert variants from guideStyle
 ThemeData customLightTheme() {
-  const AppColors colors = AppColors();
-
   TextTheme _customLightThemesTextTheme(TextTheme base) {
     return base.copyWith(
       headline1: base.headline1?.copyWith(
 //  fontFamily:
         fontSize: 22.0,
-        color: colors.green,
+        color: flowColorGreen,
       ),
       headline6: base.headline6?.copyWith(fontSize: 15.0, color: Colors.orange),
       headline4: base.headline1?.copyWith(
         fontSize: 24.0,
-        color: colors.white,
+        color: flowColorWhite,
       ),
       headline3: base.headline1?.copyWith(
         fontSize: 22.0,
@@ -48,8 +46,8 @@ ThemeData customLightTheme() {
       unselectedLabelColor: Colors.grey,
     ),
     buttonTheme: lightTheme.buttonTheme.copyWith(
-      buttonColor: colors.red,
+      buttonColor: flowColorRed,
     ),
-    errorColor: colors.red,
+    errorColor: flowColorRed,
   );
 }
