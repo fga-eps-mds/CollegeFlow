@@ -25,19 +25,15 @@ Dívidas técnicas repontuadas
 | --- | ------------------------ | ---------- |
 | #18 | Criar documento de visão | 1          |
 
+# Retrospectiva
+
+<img src="../img/gerenciamento/RetrospectivasSp3.png">
+
 # Review
 
-- Tarefas bem distribuidas? Sim. Alunos apontaram o volume
+- Objetivo Alcançado? Objetivo foi alcançado, onde pendencias foram validadas durante a review
 
-## Qualidade do Trabalho Entregue
-
-- Documento de Visão. Foi realizado apenas estudo. Revisão da task planejada para sexta e entrega na segunda.
-
-- Estruturar product backlog. Quase completada, falta fazer as histórias de usuário.
-
-- Protótipo de baixa fidelidade - Feito.
-
-Segundo a equipe a qualidade entregue foi de 3,67 considerando a escala com os valores de 1 a 5.
+- Tarefas bem distribuidas? Sim, todos estiveram com algo para fazer
 
 # Quadro de Conhecimento
 
