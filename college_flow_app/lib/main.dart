@@ -1,3 +1,5 @@
+import 'package:college_flow_app/config/routes/flow_router.dart';
+import 'package:college_flow_app/config/routes/flow_routes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,16 +11,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "Welcome to Flutter",
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text("Welcome to Flutter"),
-        ),
-        body: const Center(
-          child: Text("Hello World"),
-        ),
-      ),
+    return const MaterialApp(
+      initialRoute: FlowRoutes.mainPage,
+      onGenerateRoute: FlowRouter.routeFromSettings,
     );
   }
 }
