@@ -4,6 +4,7 @@
 | 24/07/2022 | 0.2    | Adição da seção Introdução | [Lucas Spinosa](https://github.com/LucasSpinosa)| --------------|
 | 24/07/2022 | 0.3    | Adição da seção Metodologia | [Lucas Spinosa](https://github.com/LucasSpinosa)| --------------|
 | 24/07/2022 | 0.4    | Adição da seção Curva de Aprendizagem | [Lucas Spinosa](https://github.com/LucasSpinosa)| --------------| 
+| 24/07/2022 | 0.5    | Adição da seção Familiaridade com as tecnologias | [Lucas Spinosa](https://github.com/LucasSpinosa)| --------------| 
 
 ## Introdução
 
@@ -34,6 +35,12 @@ Quanto a Node.js, este possui uma curva de aprendizagem média. É fundamental q
 Além disso, certas características dessa tecnologia também se mostram complexas. Um de seus principais atrativos, a programação assíncrona, é também a mais difícil de se usar, sendo necessário compreender uma série de conceitos, como padrões assíncronos, para poder utilizar esse recurso corretamente. 
 
 Porém, vale notar que a simplicidade do JavaScript ajuda a apaziguar a curva de aprendizagem. Assim como o Flutter, também existem diversos recursos que facilitam essa aprendizagem, sendo recomendado começar o estudo com conceitos simples, como estrutura e sintaxe, e gradativamente ir se aprofundando em conceitos mais complexos.[[3]](http://thecoders.vn/how-difficult-is-it-to-learn-nodejs/).
+
+#### Familiaridade com as tecnologias
+
+O quadro de conhecimento até o presente momento mostra uma situação relativamente preocupante: no geral, a equipe possui conhecimento entre mediano e ruim, sendo Flutter o que mais carece de familiaridade.
+
+No frontend, dos sete integrantes do grupo, apenas um é proficiente em ambiente mobile, enquanto que metade se considera ruim e a outra metade se considera regular. O backend também está em similar situação, porém com dois integrantes se considerando bons com a ferramenta.
 
 ### Conclusão
 
