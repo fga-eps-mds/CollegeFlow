@@ -6,6 +6,7 @@
 | 24/07/2022 | 0.4    | Adição da seção Curva de Aprendizagem | [Lucas Spinosa](https://github.com/LucasSpinosa)| --------------| 
 | 24/07/2022 | 0.5    | Adição da seção Familiaridade com as tecnologias | [Lucas Spinosa](https://github.com/LucasSpinosa)| --------------| 
 | 24/07/2022 | 0.6    | Adição da seção Curva de Aprendizagem x Tempo de Entrega | [Lucas Spinosa](https://github.com/LucasSpinosa)| --------------| 
+|24/07/2022 |  0.7 | Adição da seção Conclusão e Referências | [Lucas Spinosa](https://github.com/LucasSpinosa)| --------------|
 
 ## Introdução
 
@@ -49,10 +50,12 @@ Devido à falta de conhecimento por parte da equipe e também a imprevistos, o p
 
 ### Conclusão
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+Diante dos fatos apresentados, o cenário de desenvolvimento é neutro. Boa parte do grupo não é proficiente com as tecnologias do frontend e backend. Entretanto, se organizar para estudá-las e realizar pareamentos podem ajudar a melhorar a situação.
 
 ## Referências
 
-BASS, Len; CLEMENTS, Paul; KAZMAN, Rick. Software architecture in practice. Addison-Wesley Professional, 2003.
+POPAL, Abdurahman. How to Learn Flutter?. Medium, 2019. Disponível em: <https://medium.com/flutter-community/how-to-learn-flutter-886c0bad8a46>. Acesso em: 24 de julho de 2022.
 
-KRAFZIG, Dirk et al. Service-Oriented Architecture Best Practices. Indiana: Prentice Hall PTR, 2004.
+DARLING, Grant. Do You Need To Know JavaScript To Learn Node js. thecodebytes, 2022. Disponível em: <https://thecodebytes.com/do-you-need-to-know-javascript-to-learn-node-js/>. Acesso em: 24 de julho de 2022.
+
+JOHN, Mike. How Difficult Is It to Learn NodeJS. TheCoders.vn, 2019. Disponível em: <http://thecoders.vn/how-difficult-is-it-to-learn-nodejs/>. Acesso em: 24 de julho de 2022.
