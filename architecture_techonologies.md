@@ -5,6 +5,7 @@
 | 24/07/2022 | 0.3    | Adição da seção Metodologia | [Lucas Spinosa](https://github.com/LucasSpinosa)| --------------|
 | 24/07/2022 | 0.4    | Adição da seção Curva de Aprendizagem | [Lucas Spinosa](https://github.com/LucasSpinosa)| --------------| 
 | 24/07/2022 | 0.5    | Adição da seção Familiaridade com as tecnologias | [Lucas Spinosa](https://github.com/LucasSpinosa)| --------------| 
+| 24/07/2022 | 0.6    | Adição da seção Curva de Aprendizagem x Tempo de Entrega | [Lucas Spinosa](https://github.com/LucasSpinosa)| --------------| 
 
 ## Introdução
 
@@ -41,6 +42,10 @@ Porém, vale notar que a simplicidade do JavaScript ajuda a apaziguar a curva de
 O quadro de conhecimento até o presente momento mostra uma situação relativamente preocupante: no geral, a equipe possui conhecimento entre mediano e ruim, sendo Flutter o que mais carece de familiaridade.
 
 No frontend, dos sete integrantes do grupo, apenas um é proficiente em ambiente mobile, enquanto que metade se considera ruim e a outra metade se considera regular. O backend também está em similar situação, porém com dois integrantes se considerando bons com a ferramenta.
+
+#### Curva de Aprendizagem x Tempo de Entrega
+
+Devido à falta de conhecimento por parte da equipe e também a imprevistos, o prazo é curto. É vital que os desenvolvedores busquem se familizar o mais rápido possível com as ferramentas adotadas para conseguir entregar o projeto dentro do período letivo da disciplina.
 
 ### Conclusão
 
