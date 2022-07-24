@@ -3,6 +3,7 @@
 | 07/06/2022 | 0.1    | Abertura do documento | [Maurício Machado](https://github.com/MauricioMachadoFF)    | -------------|
 | 24/07/2022 | 0.2    | Adição da seção Introdução | [Lucas Spinosa](https://github.com/LucasSpinosa)| --------------|
 | 24/07/2022 | 0.3    | Adição da seção Metodologia | [Lucas Spinosa](https://github.com/LucasSpinosa)| --------------|
+| 24/07/2022 | 0.4    | Adição da seção Curva de Aprendizagem | [Lucas Spinosa](https://github.com/LucasSpinosa)| --------------| 
 
 ## Introdução
 
@@ -20,13 +21,19 @@ Adotadas essas tecnologias e considerando também a situação do grupo, torna-s
 
 • Relação entre a curva de aprendizagem e o tempo de entrega do produto
 
-## Resultados obtidos
+## Resultados Obtidos
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+Diante dos tópicos levantados sobre as ferramentas escolhidas, uma pesquisa para responder aos questionamentos foi realizada. Eis os resultados:
 
-#### Resultados obtidos
+#### Curva de Aprendizagem
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+De acordo com as fontes utilizadas, o Flutter mostrou ter uma curva de aprendizagem baixa, requisitando conhecimentos em Orientação a Objetos (conhecimento possuído por todos os integrantes) e possuindo diversos recursos que auxiliam na aprendizagem, como vídeos, documentações e blogs. Apesar disso, requer prévio conhecimento em Dart, porém como este é fácil de aprender, acaba não sendo um aspecto tão problemático [[1]](https://medium.com/flutter-community/how-to-learn-flutter-886c0bad8a46).
+
+Quanto a Node.js, este possui uma curva de aprendizagem média. É fundamental que o desenvolvedor possua ao menos conhecimento mediano sobre JavaScript. Caso contrário, essa ferramenta se mostrará bastante desafiadora em seu uso, levando à muita confusão sobre quais trechos de código são Node.js e quais são JavaScript[[2]](https://thecodebytes.com/do-you-need-to-know-javascript-to-learn-node-js/).
+
+Além disso, certas características dessa tecnologia também se mostram complexas. Um de seus principais atrativos, a programação assíncrona, é também a mais difícil de se usar, sendo necessário compreender uma série de conceitos, como padrões assíncronos, para poder utilizar esse recurso corretamente. 
+
+Porém, vale notar que a simplicidade do JavaScript ajuda a apaziguar a curva de aprendizagem. Assim como o Flutter, também existem diversos recursos que facilitam essa aprendizagem, sendo recomendado começar o estudo com conceitos simples, como estrutura e sintaxe, e gradativamente ir se aprofundando em conceitos mais complexos.[[3]](http://thecoders.vn/how-difficult-is-it-to-learn-nodejs/).
 
 ### Conclusão
 
