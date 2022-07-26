@@ -6,8 +6,8 @@
 | 24/07/2022 | 0.4    | Adição da seção Curva de Aprendizagem | [Lucas Spinosa](https://github.com/LucasSpinosa)| --------------| 
 | 24/07/2022 | 0.5    | Adição da seção Familiaridade com as tecnologias | [Lucas Spinosa](https://github.com/LucasSpinosa)| --------------| 
 | 24/07/2022 | 0.6    | Adição da seção Curva de Aprendizagem x Tempo de Entrega | [Lucas Spinosa](https://github.com/LucasSpinosa)| --------------| 
-|24/07/2022 |  0.7    | Adição da seção Conclusão e Referências | [Lucas Spinosa](https://github.com/LucasSpinosa)| --------------|
-|24/07/2022 |  0.71   | Alteração na seção Metodologia | [Lucas Spinosa](https://github.com/LucasSpinosa)| [Maurício Machado](https://github.com/MauricioMachadoFF)|
+| 24/07/2022 |  0.7   | Adição da seção Conclusão e Referências | [Lucas Spinosa](https://github.com/LucasSpinosa)| --------------|
+| 26/07/2022 |  0.71  | Alteração na seção Metodologia | [Lucas Spinosa](https://github.com/LucasSpinosa)| [Maurício Machado](https://github.com/MauricioMachadoFF)|
 
 ## Introdução
 
