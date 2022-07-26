@@ -6,7 +6,8 @@
 | 24/07/2022 | 0.4    | Adição da seção Curva de Aprendizagem | [Lucas Spinosa](https://github.com/LucasSpinosa)| --------------| 
 | 24/07/2022 | 0.5    | Adição da seção Familiaridade com as tecnologias | [Lucas Spinosa](https://github.com/LucasSpinosa)| --------------| 
 | 24/07/2022 | 0.6    | Adição da seção Curva de Aprendizagem x Tempo de Entrega | [Lucas Spinosa](https://github.com/LucasSpinosa)| --------------| 
-|24/07/2022 |  0.7 | Adição da seção Conclusão e Referências | [Lucas Spinosa](https://github.com/LucasSpinosa)| --------------|
+|24/07/2022 |  0.7    | Adição da seção Conclusão e Referências | [Lucas Spinosa](https://github.com/LucasSpinosa)| --------------|
+|24/07/2022 |  0.71   | Alteração na seção Metodologia | [Lucas Spinosa](https://github.com/LucasSpinosa)| [Maurício Machado](https://github.com/MauricioMachadoFF)|
 
 ## Introdução
 
@@ -14,7 +15,7 @@ Esse documento busca explicar a viabilidade técnica do projeto. Isto significa 
 
 ## Metodologia
 
-Após ser decidido que o projeto seria uma aplicação mobile, foi-se debatido quais seriam as tecnologias utilizadas. Devido ao fato de a equipe ser inexperiente com relação a esse ambiente de desenvolvimento, os integrantes concordaram em uninanimidade seguir a sugestão feita pelo membro Maurício Machado, já acostumado com desenvolvimento para celulares: usar Flutter para o frontend e Node.js para o backend.
+Após ser decidido que o projeto seria uma aplicação mobile, foi-se debatido quais seriam as tecnologias utilizadas. Após debate entre os membros, foi-se decidido utilizar Flutter para o frontend e Node.js para o backend. Apesar da equipe ser inexperiente com relação a esse ambiente de desenvolvimento, é válido notar que um dos integrantes, Mauricio Machado, já é acostumado com desenvolvimento para celulares, podendo assim oferecer suporte para os demais durante a produço do aplicativo.
 
 Adotadas essas tecnologias e considerando também a situação do grupo, torna-se relevante a avaliação das mesmas nos seguintes âmbitos:
 
