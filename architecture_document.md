@@ -5,91 +5,88 @@
 | Data       | Versão | Modificação           | Autor            |
 | :--------- | :----- | :-------------------- | :--------------- |
 | 07/06/2022 | 0.1    | Abertura do documento | Maurício Machado |
+| 26/06/2022 | 1.0    | Edição do documento   | Maurício Machado |
 
 ## 1. Introdução
 
-### 1.1 Objetivo
+### 1.1 Finalidade
 
-Este documento oferece uma visão geral arquitetural do
+Este documento tem como objetivo descrever a arquitetura do collegeFlow app. Aqui será apresentada a interação do mobile com o backend e por sua vez o backend e a database. Esse documento oferece também uma visão geral arquitetural do
 sistema que será implementado, permitindo assim que os
 envolvidos no projeto conheçam como a aplicação será
 subdivida e quais serão as funções de cada componente.
 
-Outro objetivo desse documento é elucidar quais foram as
-motivações que levaram a equipe a tomar decisões a respeito
-dessa arquitetura.
-
 ### 1.2 Escopo
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
-
-### 1.3 Definições, Acrônimos e Abreviações
-
-| **Sigla/Termo/Acrônimo** | **Definição**                                 |
-| ------------------------ | --------------------------------------------- |
-| MDS                      | Métodos de Desenvolvimento de <i>Software</i> |
-| EPS                      | Engenharia de Produto de <i>Software</i>      |
-| FGA                      | Faculdade do Gama                             |
-| UnB                      | Universidade de Brasília                      |
+O collegeFlow app consiste em um aplicativo para a UnB campus Gama. Sua intenção é facilitar a escolha de matérias através da experiência de outros usuários. Isso será feito mediante, listagem das matérias, apresentação de quais professores dão essa matéria e a respectiva avaliação do professor e da matéria. Além disso, é possível ver outros alunos que cursaram ou estão cursando a matéria para aumentar suas chances de um bom networking.
 
 ## 2. Representação arquitetural
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+O modelo de arquitetura proposto nesse projeto é um modelo multicamada, onde é divido em três frentes principais:
+
+- A camada de persistência, onde engloba o banco de dados não-relacional MongoDB.
+- A camada de manipulação e tratamento de dados, usando o framework ExpressJS.
+- Camada de visualização dos dados, responsável por renderizar todos os dados manipulados na camada de tratamento e lidar diretamente com o usuário final.
+
+Para realizar a comunicação entre as camadas, será utilizado o modelo de arquitetura cliente-servidor, no qual há os fornecedores de recursos e os que consomem esses recursos disponibilizados. O servidor é um fornecedor de recurso, onde é uma camada intermediária responsável por lidar diretamente com os a camada de persistência e fornecer os dados manipulados para a camada de visualização dos dados através do protocolo de comunicação HTTP. O Cliente nesse ecossistema usufrui dos dados fazendo requisições ao servidor e renderizando estes para os usuários que fizeram a requisição.
+
+![Visão geral do documento de arquitetura](./img/architecture/visao-geral.png)
+
+![Visão do documento de arquitetura - Parte Mobile](./img/architecture/visao-camada-apresentacao.png)
+
+![Visão do documento de arquitetura - Backend](./img/architecture/visao-backend.png)
+
+### **Node.js**
+
+Node.js é uma plataforma para construir aplicações web escaláveis de alta performance usando JavaScript do tipo server side, não dependendo de um browser para sua execução. Ele foi construído em cima da engine V8 que interpreta JavaScript, criado pela Google e usado em seu navegador, o Chrome.
+
+### **MongoDB**
+
+O banco de dados escolhido para o projeto foi o MongoDB, pela sua alta performance, a sua imensa comunidade em seu ecossistema e uma ótima documentação para sua implantação.
+
+### **Express js**
+
+Para a parte do Backend, será usado o framework express juntamente com o nodeJs, pela sua grande performance e flexibilidade, onde o próprio desenvolvedor tem a liberdade de definir a arquitetura do projeto. O express conta com todo o sistema de gerenciamento de rotas, utilitários HTTPs e gerenciamento de middlewares, o que é de grande ajuda para desenvolver aplicações do tipo REST e aplicações WEBs monolíticas.
+
+A responsabilidade desse framework é atuar como a camada de manipulação dos dados, sendo a API do projeto. A arquitetura usada no Backend será a MC, derivada da arquitetura MVC. Nesse caso não existe a View para essa camada, pois esta tem a única responsabilidade de fazer o interfaceamento e manipulação de dados entre a camada de persistência e View da projeto.
+
+### **DIO**
+
+Requisições HTTP são um dos principais recursos usados no desenvolvimento web e mobile, já que são necessárias para acessar o servidor de nossas aplicações, banco de dados, entre outros.
+
+DIO é um pacote do Flutter que proporciona um poderoso clietne HTTP. Além disso suporta Interceptors, Global configuration, FormData, Request Cancellation, File Downloading, Timeout etc.
 
 ## 3. Metas e Restrições arquiteturais
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+3.1 Suportabilidade
 
-## 4. Visão de Casos de Uso
+A aplicação poderá ser utilizada sem problemas para o sistema operacional android e se possível para o IOS.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+3.2 Usabilidade
 
-### 4.1 Atores
+O sistema deverá ser intuitivo e de simples uso, de forma que a curva de aprendizado para utilizar a aplicação não seja um impedimento para usar o sistema.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+3.3 Ferramentas de Desenvolvimento
 
-### 4.2 Diagrama de caso de uso
+O projeto será desenvolvido em Flutter, utilizando a versão 3.0.4, em conjunto com o framework node, um framework JavaScript para criação de servidores juntamente com o Express.js.
 
-### 4.3 Prioridade dos casos de uso
+Para facilitar a portabilidade do projeto, tanto para o ambiente de deploy quanto para os ambientes de desenvolvimento, será utilizado o Docker para realizar o empacotamento da aplicação.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+3.4 Confiabilidade
 
-## 5. Visão Lógica
+O sistema terá uma cobertura mínima de testes de 40%, buscando garantir certo nível de teste.
 
-### 5.1 Visão Geral
+## 4. Visão de Implantação
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
-
-### 5.2 Diagrama de pacotes
-
-## 6. Visão de implementação
-
-### 6.1 Diagrama de classes e serviços
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
-
-### 6.2 Banco de Dados
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
-
-#### 6.2.1 Entidades
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
-
-#### 6.2.2 Atributos
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
-
-#### 6.2.2 Relacionamentos
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
-
-#### 6.2.3 Diagrama Entidade-Relacionamento
-
-#### 6.2.4 Diagrama Lógico de Dados
+A implementação do Software será realizado por etapas, visando a utilização do software durante o desenvolvimento de novas funções, possibilitando um uso antecipado de funções já desenvolvidas.
 
 ## Referências
 
-Departamento de Informática do SUS. Documento de Arquitetura de Software. Disponível em: <https://datasus.saude.gov.br/images/MDSF/MDSoftware/Artefatos/Arquitetura/MDS_DAS_Documento_Arquitetura_Software2.docx>. Acesso em: 10 de setembro de 2019.
+Documentação do Node.js. Disponível em: <https://nodejs.org/en/docs/>. Acesso em 25 de julho de 2022.
+Documentação Flutter. Disponível em <https://docs.flutter.dev>. Acesso em 25 de julho de 2022.
+MVC com node.js. Disponível em: <https://irias.com.br/blog/mvc-conceito-e-exemplo-em-node-js/>. Acesso em 25 de julho de 2022.
+Clean architecture in flutter part 1. Disponível em: <https://irias.com.br/blog/mvc-conceito-e-exemplo-em-node-js/>.
+Imprivng workflow with clean architectue. Disponível em: <https://irias.com.br/blog/mvc-conceito-e-exemplo-em-node-js/>.
+Express js documentação. Disponível em <https://expressjs.com/en/starter/basic-routing.html>. Acesso em 25 de julho de 2022.
 
 [1] - Andrew Pinkham. Livro. Disponível em: <https://django-unleashed.com>. Acesso em: 12 de setembro de 2019.
