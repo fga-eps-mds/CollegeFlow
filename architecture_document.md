@@ -36,6 +36,28 @@ Para realizar a comunicação entre as camadas, será utilizado o modelo de arqu
 
 ![Visão do documento de arquitetura - Backend](./img/architecture/visao-backend.png)
 
+### Camada **INFRA**
+
+Sua função é contatar o backend e conseguir o dado cru para poder ser usado na aplicação.
+
+### Camada **DATA**
+
+Responsabilidade dessa camada é tratar o dado cru que é obtido pelos datasources. Esse dado cru é então trasnformado nas models através de serialização - exemplo, [json_serializable](https://fga-eps-mds.github.io/CollegeFlow/). Esse processo também pode ser analisado de outro ponto onde levamos informação da aplicação para o backend. Nesse ponto teremos a deserialização dos dados.
+
+Essa camada possui também a implementação das abstrações da camada de domain. A camada data depende da domain mas o inverso não é verdade.
+
+### Camada **PRESENTATION**
+
+Contém duas partes importantes: BLoCs e UI. Combinados elas fazem a camada de visualização de conteúdo dinâmico na aplicação.
+
+O BLoC ajuda o em executrar interações que precise de dados fora do contexto da UI. Além disso permite o gerenciamento de estado dos widgets de forma mais separada e organizada através da seguinte quebra: **bloc, event, state**.
+A UI é a implementação do design das páginas e coordenação de recebimento de valores.
+
+### Camada **DOMAIN**
+
+Contém apenas entidades internas o que significa que nosso domínio é independente de mudanças que acontecem fora dessa camada.
+Aqui definimos nossos usecases, classes individuais que performam uma ação precisa na aplicação (post de alguma info, login do usuário e etc). No caso de necessidade de vários usecases podemos criar uma rotina que faz uso desses usecases específicos.
+
 ### **Node.js**
 
 Node.js é uma plataforma para construir aplicações web escaláveis de alta performance usando JavaScript do tipo server side, não dependendo de um browser para sua execução. Ele foi construído em cima da engine V8 que interpreta JavaScript, criado pela Google e usado em seu navegador, o Chrome.
