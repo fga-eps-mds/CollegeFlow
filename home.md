@@ -1,13 +1,11 @@
 <h1 class="display-1 sub-title2">Visão geral</h1>
-Descrição do projeto aqui
 
-Esta página contém documentos relevantes relacionados ao produto, seu gerenciamento e desenvolvimento, assim como guias de contribuição e conduta.
+O College Flow é um aplicativo mobile cuja função é auxiliar os alunos de graduação da UnB Campus Gama na escolha de matérias, facilitando em manter a aderência ao fluxo da faculdade, se organizar para o semestre e fazer essas escolhas de acordo com os seus interesses.
 
 <h1 class="display-1 sub-title2">Links</h1>
-<!--TODO(Mauricio-Machado)": Change link that redirect to repos-->
 
-- [Repositório do back-end](https://github.com/fga-eps-mds/2022-1-Squad2)
-- [Repositório do front-end](https://github.com/fga-eps-mds/UnbFlow)
+- [Repositório do back-end](https://github.com/fga-eps-mds/CollegeFlow-Backend)
+- [Repositório do front-end](https://github.com/fga-eps-mds/CollegeFlow)
 
 <h2 class="display-1 sub-title2">Time</h2>
 
