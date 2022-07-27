@@ -12,11 +12,12 @@
 
 ## Issues
 
-| ID  | Descrição                                   | Estimativa | Responsável | OBS                                                                            |
-| --- | ------------------------------------------- | ---------- | ----------- | ------------------------------------------------------------------------------ |
-| #-- | Escrever sobre documento de arquitetura     | 13         |             | ---                                                                            |
-| #-- | Escrita do documento de viabilidade tecnica | 3          |             | ---                                                                            |
-| #56 | EP01-F01-US02-Registration Form             | 8          |             | Criar o usuario e armazenar em banco de dados; Criar a tela basica de registro |
+| ID  | Descrição                                   | Estimativa | Responsável                                          | OBS                                                                            |
+| --- | ------------------------------------------- | ---------- | ---------------------------------------------------- | ------------------------------------------------------------------------------ |
+| #91 | Escrever sobre documento de arquitetura     | 13         | Mauricio Machado e Lucas Macedo                      | ---                                                                            |
+| #92 | Escrita do documento de viabilidade tecnica | 3          | Lucas Spinosa                                        | ---                                                                            |
+| #50 | Criar guia de estilo e identidade visual    | 8          | Luan Melo, Wengel Rodrigues e Lucas Spinosa(Suporte) | ---                                                                            |
+| #56 | EP01-F01-US02-Registration Form             | 8          | Lucas Macedo, Raphaela Guimaraes e Lucas Gabriel     | Criar o usuario e armazenar em banco de dados; Criar a tela basica de registro |
 
 - Total de pontos: 37
 
@@ -28,13 +29,18 @@ Dívidas técnicas repontuadas
 | --- | --------------------------------------------- | ----------------- |
 | #50 | Criação de guia de estilo e identidade visual | Final da sprint 4 |
 
+# Retropectiva
+
+<img src="../img/gerenciamento/RetropectivaSp4.png">
+
 # Review
 
-- Objetivo Alcançado?
+- Objetivo Alcançado? O objetivo foi alcançado, porém, a daily continua com horário impactando os membros. Com isso, o time está realizando as dailys escritas quando não consegue se reunir no horário.
+  Realizamos a validação dos documentos de identidade visual, guia de estilo e documento de arquitetura
 
-- Estimativa correta?
+- Estimativa correta? A estimativa de pontos ficou bem distribuida para os membros
 
-- Tarefas bem distribuidas?
+- Tarefas bem distribuidas? As tarefas foram bem distribuidas para os membros
 
 # Quadro de Conhecimento
 
