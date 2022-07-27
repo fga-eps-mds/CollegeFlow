@@ -21,8 +21,6 @@
 
 - Total de pontos: 19
 
-Lucas Spinosa, Raphaela Guimaraes e Lucas Gabriel(Back-end)/ Lucas Macedo, Luan Melo e Wengel Rogrigues(Front-end)
-
 ### Dívidas técnicas alocadas
 
 Dívidas técnicas repontuadas
