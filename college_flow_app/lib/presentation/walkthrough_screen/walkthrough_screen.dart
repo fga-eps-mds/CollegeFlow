@@ -48,6 +48,7 @@ class WalkthroughScreenState extends State<WalkthroughScreen> {
                           const Text(
                             'Disciplinas',
                             style: TextStyle(
+                              fontFamily: 'OctinCollege',
                               fontSize: 45,
                               fontWeight: FontWeight.w900,
                               color: Colors.white,
@@ -57,6 +58,7 @@ class WalkthroughScreenState extends State<WalkthroughScreen> {
                           const Text(
                             'Descubra tudo sobre as disciplinas que está cursando e ainda vai cursar!',
                             style: TextStyle(
+                              fontFamily: 'Roboto',
                               fontSize: 16,
                               color: Colors.white,
                             ),
@@ -102,6 +104,7 @@ class WalkthroughScreenState extends State<WalkthroughScreen> {
                           const Text(
                             'Avaliações',
                             style: TextStyle(
+                              fontFamily: 'OctinCollege',
                               fontSize: 45,
                               fontWeight: FontWeight.w900,
                               color: Colors.white,
@@ -111,6 +114,7 @@ class WalkthroughScreenState extends State<WalkthroughScreen> {
                           const Text(
                             'Saiba o que os alunos estão achando de outras disciplinas em tempo real!',
                             style: TextStyle(
+                              fontFamily: 'Roboto',
                               fontSize: 16,
                               color: Colors.white,
                             ),
@@ -156,6 +160,7 @@ class WalkthroughScreenState extends State<WalkthroughScreen> {
                           const Text(
                             'Ranking',
                             style: TextStyle(
+                              fontFamily: 'OctinCollege',
                               fontSize: 45,
                               fontWeight: FontWeight.w900,
                               color: Colors.white,
@@ -165,6 +170,7 @@ class WalkthroughScreenState extends State<WalkthroughScreen> {
                           const Text(
                             'Veja quais são as melhores disciplinas de acordo com as notas dadas pelos alunos que cursaram!',
                             style: TextStyle(
+                              fontFamily: 'Roboto',
                               fontSize: 16,
                               color: Colors.white,
                             ),
