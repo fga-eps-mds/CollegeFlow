@@ -1,5 +1,6 @@
 import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
 import 'package:college_flow_app/config/design_system/data/icons/sizes.dart';
+import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
 import 'package:college_flow_app/presentation/widgets/buttons/flow_button_base.dart';
 import 'package:college_flow_app/presentation/widgets/flow_icon.dart';
 import 'package:college_flow_app/presentation/widgets/gap.dart';
@@ -47,19 +48,29 @@ class _FlowButtonState extends State<FlowButton> {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      color: widget.isDisabled
-          ? widget.style.backgroundColor.disabled
-          : widget.style.backgroundColor.mainly,
-      borderRadius: _borderRadius,
+    return Container(
+      decoration: BoxDecoration(
+        color: widget.isDisabled
+            ? widget.style.backgroundColor.disabled
+            : widget.style.backgroundColor.mainly,
+        borderRadius: BorderRadius.circular(
+          objectStyleBorderRadiusPill,
+        ),
+        border: Border.all(
+          color: white,
+          width: spacingAtom,
+        ),
+      ),
       child: InkWell(
         borderRadius: _borderRadius,
         onTap: widget.isDisabled || widget.isLoading ? null : widget.onTap,
         splashColor: Colors.transparent,
         hoverColor: Colors.transparent,
         highlightColor: widget.style.backgroundColor.pressed,
-        child: SizedBox(
-          height: iconSizeXL,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(
+            vertical: spacingNano,
+          ),
           child: AnimatedSwitcher(
             duration: const Duration(milliseconds: 250),
             child: widget.isLoading
@@ -81,8 +92,9 @@ class _FlowButtonState extends State<FlowButton> {
                       const HSpacer.nano(),
                       Text(
                         widget.label,
-                        //TODO(Mauricio-Machado): add textStyle to button
-                        // style:
+                        style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                              color: white,
+                            ),
                       ),
                       const HSpacer.nano(),
                       if (widget.suffixIcon != null)
@@ -121,16 +133,16 @@ class FlowButtonStyle {
 
   const FlowButtonStyle.primary()
       : backgroundColor = const FlowColorStyle(
-          //TODO(Mauricio-Machado): Implement guidestyle colors
-          mainly: flowColorRed,
+          mainly: secondary,
+          //TODO(Mauricio-Machado): Add styles to pressed and disabled
           pressed: flowColorRed,
           disabled: flowColorRed10,
         ),
-        //TODO(Mauricio-Machado): Implement guidestyle colors
         labelColor = const FlowColorStyle(
-          mainly: flowColorBlack,
-          pressed: flowColorBlack,
-          disabled: flowColorGrey,
+          mainly: textColor,
+          //TODO(Mauricio-Machado): Add styles to pressed and disabled
+          pressed: textColor,
+          disabled: textColor,
         );
 }
 
