@@ -2,7 +2,8 @@
 
 | Data | Versão | Modificação | Autor |
 | :--: | :----: | :---------: | :---: |
-| ---  |  ---   |     ---     |  ---  |
+| 11/07/2022 | 0.1 | Adição do protótipo de baixa fidelidade | Luan |
+| 22/07/2022 | 0.2 | Adição do protótipo de média fidelidade | Luan |
 
 ## 1.Introdução
 
@@ -14,19 +15,26 @@ O protótipo de baixa fidelidade tem um viés de desenvolver estratégias e sint
 
 Os protótipos a seguir foram desenvolvidos a partir de vários outros criados pelo grupo, com o intuito de deliberar ideias entre os membros. Com isso, foram geradas 3 versões preliminares do protótipo de baixa fidelidade:
 
-<!-- TODO(Mauricio-Machado): Change links reference -->
+### Versão 1.0
+<img src="img\prototypes\PrototipoBaixa-v1_page-0001.jpg" width="400" height="400">
 
-- [Versão 1](https://github.com/fga-eps-mds/2019.2-TimeBolinho/issues/18#issuecomment-527721682)
-- [Versão 2.1](https://github.com/fga-eps-mds/2019.2-TimeBolinho/issues/18#issuecomment-528601858)
-- [Versão 2.2](https://github.com/fga-eps-mds/2019.2-TimeBolinho/issues/18#issuecomment-528914791)
-- [Versão 3](https://github.com/fga-eps-mds/2019.2-TimeBolinho/issues/18#issuecomment-530608104)
+### Versão 2.0
+<img src="img\prototypes\PrototipoBaixa-v2_page-0001.jpg" width="400" height="400">
 
-### 2.1 Fluxo de usuário
+### Versão 3.0
+<img src="img\prototypes\PrototipoBaixa-v3_page-0001.png" width="400" height="400">
 
-### 2.2 Telas
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+## 3.Protótipo de Média Fidelidade
 
-## 3.Protótipo de Alta Fidelidade
+O protótipo de média fidelidade tem como objetivo detalhar visualmente a implementação das telas, focando no alinhamentos, tamanho e posição dos elementos com uma definição mais aprofundada dos principais itens de cada tela.
+
+O protótipo foi feito com a utilização do software Figma e segue abaixo os links para o acesso tanto das telas, quanto do fluxo:
+
+#### Links
+- [Telas](https://www.figma.com/file/VH37R7Gdt1e5StMC73htJZ/CollegeFlow)
+- [Fluxo](https://www.figma.com/file/VH37R7Gdt1e5StMC73htJZ/CollegeFlow?node-id=78%3A2016)
+
+## 4.Protótipo de Alta Fidelidade
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
