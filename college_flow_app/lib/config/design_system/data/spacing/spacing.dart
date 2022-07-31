@@ -1,3 +1,6 @@
+/// `2px`
+const spacingAtom = 2.0;
+
 /// `4px`
 const spacingQuarck = 4.0;
 
