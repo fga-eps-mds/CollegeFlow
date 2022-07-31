@@ -41,13 +41,13 @@ class WalkthroughPageState extends State<WalkthroughPage> {
                       title: "Avaliações",
                       description:
                           "Saiba o que os alunos estão achando de outras disciplinas em tempo real!",
-                      imgPath: walkthrough01,
+                      imgPath: walkthrough02,
                     ),
                     WalkthroughBasePage(
                       title: "Ranking",
                       description:
                           "Veja quais são as melhores disciplinas de acordo com as notas dadas pelos alunos que cursaram!",
-                      imgPath: walkthrough01,
+                      imgPath: walkthrough03,
                     ),
                   ],
                 ),

@@ -1,3 +1,3 @@
-const walkthrough01 = 'assets/walkthrough_01.svg';
-const walkthrough02 = 'assets/walkthrough_02.svg';
-const walkthrough03 = 'assets/walkthrough_03.svg';
+const walkthrough01 = 'assets/walkthrough01.png';
+const walkthrough02 = 'assets/walkthrough02.png';
+const walkthrough03 = 'assets/walkthrough03.png';

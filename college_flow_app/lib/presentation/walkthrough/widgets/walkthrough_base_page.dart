@@ -52,7 +52,7 @@ class WalkthroughBasePage extends StatelessWidget {
                   ),
                 ),
               ),
-              //TODO(Mauricio-Machado): Add image here
+              Image(image: AssetImage(imgPath)),
               const SizedBox.shrink(),
             ],
           ),
