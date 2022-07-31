@@ -18,6 +18,7 @@
 | 19/07/22 | 1.3    | Alteração na seção de restrições                                                     | [Lucas Gabriel](https://github.com/lucasgabriel-2) | [Mauricio Machado Fernandes Filho](https://github.com/MauricioMachadoFF)                                                                                                                       |
 | 19/07/22 | 1.4    | Alteração na seção de requisitos do produto                                          | [Lucas Gabriel](https://github.com/lucasgabriel-2) | [Mauricio Machado Fernandes Filho](https://github.com/MauricioMachadoFF) e [Luan Melo Queiroz](https://github.com/Luanmq)                                                                      |
 | 31/07/22 | 1.5    | Alteração na seção de requisitos do produto e ajuste na seção visão geral do produto | [Lucas Gabriel](https://github.com/lucasgabriel-2) | [Mauricio Machado Fernandes Filho](https://github.com/MauricioMachadoFF), [Luan Melo Queiroz](https://github.com/Luanmq) e [Lucas de Lima Spinosa dos Santos](https://github.com/LucasSpinosa) |
+| 31/07/22 | 1.6    | Alteração na seção de requisitos do produto | [Lucas Gabriel](https://github.com/lucasgabriel-2) | [Mauricio Machado Fernandes Filho](https://github.com/MauricioMachadoFF), [Luan Melo Queiroz](https://github.com/Luanmq) e [Lucas de Lima Spinosa dos Santos](https://github.com/LucasSpinosa) |
 
 ## **1. Introdução**
 
@@ -229,32 +230,33 @@ Lista de requisitos
 | RF3  | Deve ser possível realizar a troca de senha caso o usuário a esqueça                                                                                        | Must       |
 | RF4  | Deve ser possível a criação de três tipos diferentes de perfil (aluno, professor e administrador)                                                           | Must       |
 | RF5  | Deve ser possível que o aluno registre as disciplinas já realizadas e as em andamento                                                                       | Should     |
-| RF6  | Deve ser possível visualizar informações do perfil do usuário                                                                                               | Should     |
-| RF7  | A visualização do perfil deve ser diferente para proprietário e para visitantes por meio da função de ocultar e mostrar informações                         | Could      |
-| RF8  | Deve ser possível ver os curso disponíveis na UnB campus Gama                                                                                               | Must       |
-| RF9  | Deve ser possível visualizar a descrição e informações sobre o curso                                                                                        | Must       |
-| RF10 | Deve ser possível visualizar os fluxos disponíveis para um curso                                                                                            | Could      |
-| RF11 | Deve ser possível selecionar um curso e pesquisar por aluno                                                                                                 | Could      |
-| RF12 | Deve ser possível fazer busca por disciplina na página de disciplinas                                                                                       | Must       |
-| RF13 | Deve ser possível filtrar as disciplinas por semestre e curso                                                                                               | Should     |
-| RF14 | Deve ser possível visualizar a descrição e informações sobre a disciplina                                                                                   | Must       |
-| RF15 | Deve ser possível favoritar uma disciplina                                                                                                                  | Could      |
-| RF16 | Deve ser possível acessar na página da disciplina ao ranking dos professores que a ministram (ranking baseado na nota do professor apenas nessa disciplina) | Must       |
-| RF17 | Deve ser possível acessar a lista de alunos cursando a disciplina                                                                                           | Should     |
-| RF18 | Deve ser possível buscar por um aluno na lista de alunos cursando a disciplina                                                                              | Should     |
-| RF19 | Deve ser possível realizar o CRUD de avaliação da disciplina com o professor relacionado                                                                    | Must       |
-| RF20 | Deve ser possível realizar o CRUD de materiais indicados para a disciplina                                                                                  | Should     |
-| RF21 | Deve ser possível realizar denúncias de avaliações com possível conteúdo ofensivo                                                                           | Must       |
-| RF22 | Deve ser possível que um usuário administrador verifique as denúncias realizadas por outros usuários                                                        | Must       |
-| RF23 | Deve ser possível que os usuários ganhem títulos por avaliações das disciplinas                                                                             | Should     |
-| RF24 | Deve ser possível acessar ao ranking de disciplinas                                                                                                         | Must       |
-| RF25 | Deve ser possível fazer busca por disciplina no ranking de disciplinas                                                                                      | Should     |
-| RF26 | Deve ser possível filtrar o ranking de disciplinas por média de nota (5, 4, 3, 2 e 1)                                                                       | Could      |
-| RF27 | Deve ser possível acessar ao ranking de professores                                                                                                         | Must       |
-| RF28 | Deve ser possível fazer busca por professor no ranking de professores                                                                                       | Should     |
-| RF29 | Deve ser possível filtrar o ranking de professores por média de nota (5, 4, 3, 2 e 1)                                                                       | Could      |
-| RF30 | Deve ser possível visualizar o FAQ                                                                                                                          | Should     |
-| RF31 | Deve ser possível que o usuário tenha acesso a notícias da UnB                                                                                              | Should     |
+| RF6  | Deve ser possível que o professor registre as disciplinas que estão sendo ministradas por ele                                                               | Should     |
+| RF7  | Deve ser possível visualizar informações do perfil do usuário                                                                                               | Should     |
+| RF8  | A visualização do perfil deve ser diferente para proprietário e para visitantes por meio da função de ocultar e mostrar informações                         | Could      |
+| RF9  | Deve ser possível ver os curso disponíveis na UnB campus Gama                                                                                               | Must       |
+| RF10  | Deve ser possível visualizar a descrição e informações sobre o curso                                                                                        | Must       |
+| RF11 | Deve ser possível visualizar os fluxos disponíveis para um curso                                                                                            | Could      |
+| RF12 | Deve ser possível selecionar um curso e pesquisar por aluno                                                                                                 | Could      |
+| RF13 | Deve ser possível fazer busca por disciplina na página de disciplinas                                                                                       | Must       |
+| RF14 | Deve ser possível filtrar as disciplinas por semestre e curso                                                                                               | Should     |
+| RF15 | Deve ser possível visualizar a descrição e informações sobre a disciplina                                                                                   | Must       |
+| RF16 | Deve ser possível favoritar uma disciplina                                                                                                                  | Could      |
+| RF17 | Deve ser possível acessar na página da disciplina ao ranking dos professores que a ministram (ranking baseado na nota do professor apenas nessa disciplina) | Must       |
+| RF18 | Deve ser possível acessar a lista de alunos cursando a disciplina                                                                                           | Should     |
+| RF19 | Deve ser possível buscar por um aluno na lista de alunos cursando a disciplina                                                                              | Should     |
+| RF20 | Deve ser possível realizar o CRUD de avaliação da disciplina com o professor relacionado                                                                    | Must       |
+| RF21 | Deve ser possível realizar o CRUD de materiais indicados para a disciplina                                                                                  | Could     |
+| RF22 | Deve ser possível realizar denúncias de avaliações com possível conteúdo ofensivo                                                                           | Must       |
+| RF23 | Deve ser possível que um usuário administrador verifique as denúncias realizadas por outros usuários                                                        | Must       |
+| RF24 | Deve ser possível que os usuários ganhem títulos por avaliações das disciplinas                                                                             | Should     |
+| RF25 | Deve ser possível acessar ao ranking de disciplinas                                                                                                         | Must       |
+| RF26 | Deve ser possível fazer busca por disciplina no ranking de disciplinas                                                                                      | Should     |
+| RF27 | Deve ser possível filtrar o ranking de disciplinas por média de nota (5, 4, 3, 2, 1 e 0)                                                                       | Could      |
+| RF28 | Deve ser possível acessar ao ranking de professores                                                                                                         | Must       |
+| RF29 | Deve ser possível fazer busca por professor no ranking de professores                                                                                       | Should     |
+| RF30 | Deve ser possível filtrar o ranking de professores por média de nota (5, 4, 3, 2, 1 e 0)                                                                       | Could      |
+| RF31 | Deve ser possível visualizar o FAQ                                                                                                                          | Should     |
+| RF32 | Deve ser possível que o usuário tenha acesso a notícias da UnB                                                                                              | Should     |
 | RNF1 | O software deve ser desenvolvido com Flutter no Front-end e Node.js no Back-end                                                                             | Must       |
 | RNF2 | O software deve ser desenvolvido para ambiente mobile                                                                                                       | Must       |
 | RNF3 | O software deve ter uma interface simples e intuitiva                                                                                                       | Must       |
