@@ -1,5 +1,6 @@
 import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
+import 'package:college_flow_app/presentation/login/register_page.dart';
 import 'package:college_flow_app/presentation/widgets/buttons/flow_button.dart';
 import 'package:college_flow_app/presentation/widgets/gap.dart';
 import 'package:flutter/material.dart';
@@ -30,9 +31,7 @@ class _LoginPageState extends State<LoginPage> {
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              SizedBox(
-                height: 64,
-              ),
+              const VSpacer.lg(),
               SizedBox(
                 width: 312,
                 height: 76,
@@ -40,22 +39,16 @@ class _LoginPageState extends State<LoginPage> {
                   'assets/logo.png',
                 ),
               ),
-              SizedBox(
-                height: 55,
-              ),
+              const VSpacer.lg(),
               Text(
                 'Entre com a sua Conta',
                 style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                       color: white,
                     ),
               ),
-              SizedBox(
-                height: 24,
-              ),
+              const VSpacer.xxs(),
               InputText(placeholder: 'Digite seu Email Institucional'),
-              SizedBox(
-                height: 16,
-              ),
+              const VSpacer.xxxs(),
               InputText(placeholder: 'Digite sua senha'),
               const VSpacer.xxs(),
               FlowButton(
@@ -68,9 +61,7 @@ class _LoginPageState extends State<LoginPage> {
                   );
                 },
               ),
-              SizedBox(
-                height: 16,
-              ),
+              const VSpacer.xxs(),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -80,12 +71,12 @@ class _LoginPageState extends State<LoginPage> {
                           color: white,
                         ),
                   ),
-                  SizedBox(width: 3),
+                  SizedBox(width: 4),
                   GestureDetector(
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(builder: (context) {
-                          return LoginPage();
+                          return RegisterPage();
                         }),
                       );
                     },

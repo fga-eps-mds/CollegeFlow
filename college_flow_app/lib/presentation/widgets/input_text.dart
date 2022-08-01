@@ -9,7 +9,8 @@ class InputText extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextField(
       decoration: InputDecoration(
-        border: OutlineInputBorder(),
+        enabledBorder:
+            OutlineInputBorder(borderSide: BorderSide(color: secondary)),
         contentPadding: EdgeInsets.symmetric(
           horizontal: 8,
           vertical: 8,
