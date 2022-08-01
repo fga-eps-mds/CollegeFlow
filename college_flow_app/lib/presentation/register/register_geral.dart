@@ -1,9 +1,6 @@
-import 'dart:ffi';
-
 import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
-import 'package:college_flow_app/presentation/login/register_adm.dart';
-import 'package:college_flow_app/presentation/login/register_geral.dart';
+import 'package:college_flow_app/presentation/register/register_student.dart';
 import 'package:college_flow_app/presentation/widgets/buttons/flow_button.dart';
 import 'package:college_flow_app/presentation/widgets/gap.dart';
 import 'package:college_flow_app/presentation/widgets/input_text.dart';
@@ -11,14 +8,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-class RegisterStudent extends StatefulWidget {
-  const RegisterStudent({Key? key}) : super(key: key);
+class RegisterGeral extends StatefulWidget {
+  const RegisterGeral({Key? key}) : super(key: key);
 
   @override
-  State<RegisterStudent> createState() => _RegisterStudentState();
+  State<RegisterGeral> createState() => _RegisterGeralState();
 }
 
-class _RegisterStudentState extends State<RegisterStudent> {
+class _RegisterGeralState extends State<RegisterGeral> {
   final _pageViewController = PageController();
 
   @override
@@ -56,48 +53,86 @@ class _RegisterStudentState extends State<RegisterStudent> {
               ),
             ),
             const VSpacer.xxs(),
+            Image.asset('assets/imgs/add_image.png'),
+            const VSpacer.xxxs(),
             Text(
-              'Matrícula',
+              'Adicione uma foto de perfil',
+              style: Theme.of(context).textTheme.labelLarge?.copyWith(
+                    color: textColor,
+                  ),
+            ),
+            const VSpacer.xs(),
+            Text(
+              'Nome',
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
                     color: textColor,
                   ),
             ),
             const VSpacer.nano(),
             InputText(
-              placeholder: 'Digite sua Matrícula',
+              placeholder: 'Digite seu Nome completo',
               color: flowColorGrey,
             ),
             const VSpacer.xxxs(),
             Text(
-              'Curso',
+              'Email Institucional',
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
                     color: textColor,
                   ),
             ),
             const VSpacer.nano(),
             InputText(
-              placeholder: 'selecione seu Curso',
+              placeholder: 'Digite seu Email Institucional',
               color: flowColorGrey,
             ),
             const VSpacer.xxxs(),
             Text(
-              'Semestre',
+              'Celular',
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
                     color: textColor,
                   ),
             ),
             const VSpacer.nano(),
             InputText(
-              placeholder: 'Digite seu Semestre',
+              placeholder: 'Digite seu Número de celular',
               color: flowColorGrey,
             ),
-            const VSpacer.xxs(),
+            const VSpacer.xxxs(),
+            Text(
+              'Data de Naceimento',
+              style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                    color: textColor,
+                  ),
+            ),
+            const VSpacer.nano(),
+            InputText(
+              placeholder: 'Dia / Mês / Ano',
+              color: flowColorGrey,
+            ),
+            const VSpacer.xxxs(),
+            Text(
+              'Senha',
+              style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                    color: textColor,
+                  ),
+            ),
+            const VSpacer.nano(),
+            InputText(
+              placeholder: 'Digite sua Senha',
+              color: flowColorGrey,
+            ),
+            const VSpacer.nano(),
+            InputText(
+              placeholder: 'Confirme sua Senha',
+              color: flowColorGrey,
+            ),
+            const VSpacer.sm(),
             FlowButton(
               label: "Continue",
               onTap: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) {
-                    return RegisterAdministrator();
+                    return RegisterStudent();
                   }),
                 );
               },
