@@ -5,7 +5,7 @@ import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart'
 import 'package:college_flow_app/presentation/register/register_adm.dart';
 import 'package:college_flow_app/presentation/widgets/buttons/flow_button.dart';
 import 'package:college_flow_app/presentation/widgets/gap.dart';
-import 'package:college_flow_app/presentation/widgets/input_text.dart';
+import 'package:college_flow_app/presentation/widgets/textfield/flow_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -62,9 +62,9 @@ class _RegisterStudentState extends State<RegisterStudent> {
                   ),
             ),
             const VSpacer.nano(),
-            InputText(
+            const FlowTextField(
+              label: "E-mail",
               placeholder: 'Digite sua Matrícula',
-              color: flowColorGrey,
             ),
             const VSpacer.xxxs(),
             Text(
@@ -74,9 +74,9 @@ class _RegisterStudentState extends State<RegisterStudent> {
                   ),
             ),
             const VSpacer.nano(),
-            InputText(
-              placeholder: 'selecione seu Curso',
-              color: flowColorGrey,
+            const FlowTextField(
+              label: "Curso",
+              placeholder: 'selecione seu curso',
             ),
             const VSpacer.xxxs(),
             Text(
@@ -86,32 +86,19 @@ class _RegisterStudentState extends State<RegisterStudent> {
                   ),
             ),
             const VSpacer.nano(),
-            InputText(
-              placeholder: 'Digite seu Semestre',
-              color: flowColorGrey,
+            const FlowTextField(
+              label: "Semestre",
+              placeholder: 'Digite seu semestre',
             ),
             const VSpacer.xxs(),
             FlowButton(
               label: "Continue",
-              onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) {
-                    return RegisterAdministrator();
-                  }),
-                );
-              },
+              //TODO(Mauricio-Machado): add tap functionality
+              onTap: () {},
             ),
           ],
         ),
       ),
-    );
-  }
-
-  void togglePage(int page) {
-    _pageViewController.animateToPage(
-      page,
-      duration: const Duration(milliseconds: 200),
-      curve: Curves.easeIn,
     );
   }
 }

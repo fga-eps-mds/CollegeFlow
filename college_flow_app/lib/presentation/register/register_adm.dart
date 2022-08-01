@@ -5,7 +5,7 @@ import 'package:college_flow_app/presentation/register/register_teacher.dart';
 
 import 'package:college_flow_app/presentation/widgets/buttons/flow_button.dart';
 import 'package:college_flow_app/presentation/widgets/gap.dart';
-import 'package:college_flow_app/presentation/widgets/input_text.dart';
+import 'package:college_flow_app/presentation/widgets/textfield/flow_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -70,21 +70,16 @@ class _RegisterAdministratorState extends State<RegisterAdministrator> {
                   ),
             ),
             const VSpacer.nano(),
-            InputText(
+            const FlowTextField(
+              label: "Código de Administrador",
               placeholder: 'Digite seu código',
-              color: flowColorGrey,
             ),
             const VSpacer.xxxs(),
             const VSpacer.xxs(),
             FlowButton(
               label: "Continue",
-              onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) {
-                    return RegisterTeacher();
-                  }),
-                );
-              },
+              //TODO(Mauricio-Machado): add tap functionality
+              onTap: () {},
             ),
           ],
         ),

@@ -4,7 +4,6 @@ import 'package:college_flow_app/presentation/register/register_adm.dart';
 import 'package:college_flow_app/presentation/widgets/buttons/flow_button.dart';
 import 'package:college_flow_app/presentation/widgets/checkboxlist_material.dart';
 import 'package:college_flow_app/presentation/widgets/gap.dart';
-import 'package:college_flow_app/presentation/widgets/input_text.dart';
 import 'package:flutter/material.dart';
 
 class RegisterTeacher extends StatefulWidget {

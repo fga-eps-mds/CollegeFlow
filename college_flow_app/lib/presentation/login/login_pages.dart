@@ -1,10 +1,10 @@
 import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
-import 'package:college_flow_app/presentation/register/register_page.dart';
+import 'package:college_flow_app/config/routes/flow_routes.dart';
 import 'package:college_flow_app/presentation/widgets/buttons/flow_button.dart';
 import 'package:college_flow_app/presentation/widgets/gap.dart';
+import 'package:college_flow_app/presentation/widgets/textfield/flow_text_field.dart';
 import 'package:flutter/material.dart';
-import '../widgets/input_text.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -19,7 +19,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xff2C61F4),
+      backgroundColor: primary,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(
@@ -30,12 +30,8 @@ class _LoginPageState extends State<LoginPage> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const VSpacer.lg(),
-              SizedBox(
-                width: 312,
-                height: 76,
-                child: Image.asset(
-                  'assets/imgs/logo.png',
-                ),
+              Image.asset(
+                'assets/imgs/logo.png',
               ),
               const VSpacer.lg(),
               Text(
@@ -45,25 +41,20 @@ class _LoginPageState extends State<LoginPage> {
                     ),
               ),
               const VSpacer.xxs(),
-              InputText(
+              const FlowTextField(
+                label: "E-mail",
                 placeholder: 'Digite seu Email Institucional',
-                color: primaryLight,
               ),
               const VSpacer.xxxs(),
-              InputText(
+              const FlowTextField(
+                label: "Senha",
                 placeholder: 'Digite sua senha',
-                color: primaryLight,
               ),
               const VSpacer.xxs(),
               FlowButton(
                 label: "Login",
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) {
-                      return LoginPage();
-                    }),
-                  );
-                },
+                //TODO(Mauricio-Machado): Add login call request
+                onTap: () {},
               ),
               const VSpacer.xxs(),
               Row(
@@ -78,11 +69,7 @@ class _LoginPageState extends State<LoginPage> {
                   SizedBox(width: 4),
                   GestureDetector(
                     onTap: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) {
-                          return RegisterPage();
-                        }),
-                      );
+                      Navigator.of(context).pushNamed(FlowRoutes.registerPage);
                     },
                     child: Text(
                       "Cadastro",

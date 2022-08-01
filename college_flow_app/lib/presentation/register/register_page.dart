@@ -28,28 +28,16 @@ class _RegisterPageState extends State<RegisterPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Container(
-              height: 124,
-              width: double.infinity,
-              decoration: BoxDecoration(color: primary),
-              padding: const EdgeInsets.symmetric(
-                horizontal: spacingXXXS,
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Image.asset(
-                    'assets/imgs/logo.png',
+            Image.asset(
+              'assets/imgs/logo.png',
+            ),
+            const VSpacer.nano(),
+            Text(
+              "Banana",
+              // 'Faça seu Cadastro para ter acesso ao Aplicativo!',
+              style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                    color: white,
                   ),
-                  const VSpacer.nano(),
-                  Text(
-                    'Faça seu Cadastro para ter acesso ao Aplicativo!',
-                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                          color: white,
-                        ),
-                  ),
-                ],
-              ),
             ),
             const VSpacer.xxs(),
             Text(

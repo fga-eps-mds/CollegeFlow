@@ -3,7 +3,7 @@ import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart'
 import 'package:college_flow_app/presentation/register/register_student.dart';
 import 'package:college_flow_app/presentation/widgets/buttons/flow_button.dart';
 import 'package:college_flow_app/presentation/widgets/gap.dart';
-import 'package:college_flow_app/presentation/widgets/input_text.dart';
+import 'package:college_flow_app/presentation/widgets/textfield/flow_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -69,9 +69,9 @@ class _RegisterGeralState extends State<RegisterGeral> {
                   ),
             ),
             const VSpacer.nano(),
-            InputText(
+            const FlowTextField(
+              label: "Nome Completo",
               placeholder: 'Digite seu Nome completo',
-              color: flowColorGrey,
             ),
             const VSpacer.xxxs(),
             Text(
@@ -81,9 +81,9 @@ class _RegisterGeralState extends State<RegisterGeral> {
                   ),
             ),
             const VSpacer.nano(),
-            InputText(
+            const FlowTextField(
+              label: "E-mail",
               placeholder: 'Digite seu Email Institucional',
-              color: flowColorGrey,
             ),
             const VSpacer.xxxs(),
             Text(
@@ -93,9 +93,9 @@ class _RegisterGeralState extends State<RegisterGeral> {
                   ),
             ),
             const VSpacer.nano(),
-            InputText(
+            const FlowTextField(
+              label: "Celular",
               placeholder: 'Digite seu Número de celular',
-              color: flowColorGrey,
             ),
             const VSpacer.xxxs(),
             Text(
@@ -105,9 +105,9 @@ class _RegisterGeralState extends State<RegisterGeral> {
                   ),
             ),
             const VSpacer.nano(),
-            InputText(
+            const FlowTextField(
+              label: "Data de Nascimento",
               placeholder: 'Dia / Mês / Ano',
-              color: flowColorGrey,
             ),
             const VSpacer.xxxs(),
             Text(
@@ -117,25 +117,20 @@ class _RegisterGeralState extends State<RegisterGeral> {
                   ),
             ),
             const VSpacer.nano(),
-            InputText(
+            const FlowTextField(
+              label: "Senha",
               placeholder: 'Digite sua Senha',
-              color: flowColorGrey,
             ),
             const VSpacer.nano(),
-            InputText(
+            const FlowTextField(
+              label: "Confirme sua senha",
               placeholder: 'Confirme sua Senha',
-              color: flowColorGrey,
             ),
             const VSpacer.sm(),
             FlowButton(
               label: "Continue",
-              onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) {
-                    return RegisterStudent();
-                  }),
-                );
-              },
+              //TODO(Mauricio-Machado): add tap functionality
+              onTap: () {},
             ),
           ],
         ),
