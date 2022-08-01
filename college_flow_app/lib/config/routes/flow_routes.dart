@@ -1,4 +1,5 @@
 abstract class FlowRoutes {
   static const mainPage = '/';
-  static const secondPage = '/secondPage';
+  static const LoginPage = '/LoginPage';
+  static const RegisterPage = '/RegisterPage';
 }

@@ -1,6 +1,5 @@
 import 'package:college_flow_app/config/routes/flow_routes.dart';
-import 'package:college_flow_app/presentation/first_screen/first_screen_page.dart';
-import 'package:college_flow_app/presentation/second_screen/second_screen_page.dart';
+import 'package:college_flow_app/presentation/login/login_pages.dart';
 import 'package:college_flow_app/presentation/walkthrough/walkthrough_page.dart';
 import 'package:college_flow_app/utils/helpers/navigator_helper.dart';
 import 'package:flutter/material.dart' hide Router;
@@ -10,8 +9,11 @@ abstract class FlowRouter {
     late Widget page;
 
     switch (settings.name) {
-      case FlowRoutes.secondPage:
-        page = const SecondScreenPage();
+      // case FlowRoutes.RegisterPage:
+      //   page = const RegisterPage();
+      //   break;
+      case FlowRoutes.LoginPage:
+        page = const LoginPage();
         break;
       case FlowRoutes.mainPage:
       default:
