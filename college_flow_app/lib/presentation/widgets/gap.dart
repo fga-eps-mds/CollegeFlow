@@ -18,17 +18,32 @@ class VSpacer extends StatelessWidget {
 
   ///Height `8px`
   const VSpacer.nano({Key? key})
-      : size = spacingQuarck,
+      : size = spacingNano,
         super(key: key);
 
   ///Height `16px`
   const VSpacer.xxxs({Key? key})
-      : size = spacingQuarck,
+      : size = spacingXXXS,
         super(key: key);
 
   ///Height `24px`
   const VSpacer.xxs({Key? key})
-      : size = spacingQuarck,
+      : size = spacingXXS,
+        super(key: key);
+
+  ///Height `32px`
+  const VSpacer.xs({Key? key})
+      : size = spacingXS,
+        super(key: key);
+
+  ///Height `40px`
+  const VSpacer.sm({Key? key})
+      : size = spacingSM,
+        super(key: key);
+
+  ///Height `64px`
+  const VSpacer.lg({Key? key})
+      : size = spacingLG,
         super(key: key);
 
   @override
