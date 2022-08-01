@@ -51,8 +51,8 @@ flutter:
 
 
   assets:
-    - assets/icons
-    - assets/imgs
+    - assets/icons/
+    - assets/imgs/
   fonts:
     - family: OctinCollege
       fonts:
