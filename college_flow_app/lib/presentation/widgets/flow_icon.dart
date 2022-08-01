@@ -35,6 +35,7 @@ class FlowIcon extends StatelessWidget {
       size: size,
       color: color,
       icon: icon.toIconData(),
+      path: icon.toPath(size),
     );
   }
 
@@ -80,20 +81,31 @@ class _FlowIcon extends StatelessWidget {
   final double size;
   final Color? color;
   final IconData? icon;
+  final String? path;
 
   const _FlowIcon({
     Key? key,
     this.size = iconSizeDefault,
-    required this.icon,
+    this.icon,
     this.color,
-  }) : super(key: key);
+    this.path,
+  })  : assert(path != null || icon != null, "Path or icon must be passed"),
+        assert(
+            path == null || icon == null, "Cannot provide both path and icon"),
+        super(key: key);
+
+  bool get _isIcon => icon != null;
 
   @override
   Widget build(BuildContext context) {
-    return Icon(
-      icon!,
-      size: size,
-      color: color ?? flowColorGrey,
-    );
+    if (_isIcon) {
+      return Icon(
+        icon!,
+        size: size,
+        color: color ?? flowColorGrey,
+      );
+    }
+
+    return Image(image: AssetImage(path!));
   }
 }
