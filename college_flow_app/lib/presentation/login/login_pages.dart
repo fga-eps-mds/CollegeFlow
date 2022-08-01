@@ -34,7 +34,7 @@ class _LoginPageState extends State<LoginPage> {
                 width: 312,
                 height: 76,
                 child: Image.asset(
-                  'assets/logo.png',
+                  'assets/imgs/logo.png',
                 ),
               ),
               const VSpacer.lg(),

@@ -41,7 +41,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Image.asset(
-                    'assets/logo.png',
+                    'assets/imgs/logo.png',
                   ),
                   const VSpacer.nano(),
                   Text(

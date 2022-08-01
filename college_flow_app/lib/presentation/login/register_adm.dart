@@ -41,7 +41,7 @@ class _RegisterAdministratorState extends State<RegisterAdministrator> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Image.asset(
-                    'assets/logo.png',
+                    'assets/imgs/logo.png',
                   ),
                   const VSpacer.nano(),
                   Text(

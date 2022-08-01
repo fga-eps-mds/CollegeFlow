@@ -40,7 +40,7 @@ class _RegisterGeralState extends State<RegisterGeral> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Image.asset(
-                    'assets/logo.png',
+                    'assets/imgs/logo.png',
                   ),
                   const VSpacer.nano(),
                   Text(
@@ -53,7 +53,7 @@ class _RegisterGeralState extends State<RegisterGeral> {
               ),
             ),
             const VSpacer.xxs(),
-            Image.asset('assets/add_image.png'),
+            Image.asset('assets/imgs/add_image.png'),
             const VSpacer.xxxs(),
             Text(
               'Adicione uma foto de perfil',
