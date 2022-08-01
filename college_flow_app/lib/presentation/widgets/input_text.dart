@@ -3,20 +3,21 @@ import 'package:flutter/material.dart';
 
 class InputText extends StatelessWidget {
   final String? placeholder;
-  InputText({this.placeholder});
+  final Color? color;
+  InputText({this.placeholder, this.color});
 
   @override
   Widget build(BuildContext context) {
     return TextField(
       decoration: InputDecoration(
         enabledBorder:
-            OutlineInputBorder(borderSide: BorderSide(color: secondary)),
-        contentPadding: EdgeInsets.symmetric(
+            const OutlineInputBorder(borderSide: BorderSide(color: secondary)),
+        contentPadding: const EdgeInsets.symmetric(
           horizontal: 8,
           vertical: 8,
         ),
         labelText: placeholder,
-        labelStyle: TextStyle(fontSize: 16, color: primaryLight),
+        labelStyle: TextStyle(fontSize: 16, color: color),
       ),
     );
   }

@@ -4,8 +4,6 @@ import 'package:college_flow_app/presentation/login/register_page.dart';
 import 'package:college_flow_app/presentation/widgets/buttons/flow_button.dart';
 import 'package:college_flow_app/presentation/widgets/gap.dart';
 import 'package:flutter/material.dart';
-
-import '../widgets/app_text.dart';
 import '../widgets/input_text.dart';
 
 class LoginPage extends StatefulWidget {
@@ -47,9 +45,15 @@ class _LoginPageState extends State<LoginPage> {
                     ),
               ),
               const VSpacer.xxs(),
-              InputText(placeholder: 'Digite seu Email Institucional'),
+              InputText(
+                placeholder: 'Digite seu Email Institucional',
+                color: primaryLight,
+              ),
               const VSpacer.xxxs(),
-              InputText(placeholder: 'Digite sua senha'),
+              InputText(
+                placeholder: 'Digite sua senha',
+                color: primaryLight,
+              ),
               const VSpacer.xxs(),
               FlowButton(
                 label: "Login",

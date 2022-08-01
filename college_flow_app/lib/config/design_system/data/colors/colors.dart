@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 const flowColorGrey = Color.fromARGB(255, 174, 174, 174);
 const flowColorWhite = Color.fromARGB(255, 255, 255, 255);
-const black = Color.fromARGB(255, 30, 0, 30);
+const flowColorBlack = Color.fromARGB(255, 0, 0, 0);
 const flowColorGreen = Color.fromRGBO(76, 175, 80, 1);
 const flowColorRed = Color.fromRGBO(244, 67, 54, 1);
 const flowColorRed10 = Color.fromARGB(255, 242, 114, 105);
