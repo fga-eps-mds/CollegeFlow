@@ -61,6 +61,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   ),
             ),
             const VSpacer.xxs(),
+            const VSpacer.xxs(),
             FlowButton(
               label: "Continue",
               onTap: () {
