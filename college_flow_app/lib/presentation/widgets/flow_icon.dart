@@ -75,6 +75,27 @@ class FlowIcon extends StatelessWidget {
     this.color = flowColorGrey,
   })  : icon = FlowIconData.home,
         super(key: key);
+
+  const FlowIcon.admin({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = secondary,
+  })  : icon = FlowIconData.registerAdmin,
+        super(key: key);
+
+  const FlowIcon.professor({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = secondary,
+  })  : icon = FlowIconData.registerProfessor,
+        super(key: key);
+
+  const FlowIcon.student({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = secondary,
+  })  : icon = FlowIconData.registerStudent,
+        super(key: key);
 }
 
 class _FlowIcon extends StatelessWidget {

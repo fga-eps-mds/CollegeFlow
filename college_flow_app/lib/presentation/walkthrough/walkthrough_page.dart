@@ -1,5 +1,6 @@
 import 'package:college_flow_app/config/constants/assets_contants.dart';
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
+import 'package:college_flow_app/presentation/login/login_pages.dart';
 import 'package:college_flow_app/presentation/walkthrough/widgets/walkthrough_base_page.dart';
 import 'package:college_flow_app/presentation/widgets/buttons/flow_button.dart';
 import 'package:college_flow_app/presentation/widgets/gap.dart';
@@ -68,7 +69,13 @@ class WalkthroughPageState extends State<WalkthroughPage> {
               FlowButton(
                 label: "Vamos Começar",
                 //TODO(Mauricio-Machado): When user clicks redirect to login page
-                onTap: () => togglePage(2),
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) {
+                      return LoginPage();
+                    }),
+                  );
+                },
               ),
             ],
           ),
