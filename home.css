@@ -77,3 +77,20 @@
 body h1 {
   font-size: 2.5em !important;
 }
+
+.home-btn {
+  background: #F89627;
+  width: 320px;
+  height: 40px;
+  border: 2px solid #FFFFFF;
+  border-radius: 25px;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-family: octin-college,sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.sidebar{
+  padding: 0 0 40px !important;
+}
