@@ -59,19 +59,19 @@ class CustomTheme {
         color: textColor,
       ),
       labelLarge: TextStyle(
-        fontFamily: 'OctinCollege',
+        fontFamily: 'Roboto',
         fontWeight: FontWeight.w500,
         fontSize: 16,
         color: textColor,
       ),
       labelMedium: TextStyle(
-        fontFamily: 'OctinCollege',
+        fontFamily: 'Roboto',
         fontWeight: FontWeight.w500,
         fontSize: 12,
         color: textColor,
       ),
       labelSmall: TextStyle(
-        fontFamily: 'OctinCollege',
+        fontFamily: 'Roboto',
         fontWeight: FontWeight.w500,
         fontSize: 11,
         color: textColor,
