@@ -28,7 +28,7 @@ Para contribuir com este projeto basta seguir:
   <div class="row">
     <div class="row">
     <div class="col-sm container-img">
-        <img src="img/team/mauricio.png" alt="..." class="img-thumbnail image">
+        <img src="doc/img/team/mauricio.png" alt="..." class="img-thumbnail image">
             <div class="middle">
               <div class="text">
                 Mauricio Machado
@@ -36,7 +36,7 @@ Para contribuir com este projeto basta seguir:
             </div>
     </div>
     <div class="col-sm container-img">
-      <img src="img/team/Lmacedo.png" alt="..." class="img-thumbnail image">
+      <img src="doc/img/team/Lmacedo.png" alt="..." class="img-thumbnail image">
         <div class="middle">
           <div class="text">
             Lucas Macedo
@@ -44,7 +44,7 @@ Para contribuir com este projeto basta seguir:
         </div>
     </div>
     <div class="col-sm container-img">
-      <img src="img/team/Lspinosa.png" alt="..." class="img-thumbnail image">
+      <img src="doc/img/team/Lspinosa.png" alt="..." class="img-thumbnail image">
         <div class="middle">
           <div class="text">
             Lucas de Lima
@@ -52,7 +52,7 @@ Para contribuir com este projeto basta seguir:
         </div>
     </div>
     <div class="col-sm container-img">
-      <img src="img/team/luan.png" alt="..." class="img-thumbnail image">
+      <img src="doc/img/team/luan.png" alt="..." class="img-thumbnail image">
         <div class="middle">
           <div class="text">
             Luan Melo
@@ -62,7 +62,7 @@ Para contribuir com este projeto basta seguir:
   </div>
   <div class="row">
   <div class="col-sm container-img">
-      <img src="img/team/Wengel.png" alt="..." class="img-thumbnail image">    
+      <img src="doc/img/team/Wengel.png" alt="..." class="img-thumbnail image">    
           <div class="middle">
             <div class="text">
               Wengel Rodrigues
@@ -70,7 +70,7 @@ Para contribuir com este projeto basta seguir:
           </div>
     </div>
     <div class="col-sm container-img">
-        <img src="img/team/Lgabriel.png" alt="..." class="img-thumbnail image">
+        <img src="doc/img/team/Lgabriel.png" alt="..." class="img-thumbnail image">
             <div class="middle">
               <div class="text">
                 Lucas Gabriel
@@ -78,7 +78,7 @@ Para contribuir com este projeto basta seguir:
             </div>
     </div>
     <div class="col-sm container-img">
-      <img src="img/team/rapha.png" alt="..." class="img-thumbnail image">
+      <img src="doc/img/team/rapha.png" alt="..." class="img-thumbnail image">
         <div class="middle">
           <div class="text">
             Raphaela Guimarães
