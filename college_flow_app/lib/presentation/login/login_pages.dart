@@ -64,7 +64,7 @@ class _LoginPageState extends State<LoginPage> {
                           color: white,
                         ),
                   ),
-                  SizedBox(width: 4),
+                  const VSpacer.quarck(),
                   GestureDetector(
                     onTap: () {
                       Navigator.of(context)
