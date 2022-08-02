@@ -37,4 +37,5 @@ O protótipo foi feito com a utilização do software Figma e segue abaixo os li
 
 ## 4.Protótipo de Alta Fidelidade
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+O protótipo de alta apresenta as telas finais e suas possíveis interações entre si. Para a etapa inicial do projeto definimos apenas realizar as telas de login e cadastro para o protótipo de alta, segue abaixo o link para seu acesso:
+- [Telas](https://www.figma.com/file/VH37R7Gdt1e5StMC73htJZ/CollegeFlow?node-id=143%3A71)
