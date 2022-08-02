@@ -25,7 +25,7 @@ class LogoBar extends StatelessWidget {
       color: primary,
       child: Column(
         children: [
-          const VSpacer.xs(),
+          const VSpacer.lg(),
           Image.asset(
             'assets/imgs/logo.png',
           ),
