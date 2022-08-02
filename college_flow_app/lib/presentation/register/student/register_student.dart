@@ -1,21 +1,24 @@
+import 'dart:ffi';
+
 import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
-import 'package:college_flow_app/presentation/register/register_adm.dart';
+import 'package:college_flow_app/presentation/register/admin/register_adm.dart';
 import 'package:college_flow_app/presentation/widgets/buttons/flow_button.dart';
-import 'package:college_flow_app/presentation/widgets/checkboxlist_material.dart';
 import 'package:college_flow_app/presentation/widgets/gap.dart';
+import 'package:college_flow_app/presentation/widgets/textfield/flow_text_field.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/src/foundation/key.dart';
+import 'package:flutter/src/widgets/framework.dart';
 
-class RegisterTeacher extends StatefulWidget {
-  const RegisterTeacher({Key? key}) : super(key: key);
+class RegisterStudent extends StatefulWidget {
+  const RegisterStudent({Key? key}) : super(key: key);
 
   @override
-  State<RegisterTeacher> createState() => _RegisterTeacherState();
+  State<RegisterStudent> createState() => _RegisterStudentState();
 }
 
-class _RegisterTeacherState extends State<RegisterTeacher> {
+class _RegisterStudentState extends State<RegisterStudent> {
   final _pageViewController = PageController();
-  bool _selected = false;
 
   @override
   Widget build(BuildContext context) {
@@ -53,65 +56,49 @@ class _RegisterTeacherState extends State<RegisterTeacher> {
             ),
             const VSpacer.xxs(),
             Text(
-              'Marque as diciplinas que você ministra aulas',
-              textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                    color: textColor,
-                  ),
-            ),
-            const VSpacer.xxs(),
-            InkWell(
-              child: Icon(
-                Icons.search,
-                size: 36,
-                color: secondary,
-              ),
-              onTap: () {
-                //action code when clicked
-                print("The icon is clicked");
-              },
-            ),
-            const VSpacer.xxs(),
-            Text(
-              'Nome         Semestre',
-              textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+              'Matrícula',
+              style: Theme.of(context).textTheme.titleMedium?.copyWith(
                     color: textColor,
                   ),
             ),
             const VSpacer.nano(),
-            CheckboxListMaterial(
-              label: '             Nome Disciplina             ',
-              padding: const EdgeInsets.symmetric(horizontal: 10.0),
-              label1: 'X Semestre',
-              value: _selected,
-              onChanged: (bool newValue) {
-                setState(() {
-                  _selected = newValue;
-                });
-              },
+            const FlowTextField(
+              label: "E-mail",
+              placeholder: 'Digite sua Matrícula',
             ),
+            const VSpacer.xxxs(),
+            Text(
+              'Curso',
+              style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                    color: textColor,
+                  ),
+            ),
+            const VSpacer.nano(),
+            const FlowTextField(
+              label: "Curso",
+              placeholder: 'selecione seu curso',
+            ),
+            const VSpacer.xxxs(),
+            Text(
+              'Semestre',
+              style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                    color: textColor,
+                  ),
+            ),
+            const VSpacer.nano(),
+            const FlowTextField(
+              label: "Semestre",
+              placeholder: 'Digite seu semestre',
+            ),
+            const VSpacer.xxs(),
             FlowButton(
               label: "Continue",
-              onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) {
-                    return RegisterAdministrator();
-                  }),
-                );
-              },
+              //TODO(Mauricio-Machado): add tap functionality
+              onTap: () {},
             ),
           ],
         ),
       ),
-    );
-  }
-
-  void togglePage(int page) {
-    _pageViewController.animateToPage(
-      page,
-      duration: const Duration(milliseconds: 200),
-      curve: Curves.easeIn,
     );
   }
 }

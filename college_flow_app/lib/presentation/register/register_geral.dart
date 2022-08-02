@@ -1,6 +1,6 @@
 import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
-import 'package:college_flow_app/presentation/register/register_student.dart';
+import 'package:college_flow_app/presentation/register/student/register_student.dart';
 import 'package:college_flow_app/presentation/widgets/buttons/flow_button.dart';
 import 'package:college_flow_app/presentation/widgets/gap.dart';
 import 'package:college_flow_app/presentation/widgets/textfield/flow_text_field.dart';

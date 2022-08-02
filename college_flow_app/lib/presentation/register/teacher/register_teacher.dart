@@ -1,24 +1,21 @@
-import 'dart:ffi';
 import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
-import 'package:college_flow_app/presentation/register/register_teacher.dart';
-
+import 'package:college_flow_app/presentation/register/admin/register_adm.dart';
 import 'package:college_flow_app/presentation/widgets/buttons/flow_button.dart';
+import 'package:college_flow_app/presentation/widgets/checkboxlist_material.dart';
 import 'package:college_flow_app/presentation/widgets/gap.dart';
-import 'package:college_flow_app/presentation/widgets/textfield/flow_text_field.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
-class RegisterAdministrator extends StatefulWidget {
-  const RegisterAdministrator({Key? key}) : super(key: key);
+class RegisterTeacher extends StatefulWidget {
+  const RegisterTeacher({Key? key}) : super(key: key);
 
   @override
-  State<RegisterAdministrator> createState() => _RegisterAdministratorState();
+  State<RegisterTeacher> createState() => _RegisterTeacherState();
 }
 
-class _RegisterAdministratorState extends State<RegisterAdministrator> {
+class _RegisterTeacherState extends State<RegisterTeacher> {
   final _pageViewController = PageController();
+  bool _selected = false;
 
   @override
   Widget build(BuildContext context) {
@@ -56,30 +53,53 @@ class _RegisterAdministratorState extends State<RegisterAdministrator> {
             ),
             const VSpacer.xxs(),
             Text(
-              'Insira Abaixo o seu Código de Administrador',
+              'Marque as diciplinas que você ministra aulas',
               textAlign: TextAlign.center,
               style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                     color: textColor,
                   ),
             ),
-            const VSpacer.xs(),
+            const VSpacer.xxs(),
+            InkWell(
+              child: Icon(
+                Icons.search,
+                size: 36,
+                color: secondary,
+              ),
+              onTap: () {
+                //action code when clicked
+                print("The icon is clicked");
+              },
+            ),
+            const VSpacer.xxs(),
             Text(
-              'Código',
-              style: Theme.of(context).textTheme.titleMedium?.copyWith(
+              'Nome         Semestre',
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                     color: textColor,
                   ),
             ),
             const VSpacer.nano(),
-            const FlowTextField(
-              label: "Código de Administrador",
-              placeholder: 'Digite seu código',
+            CheckboxListMaterial(
+              label: '             Nome Disciplina             ',
+              padding: const EdgeInsets.symmetric(horizontal: 10.0),
+              label1: 'X Semestre',
+              value: _selected,
+              onChanged: (bool newValue) {
+                setState(() {
+                  _selected = newValue;
+                });
+              },
             ),
-            const VSpacer.xxxs(),
-            const VSpacer.xxs(),
             FlowButton(
               label: "Continue",
-              //TODO(Mauricio-Machado): add tap functionality
-              onTap: () {},
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) {
+                    return RegisterAdministrator();
+                  }),
+                );
+              },
             ),
           ],
         ),

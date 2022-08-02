@@ -1,3 +1,4 @@
+import 'package:college_flow_app/config/routes/flow_routes.dart';
 import 'package:college_flow_app/presentation/register/widgets/user_type_button.dart';
 import 'package:college_flow_app/presentation/widgets/flow_icon.dart';
 import 'package:college_flow_app/presentation/widgets/gap.dart';
@@ -21,18 +22,25 @@ class UserTypeOptions extends StatelessWidget {
             UserTypeButton(
               icon: const FlowIcon.student(),
               title: "Aluno",
-              onTap: () {},
+              onTap: () => Navigator.of(context).pushNamed(
+                FlowRoutes.registerStudent,
+              ),
             ),
             UserTypeButton(
-                icon: const FlowIcon.professor(),
-                title: "Professor",
-                onTap: () {}),
+              icon: const FlowIcon.professor(),
+              title: "Professor",
+              onTap: () => Navigator.of(context).pushNamed(
+                FlowRoutes.registerProfessor,
+              ),
+            ),
           ],
         ),
         UserTypeButton(
           icon: const FlowIcon.admin(),
           title: "Administrador",
-          onTap: () {},
+          onTap: () => Navigator.of(context).pushNamed(
+            FlowRoutes.registerAdmin,
+          ),
         ),
       ],
     );
