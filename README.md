@@ -15,3 +15,17 @@
 | Lucas Gabriel Sousa Camargo Paiva       | lucasgabriel-2    |
 | Wengel Rodrigues Farias                 | Wengel-Rodrigues  |
 | Raphaela Guimarães de Araujo dos Santos | raphaiela         |
+
+
+#Como rodar o projeto
+
+Consulte também as instruções do backend. Consideramos que você já leu o readme do repositório do backend e quer buildar o app.
+
+- Tenha o flutter instalado na [versão 3.0.4](https://docs.flutter.dev/development/tools/sdk/releases)
+- Clone o repositório
+- Navegue até a pasta ```college_flow_app```
+- Execute os seguintes comandos:
+
+```flutter pub get```
+
+```flutter run```
