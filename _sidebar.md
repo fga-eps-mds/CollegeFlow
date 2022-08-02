@@ -26,6 +26,8 @@
   - [Sprint 1](sprints/sprint_1.md)
   - [Sprint 2](sprints/sprint_2.md)
   - [Sprint 3](sprints/sprint_3.md)
+  - [Sprint 4](sprints/sprint_4.md)
+  - [Sprint 5](sprints/sprint_5.md)
 
 - [**Contribuição**](#)
   - [Como contribuir](contributing.md)
