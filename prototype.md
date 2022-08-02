@@ -29,13 +29,12 @@ Os protótipos a seguir foram desenvolvidos a partir de vários outros criados p
 
 O protótipo de média fidelidade tem como objetivo detalhar visualmente a implementação das telas, focando no alinhamentos, tamanho e posição dos elementos com uma definição mais aprofundada dos principais itens de cada tela.
 
-O protótipo foi feito com a utilização do software Figma e segue abaixo os links para o acesso tanto das telas, quanto do fluxo:
+O protótipo foi feito com a utilização do software Figma e segue abaixo os links para o acesso das telas:
 
-#### Links
-- [Telas](https://www.figma.com/file/VH37R7Gdt1e5StMC73htJZ/CollegeFlow)
-- [Fluxo](https://www.figma.com/file/VH37R7Gdt1e5StMC73htJZ/CollegeFlow?node-id=78%3A2016)
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FVH37R7Gdt1e5StMC73htJZ%2FCollegeFlow" allowfullscreen></iframe>
 
 ## 4.Protótipo de Alta Fidelidade
 
-O protótipo de alta apresenta as telas finais e suas possíveis interações entre si. Para a etapa inicial do projeto definimos apenas realizar as telas de login e cadastro para o protótipo de alta, segue abaixo o link para seu acesso:
-- [Telas](https://www.figma.com/file/VH37R7Gdt1e5StMC73htJZ/CollegeFlow?node-id=143%3A71)
+O protótipo de alta fidelidade apresenta as telas finais do projeto, mostrando a estrutura desenvolvida no protótipo de média atualizada com os estilos definidos para a aplicação:
+
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FVH37R7Gdt1e5StMC73htJZ%2FCollegeFlow%3Fnode-id%3D143%253A71" allowfullscreen></iframe>
