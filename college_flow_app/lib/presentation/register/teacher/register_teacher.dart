@@ -1,6 +1,7 @@
 import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
 import 'package:college_flow_app/presentation/register/admin/register_adm.dart';
+import 'package:college_flow_app/presentation/register/widgets/logo_bar.dart';
 import 'package:college_flow_app/presentation/widgets/buttons/flow_button.dart';
 import 'package:college_flow_app/presentation/widgets/checkboxlist_material.dart';
 import 'package:college_flow_app/presentation/widgets/gap.dart';
@@ -20,36 +21,14 @@ class _RegisterTeacherState extends State<RegisterTeacher> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: primary,
-      ),
       backgroundColor: flowColorWhite,
       body: SafeArea(
+        top: false,
         child: Column(
           children: [
-            Container(
-              height: 124,
-              width: double.infinity,
-              decoration: BoxDecoration(color: primary),
-              padding: const EdgeInsets.symmetric(
-                horizontal: spacingXXXS,
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Image.asset(
-                    'assets/imgs/logo.png',
-                  ),
-                  const VSpacer.nano(),
-                  Text(
-                    'Faça seu Cadastro para ter acesso ao Aplicativo!',
-                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                          color: white,
-                        ),
-                  ),
-                ],
-              ),
+            const LogoBar(
+              description: "Faça seu Cadastro para ter acesso ao Aplicativo!",
+              textAlign: TextAlign.start,
             ),
             const VSpacer.xxs(),
             Text(
@@ -61,14 +40,13 @@ class _RegisterTeacherState extends State<RegisterTeacher> {
             ),
             const VSpacer.xxs(),
             InkWell(
-              child: Icon(
+              child: const Icon(
                 Icons.search,
                 size: 36,
                 color: secondary,
               ),
               onTap: () {
                 //action code when clicked
-                print("The icon is clicked");
               },
             ),
             const VSpacer.xxs(),
@@ -96,7 +74,7 @@ class _RegisterTeacherState extends State<RegisterTeacher> {
               onTap: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) {
-                    return RegisterAdministrator();
+                    return const RegisterAdministrator();
                   }),
                 );
               },

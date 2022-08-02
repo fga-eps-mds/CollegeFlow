@@ -95,9 +95,9 @@ class CustomTheme {
         color: textColor,
       ),
     ),
-    primaryColor: Color(0xffce107c),
-    indicatorColor: Color(0xFF807A6B),
-    scaffoldBackgroundColor: Color(0xFFF5F5F5),
+    primaryColor: const Color(0xffce107c),
+    indicatorColor: const Color(0xFF807A6B),
+    scaffoldBackgroundColor: const Color(0xFFF5F5F5),
     backgroundColor: Colors.white,
     // tabBarTheme: lightTheme.tabBarTheme.copyWith(
     //   labelColor: Color(0xffce107c),
