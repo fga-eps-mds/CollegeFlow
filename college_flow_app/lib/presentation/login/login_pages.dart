@@ -66,8 +66,7 @@ class _LoginPageState extends State<LoginPage> {
                   const VSpacer.quarck(),
                   GestureDetector(
                     onTap: () {
-                      Navigator.of(context)
-                          .pushReplacementNamed(FlowRoutes.registerPage);
+                      Navigator.of(context).pushNamed(FlowRoutes.registerPage);
                     },
                     child: Text(
                       "Cadastro",
