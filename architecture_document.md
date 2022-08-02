@@ -36,6 +36,10 @@ Para realizar a comunicação entre as camadas, será utilizado o modelo de arqu
 
 ![Visão do documento de arquitetura - Backend](./img/architecture/visao-backend.png)
 
+### Diagrama de relação
+
+![Diagrama de relações ](./img/architecture/Diagrama-de-relacao.png)
+
 ### Camada **INFRA**
 
 Sua função é contatar o backend e conseguir o dado cru para poder ser usado na aplicação.
