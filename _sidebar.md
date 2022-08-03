@@ -8,14 +8,14 @@
   <!-- - [Estrutura Analítica do Projeto](wbs.md) -->
   - [Documento de Visão](vision_document.md)
   - [Documento de Arquitetura](architecture_document.md)
+  - [Viabilidade técnica](architecture_techonologies.md)
   - [Guia de Estilo e Identidade Visual](style_guide.md)
   - [Protótipo](prototype.md)
+  - [Estudos](studies.md)
   <!-- - [Canvas](canvas.md) -->
   <!-- - [Roadmap do Produto](product_roadmap.md) -->
 
-- [**Viabilidade técnica**](#)
-
-  - [Viabilidade das tecnologias](architecture_techonologies.md)
+<!-- - [**Viabilidade técnica**](#) -->
  <!-- - [Ferramentas de testes](tools_testing.md) -->
 
 - [**Gerenciamento**](#)
