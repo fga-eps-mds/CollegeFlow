@@ -16,12 +16,12 @@ Modelo para verificar a utilização das práticas ágeis durante o projeto. Ser
 
 Modelo que mensura o conhecimento da equipe em diversos aspectos. Tambem útil para avaliar a evolução e a gestão de conhecimento da equipe.
 
-Pode ser encontrado em : [Quadro de Conhecimento](https://docs.google.com/spreadsheets/d/1RKcA2VR6jS--O1DSd3KZ6vcl8PCMI4f9WJ8x_1HUqek/edit?usp=sharing)
+Pode ser encontrado em: [Quadro de Conhecimento](https://docs.google.com/spreadsheets/d/1RKcA2VR6jS--O1DSd3KZ6vcl8PCMI4f9WJ8x_1HUqek/edit?usp=sharing)
 
-## Qualidade em Código
+<!-- ## Qualidade em Código
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
 
 ## Burndown de Risco
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros. -->
