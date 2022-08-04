@@ -1,7 +1,5 @@
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class VSpacer extends StatelessWidget {
   final double size;

@@ -1,14 +1,10 @@
-import 'dart:ffi';
-
 import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
-import 'package:college_flow_app/presentation/register/admin/register_adm.dart';
+import 'package:college_flow_app/presentation/register/widgets/logo_bar.dart';
 import 'package:college_flow_app/presentation/widgets/buttons/flow_button.dart';
 import 'package:college_flow_app/presentation/widgets/gap.dart';
 import 'package:college_flow_app/presentation/widgets/textfield/flow_text_field.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class RegisterStudent extends StatefulWidget {
   const RegisterStudent({Key? key}) : super(key: key);
@@ -18,41 +14,17 @@ class RegisterStudent extends StatefulWidget {
 }
 
 class _RegisterStudentState extends State<RegisterStudent> {
-  final _pageViewController = PageController();
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: primary,
-      ),
       backgroundColor: flowColorWhite,
       body: SafeArea(
+        top: false,
         child: Column(
           children: [
-            Container(
-              height: 124,
-              width: double.infinity,
-              decoration: BoxDecoration(color: primary),
-              padding: const EdgeInsets.symmetric(
-                horizontal: spacingXXXS,
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Image.asset(
-                    'assets/imgs/logo.png',
-                  ),
-                  const VSpacer.nano(),
-                  Text(
-                    'Faça seu Cadastro para ter acesso ao Aplicativo!',
-                    style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                          color: white,
-                        ),
-                  ),
-                ],
-              ),
+            const LogoBar(
+              description: "Faça seu Cadastro para ter acesso ao Aplicativo!",
+              textAlign: TextAlign.start,
             ),
             const VSpacer.xxs(),
             Text(
@@ -65,6 +37,8 @@ class _RegisterStudentState extends State<RegisterStudent> {
             const FlowTextField(
               label: "E-mail",
               placeholder: 'Digite sua Matrícula',
+              borderColor: secondary,
+              isDark: true,
             ),
             const VSpacer.xxxs(),
             Text(
@@ -77,6 +51,8 @@ class _RegisterStudentState extends State<RegisterStudent> {
             const FlowTextField(
               label: "Curso",
               placeholder: 'selecione seu curso',
+              borderColor: secondary,
+              isDark: true,
             ),
             const VSpacer.xxxs(),
             Text(
@@ -89,6 +65,8 @@ class _RegisterStudentState extends State<RegisterStudent> {
             const FlowTextField(
               label: "Semestre",
               placeholder: 'Digite seu semestre',
+              borderColor: secondary,
+              isDark: true,
             ),
             const VSpacer.xxs(),
             FlowButton(

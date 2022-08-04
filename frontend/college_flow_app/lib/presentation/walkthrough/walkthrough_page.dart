@@ -72,7 +72,7 @@ class WalkthroughPageState extends State<WalkthroughPage> {
                 onTap: () {
                   Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) {
-                      return LoginPage();
+                      return const LoginPage();
                     }),
                   );
                 },
