@@ -106,6 +106,14 @@ O sistema terá uma cobertura mínima de testes de 40%, buscando garantir certo 
 
 A implementação do Software será realizado por etapas, visando a utilização do software durante o desenvolvimento de novas funções, possibilitando um uso antecipado de funções já desenvolvidas.
 
+### 4.1 Diagrama de Classe
+
+![Diagrama de classes para projeto CollegeFlow](./img/architecture/class_diagram.png)
+
+### 4.2 Diagrama de Casos de Uso
+
+![Diagrama de casos de uso para projeto CollegeFlow](./img/architecture/usecases_diagram.png)
+
 ## Referências
 
 Documentação do Node.js. Disponível em: <https://nodejs.org/en/docs/>. Acesso em 25 de julho de 2022.
