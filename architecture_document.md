@@ -30,11 +30,11 @@ O modelo de arquitetura proposto nesse projeto é um modelo multicamada, onde é
 
 Para realizar a comunicação entre as camadas, será utilizado o modelo de arquitetura cliente-servidor, no qual há os fornecedores de recursos e os que consomem esses recursos disponibilizados. O servidor é um fornecedor de recurso, onde é uma camada intermediária responsável por lidar diretamente com os a camada de persistência e fornecer os dados manipulados para a camada de visualização dos dados através do protocolo de comunicação HTTP. O Cliente nesse ecossistema usufrui dos dados fazendo requisições ao servidor e renderizando estes para os usuários que fizeram a requisição.
 
-![Visão geral do documento de arquitetura](./img/architecture/visao-geral.png)
+![Visão geral do documento de arquitetura](./img/architecture/arch_general_vision.png)
 
-![Visão do documento de arquitetura - Parte Mobile](./img/architecture/visao-camada-apresentacao.png)
+![Visão do documento de arquitetura - Parte Mobile](./img/architecture/arch_frontend_vision.png)
 
-![Visão do documento de arquitetura - Backend](./img/architecture/visao-backend.png)
+![Visão do documento de arquitetura - Backend](./img/architecture/arch_backend_vision.png)
 
 ### Diagrama de relação
 
