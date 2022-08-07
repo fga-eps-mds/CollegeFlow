@@ -17,14 +17,19 @@
         <img src="https://img.shields.io/badge/License-MIT-blue.svg" />
     </a>
 </p>
+<br>
+<br>
 
 ## <img src=".github/images/logo-college-flow-background.png" width="30" height="30" /> Sobre o projeto
 
-O projeto tem como intuito de ajudar aos estudantes ao realizar matricula nas disciplinas do campus do Gama, onde será possível ver avaliações de matérias e professores.
+O projeto tem como intuito de ajudar aos estudantes ao realizar matricula nas disciplinas da UnB do campus do Gama, onde será possível ver avaliações de matérias e professores.
 
 <p align="center">
+Segue o link da documentação do projeto
     <a href="https://fga-eps-mds.github.io/CollegeFlow/"><strong>College Flow Docs</strong></a> <img src=".github/images/logo-college-flow-background.png" width="20" height="20" />
 </p>
+<br>
+<br>
 
 ## 💻 Tecnologias utilizadas
 
@@ -42,18 +47,26 @@ O projeto tem como intuito de ajudar aos estudantes ao realizar matricula nas di
         <img width="70" height="70" src="https://github.com/devicons/devicon/blob/master/icons/mongodb/mongodb-original.svg" />
     </a>
 </p>
+<br>
+<br>
 
-## 📜Como Contribuir
+## 📜 Como Contribuir
 
 Para contribuir com o projeto, é extremamente importante e recomendado que siga o [Guia de como contribuir com o projeto](https://fga-eps-mds.github.io/CollegeFlow/#/contributing) onde será encontrado tudo necessario para se contribuir, como templates, codigo de conduta e politicas.  
 E tambem deverá estar atento ao nosso [Codigo de Conduta](https://fga-eps-mds.github.io/CollegeFlow/#/code_of_conduct).
+<br>
+<br>
 
-# Como rodar o projeto
+## 🧑‍💼💻 Como rodar o projeto
 
 Essas são as instruções de como rodar o front end, consulte também as instruções do [back-end](https://github.com/fga-eps-mds/CollegeFlow-Backend)
 Consulte também as instruções do backend. Consideramos que você já leu o readme do repositório do backend e quer buildar o app.
-
+<br>
+<br>
+<br>
 1 - Tenha o flutter instalado na [versão 3.0.4](https://docs.flutter.dev/development/tools/sdk/releases)
+<br>
+<br>
 2 - Clone o repositório
 
 ```
@@ -68,14 +81,14 @@ cd college_flow_app
 
 4 - Execute os seguintes comandos:
 
+- 4.1 - Para instalar as dependências, rode o seguinte comando
+
 ```
 flutter pub get
 ```
 
-\*para instalar as dependências
+- 4.2 - Após instalar, utilize para rodar a aplicação
 
 ```
 flutter run
 ```
-
-\*para rodar a aplicação
