@@ -22,7 +22,7 @@
 
 ## <img src=".github/images/logo-college-flow-background.png" width="30" height="30" /> Sobre o projeto
 
-O projeto tem como intuito de ajudar aos estudantes ao realizar matricula nas disciplinas da UnB do campus do Gama, onde será possível ver avaliações de matérias e professores.
+O projeto tem o intuito de ajudar os estudantes da UnB do campus do Gama a realizar matricula nas suas disciplinas, onde será possível ver avaliações de disciplinas e seus professores para que possam tomar a melhor decisão com base na opinião de outros alunos.
 
 <p align="center">
 Segue o link da documentação do projeto
@@ -52,15 +52,14 @@ Segue o link da documentação do projeto
 
 ## 📜 Como Contribuir
 
-Para contribuir com o projeto, é extremamente importante e recomendado que siga o [Guia de como contribuir com o projeto](https://fga-eps-mds.github.io/CollegeFlow/#/contributing) onde será encontrado tudo necessario para se contribuir, como templates, codigo de conduta e politicas.  
-E tambem deverá estar atento ao nosso [Codigo de Conduta](https://fga-eps-mds.github.io/CollegeFlow/#/code_of_conduct).
+Para contribuir com o projeto, é extremamente importante e recomendado que siga o [Guia de como contribuir com o projeto](https://fga-eps-mds.github.io/CollegeFlow/#/contributing) no qual será encontrado tudo necessario para se contribuir, como templates, [Código de Conduta](https://fga-eps-mds.github.io/CollegeFlow/#/code_of_conduct) e [Politicas](https://fga-eps-mds.github.io/CollegeFlow/#/policies).  
 <br>
 <br>
 
 ## 🧑‍💼💻 Como rodar o projeto
 
 Essas são as instruções de como rodar o front end, consulte também as instruções do [back-end](https://github.com/fga-eps-mds/CollegeFlow-Backend)
-Consulte também as instruções do backend. Consideramos que você já leu o readme do repositório do backend e quer buildar o app.
+Considerando que você já leu o README do repositório do backend e quer buildar o app siga os passos abaixo.
 <br>
 <br>
 <br>
