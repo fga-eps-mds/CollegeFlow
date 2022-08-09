@@ -53,4 +53,4 @@ Segundo a equipe a qualidade entregue foi de 4,7 considerando a escala de likert
 
 # Quadro de Conhecimento
 
-![](../img/gerenciamento/sprint2.jpg)
+![Quadro de Conhecimento](../img/gerenciamento/QuadroConhecimento/QuadroConhecimento2.png)
