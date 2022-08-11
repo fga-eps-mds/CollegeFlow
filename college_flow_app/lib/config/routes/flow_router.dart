@@ -1,6 +1,7 @@
 import 'package:college_flow_app/config/routes/flow_routes.dart';
 import 'package:college_flow_app/presentation/login/login_pages.dart';
 import 'package:college_flow_app/presentation/register/admin/register_adm.dart';
+import 'package:college_flow_app/presentation/register/student/listcourses_student.dart';
 import 'package:college_flow_app/presentation/register/teacher/register_teacher.dart';
 import 'package:college_flow_app/presentation/walkthrough/walkthrough_page.dart';
 import 'package:college_flow_app/utils/helpers/navigator_helper.dart';
@@ -20,6 +21,9 @@ abstract class FlowRouter {
         break;
       case FlowRoutes.registerStudent:
         page = const RegisterStudent();
+        break;
+      case FlowRoutes.listCoursesStudent:
+        page = const ListCoursesStudent();
         break;
       case FlowRoutes.registerAdmin:
         page = const RegisterAdministrator();
