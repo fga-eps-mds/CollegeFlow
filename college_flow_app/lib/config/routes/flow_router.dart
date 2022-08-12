@@ -1,5 +1,5 @@
 import 'package:college_flow_app/config/routes/flow_routes.dart';
-import 'package:college_flow_app/features/authentication/presentation/login/login_pages.dart';
+import 'package:college_flow_app/features/authentication/presentation/login/login_page.dart';
 import 'package:college_flow_app/features/authentication/presentation/register/admin/register_adm.dart';
 import 'package:college_flow_app/features/authentication/presentation/register/register_geral.dart';
 import 'package:college_flow_app/features/authentication/presentation/register/register_page.dart';
