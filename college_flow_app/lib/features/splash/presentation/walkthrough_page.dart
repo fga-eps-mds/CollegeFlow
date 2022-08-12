@@ -1,9 +1,9 @@
 import 'package:college_flow_app/config/constants/assets_contants.dart';
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
-import 'package:college_flow_app/presentation/login/login_pages.dart';
-import 'package:college_flow_app/presentation/walkthrough/widgets/walkthrough_base_page.dart';
-import 'package:college_flow_app/presentation/widgets/buttons/flow_button.dart';
-import 'package:college_flow_app/presentation/widgets/gap.dart';
+import 'package:college_flow_app/config/routes/flow_routes.dart';
+import 'package:college_flow_app/features/splash/presentation/widgets/walkthrough_base_page.dart';
+import 'package:college_flow_app/shared/widgets/buttons/flow_button.dart';
+import 'package:college_flow_app/shared/widgets/gap.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -70,10 +70,8 @@ class WalkthroughPageState extends State<WalkthroughPage> {
                 label: "Vamos Começar",
                 //TODO(Mauricio-Machado): When user clicks redirect to login page
                 onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) {
-                      return const LoginPage();
-                    }),
+                  Navigator.of(context).pushNamed(
+                    FlowRoutes.loginPage,
                   );
                 },
               ),

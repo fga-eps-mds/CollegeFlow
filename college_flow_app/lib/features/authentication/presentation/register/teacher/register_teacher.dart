@@ -1,10 +1,9 @@
 import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
-import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
-import 'package:college_flow_app/presentation/register/admin/register_adm.dart';
-import 'package:college_flow_app/presentation/register/widgets/logo_bar.dart';
-import 'package:college_flow_app/presentation/widgets/buttons/flow_button.dart';
-import 'package:college_flow_app/presentation/widgets/checkboxlist_material.dart';
-import 'package:college_flow_app/presentation/widgets/gap.dart';
+import 'package:college_flow_app/config/routes/flow_routes.dart';
+import 'package:college_flow_app/features/authentication/presentation/register/widgets/logo_bar.dart';
+import 'package:college_flow_app/shared/widgets/buttons/flow_button.dart';
+import 'package:college_flow_app/shared/widgets/checkboxlist_material.dart';
+import 'package:college_flow_app/shared/widgets/gap.dart';
 import 'package:flutter/material.dart';
 
 class RegisterTeacher extends StatefulWidget {
@@ -72,10 +71,8 @@ class _RegisterTeacherState extends State<RegisterTeacher> {
             FlowButton(
               label: "Continue",
               onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) {
-                    return const RegisterAdministrator();
-                  }),
+                Navigator.of(context).pushNamed(
+                  FlowRoutes.registerAdmin,
                 );
               },
             ),

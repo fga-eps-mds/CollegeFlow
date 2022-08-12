@@ -1,10 +1,8 @@
 import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
-import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
-import 'package:college_flow_app/presentation/register/widgets/logo_bar.dart';
-
-import 'package:college_flow_app/presentation/widgets/buttons/flow_button.dart';
-import 'package:college_flow_app/presentation/widgets/gap.dart';
-import 'package:college_flow_app/presentation/widgets/textfield/flow_text_field.dart';
+import 'package:college_flow_app/features/authentication/presentation/register/widgets/logo_bar.dart';
+import 'package:college_flow_app/shared/widgets/buttons/flow_button.dart';
+import 'package:college_flow_app/shared/widgets/gap.dart';
+import 'package:college_flow_app/shared/widgets/textfield/flow_text_field.dart';
 import 'package:flutter/material.dart';
 
 class RegisterAdministrator extends StatefulWidget {

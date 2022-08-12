@@ -1,7 +1,7 @@
 import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
 import 'package:college_flow_app/config/design_system/data/icons/sizes.dart';
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
-import 'package:college_flow_app/presentation/widgets/flow_icon.dart';
+import 'package:college_flow_app/shared/widgets/flow_icon.dart';
 import 'package:flutter/material.dart';
 
 class FlowIconButton extends StatelessWidget {

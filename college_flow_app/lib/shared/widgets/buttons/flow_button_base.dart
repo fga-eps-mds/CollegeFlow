@@ -1,4 +1,4 @@
-import 'package:college_flow_app/presentation/widgets/flow_icon.dart';
+import 'package:college_flow_app/shared/widgets/flow_icon.dart';
 import 'package:flutter/material.dart';
 
 abstract class FlowButtonBase extends StatefulWidget {
