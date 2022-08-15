@@ -1,6 +1,4 @@
 import 'package:college_flow_app/presentation/register/widgets/user_type_options.dart';
-import 'package:college_flow_app/presentation/widgets/flow_icon.dart';
-import 'package:college_flow_app/presentation/widgets/flow_icon_button.dart';
 import 'package:college_flow_app/presentation/widgets/gap.dart';
 import 'package:college_flow_app/presentation/register/widgets/logo_bar.dart';
 import 'package:flutter/material.dart';

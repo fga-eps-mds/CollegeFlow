@@ -1,5 +1,4 @@
 import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
-import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
 import 'package:college_flow_app/presentation/register/widgets/logo_bar.dart';
 
 import 'package:college_flow_app/presentation/widgets/buttons/flow_button.dart';
