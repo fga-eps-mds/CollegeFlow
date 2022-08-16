@@ -31,16 +31,16 @@ Dívidas técnicas repontuadas
 
 # Retropectiva
 
-<img src="">
+<img src="../img/gerenciamento/Retrospectiva/Retrospectiva05.png">
 
 # Review
 
-- Objetivo Alcançado?
+- Objetivo Alcançado? O objetivo da sprint foi alcançado, onde tiveram algumas pequenas dívidas técnicas
 
-- Estimativa correta?
+- Estimativa correta? Teve uma quantidade boa de pontos para a sprint, de forma que nao deixou ninguem sobrecarregado
 
-- Tarefas bem distribuidas?
+- Tarefas bem distribuidas? Sim, todos do grupo obtiveram alguma atividade para realizar
 
 # Quadro de Conhecimento
 
-<img src="../img/gerenciamento/QuadroConhecimento5.png">
+<img src="../img/gerenciamento/QuadroConhecimento/QuadroConhecimento5.png">
