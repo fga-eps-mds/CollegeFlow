@@ -27,17 +27,15 @@ Dívidas técnicas repontuadas
 
 # Retropectiva
 
-<img src="">
-
-- Pontos de melhorias: Melhorar a comunicação do time como um todo
+<img src="../img/gerenciamento/Retrospectiva/Retrospectiva07.png">
 
 # Review
 
-- Objetivo Alcançado?
+- Objetivo Alcançado? Foi alcançcado, porém teve pequenos débitos técnicos referente a task anterior de back-end
 
-- Estimativa correta?
+- Estimativa correta? Exigiu muito dos membros, sendo uma estimativa de pontos bastante elevada
 
-- Tarefas bem distribuidas?
+- Tarefas bem distribuidas? Sim, todos os membros estão com pelo menos uma tarefa alocada
 
 # Quadro de Conhecimento
 

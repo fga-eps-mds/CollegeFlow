@@ -30,6 +30,8 @@ Dívidas técnicas repontuadas
 
 <img src="../img/gerenciamento/Retrospectiva/Retrospectiva06.png">
 
+- Pontos de melhorias: Melhorar a comunicação do time como um todo
+
 # Review
 
 - Objetivo Alcançado? Mesmo não tendo realizado a implementação do código durante essa sprint, o objetivo de organizar o repositorio foi alcançado.
