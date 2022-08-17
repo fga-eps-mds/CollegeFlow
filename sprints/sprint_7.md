@@ -1,4 +1,4 @@
-# Planning da Sprint 6
+# Planning da Sprint 7
 
 - Período : 09/08 a 15/08
 
