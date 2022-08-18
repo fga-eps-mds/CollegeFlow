@@ -20,16 +20,16 @@ class _RegisterGeralState extends State<RegisterGeral> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: primary,
+        backgroundColor: colorPrimary,
       ),
-      backgroundColor: flowColorWhite,
+      backgroundColor: colorWhite,
       body: SafeArea(
         child: Column(
           children: [
             Container(
               height: 124,
               width: double.infinity,
-              decoration: const BoxDecoration(color: primary),
+              decoration: const BoxDecoration(color: colorPrimary),
               padding: const EdgeInsets.symmetric(
                 horizontal: spacingXXXS,
               ),
@@ -43,7 +43,7 @@ class _RegisterGeralState extends State<RegisterGeral> {
                   Text(
                     'Faça seu Cadastro para ter acesso ao Aplicativo!',
                     style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                          color: white,
+                          color: colorWhite,
                         ),
                   ),
                 ],
@@ -55,14 +55,14 @@ class _RegisterGeralState extends State<RegisterGeral> {
             Text(
               'Adicione uma foto de perfil',
               style: Theme.of(context).textTheme.labelLarge?.copyWith(
-                    color: textColor,
+                    color: colorBlack,
                   ),
             ),
             const VSpacer.xs(),
             Text(
               'Nome',
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                    color: textColor,
+                    color: colorBlack,
                   ),
             ),
             const VSpacer.nano(),
@@ -74,7 +74,7 @@ class _RegisterGeralState extends State<RegisterGeral> {
             Text(
               'Email Institucional',
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                    color: textColor,
+                    color: colorBlack,
                   ),
             ),
             const VSpacer.nano(),
@@ -86,7 +86,7 @@ class _RegisterGeralState extends State<RegisterGeral> {
             Text(
               'Celular',
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                    color: textColor,
+                    color: colorBlack,
                   ),
             ),
             const VSpacer.nano(),
@@ -98,7 +98,7 @@ class _RegisterGeralState extends State<RegisterGeral> {
             Text(
               'Data de Naceimento',
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                    color: textColor,
+                    color: colorBlack,
                   ),
             ),
             const VSpacer.nano(),
@@ -110,7 +110,7 @@ class _RegisterGeralState extends State<RegisterGeral> {
             Text(
               'Senha',
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                    color: textColor,
+                    color: colorBlack,
                   ),
             ),
             const VSpacer.nano(),

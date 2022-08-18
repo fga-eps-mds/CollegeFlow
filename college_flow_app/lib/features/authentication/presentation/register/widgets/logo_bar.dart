@@ -24,7 +24,7 @@ class LogoBar extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: spacingXXS),
       width: double.maxFinite,
-      color: primary,
+      color: colorPrimary,
       child: Column(
         children: [
           const VSpacer.lg(),
@@ -42,7 +42,7 @@ class LogoBar extends StatelessWidget {
             Text(
               description!,
               style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                    color: white,
+                    color: colorWhite,
                   ),
               textAlign: textAlign,
             ),

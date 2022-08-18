@@ -18,7 +18,7 @@ class _RegisterAdministratorState extends State<RegisterAdministrator> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: flowColorWhite,
+      backgroundColor: colorWhite,
       body: SafeArea(
         top: false,
         child: Column(
@@ -32,14 +32,14 @@ class _RegisterAdministratorState extends State<RegisterAdministrator> {
               'Insira Abaixo o seu Código de Administrador',
               textAlign: TextAlign.center,
               style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                    color: textColor,
+                    color: colorBlack,
                   ),
             ),
             const VSpacer.xs(),
             Text(
               'Código',
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                    color: textColor,
+                    color: colorBlack,
                   ),
             ),
             const VSpacer.nano(),

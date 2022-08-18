@@ -27,10 +27,10 @@ class UserTypeButton extends StatelessWidget {
         Container(
           padding: const EdgeInsets.all(spacingNano),
           decoration: BoxDecoration(
-              color: primary,
+              color: colorPrimary,
               borderRadius: BorderRadius.circular(objectStyleBorderRadiusPill),
               border: Border.all(
-                color: secondary,
+                color: colorSecondary,
                 width: spacingAtom,
               )),
           child: FlowIconButton(

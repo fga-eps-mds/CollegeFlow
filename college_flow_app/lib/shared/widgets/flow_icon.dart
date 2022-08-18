@@ -44,56 +44,56 @@ class FlowIcon extends StatelessWidget {
   const FlowIcon.chevronLeft({
     Key? key,
     this.size = iconSizeDefault,
-    this.color = flowColorGrey,
+    this.color = colorBlack,
   })  : icon = FlowIconData.chevronLeft,
         super(key: key);
 
   const FlowIcon.add({
     Key? key,
     this.size = iconSizeDefault,
-    this.color = flowColorGrey,
+    this.color = colorBlack,
   })  : icon = FlowIconData.add,
         super(key: key);
 
   const FlowIcon.close({
     Key? key,
     this.size = iconSizeDefault,
-    this.color = flowColorGrey,
+    this.color = colorBlack,
   })  : icon = FlowIconData.close,
         super(key: key);
 
   const FlowIcon.delete({
     Key? key,
     this.size = iconSizeDefault,
-    this.color = flowColorGrey,
+    this.color = colorBlack,
   })  : icon = FlowIconData.delete,
         super(key: key);
 
   const FlowIcon.home({
     Key? key,
     this.size = iconSizeDefault,
-    this.color = flowColorGrey,
+    this.color = colorBlack,
   })  : icon = FlowIconData.home,
         super(key: key);
 
   const FlowIcon.admin({
     Key? key,
     this.size = iconSizeDefault,
-    this.color = secondary,
+    this.color = colorSecondary,
   })  : icon = FlowIconData.registerAdmin,
         super(key: key);
 
   const FlowIcon.professor({
     Key? key,
     this.size = iconSizeDefault,
-    this.color = secondary,
+    this.color = colorSecondary,
   })  : icon = FlowIconData.registerProfessor,
         super(key: key);
 
   const FlowIcon.student({
     Key? key,
     this.size = iconSizeDefault,
-    this.color = secondary,
+    this.color = colorSecondary,
   })  : icon = FlowIconData.registerStudent,
         super(key: key);
 }
@@ -123,7 +123,7 @@ class _FlowIcon extends StatelessWidget {
       return Icon(
         icon!,
         size: size,
-        color: color ?? flowColorGrey,
+        color: color ?? colorBlack,
       );
     }
 

@@ -20,7 +20,7 @@ class _RegisterTeacherState extends State<RegisterTeacher> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: flowColorWhite,
+      backgroundColor: colorWhite,
       body: SafeArea(
         top: false,
         child: Column(
@@ -34,7 +34,7 @@ class _RegisterTeacherState extends State<RegisterTeacher> {
               'Marque as diciplinas que você ministra aulas',
               textAlign: TextAlign.center,
               style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                    color: textColor,
+                    color: colorBlack,
                   ),
             ),
             const VSpacer.xxs(),
@@ -42,7 +42,7 @@ class _RegisterTeacherState extends State<RegisterTeacher> {
               child: const Icon(
                 Icons.search,
                 size: 36,
-                color: secondary,
+                color: colorSecondary,
               ),
               onTap: () {
                 //action code when clicked
@@ -53,7 +53,7 @@ class _RegisterTeacherState extends State<RegisterTeacher> {
               'Nome         Semestre',
               textAlign: TextAlign.center,
               style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                    color: textColor,
+                    color: colorBlack,
                   ),
             ),
             const VSpacer.nano(),

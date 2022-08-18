@@ -16,7 +16,7 @@ class _RegisterStudentState extends State<RegisterStudent> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: flowColorWhite,
+      backgroundColor: colorWhite,
       body: SafeArea(
         top: false,
         child: Column(
@@ -29,42 +29,42 @@ class _RegisterStudentState extends State<RegisterStudent> {
             Text(
               'Matrícula',
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                    color: textColor,
+                    color: colorBlack,
                   ),
             ),
             const VSpacer.nano(),
             const FlowTextField(
               label: "E-mail",
               placeholder: 'Digite sua Matrícula',
-              borderColor: secondary,
+              borderColor: colorSecondary,
               isDark: true,
             ),
             const VSpacer.xxxs(),
             Text(
               'Curso',
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                    color: textColor,
+                    color: colorBlack,
                   ),
             ),
             const VSpacer.nano(),
             const FlowTextField(
               label: "Curso",
               placeholder: 'selecione seu curso',
-              borderColor: secondary,
+              borderColor: colorSecondary,
               isDark: true,
             ),
             const VSpacer.xxxs(),
             Text(
               'Semestre',
               style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                    color: textColor,
+                    color: colorBlack,
                   ),
             ),
             const VSpacer.nano(),
             const FlowTextField(
               label: "Semestre",
               placeholder: 'Digite seu semestre',
-              borderColor: secondary,
+              borderColor: colorSecondary,
               isDark: true,
             ),
             const VSpacer.xxs(),

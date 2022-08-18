@@ -17,7 +17,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: primary,
+      backgroundColor: colorPrimary,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(
@@ -34,7 +34,7 @@ class _LoginPageState extends State<LoginPage> {
               Text(
                 "Entre com a sua conta",
                 style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                      color: white,
+                      color: colorWhite,
                     ),
               ),
               const VSpacer.xxs(),
@@ -60,7 +60,7 @@ class _LoginPageState extends State<LoginPage> {
                   Text(
                     'Ainda não tem uma conta? Faça seu',
                     style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                          color: white,
+                          color: colorWhite,
                         ),
                   ),
                   const VSpacer.quarck(),
@@ -71,7 +71,7 @@ class _LoginPageState extends State<LoginPage> {
                     child: Text(
                       "Cadastro",
                       style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                            color: secondary,
+                            color: colorSecondary,
                           ),
                     ),
                   ),
