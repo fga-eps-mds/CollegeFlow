@@ -41,34 +41,6 @@ class FlowIcon extends StatelessWidget {
 
   // -- INTERFACE -- //
 
-  const FlowIcon.chevronLeft({
-    Key? key,
-    this.size = iconSizeDefault,
-    this.color = flowColorGrey,
-  })  : icon = FlowIconData.chevronLeft,
-        super(key: key);
-
-  const FlowIcon.add({
-    Key? key,
-    this.size = iconSizeDefault,
-    this.color = flowColorGrey,
-  })  : icon = FlowIconData.add,
-        super(key: key);
-
-  const FlowIcon.close({
-    Key? key,
-    this.size = iconSizeDefault,
-    this.color = flowColorGrey,
-  })  : icon = FlowIconData.close,
-        super(key: key);
-
-  const FlowIcon.delete({
-    Key? key,
-    this.size = iconSizeDefault,
-    this.color = flowColorGrey,
-  })  : icon = FlowIconData.delete,
-        super(key: key);
-
   const FlowIcon.home({
     Key? key,
     this.size = iconSizeDefault,
@@ -80,21 +52,147 @@ class FlowIcon extends StatelessWidget {
     Key? key,
     this.size = iconSizeDefault,
     this.color = secondary,
-  })  : icon = FlowIconData.registerAdmin,
+  })  : icon = FlowIconData.shield,
         super(key: key);
 
   const FlowIcon.professor({
     Key? key,
     this.size = iconSizeDefault,
     this.color = secondary,
-  })  : icon = FlowIconData.registerProfessor,
+  })  : icon = FlowIconData.teacher,
         super(key: key);
 
   const FlowIcon.student({
     Key? key,
     this.size = iconSizeDefault,
     this.color = secondary,
-  })  : icon = FlowIconData.registerStudent,
+  })  : icon = FlowIconData.studentHat,
+        super(key: key);
+
+  const FlowIcon.arrowLeft({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = secondary,
+  })  : icon = FlowIconData.arrowLeft,
+        super(key: key);
+
+  const FlowIcon.arrowRight({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = secondary,
+  })  : icon = FlowIconData.arrowRight,
+        super(key: key);
+
+  const FlowIcon.settings({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = secondary,
+  })  : icon = FlowIconData.settings,
+        super(key: key);
+
+  const FlowIcon.checkOutlined({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = secondary,
+  })  : icon = FlowIconData.checkOutlined,
+        super(key: key);
+
+  const FlowIcon.checkFilled({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = secondary,
+  })  : icon = FlowIconData.checkFilled,
+        super(key: key);
+
+  const FlowIcon.chevronLeft({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = secondary,
+  })  : icon = FlowIconData.chevronLeft,
+        super(key: key);
+
+  const FlowIcon.chevronRight({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = secondary,
+  })  : icon = FlowIconData.chevronRight,
+        super(key: key);
+
+  const FlowIcon.search({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = secondary,
+  })  : icon = FlowIconData.search,
+        super(key: key);
+
+  const FlowIcon.filter({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = secondary,
+  })  : icon = FlowIconData.filter,
+        super(key: key);
+
+  const FlowIcon.likeFilled({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = secondary,
+  })  : icon = FlowIconData.likeFilled,
+        super(key: key);
+
+  const FlowIcon.likeOutlined({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = secondary,
+  })  : icon = FlowIconData.likeOutlined,
+        super(key: key);
+
+  const FlowIcon.star({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = secondary,
+  })  : icon = FlowIconData.star,
+        super(key: key);
+
+  const FlowIcon.book({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = secondary,
+  })  : icon = FlowIconData.book,
+        super(key: key);
+
+  const FlowIcon.rank({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = secondary,
+  })  : icon = FlowIconData.rank,
+        super(key: key);
+
+  const FlowIcon.copyLink({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = secondary,
+  })  : icon = FlowIconData.copyLink,
+        super(key: key);
+
+  const FlowIcon.user({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = secondary,
+  })  : icon = FlowIconData.user,
+        super(key: key);
+
+  const FlowIcon.editComment({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = secondary,
+  })  : icon = FlowIconData.editComment,
+        super(key: key);
+
+  const FlowIcon.courses({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = secondary,
+  })  : icon = FlowIconData.courses,
         super(key: key);
 }
 
