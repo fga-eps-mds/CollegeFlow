@@ -1,16 +1,21 @@
 import 'package:flutter/material.dart';
 
-//TODO(Mauricio-Machado): Insert colors from guideStyle
+const colorLightPrimary = Color.fromARGB(255, 107, 144, 247);
+const colorPrimary = Color.fromARGB(255, 44, 97, 244);
+const colorDarkPrimary = Color.fromARGB(255, 35, 78, 195);
 
-const flowColorGrey = Color.fromARGB(255, 174, 174, 174);
-const flowColorWhite = Color.fromARGB(255, 255, 255, 255);
-const flowColorBlack = Color.fromARGB(255, 0, 0, 0);
-const flowColorGreen = Color.fromRGBO(76, 175, 80, 1);
-const flowColorRed = Color.fromRGBO(244, 67, 54, 1);
-const flowColorRed10 = Color.fromARGB(255, 242, 114, 105);
-const textColor = Color.fromARGB(255, 28, 27, 31);
-const white = Colors.white;
-const whiteLight = Color.fromARGB(255, 202, 202, 202);
-const secondary = Color.fromARGB(255, 248, 150, 39);
-const primaryLight = Color.fromRGBO(107, 144, 247, 1);
-const primary = Color.fromARGB(255, 44, 97, 244);
+const colorLightSecondary = Color.fromARGB(255, 249, 171, 82);
+const colorSecondary = Color.fromARGB(255, 248, 150, 39);
+const colorDarkSecondary = Color.fromARGB(255, 198, 120, 31);
+
+const colorLightWhite = Color.fromARGB(255, 255, 255, 255);
+const colorWhite = Color.fromARGB(255, 246, 246, 246);
+const colorDarkWhite = Color.fromARGB(255, 207, 207, 207);
+
+const colorLightBlack = Color.fromARGB(255, 89, 89, 89);
+const colorBlack = Color.fromARGB(255, 48, 48, 48);
+const colorDarkBlack = Color.fromARGB(255, 0, 0, 0);
+
+const colorLightError = Color.fromARGB(255, 250, 104, 104);
+const colorError = Color.fromARGB(255, 248, 39, 39);
+const colorDarkError = Color.fromARGB(255, 198, 31, 31);
