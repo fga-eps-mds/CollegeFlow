@@ -1,4 +1,5 @@
 import 'package:college_flow_app/config/constants/assets_contants.dart';
+import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
 import 'package:college_flow_app/config/routes/flow_routes.dart';
 import 'package:college_flow_app/features/splash/presentation/widgets/walkthrough_base_page.dart';
@@ -63,8 +64,8 @@ class WalkthroughPageState extends State<WalkthroughPage> {
                         spacing: spacingXXXS,
                         dotHeight: spacingNano,
                         dotWidth: spacingNano,
-                        dotColor: Color(0xff234EC3),
-                        activeDotColor: Colors.white,
+                        dotColor: colorDarkPrimary,
+                        activeDotColor: colorWhite,
                       ),
                       onDotClicked: togglePage,
                     ),
