@@ -27,7 +27,7 @@ Dívidas técnicas repontuadas
 
 # Retropectiva
 
-<img src="../img/gerenciamento/Retrospectiva/Retrospectiva07.png">
+![Retrospectiva](../img/gerenciamento/Retrospectiva/Retrospectiva07.png)
 
 # Review
 
@@ -39,4 +39,4 @@ Dívidas técnicas repontuadas
 
 # Quadro de Conhecimento
 
-<img src="../img/gerenciamento/QuadroConhecimento/QuadroConhecimento7.png">
+![Quadro de Conhecimento](../img/gerenciamento/QuadroConhecimento/QuadroConhecimento7.png)

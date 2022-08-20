@@ -6,14 +6,10 @@
 
 ## Issues
 
-| ID  | Descrição                                  | Estimativa | Label |
-| --- | ------------------------------------------ | ---------- | ----- |
-| #4  | Criar o Termo de Abertura do Projeto (TAP) | 2          | EPS   |
-| #9  | Definir processo do projeto                | 5          | EPS   |
-| #15 | Criar documento de visão                   | 13         | MDS   |
-| #18 | Criar protótipo de baixa fidelidade        | 5          | MDS   |
-| #19 | Criar a Estrutura Analítica do Projeto     | 8          | EPS   |
-| #20 | Definir as Tecnologias da Arquitetura      | 8          | EPS   |
+| ID  | Descrição                             | Estimativa |
+| --- | ------------------------------------- | ---------- |
+| #18 | Criar protótipo de baixa fidelidade   | 5          |
+| #20 | Definir as Tecnologias da Arquitetura | 8          |
 
 - Total de pontos: 41pts.
 - Total de pontos entregues: 31pts.
@@ -25,10 +21,6 @@
 - Estimativa correta? A estimativa das issues não foram condigentes com seu real esforço. Em suma estimamos menos esforço do que foi necessário.
 
 - Tarefas bem distribuidas? Não. As tarefas não foram bem distribuidas em MDS o que gerou um sobrecargo em alguns membros.
-
-## Qualidade do Trabalho Entregue
-
-Segundo a equipe a qualidade entregue foi de 3,67 considerando a escala de likert com os valores de 1 a 5.
 
 # Retrospectiva
 

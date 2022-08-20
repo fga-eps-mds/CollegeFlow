@@ -28,7 +28,7 @@ Dívidas técnicas repontuadas
 
 # Retropectiva
 
-<img src="../img/gerenciamento/Retrospectiva/Retrospectiva06.png">
+![Retrospectiva](../img/gerenciamento/Retrospectiva/Retrospectiva06.png)
 
 - Pontos de melhorias: Melhorar a comunicação do time como um todo
 
@@ -42,4 +42,4 @@ Dívidas técnicas repontuadas
 
 # Quadro de Conhecimento
 
-<img src="../img/gerenciamento/QuadroConhecimento/QuadroConhecimento6.png">
+![Quadro de conhecimento](../img/gerenciamento/QuadroConhecimento/QuadroConhecimento6.png)
