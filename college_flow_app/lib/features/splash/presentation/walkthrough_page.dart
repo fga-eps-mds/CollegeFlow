@@ -67,7 +67,7 @@ class WalkthroughPageState extends State<WalkthroughPage> {
                         dotColor: colorDarkPrimary,
                         activeDotColor: colorWhite,
                       ),
-                      onDotClicked: togglePage,
+                      onDotClicked: _togglePage,
                     ),
                     FlowIconButton(
                       icon: const FlowIcon.arrowRight(),
@@ -84,7 +84,7 @@ class WalkthroughPageState extends State<WalkthroughPage> {
     );
   }
 
-  void togglePage(int page) {
+  void _togglePage(int page) {
     _pageViewController.animateToPage(
       page,
       duration: const Duration(milliseconds: 200),
