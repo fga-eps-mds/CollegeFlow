@@ -31,7 +31,7 @@ class CheckboxList extends StatelessWidget {
           children: <Widget>[
             Expanded(child: Text(label)),
             Checkbox(
-              activeColor: secondary,
+              activeColor: colorSecondary,
               value: value,
               onChanged: (bool? newValue) {
                 onChanged(newValue!);

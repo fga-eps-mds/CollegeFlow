@@ -11,7 +11,7 @@ class FlowTextField extends StatefulWidget {
     this.onChanged,
     this.placeholder,
     this.controller,
-    this.borderColor = white,
+    this.borderColor = colorWhite,
     this.isDark = false,
   }) : super(key: key);
 
@@ -30,7 +30,9 @@ class FlowTextField extends StatefulWidget {
 
 class _FlowTextFieldState extends State<FlowTextField> {
   final _baseBorder = const OutlineInputBorder(
-    borderSide: BorderSide(color: white),
+    borderSide: BorderSide(
+      color: colorWhite,
+    ),
   );
 
   late final TextEditingController _textEditingController;
@@ -82,7 +84,7 @@ class _FlowTextFieldState extends State<FlowTextField> {
               child: Text(
                 widget.label,
                 style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                      color: widget.isDark ? textColor : white,
+                      color: widget.isDark ? colorBlack : colorWhite,
                     ),
               ),
             ),
