@@ -46,6 +46,7 @@ class WalkthroughPageState extends State<WalkthroughPage> {
                           "Saiba o que os alunos estão achando de outras disciplinas em tempo real!",
                       imgPath: walkthrough02,
                     ),
+                    // TODO (lucas Macedo): Make third swipe
                   ],
                 ),
               ),
@@ -55,6 +56,7 @@ class WalkthroughPageState extends State<WalkthroughPage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     SmoothPageIndicator(
+                      // TODO (lucas Macedo): Make third swipe
                       controller: _pageViewController,
                       count: 2,
                       effect: const SwapEffect(
@@ -66,7 +68,11 @@ class WalkthroughPageState extends State<WalkthroughPage> {
                       ),
                       onDotClicked: togglePage,
                     ),
-                    FlowIconButton(icon: FlowIcon.arrowRight(), onTap: () {}),
+                    FlowIconButton(
+                      icon: const FlowIcon.arrowRight(),
+                      // TODO (lucas Macedo): Navigate on icon button
+                      onTap: () {},
+                    ),
                   ],
                 ),
               ),
