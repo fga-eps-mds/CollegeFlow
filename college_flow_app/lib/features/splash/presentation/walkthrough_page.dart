@@ -1,8 +1,11 @@
 import 'package:college_flow_app/config/constants/assets_contants.dart';
+import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
 import 'package:college_flow_app/config/routes/flow_routes.dart';
 import 'package:college_flow_app/features/splash/presentation/widgets/walkthrough_base_page.dart';
 import 'package:college_flow_app/shared/widgets/buttons/flow_button.dart';
+import 'package:college_flow_app/shared/widgets/flow_icon.dart';
+import 'package:college_flow_app/shared/widgets/flow_icon_button.dart';
 import 'package:college_flow_app/shared/widgets/gap.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -44,32 +47,35 @@ class WalkthroughPageState extends State<WalkthroughPage> {
                           "Saiba o que os alunos estão achando de outras disciplinas em tempo real!",
                       imgPath: walkthrough02,
                     ),
-                    WalkthroughBasePage(
-                      title: "Ranking",
-                      description:
-                          "Veja quais são as melhores disciplinas de acordo com as notas dadas pelos alunos que cursaram!",
-                      imgPath: walkthrough03,
-                    ),
+                    // TODO (lucas Macedo): Make third swipe
                   ],
                 ),
               ),
-              SmoothPageIndicator(
-                controller: _pageViewController,
-                count: 3,
-                effect: const SwapEffect(
-                  spacing: spacingXXXS,
-                  dotHeight: spacingNano,
-                  dotWidth: spacingNano,
-                  dotColor: Color(0xff234EC3),
-                  activeDotColor: Colors.white,
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 24),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    SmoothPageIndicator(
+                      // TODO (lucas Macedo): Make third swipe
+                      controller: _pageViewController,
+                      count: 2,
+                      effect: const SwapEffect(
+                        spacing: spacingXXXS,
+                        dotHeight: spacingNano,
+                        dotWidth: spacingNano,
+                        dotColor: colorDarkPrimary,
+                        activeDotColor: colorWhite,
+                      ),
+                      onDotClicked: _togglePage,
+                    ),
+                    FlowIconButton(
+                      icon: const FlowIcon.arrowRight(),
+                      // TODO (lucas Macedo): Navigate on icon button
+                      onTap: () {},
+                    ),
+                  ],
                 ),
-                onDotClicked: togglePage,
-              ),
-              const VSpacer.xxxs(),
-              FlowButton(
-                label: "Vamos Começar",
-                //TODO(Mauricio-Machado): Add flow navigation
-                onTap: () {},
               ),
             ],
           ),
@@ -78,7 +84,7 @@ class WalkthroughPageState extends State<WalkthroughPage> {
     );
   }
 
-  void togglePage(int page) {
+  void _togglePage(int page) {
     _pageViewController.animateToPage(
       page,
       duration: const Duration(milliseconds: 200),
