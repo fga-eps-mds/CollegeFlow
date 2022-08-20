@@ -40,7 +40,7 @@ class CheckboxListMaterial extends StatelessWidget {
               ),
             ),
             Checkbox(
-              activeColor: secondary,
+              activeColor: colorSecondary,
               value: value,
               onChanged: (bool? newValue) {
                 onChanged(newValue!);

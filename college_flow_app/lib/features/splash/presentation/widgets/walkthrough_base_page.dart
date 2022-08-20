@@ -29,14 +29,14 @@ class WalkthroughBasePage extends StatelessWidget {
           Text(
             title,
             style: Theme.of(context).textTheme.displayMedium?.copyWith(
-                  color: white,
+                  color: colorWhite,
                 ),
           ),
           const VSpacer.nano(),
           Text(
             description,
             style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                  color: white,
+                  color: colorWhite,
                 ),
           ),
           const VSpacer.lg(),
@@ -48,7 +48,7 @@ class WalkthroughBasePage extends StatelessWidget {
                   width: 30,
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: primaryLight,
+                    color: colorLightPrimary,
                   ),
                 ),
               ),
