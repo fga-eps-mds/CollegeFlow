@@ -56,7 +56,7 @@ class _FlowButtonState extends State<FlowButton> {
           objectStyleBorderRadiusPill,
         ),
         border: Border.all(
-          color: white,
+          color: colorWhite,
           width: spacingAtom,
         ),
       ),
@@ -92,7 +92,7 @@ class _FlowButtonState extends State<FlowButton> {
                       Text(
                         widget.label,
                         style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                              color: white,
+                              color: colorWhite,
                             ),
                       ),
                       const HSpacer.nano(),
@@ -132,16 +132,16 @@ class FlowButtonStyle {
 
   const FlowButtonStyle.primary()
       : backgroundColor = const FlowColorStyle(
-          mainly: secondary,
+          mainly: colorSecondary,
           //TODO(Mauricio-Machado): Add styles to pressed and disabled
-          pressed: flowColorRed,
-          disabled: flowColorRed10,
+          pressed: colorError,
+          disabled: colorLightError,
         ),
         labelColor = const FlowColorStyle(
-          mainly: textColor,
+          mainly: colorBlack,
           //TODO(Mauricio-Machado): Add styles to pressed and disabled
-          pressed: textColor,
-          disabled: textColor,
+          pressed: colorBlack,
+          disabled: colorBlack,
         );
 }
 

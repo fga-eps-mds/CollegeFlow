@@ -41,60 +41,158 @@ class FlowIcon extends StatelessWidget {
 
   // -- INTERFACE -- //
 
-  const FlowIcon.chevronLeft({
-    Key? key,
-    this.size = iconSizeDefault,
-    this.color = flowColorGrey,
-  })  : icon = FlowIconData.chevronLeft,
-        super(key: key);
-
-  const FlowIcon.add({
-    Key? key,
-    this.size = iconSizeDefault,
-    this.color = flowColorGrey,
-  })  : icon = FlowIconData.add,
-        super(key: key);
-
-  const FlowIcon.close({
-    Key? key,
-    this.size = iconSizeDefault,
-    this.color = flowColorGrey,
-  })  : icon = FlowIconData.close,
-        super(key: key);
-
-  const FlowIcon.delete({
-    Key? key,
-    this.size = iconSizeDefault,
-    this.color = flowColorGrey,
-  })  : icon = FlowIconData.delete,
-        super(key: key);
-
   const FlowIcon.home({
     Key? key,
     this.size = iconSizeDefault,
-    this.color = flowColorGrey,
+    this.color = colorBlack,
   })  : icon = FlowIconData.home,
         super(key: key);
 
   const FlowIcon.admin({
     Key? key,
     this.size = iconSizeDefault,
-    this.color = secondary,
-  })  : icon = FlowIconData.registerAdmin,
+    this.color = colorBlack,
+  })  : icon = FlowIconData.shield,
         super(key: key);
 
   const FlowIcon.professor({
     Key? key,
     this.size = iconSizeDefault,
-    this.color = secondary,
-  })  : icon = FlowIconData.registerProfessor,
+    this.color = colorBlack,
+  })  : icon = FlowIconData.teacher,
         super(key: key);
 
   const FlowIcon.student({
     Key? key,
     this.size = iconSizeDefault,
-    this.color = secondary,
-  })  : icon = FlowIconData.registerStudent,
+    this.color = colorBlack,
+  })  : icon = FlowIconData.studentHat,
+        super(key: key);
+
+  const FlowIcon.arrowLeft({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = colorBlack,
+  })  : icon = FlowIconData.arrowLeft,
+        super(key: key);
+
+  const FlowIcon.arrowRight({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = colorBlack,
+  })  : icon = FlowIconData.arrowRight,
+        super(key: key);
+
+  const FlowIcon.settings({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = colorBlack,
+  })  : icon = FlowIconData.settings,
+        super(key: key);
+
+  const FlowIcon.checkOutlined({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = colorBlack,
+  })  : icon = FlowIconData.checkOutlined,
+        super(key: key);
+
+  const FlowIcon.checkFilled({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = colorBlack,
+  })  : icon = FlowIconData.checkFilled,
+        super(key: key);
+
+  const FlowIcon.chevronLeft({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = colorBlack,
+  })  : icon = FlowIconData.chevronLeft,
+        super(key: key);
+
+  const FlowIcon.chevronRight({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = colorBlack,
+  })  : icon = FlowIconData.chevronRight,
+        super(key: key);
+
+  const FlowIcon.search({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = colorBlack,
+  })  : icon = FlowIconData.search,
+        super(key: key);
+
+  const FlowIcon.filter({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = colorBlack,
+  })  : icon = FlowIconData.filter,
+        super(key: key);
+
+  const FlowIcon.likeFilled({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = colorBlack,
+  })  : icon = FlowIconData.likeFilled,
+        super(key: key);
+
+  const FlowIcon.likeOutlined({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = colorBlack,
+  })  : icon = FlowIconData.likeOutlined,
+        super(key: key);
+
+  const FlowIcon.star({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = colorBlack,
+  })  : icon = FlowIconData.star,
+        super(key: key);
+
+  const FlowIcon.book({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = colorBlack,
+  })  : icon = FlowIconData.book,
+        super(key: key);
+
+  const FlowIcon.rank({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = colorBlack,
+  })  : icon = FlowIconData.rank,
+        super(key: key);
+
+  const FlowIcon.copyLink({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = colorBlack,
+  })  : icon = FlowIconData.copyLink,
+        super(key: key);
+
+  const FlowIcon.user({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = colorBlack,
+  })  : icon = FlowIconData.user,
+        super(key: key);
+
+  const FlowIcon.editComment({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = colorBlack,
+  })  : icon = FlowIconData.editComment,
+        super(key: key);
+
+  const FlowIcon.courses({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = colorBlack,
+  })  : icon = FlowIconData.courses,
         super(key: key);
 }
 
@@ -123,7 +221,7 @@ class _FlowIcon extends StatelessWidget {
       return Icon(
         icon!,
         size: size,
-        color: color ?? flowColorGrey,
+        color: color ?? colorBlack,
       );
     }
 

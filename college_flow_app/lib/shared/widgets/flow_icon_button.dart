@@ -37,8 +37,8 @@ class FlowIconButtonStyle {
   final Color color;
 
   //TODO(Mauricio-Machado): define color for default style
-  const FlowIconButtonStyle({this.color = flowColorWhite});
+  const FlowIconButtonStyle({this.color = colorWhite});
 
   //TODO(Mauricio-Machado): More variants
-  const FlowIconButtonStyle.onPrimary() : color = flowColorRed;
+  const FlowIconButtonStyle.onPrimary() : color = colorError;
 }
