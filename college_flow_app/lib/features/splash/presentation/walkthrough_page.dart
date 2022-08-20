@@ -68,12 +68,8 @@ class WalkthroughPageState extends State<WalkthroughPage> {
               const VSpacer.xxxs(),
               FlowButton(
                 label: "Vamos Começar",
-                //TODO(Mauricio-Machado): When user clicks redirect to login page
-                onTap: () {
-                  Navigator.of(context).pushNamed(
-                    FlowRoutes.loginPage,
-                  );
-                },
+                //TODO(Mauricio-Machado): Add flow navigation
+                onTap: () {},
               ),
             ],
           ),
