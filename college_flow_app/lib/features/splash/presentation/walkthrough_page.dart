@@ -44,36 +44,35 @@ class WalkthroughPageState extends State<WalkthroughPage> {
                           "Saiba o que os alunos estão achando de outras disciplinas em tempo real!",
                       imgPath: walkthrough02,
                     ),
-                    WalkthroughBasePage(
-                      title: "Ranking",
-                      description:
-                          "Veja quais são as melhores disciplinas de acordo com as notas dadas pelos alunos que cursaram!",
-                      imgPath: walkthrough03,
-                    ),
                   ],
                 ),
               ),
-              SmoothPageIndicator(
-                controller: _pageViewController,
-                count: 3,
-                effect: const SwapEffect(
-                  spacing: spacingXXXS,
-                  dotHeight: spacingNano,
-                  dotWidth: spacingNano,
-                  dotColor: Color(0xff234EC3),
-                  activeDotColor: Colors.white,
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 24),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    SmoothPageIndicator(
+                      controller: _pageViewController,
+                      count: 2,
+                      effect: const SwapEffect(
+                        spacing: spacingXXXS,
+                        dotHeight: spacingNano,
+                        dotWidth: spacingNano,
+                        dotColor: Color(0xff234EC3),
+                        activeDotColor: Colors.white,
+                      ),
+                      onDotClicked: togglePage,
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      color: Colors.white,
+                      icon: const Icon(
+                        Icons.arrow_forward,
+                      ),
+                    )
+                  ],
                 ),
-                onDotClicked: togglePage,
-              ),
-              const VSpacer.xxxs(),
-              FlowButton(
-                label: "Vamos Começar",
-                //TODO(Mauricio-Machado): When user clicks redirect to login page
-                onTap: () {
-                  Navigator.of(context).pushNamed(
-                    FlowRoutes.loginPage,
-                  );
-                },
               ),
             ],
           ),
