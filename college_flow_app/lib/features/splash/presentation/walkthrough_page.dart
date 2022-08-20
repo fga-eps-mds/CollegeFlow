@@ -71,8 +71,11 @@ class WalkthroughPageState extends State<WalkthroughPage> {
                     ),
                     FlowIconButton(
                       icon: const FlowIcon.arrowRight(),
-                      // TODO (lucas Macedo): Navigate on icon button
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.of(context).pushNamed(
+                          FlowRoutes.reviewList,
+                        );
+                      },
                     ),
                   ],
                 ),
