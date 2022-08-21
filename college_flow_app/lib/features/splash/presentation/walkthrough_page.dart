@@ -3,10 +3,8 @@ import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
 import 'package:college_flow_app/config/routes/flow_routes.dart';
 import 'package:college_flow_app/features/splash/presentation/widgets/walkthrough_base_page.dart';
-import 'package:college_flow_app/shared/widgets/buttons/flow_button.dart';
 import 'package:college_flow_app/shared/widgets/flow_icon.dart';
 import 'package:college_flow_app/shared/widgets/flow_icon_button.dart';
-import 'package:college_flow_app/shared/widgets/gap.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -46,8 +44,8 @@ class WalkthroughPageState extends State<WalkthroughPage> {
                       description:
                           "Saiba o que os alunos estão achando de outras disciplinas em tempo real!",
                       imgPath: walkthrough02,
+                      isFinalPage: true,
                     ),
-                    // TODO (lucas Macedo): Make third swipe
                   ],
                 ),
               ),
@@ -57,7 +55,6 @@ class WalkthroughPageState extends State<WalkthroughPage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     SmoothPageIndicator(
-                      // TODO (lucas Macedo): Make third swipe
                       controller: _pageViewController,
                       count: 2,
                       effect: const SwapEffect(
