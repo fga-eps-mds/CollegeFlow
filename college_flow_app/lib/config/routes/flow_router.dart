@@ -1,5 +1,5 @@
 import 'package:college_flow_app/config/routes/flow_routes.dart';
-import 'package:college_flow_app/features/review/review_page.dart';
+import 'package:college_flow_app/features/review/presentation/review_page.dart';
 import 'package:college_flow_app/features/splash/presentation/walkthrough_page.dart';
 import 'package:college_flow_app/utils/helpers/navigator_helper.dart';
 import 'package:flutter/material.dart' hide Router;
