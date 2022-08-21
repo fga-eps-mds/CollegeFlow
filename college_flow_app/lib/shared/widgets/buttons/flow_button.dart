@@ -56,7 +56,9 @@ class _FlowButtonState extends State<FlowButton> {
           objectStyleBorderRadiusPill,
         ),
         border: Border.all(
-          color: colorWhite,
+          color: widget.isDisabled
+              ? widget.style.borderColor.disabled
+              : widget.style.borderColor.mainly,
           width: spacingAtom,
         ),
       ),
@@ -77,7 +79,7 @@ class _FlowButtonState extends State<FlowButton> {
                     child: FlowLoading.dark(),
                   )
                 : Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     mainAxisSize:
                         widget.isExpanded ? MainAxisSize.max : MainAxisSize.min,
                     children: [
@@ -115,19 +117,23 @@ class _FlowButtonState extends State<FlowButton> {
 class FlowButtonStyle {
   final FlowColorStyle backgroundColor;
   final FlowColorStyle labelColor;
+  final FlowColorStyle borderColor;
 
   const FlowButtonStyle({
     required this.backgroundColor,
     required this.labelColor,
+    required this.borderColor,
   });
 
   FlowButtonStyle copyWith({
     FlowColorStyle? backgroundColor,
     FlowColorStyle? labelColor,
+    FlowColorStyle? borderColor,
   }) =>
       FlowButtonStyle(
         backgroundColor: backgroundColor ?? this.backgroundColor,
         labelColor: labelColor ?? this.labelColor,
+        borderColor: borderColor ?? this.borderColor,
       );
 
   const FlowButtonStyle.primary()
@@ -138,10 +144,34 @@ class FlowButtonStyle {
           disabled: colorLightError,
         ),
         labelColor = const FlowColorStyle(
-          mainly: colorBlack,
+          mainly: colorWhite,
           //TODO(Mauricio-Machado): Add styles to pressed and disabled
           pressed: colorBlack,
           disabled: colorBlack,
+        ),
+        borderColor = const FlowColorStyle(
+          mainly: colorPrimary,
+          pressed: colorDarkPrimary,
+          disabled: colorLightPrimary,
+        );
+
+  const FlowButtonStyle.whiteBorder()
+      : backgroundColor = const FlowColorStyle(
+          mainly: colorSecondary,
+          //TODO(Mauricio-Machado): Add styles to pressed and disabled
+          pressed: colorError,
+          disabled: colorLightError,
+        ),
+        labelColor = const FlowColorStyle(
+          mainly: colorWhite,
+          //TODO(Mauricio-Machado): Add styles to pressed and disabled
+          pressed: colorBlack,
+          disabled: colorBlack,
+        ),
+        borderColor = const FlowColorStyle(
+          mainly: colorWhite,
+          pressed: colorWhite,
+          disabled: colorWhite,
         );
 }
 
