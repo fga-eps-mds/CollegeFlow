@@ -16,6 +16,20 @@ class FlowIconButton extends StatelessWidget {
     this.style = const FlowIconButtonStyle(),
   }) : super(key: key);
 
+  const FlowIconButton.secondary({
+    Key? key,
+    required this.icon,
+    required this.onTap,
+  })  : style = const FlowIconButtonStyle.secondary(),
+        super(key: key);
+
+  const FlowIconButton.inactive({
+    Key? key,
+    required this.icon,
+    required this.onTap,
+  })  : style = const FlowIconButtonStyle.inactive(),
+        super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -40,5 +54,7 @@ class FlowIconButtonStyle {
   const FlowIconButtonStyle({this.color = colorWhite});
 
   //TODO(Mauricio-Machado): More variants
-  const FlowIconButtonStyle.onPrimary() : color = colorError;
+  const FlowIconButtonStyle.secondary() : color = colorSecondary;
+
+  const FlowIconButtonStyle.inactive() : color = colorDarkWhite;
 }
