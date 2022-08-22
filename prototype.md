@@ -31,8 +31,7 @@ O protótipo de média fidelidade tem como objetivo detalhar visualmente a imple
 
 O protótipo foi feito com a utilização do software Figma e segue abaixo os links para o acesso das telas:
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FVH37R7Gdt1e5StMC73htJZ%2FCollegeFlow" allowfullscreen></iframe>
-
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FVH37R7Gdt1e5StMC73htJZ%2FCollegeFlow%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
 ## 4.Protótipo de Alta Fidelidade
 
 O protótipo de alta fidelidade apresenta as telas finais do projeto, mostrando a estrutura desenvolvida no protótipo de média atualizada com os estilos definidos para a aplicação:
