@@ -24,8 +24,6 @@ enum FlowIconData {
   home,
   user,
   teacher,
-  upVote,
-  downVote,
 }
 
 extension IconParsing on FlowIconData {
@@ -82,10 +80,6 @@ extension IconParsing on FlowIconData {
         return Icons.message_sharp;
       case FlowIconData.courses:
         return Icons.view_column_sharp;
-      case FlowIconData.upVote:
-        return Icons.keyboard_double_arrow_up_sharp;
-      case FlowIconData.downVote:
-        return Icons.keyboard_double_arrow_down_sharp;
       default:
         return null;
     }

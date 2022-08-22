@@ -194,20 +194,6 @@ class FlowIcon extends StatelessWidget {
     this.color = colorBlack,
   })  : icon = FlowIconData.courses,
         super(key: key);
-
-  const FlowIcon.upVote({
-    Key? key,
-    this.size = iconSizeDefault,
-    this.color = colorBlack,
-  })  : icon = FlowIconData.upVote,
-        super(key: key);
-
-  const FlowIcon.downVote({
-    Key? key,
-    this.size = iconSizeDefault,
-    this.color = colorBlack,
-  })  : icon = FlowIconData.downVote,
-        super(key: key);
 }
 
 class _FlowIcon extends StatelessWidget {
