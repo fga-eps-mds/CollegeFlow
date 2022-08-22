@@ -1,7 +1,8 @@
 import 'package:college_flow_app/config/design_system/data/object_styles/object_styles.dart';
 import 'package:college_flow_app/features/review/list_example.dart';
-import 'package:college_flow_app/shared/widgets/flow_icon.dart';
-import 'package:college_flow_app/shared/widgets/flow_icon_button.dart';
+import 'package:college_flow_app/features/review/presentation/widgets/review_score_tag.dart';
+import 'package:college_flow_app/features/review/presentation/widgets/teacher_tag.dart';
+import 'package:college_flow_app/shared/widgets/gap.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../config/design_system/data/colors/colors.dart';
@@ -32,34 +33,27 @@ class _ReviewCardState extends State<ReviewCard> {
           objectStyleBorderRadiusDefault,
         ),
       ),
-      child: Row(
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Column(
-            children: [
-              FlowIconButton.inactive(
-                icon: const FlowIcon.upVote(),
-                onTap: () {},
-              ),
-              Text(
-                '${widget.review.score}',
-                style: Theme.of(context).textTheme.labelLarge,
-              ),
-              FlowIconButton.inactive(
-                icon: const FlowIcon.downVote(),
-                onTap: () {},
-              ),
-            ],
+          Text(
+            widget.review.title,
+            style: Theme.of(context).textTheme.labelLarge,
           ),
-          Column(
+          const VSpacer.quarck(),
+          Text(
+            widget.review.description,
+            style: Theme.of(context).textTheme.bodySmall,
+          ),
+          const VSpacer.nano(),
+          Row(
             children: [
-              Text(
-                widget.review.title,
-                style: Theme.of(context).textTheme.labelLarge,
-                overflow: TextOverflow.ellipsis,
+              ReviewScoreTag(
+                reviewScore: widget.review.score,
               ),
-              Row(
-                children: [],
+              const HSpacer.nano(),
+              TeacherTag(
+                teacherName: widget.review.teacherName,
               ),
             ],
           ),

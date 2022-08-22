@@ -25,15 +25,13 @@ class _ReviewPageState extends State<ReviewPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   backgroundColor: colorPrimary,
-      //   elevation: 0,
-      // ),
       body: Stack(
         children: [
           CustomScrollView(
             slivers: [
               const SliverAppBar(
+                floating: true,
+                snap: true,
                 backgroundColor: colorPrimary,
                 elevation: 0,
               ),

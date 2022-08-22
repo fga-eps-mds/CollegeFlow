@@ -1,20 +1,17 @@
 import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
-import 'package:college_flow_app/config/design_system/data/icons/sizes.dart';
 import 'package:college_flow_app/config/design_system/data/object_styles/object_styles.dart';
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
-import 'package:college_flow_app/shared/widgets/flow_icon.dart';
-import 'package:college_flow_app/shared/widgets/gap.dart';
 import 'package:flutter/material.dart';
 
-class ReviewScoreTag extends StatelessWidget {
-  const ReviewScoreTag({
+class TeacherTag extends StatelessWidget {
+  const TeacherTag({
     Key? key,
-    required this.reviewScore,
+    required this.teacherName,
   }) : super(
           key: key,
         );
 
-  final double reviewScore;
+  final String teacherName;
 
   @override
   Widget build(BuildContext context) {
@@ -32,14 +29,10 @@ class ReviewScoreTag extends StatelessWidget {
       child: Row(
         children: [
           Text(
-            '$reviewScore',
+            teacherName,
             style: Theme.of(context).textTheme.displaySmall?.copyWith(
                   fontSize: 16,
                 ),
-          ),
-          const HSpacer.atom(),
-          const FlowIcon.star(
-            size: iconSizeSM,
           ),
         ],
       ),
