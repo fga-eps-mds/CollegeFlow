@@ -8,6 +8,8 @@ import 'package:college_flow_app/shared/widgets/flow_icon.dart';
 import 'package:college_flow_app/shared/widgets/gap.dart';
 import 'package:flutter/material.dart';
 
+import '../domain/entities/review.dart';
+
 class ReviewPage extends StatefulWidget {
   const ReviewPage({Key? key}) : super(key: key);
 
