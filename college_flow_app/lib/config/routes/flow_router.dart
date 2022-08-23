@@ -3,6 +3,8 @@ import 'package:college_flow_app/features/splash/presentation/walkthrough_page.d
 import 'package:college_flow_app/utils/helpers/navigator_helper.dart';
 import 'package:flutter/material.dart' hide Router;
 
+import '../../features/list_subjects/list_subjects_page.dart';
+
 abstract class FlowRouter {
   static Route routeFromSettings(RouteSettings settings) {
     late Widget page;
@@ -10,7 +12,8 @@ abstract class FlowRouter {
     switch (settings.name) {
       case FlowRoutes.mainPage:
       default:
-        page = const WalkthroughPage();
+        //page = const WalkthroughPage();
+        page = const ListCoursesStudent();
         break;
     }
 

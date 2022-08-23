@@ -84,6 +84,8 @@ class WalkthroughPageState extends State<WalkthroughPage> {
     );
   }
 
+  //TO DO (Luan): Configurar a navegação pela arrow. Avançar as páginas e quando chegar na última
+  //ir para a tela de list_subjects_page
   void _togglePage(int page) {
     _pageViewController.animateToPage(
       page,
