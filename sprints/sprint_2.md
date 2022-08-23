@@ -6,13 +6,13 @@
 
 ## Issues
 
-| ID  | Descrição                              | Estimativa | Label |
-| --- | -------------------------------------- | ---------- | ----- |
-| #18 | Criar protótipo de baixa fidelidade    | 5          | MDS   |
-| #22 | Configurar ambiente de desenvolvimento | 13         | EPS   |
-| #24 | Definir Indicadores e Métricas         | 8          | EPS   |
-| #35 | Criar Guia de Estilo                   | 8          | MDS   |
-| #37 | Elaborar documento de arquitetura      | 8          | MDS   |
+| ID  | Descrição                              | Estimativa |
+| --- | -------------------------------------- | ---------- |
+| #18 | Criar protótipo de baixa fidelidade    | 5          |
+| #22 | Configurar ambiente de desenvolvimento | 13         |
+| #24 | Definir Indicadores e Métricas         | 8          |
+| #35 | Criar Guia de Estilo                   | 8          |
+| #37 | Elaborar documento de arquitetura      | 8          |
 
 - Total de pontos: 42pts.
 - Total de pontos entregues: 34pts.
@@ -24,10 +24,6 @@
 - Estimativa correta? A estimativa das issues não foram condigentes com seu real esforço. Em suma estimamos menos esforço do que foi necessário.
 
 - Tarefas bem distribuidas? Não. Apesar de termos feito uma divisão de trabalho ela se mostrou menos eficiente do que o esperado.
-
-## Qualidade do Trabalho Entregue
-
-Segundo a equipe a qualidade entregue foi de 4,7 considerando a escala de likert com os valores de 1 a 5. Apesar de não termos alcançado nosso objetivo a equipe considerou que o esforço gerou insumos com qualidade para conseguirmos cumprí -lo posteriormente.
 
 # Retrospectiva
 
@@ -53,4 +49,4 @@ Segundo a equipe a qualidade entregue foi de 4,7 considerando a escala de likert
 
 # Quadro de Conhecimento
 
-![](../img/gerenciamento/sprint2.jpg)
+![Quadro de Conhecimento](../img/gerenciamento/QuadroConhecimento/QuadroConhecimento2.png)
