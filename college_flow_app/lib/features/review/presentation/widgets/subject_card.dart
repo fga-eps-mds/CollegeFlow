@@ -35,6 +35,8 @@ class SubjectCard extends StatelessWidget {
               style: Theme.of(context).textTheme.displaySmall?.copyWith(
                     color: colorWhite,
                   ),
+              maxLines: 3,
+              overflow: TextOverflow.ellipsis,
             ),
           ),
           const VSpacer.quarck(),
