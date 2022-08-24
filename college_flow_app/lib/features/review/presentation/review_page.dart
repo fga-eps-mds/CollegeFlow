@@ -62,20 +62,25 @@ class _ReviewPageState extends State<ReviewPage> {
                             thickness: spacingQuarck,
                             color: colorSecondary,
                           ),
-                          ListView.builder(
-                            physics: const NeverScrollableScrollPhysics(),
-                            shrinkWrap: true,
-                            itemCount: _mockReviewList.length,
-                            itemBuilder: (context, index) {
-                              return Column(
-                                children: [
-                                  ReviewCard(
-                                    review: _mockReviewList[index],
-                                  ),
-                                  const VSpacer.xxxs(),
-                                ],
-                              );
-                            },
+                          const VSpacer.xxs(),
+                          MediaQuery.removePadding(
+                            context: context,
+                            removeTop: true,
+                            child: ListView.builder(
+                              physics: const NeverScrollableScrollPhysics(),
+                              shrinkWrap: true,
+                              itemCount: _mockReviewList.length,
+                              itemBuilder: (context, index) {
+                                return Column(
+                                  children: [
+                                    ReviewCard(
+                                      review: _mockReviewList[index],
+                                    ),
+                                    const VSpacer.xxxs(),
+                                  ],
+                                );
+                              },
+                            ),
                           ),
                           const VSpacer.sm(),
                         ],
