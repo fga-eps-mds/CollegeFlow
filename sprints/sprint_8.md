@@ -29,15 +29,15 @@ Dívidas técnicas repontuadas
 
 # Retropectiva
 
-![Retrsopectiva]()
+![Retrsopectiva](../img/gerenciamento/Retrospectiva/Retrospectiva08.png)
 
 # Review
 
-- Objetivo Alcançado?
+- Objetivo Alcançado? Não, devido a correria de outras matérias e a mudança do escopo final do projeto, a equipe acabou atrasando algumas tarefas.
 
-- Estimativa correta?
+- Estimativa correta? Sim, a estimativa dos pontos para a equipe fo correta para todos
 
-- Tarefas bem distribuidas?
+- Tarefas bem distribuidas? Sim, apesar de ter uma demanda muito alta de tarefas, foram bem distribuidas para que todos os membros da equipe tivesse algo a se fazer
 
 # Quadro de Conhecimento
 
