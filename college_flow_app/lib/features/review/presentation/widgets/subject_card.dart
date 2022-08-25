@@ -41,6 +41,7 @@ class SubjectCard extends StatelessWidget {
           ),
           const VSpacer.quarck(),
           Row(
+            crossAxisAlignment: CrossAxisAlignment.end,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
