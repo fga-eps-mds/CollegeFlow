@@ -1,4 +1,3 @@
-import 'package:college_flow_app/config/design_system/data/icons/gallery.dart';
 import 'package:flutter/material.dart';
 
 enum FlowIconData {
@@ -29,12 +28,6 @@ enum FlowIconData {
 extension IconParsing on FlowIconData {
   String? toPath(double size) {
     switch (this) {
-      case FlowIconData.shield:
-        return IconPaths.registerAdminIcon.path;
-      case FlowIconData.studentHat:
-        return IconPaths.registerStudentIcon.path;
-      case FlowIconData.teacher:
-        return IconPaths.registeProfessorIcon.path;
       default:
         return null;
     }
