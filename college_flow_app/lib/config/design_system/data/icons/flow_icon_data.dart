@@ -14,8 +14,6 @@ enum FlowIconData {
   likeFilled,
   likeOutlined,
   star,
-  studentHat,
-  shield,
   courses,
   editComment,
   copyLink,
@@ -23,7 +21,6 @@ enum FlowIconData {
   book,
   home,
   user,
-  teacher,
   professorTag,
 }
 

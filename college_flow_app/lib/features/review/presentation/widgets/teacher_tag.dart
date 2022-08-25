@@ -1,6 +1,8 @@
 import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
 import 'package:college_flow_app/config/design_system/data/object_styles/object_styles.dart';
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
+import 'package:college_flow_app/shared/widgets/flow_icon.dart';
+import 'package:college_flow_app/shared/widgets/gap.dart';
 import 'package:flutter/material.dart';
 
 class TeacherTag extends StatelessWidget {
@@ -28,6 +30,8 @@ class TeacherTag extends StatelessWidget {
       ),
       child: Row(
         children: [
+          const FlowIcon.professorTag(),
+          const HSpacer.quarck(),
           Text(
             teacherName,
             style: Theme.of(context).textTheme.displaySmall?.copyWith(
