@@ -18,9 +18,9 @@ class TeacherTag extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 24,
       padding: const EdgeInsets.symmetric(
         horizontal: spacingNano,
-        vertical: spacingQuarck,
       ),
       decoration: BoxDecoration(
         color: colorSecondary,
@@ -34,9 +34,11 @@ class TeacherTag extends StatelessWidget {
           const HSpacer.quarck(),
           Text(
             teacherName,
-            style: Theme.of(context).textTheme.displaySmall?.copyWith(
-                  fontSize: 16,
-                ),
+            style: const TextStyle(
+              fontFamily: 'OctinCollege',
+              fontWeight: FontWeight.w600,
+              fontSize: 14,
+            ),
           ),
         ],
       ),

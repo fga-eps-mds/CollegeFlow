@@ -19,6 +19,7 @@ class ReviewScoreTag extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 24,
       padding: const EdgeInsets.symmetric(
         horizontal: spacingNano,
         vertical: spacingAtom,
