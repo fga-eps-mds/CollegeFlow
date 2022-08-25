@@ -1,6 +1,8 @@
 const basePath = "assets/icons/";
 
-abstract class IconPaths {}
+abstract class IconPaths {
+  static IconPath professorTagIcon = const IconPath("${basePath}professor.png");
+}
 
 class IconPath {
   final String path;

@@ -194,6 +194,13 @@ class FlowIcon extends StatelessWidget {
     this.color = colorBlack,
   })  : icon = FlowIconData.courses,
         super(key: key);
+
+  const FlowIcon.professorTag({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = colorBlack,
+  })  : icon = FlowIconData.professorTag,
+        super(key: key);
 }
 
 class _FlowIcon extends StatelessWidget {
