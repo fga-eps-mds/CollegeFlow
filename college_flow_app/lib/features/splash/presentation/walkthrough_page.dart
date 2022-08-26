@@ -70,7 +70,7 @@ class WalkthroughPageState extends State<WalkthroughPage> {
                       icon: const FlowIcon.arrowRight(),
                       onTap: () {
                         Navigator.of(context).pushNamed(
-                          FlowRoutes.reviewList,
+                          FlowRoutes.subjectsList,
                         );
                       },
                     ),
