@@ -58,6 +58,11 @@ class HSpacer extends StatelessWidget {
     required this.size,
   }) : super(key: key);
 
+  ///Height `2px`
+  const HSpacer.atom({Key? key})
+      : size = spacingAtom,
+        super(key: key);
+
   ///Height `4px`
   const HSpacer.quarck({Key? key})
       : size = spacingQuarck,
