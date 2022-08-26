@@ -48,27 +48,6 @@ class FlowIcon extends StatelessWidget {
   })  : icon = FlowIconData.home,
         super(key: key);
 
-  const FlowIcon.admin({
-    Key? key,
-    this.size = iconSizeDefault,
-    this.color = colorBlack,
-  })  : icon = FlowIconData.shield,
-        super(key: key);
-
-  const FlowIcon.professor({
-    Key? key,
-    this.size = iconSizeDefault,
-    this.color = colorBlack,
-  })  : icon = FlowIconData.teacher,
-        super(key: key);
-
-  const FlowIcon.student({
-    Key? key,
-    this.size = iconSizeDefault,
-    this.color = colorBlack,
-  })  : icon = FlowIconData.studentHat,
-        super(key: key);
-
   const FlowIcon.arrowLeft({
     Key? key,
     this.size = iconSizeDefault,
@@ -193,6 +172,13 @@ class FlowIcon extends StatelessWidget {
     this.size = iconSizeDefault,
     this.color = colorBlack,
   })  : icon = FlowIconData.courses,
+        super(key: key);
+
+  const FlowIcon.professorTag({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = colorBlack,
+  })  : icon = FlowIconData.professorTag,
         super(key: key);
 }
 
