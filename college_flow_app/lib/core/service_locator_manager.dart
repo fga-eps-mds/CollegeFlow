@@ -1,4 +1,5 @@
 import 'package:college_flow_app/core/api_client.dart';
+import 'package:college_flow_app/features/review/review_injection_container.dart';
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
 
@@ -61,5 +62,7 @@ class _ServiceLocatorManagerImpl implements ServiceLocatorManager {
     await _registerFeatures();
   }
 
-  Future<void> _registerFeatures() async {}
+  Future<void> _registerFeatures() async {
+    await ReviewInjectionContainer().inject(_serviceLocator);
+  }
 }
