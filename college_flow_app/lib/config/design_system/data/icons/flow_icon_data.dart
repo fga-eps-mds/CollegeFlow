@@ -1,3 +1,4 @@
+import 'package:college_flow_app/config/design_system/data/icons/gallery.dart';
 import 'package:flutter/material.dart';
 
 enum FlowIconData {
