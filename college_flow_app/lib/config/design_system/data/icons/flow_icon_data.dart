@@ -13,8 +13,6 @@ enum FlowIconData {
   likeFilled,
   likeOutlined,
   star,
-  studentHat,
-  shield,
   courses,
   editComment,
   copyLink,
@@ -22,12 +20,14 @@ enum FlowIconData {
   book,
   home,
   user,
-  teacher,
+  professorTag,
 }
 
 extension IconParsing on FlowIconData {
   String? toPath(double size) {
     switch (this) {
+      case FlowIconData.professorTag:
+        return IconPaths.professorTagIcon.path;
       default:
         return null;
     }

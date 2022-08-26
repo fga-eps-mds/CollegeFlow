@@ -19,9 +19,10 @@ class ReviewScoreTag extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 24,
       padding: const EdgeInsets.symmetric(
         horizontal: spacingNano,
-        vertical: spacingQuarck,
+        vertical: spacingAtom,
       ),
       decoration: BoxDecoration(
         color: colorSecondary,
@@ -33,13 +34,15 @@ class ReviewScoreTag extends StatelessWidget {
         children: [
           Text(
             '$reviewScore',
-            style: Theme.of(context).textTheme.displaySmall?.copyWith(
-                  fontSize: 16,
-                ),
+            style: const TextStyle(
+              fontFamily: 'OctinCollege',
+              fontWeight: FontWeight.w600,
+              fontSize: 14,
+            ),
           ),
           const HSpacer.atom(),
           const FlowIcon.star(
-            size: iconSizeSM,
+            size: iconSizeXS,
           ),
         ],
       ),

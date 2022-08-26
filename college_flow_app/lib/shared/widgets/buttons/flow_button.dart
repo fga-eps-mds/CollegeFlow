@@ -93,9 +93,12 @@ class _FlowButtonState extends State<FlowButton> {
                       const HSpacer.nano(),
                       Text(
                         widget.label,
-                        style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                              color: colorWhite,
-                            ),
+                        style: const TextStyle(
+                          fontFamily: 'OctinCollege',
+                          fontWeight: FontWeight.w900,
+                          fontSize: 24,
+                          color: colorWhite,
+                        ),
                       ),
                       const HSpacer.nano(),
                       if (widget.suffixIcon != null)
