@@ -48,7 +48,7 @@ class CustomTheme {
       ),
       titleMedium: TextStyle(
         fontFamily: 'OctinCollege',
-        fontWeight: FontWeight.w400,
+        fontWeight: FontWeight.w600,
         fontSize: 16,
         color: colorBlack,
       ),
