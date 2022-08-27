@@ -1,5 +1,6 @@
 import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
+import 'package:college_flow_app/config/routes/flow_routes.dart';
 import 'package:college_flow_app/features/review/list_example.dart';
 import 'package:college_flow_app/features/review/presentation/widgets/review_card.dart';
 import 'package:college_flow_app/features/review/presentation/widgets/subject_card.dart';
@@ -95,7 +96,11 @@ class _ReviewPageState extends State<ReviewPage> {
                   label: 'Criar avaliação',
                   suffixIcon: const FlowIcon.editComment(),
                   //TODO(Mauricio-Machado): Navigate to Review Form
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.of(context).pushNamed(
+                      FlowRoutes.reviewForm,
+                    );
+                  },
                 ),
               ),
             ),
