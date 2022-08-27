@@ -15,6 +15,7 @@ dependencies:
   dio: ^4.0.6
   json_serializable: ^6.3.1
   smooth_page_indicator: ^1.0.0+2
+  flutter_rating_bar: ^4.0.1
 
 dev_dependencies:
   flutter_test:
