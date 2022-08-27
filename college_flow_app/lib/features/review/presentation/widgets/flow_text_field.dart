@@ -12,7 +12,7 @@ class FlowTextField extends StatefulWidget {
     this.placeholder,
     this.controller,
     this.borderColor = colorWhite,
-    this.isDark = false,
+    this.isDark = true,
   }) : super(key: key);
 
   final String label;
@@ -80,15 +80,15 @@ class _FlowTextFieldState extends State<FlowTextField> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.only(left: spacingNano),
+              padding: const EdgeInsets.only(),
               child: Text(
                 widget.label,
-                style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                style: Theme.of(context).textTheme.titleMedium?.copyWith(
                       color: widget.isDark ? colorBlack : colorWhite,
                     ),
               ),
             ),
-            const VSpacer.quarck(),
+            const VSpacer.nano(),
             TextField(
               controller: _controller,
               onChanged: (text) {
@@ -99,6 +99,10 @@ class _FlowTextFieldState extends State<FlowTextField> {
                 state.didChange(text);
               },
               decoration: InputDecoration(
+                labelText: widget.placeholder,
+                labelStyle: Theme.of(context).textTheme.titleMedium?.copyWith(
+                      color: colorDarkWhite,
+                    ),
                 contentPadding: const EdgeInsets.all(spacingNano),
                 focusedBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: widget.borderColor),
