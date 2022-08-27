@@ -1,5 +1,5 @@
 import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
-import 'package:college_flow_app/features/review/presentation/widgets/flow_text_field.dart';
+import 'package:college_flow_app/features/review/presentation/widgets/textfields/flow_text_field.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
 import 'package:college_flow_app/config/routes/flow_routes.dart';
@@ -50,20 +50,19 @@ class _ReviewFormState extends State<ReviewForm> {
                         children: [
                           const FlowTextField(
                             label: 'Nome do Professor Avaliado',
-                            placeholder: 'Insira o nome do Professor',
+                            hint: 'Insira o nome do Professor',
                             borderColor: colorSecondary,
                           ),
                           const VSpacer.xxs(),
                           const FlowTextField(
                             label: 'Título',
-                            placeholder: 'Insira o Título para a avaliação',
+                            hint: 'Insira o Título para a avaliação',
                             borderColor: colorSecondary,
                           ),
                           const VSpacer.xxs(),
                           const FlowTextField(
                             label: 'Descrição',
-                            placeholder:
-                                'Insira uma Descrição para a avaliação',
+                            hint: 'Insira uma Descrição para a avaliação',
                             borderColor: colorSecondary,
                           ),
                           const VSpacer.xxs(),

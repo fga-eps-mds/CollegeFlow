@@ -9,7 +9,7 @@ class FlowTextField extends StatefulWidget {
     required this.label,
     this.initialValue = '',
     this.onChanged,
-    this.placeholder,
+    this.hint,
     this.controller,
     this.borderColor = colorWhite,
     this.isDark = true,
@@ -17,7 +17,7 @@ class FlowTextField extends StatefulWidget {
 
   final String label;
   final String initialValue;
-  final String? placeholder;
+  final String? hint;
   final TextEditingController? controller;
   final Color borderColor;
   final bool isDark;
@@ -99,8 +99,8 @@ class _FlowTextFieldState extends State<FlowTextField> {
                 state.didChange(text);
               },
               decoration: InputDecoration(
-                labelText: widget.placeholder,
-                labelStyle: Theme.of(context).textTheme.titleMedium?.copyWith(
+                hintText: widget.hint,
+                hintStyle: Theme.of(context).textTheme.bodyMedium?.copyWith(
                       color: colorDarkWhite,
                     ),
                 contentPadding: const EdgeInsets.all(spacingNano),
