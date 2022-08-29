@@ -1,18 +1,4 @@
-class Review {
-  final int voteCounter;
-  final String teacherName;
-  final double score;
-  final String title;
-  final String description;
-
-  Review({
-    required this.voteCounter,
-    required this.teacherName,
-    required this.score,
-    required this.title,
-    required this.description,
-  });
-}
+import 'domain/entities/review.dart';
 
 final List<Review> reviewList = List.generate(
   12,

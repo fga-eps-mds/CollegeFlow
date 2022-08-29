@@ -22,6 +22,7 @@ enum FlowIconData {
   home,
   user,
   professorTag,
+  error,
 }
 
 extension IconParsing on FlowIconData {
@@ -74,6 +75,8 @@ extension IconParsing on FlowIconData {
         return Icons.message_sharp;
       case FlowIconData.courses:
         return Icons.view_column_sharp;
+      case FlowIconData.error:
+        return Icons.error_outline_sharp;
       default:
         return null;
     }

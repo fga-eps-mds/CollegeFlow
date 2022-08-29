@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
 import 'package:flutter/material.dart';
 
 class FlowLoading extends StatefulWidget {
@@ -11,8 +12,8 @@ class FlowLoading extends StatefulWidget {
   const FlowLoading({
     this.color = Colors.blue,
     this.finalColor = Colors.white,
-    this.maxHeight = 32,
-    this.maxWidth = 32,
+    this.maxHeight = spacingXS,
+    this.maxWidth = spacingXS,
     Key? key,
   }) : super(key: key);
 
