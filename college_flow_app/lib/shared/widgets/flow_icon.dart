@@ -180,6 +180,13 @@ class FlowIcon extends StatelessWidget {
     this.color = colorBlack,
   })  : icon = FlowIconData.professorTag,
         super(key: key);
+
+  const FlowIcon.error({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = colorBlack,
+  })  : icon = FlowIconData.error,
+        super(key: key);
 }
 
 class _FlowIcon extends StatelessWidget {

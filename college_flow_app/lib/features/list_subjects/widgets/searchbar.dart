@@ -34,7 +34,7 @@ class SearchBar extends StatelessWidget {
                 borderSide: const BorderSide(color: colorSecondary, width: 1),
                 borderRadius: BorderRadius.circular(50.0),
               ),
-              hintText: 'Digite as disciplinas que deseja buscar',
+              hintText: 'Digite o nome de uma disciplina',
               hintStyle: Theme.of(context).textTheme.bodySmall?.copyWith(
                     color: colorDarkWhite,
                   ),

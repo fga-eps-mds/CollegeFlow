@@ -1,5 +1,4 @@
 import 'package:college_flow_app/config/design_system/data/object_styles/object_styles.dart';
-import 'package:college_flow_app/features/review/list_example.dart';
 import 'package:college_flow_app/features/review/presentation/widgets/review_score_tag.dart';
 import 'package:college_flow_app/features/review/presentation/widgets/teacher_tag.dart';
 import 'package:college_flow_app/shared/widgets/gap.dart';
@@ -7,6 +6,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../config/design_system/data/colors/colors.dart';
 import '../../../../config/design_system/data/spacing/spacing.dart';
+import '../../domain/entities/review.dart';
 
 class ReviewCard extends StatefulWidget {
   const ReviewCard({
