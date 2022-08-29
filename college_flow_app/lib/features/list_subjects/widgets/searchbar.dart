@@ -1,5 +1,4 @@
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
-import 'package:college_flow_app/shared/widgets/flow_icon_button.dart';
 import 'package:college_flow_app/shared/widgets/gap.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +8,10 @@ import '../../../shared/widgets/flow_icon.dart';
 class SearchBar extends StatelessWidget {
   const SearchBar({
     Key? key,
+    required this.searchSubject,
   }) : super(key: key);
+
+  final Function(String query) searchSubject;
 
   @override
   Widget build(BuildContext context) {
@@ -18,12 +20,9 @@ class SearchBar extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       mainAxisSize: MainAxisSize.max,
       children: [
-        FlowIconButton(
-          icon: const FlowIcon.search(
-            color: colorSecondary,
-            size: spacingXS,
-          ),
-          onTap: () {},
+        const FlowIcon.search(
+          color: colorSecondary,
+          size: spacingXS,
         ),
         const VSpacer.quarck(),
         SizedBox(
@@ -42,6 +41,7 @@ class SearchBar extends StatelessWidget {
               isDense: true,
               contentPadding: const EdgeInsets.all(8.0),
             ),
+            onChanged: searchSubject,
           ),
         ),
         const VSpacer.xxxs(),

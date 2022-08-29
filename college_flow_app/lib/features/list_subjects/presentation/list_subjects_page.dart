@@ -2,7 +2,6 @@ import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
 import 'package:college_flow_app/features/list_subjects/widgets/subject_tile.dart';
 import 'package:flutter/material.dart';
-
 import '../../../shared/widgets/gap.dart';
 import '../../../shared/widgets/header.dart';
 import '../../review/list_example.dart';
@@ -16,7 +15,7 @@ class ListSubjectsPage extends StatefulWidget {
 }
 
 class _ListSubjectsPageState extends State<ListSubjectsPage> {
-  final List<Subject> _mockSubjectList = subjectList;
+  List<Subject> _mockSubjectList = subjectList;
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +35,11 @@ class _ListSubjectsPageState extends State<ListSubjectsPage> {
               child: Column(
                 children: [
                   const VSpacer.xxs(),
-                  const SearchBar(),
+                  SearchBar(
+                    searchSubject: (String query) {
+                      searchSubject(query);
+                    },
+                  ),
                   const VSpacer.xxs(),
                   MediaQuery.removePadding(
                     context: context,
@@ -64,5 +67,18 @@ class _ListSubjectsPageState extends State<ListSubjectsPage> {
         ),
       ),
     );
+  }
+
+  void searchSubject(String query) {
+    final suggestions = subjectList.where((subject) {
+      final subjectName = subject.name.toLowerCase();
+      final input = query.toLowerCase();
+
+      return subjectName.contains(input);
+    }).toList();
+
+    setState(() {
+      _mockSubjectList = suggestions;
+    });
   }
 }
