@@ -132,22 +132,6 @@ class _ReviewPageState extends State<ReviewPage> {
                                 ],
                               ),
                             ),
-                            SafeArea(
-                              child: Padding(
-                                padding: const EdgeInsets.symmetric(
-                                  horizontal: spacingXXS,
-                                ),
-                                child: Align(
-                                  alignment: Alignment.bottomCenter,
-                                  child: FlowButton(
-                                    label: 'Criar avaliação',
-                                    suffixIcon: const FlowIcon.editComment(),
-                                    //TODO(Mauricio-Machado): Navigate to Review Form
-                                    onTap: () {},
-                                  ),
-                                ),
-                              ),
-                            ),
                           ],
                         ),
                       )
