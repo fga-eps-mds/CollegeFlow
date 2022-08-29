@@ -18,17 +18,12 @@ class SearchBar extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       mainAxisSize: MainAxisSize.max,
       children: [
-        FlowIconButton(
-          icon: const FlowIcon.search(
-            color: colorSecondary,
-            size: spacingXS,
-          ),
-          onTap: () {},
+        const FlowIcon.search(
+          color: colorSecondary,
+          size: spacingXS,
         ),
         const VSpacer.quarck(),
-        SizedBox(
-          width: 280,
-          height: 32,
+        Expanded(
           child: TextFormField(
             decoration: InputDecoration(
               enabledBorder: OutlineInputBorder(

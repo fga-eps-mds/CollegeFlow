@@ -20,7 +20,7 @@ class SubjectTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       visualDensity: const VisualDensity(vertical: -4),
-      horizontalTitleGap: 16.0,
+      horizontalTitleGap: spacingXXXS,
       textColor: colorBlack,
       iconColor: colorBlack,
       shape: RoundedRectangleBorder(
