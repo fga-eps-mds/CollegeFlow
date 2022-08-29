@@ -13,6 +13,7 @@ class GetSubjectListImpl implements GetSubjectList {
   }
 }
 
+//TODO(Mauricio-Machado): Remove mock for subjectList
 final List<Subject> subjectList = List.generate(
   12,
   (index) => Subject(
