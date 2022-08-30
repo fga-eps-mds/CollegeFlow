@@ -56,6 +56,4 @@ class SubjectTile extends StatelessWidget {
       ),
     );
   }
-
-  void setState(Null Function() param0) {}
 }
