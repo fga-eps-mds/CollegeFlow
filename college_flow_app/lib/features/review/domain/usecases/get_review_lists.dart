@@ -15,6 +15,7 @@ class GetReviewListImpl implements GetReviewList {
   }
 }
 
+//TODO(Mauricio-Machado): Remove when implemented usecase
 final List<Review> reviewList = List.generate(
   12,
   (index) => Review(
