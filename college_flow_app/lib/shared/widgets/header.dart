@@ -19,11 +19,15 @@ class Header extends StatelessWidget {
   final String title;
   final TextAlign textAlign;
   bool get hasDescription => description != null;
-  
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(top: spacingXXS, bottom: spacingNano, right: spacingXXS, left: spacingXXS),
+      padding: const EdgeInsets.only(
+          top: spacingXXS,
+          bottom: spacingNano,
+          right: spacingXXS,
+          left: spacingXXS),
       width: double.maxFinite,
       color: colorPrimary,
       child: Column(
@@ -36,13 +40,12 @@ class Header extends StatelessWidget {
             ),
           ),
           Text(
-              title,
-              style: Theme.of(context).textTheme.displayMedium?.copyWith(
-                    color: colorWhite,
-                  ),
-              textAlign: textAlign,
-            ),
-
+            title,
+            style: Theme.of(context).textTheme.displayMedium?.copyWith(
+                  color: colorWhite,
+                ),
+            textAlign: textAlign,
+          ),
           if (hasDescription)
             Text(
               description!,
