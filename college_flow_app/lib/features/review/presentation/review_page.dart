@@ -1,21 +1,16 @@
 import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
 import 'package:college_flow_app/core/service_locator_manager.dart';
-import 'package:college_flow_app/features/review/list_example.dart';
 import 'package:college_flow_app/features/review/presentation/bloc/load_review_list_bloc.dart';
 import 'package:college_flow_app/features/review/presentation/widgets/review_card.dart';
 import 'package:college_flow_app/features/review/presentation/widgets/subject_card.dart';
-import 'package:college_flow_app/shared/base_page.dart';
 import 'package:college_flow_app/shared/error_page.dart';
 import 'package:college_flow_app/shared/loading_page.dart';
 import 'package:college_flow_app/shared/widgets/buttons/flow_button.dart';
 import 'package:college_flow_app/shared/widgets/flow_icon.dart';
 import 'package:college_flow_app/shared/widgets/gap.dart';
-import 'package:college_flow_app/shared/widgets/loading.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-import '../domain/entities/review.dart';
 
 class ReviewPageParams {
   final String subjectName;

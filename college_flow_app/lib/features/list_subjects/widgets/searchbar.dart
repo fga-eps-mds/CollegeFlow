@@ -9,7 +9,10 @@ import '../../../shared/widgets/flow_icon.dart';
 class SearchBar extends StatelessWidget {
   const SearchBar({
     Key? key,
+    required this.searchSubject,
   }) : super(key: key);
+
+  final Function(String query) searchSubject;
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +23,7 @@ class SearchBar extends StatelessWidget {
       children: [
         const FlowIcon.search(
           color: colorSecondary,
-          size: spacingXS,
+          size: spacingSM,
         ),
         const VSpacer.quarck(),
         Expanded(
@@ -39,6 +42,10 @@ class SearchBar extends StatelessWidget {
               isDense: true,
               contentPadding: const EdgeInsets.all(spacingNano),
             ),
+            onChanged: searchSubject,
+            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  color: colorBlack,
+                ),
           ),
         ),
         const VSpacer.xxxs(),

@@ -1,12 +1,10 @@
-import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
-import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
-import 'package:college_flow_app/features/list_subjects/widgets/subject_tile.dart';
+import 'package:college_flow_app/core/service_locator_manager.dart';
+import 'package:college_flow_app/features/list_subjects/presentation/bloc/load_subject_list/load_subject_list_bloc.dart';
+import 'package:college_flow_app/features/list_subjects/presentation/subjects_page.dart';
+import 'package:college_flow_app/shared/error_page.dart';
+import 'package:college_flow_app/shared/loading_page.dart';
 import 'package:flutter/material.dart';
-
-import '../../../shared/widgets/gap.dart';
-import '../../../shared/widgets/header.dart';
-import '../../review/list_example.dart';
-import '../widgets/searchbar.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ListSubjectsPage extends StatefulWidget {
   const ListSubjectsPage({Key? key}) : super(key: key);
@@ -16,53 +14,36 @@ class ListSubjectsPage extends StatefulWidget {
 }
 
 class _ListSubjectsPageState extends State<ListSubjectsPage> {
-  final List<Subject> _mockSubjectList = subjectList;
+  late final SubjectListBloc subjectListBloc;
+
+  @override
+  void initState() {
+    subjectListBloc = SubjectListBloc(
+      getSubjectList: ServiceLocatorManager.I.get(),
+    );
+    subjectListBloc.add(
+      const SubjectListEvent.loadSubjectList(),
+    );
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: colorLightWhite,
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            //TO DO (Luan): Colocar o componente usado na tela Review form
-            const Header(
-              title: "disciplinas",
-              description: "Acesse uma Disciplina e veja suas Avaliações",
-              textAlign: TextAlign.start,
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: spacingXXS),
-              child: Column(
-                children: [
-                  const VSpacer.xxs(),
-                  const SearchBar(),
-                  const VSpacer.xxs(),
-                  MediaQuery.removePadding(
-                    context: context,
-                    removeTop: true,
-                    child: ListView.builder(
-                      physics: const NeverScrollableScrollPhysics(),
-                      shrinkWrap: true,
-                      itemCount: _mockSubjectList.length,
-                      itemBuilder: (context, index) {
-                        return Column(
-                          children: [
-                            SubjectTile(
-                              subject: _mockSubjectList[index],
-                            ),
-                            const VSpacer.xxxs(),
-                          ],
-                        );
-                      },
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
-      ),
+    return BlocBuilder<SubjectListBloc, SubjectListState>(
+      bloc: subjectListBloc,
+      builder: (context, state) {
+        return state.when(
+          error: () => const ErrorPage(
+            description: "Não foi possível carregar as disciplinas",
+          ),
+          loading: () => const LoadingPage(
+            description: "Carregando disciplinas...",
+          ),
+          loaded: (subjectList) => SubjectsPage(
+            subjectList: subjectList,
+          ),
+        );
+      },
     );
   }
 }
