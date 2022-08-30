@@ -67,7 +67,7 @@ class WalkthroughBasePage extends StatelessWidget {
               style: const FlowButtonStyle.whiteBorder(),
               //TODO(Mauricio-Machado): Change redirection page to list of subjects
               onTap: () => Navigator.of(context).pushNamed(
-                FlowRoutes.reviewList,
+                FlowRoutes.subjectsList,
               ),
             ),
         ],

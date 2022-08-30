@@ -1,5 +1,23 @@
 import 'domain/entities/review.dart';
 
+class Subject {
+  final String name;
+  final String code;
+
+  Subject({
+    required this.name,
+    required this.code,
+  });
+}
+
+final List<Subject> subjectList = List.generate(
+  12,
+  (index) => Subject(
+    name: 'any_name $index',
+    code: 'any_code $index',
+  ),
+);
+
 final List<Review> reviewList = List.generate(
   12,
   (_) => Review(

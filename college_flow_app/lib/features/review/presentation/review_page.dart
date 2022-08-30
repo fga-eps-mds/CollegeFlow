@@ -17,16 +17,31 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../domain/entities/review.dart';
 
+class ReviewPageParams {
+  final String subjectName;
+  final String subjectCode;
+
+  const ReviewPageParams({
+    required this.subjectCode,
+    required this.subjectName,
+  });
+}
+
 class ReviewPage extends StatefulWidget {
-  const ReviewPage({Key? key}) : super(key: key);
+  const ReviewPage({
+    Key? key,
+    required this.params,
+  }) : super(
+          key: key,
+        );
+
+  final ReviewPageParams params;
 
   @override
   State<ReviewPage> createState() => _ReviewPageState();
 }
 
 class _ReviewPageState extends State<ReviewPage> {
-  final String _mockSubjectName = 'any_subject';
-  final String _mockSubjectCode = 'any_code';
   final double _scoreMean = 3.2;
 
   late final LoadReviewListBloc _loadReviewListBloc;
@@ -48,7 +63,7 @@ class _ReviewPageState extends State<ReviewPage> {
         return state.when(
           error: () => const ErrorPage(
             description:
-                'Erro ao carregar lista de reviews. Tente novamente mais tarde',
+                'Erro ao carregar lista de avaliações. Tente novamente mais tarde',
           ),
           loading: () => const LoadingPage(
             description: 'Carregando avaliações',
@@ -70,8 +85,8 @@ class _ReviewPageState extends State<ReviewPage> {
                           [
                             SubjectCard(
                               reviewScore: _scoreMean,
-                              subjectCode: _mockSubjectCode,
-                              subjectName: _mockSubjectName,
+                              subjectCode: widget.params.subjectCode,
+                              subjectName: widget.params.subjectName,
                             ),
                             const VSpacer.xs(),
                             Padding(
@@ -119,24 +134,28 @@ class _ReviewPageState extends State<ReviewPage> {
                             ),
                           ],
                         ),
-                      ),
+                      )
                     ],
                   ),
-                  SafeArea(
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: spacingXXS,
-                      ),
-                      child: Align(
-                        alignment: Alignment.bottomCenter,
-                        child: FlowButton(
-                          label: 'Criar avaliação',
-                          suffixIcon: const FlowIcon.editComment(),
-                          //TODO(Mauricio-Machado): Navigate to Review Form
-                          onTap: () {},
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: spacingXXS,
+                        ),
+                        child: Align(
+                          alignment: Alignment.bottomCenter,
+                          child: FlowButton(
+                            label: 'Criar avaliação',
+                            suffixIcon: const FlowIcon.editComment(),
+                            //TODO(Mauricio-Machado): Navigate to Review Form
+                            onTap: () {},
+                          ),
                         ),
                       ),
-                    ),
+                      const VSpacer.xxs(),
+                    ],
                   ),
                 ],
               ),
