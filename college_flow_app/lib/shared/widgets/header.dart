@@ -9,25 +9,25 @@ import 'flow_icon_button.dart';
 class Header extends StatelessWidget {
   const Header({
     Key? key,
-    this.description,
+    this.description = "",
     this.title = "",
     this.textAlign = TextAlign.start,
   }) : super(
           key: key,
         );
-  final String? description;
+  final String description;
   final String title;
   final TextAlign textAlign;
-  bool get hasDescription => description != null;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.only(
-          top: spacingXXS,
-          bottom: spacingNano,
-          right: spacingXXS,
-          left: spacingXXS),
+        top: spacingXXS,
+        bottom: spacingNano,
+        right: spacingXXS,
+        left: spacingXXS,
+      ),
       width: double.maxFinite,
       color: colorPrimary,
       child: Column(
@@ -46,14 +46,13 @@ class Header extends StatelessWidget {
                 ),
             textAlign: textAlign,
           ),
-          if (hasDescription)
-            Text(
-              description!,
-              style: Theme.of(context).textTheme.labelLarge?.copyWith(
-                    color: colorWhite,
-                  ),
-              textAlign: textAlign,
-            ),
+          Text(
+            description,
+            style: Theme.of(context).textTheme.labelLarge?.copyWith(
+                  color: colorWhite,
+                ),
+            textAlign: textAlign,
+          ),
           const VSpacer.xxxs(),
         ],
       ),
