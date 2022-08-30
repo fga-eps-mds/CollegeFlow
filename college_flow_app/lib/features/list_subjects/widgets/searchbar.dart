@@ -23,7 +23,7 @@ class SearchBar extends StatelessWidget {
       children: [
         const FlowIcon.search(
           color: colorSecondary,
-          size: spacingXS,
+          size: spacingSM,
         ),
         const VSpacer.quarck(),
         Expanded(
@@ -43,6 +43,9 @@ class SearchBar extends StatelessWidget {
               contentPadding: const EdgeInsets.all(spacingNano),
             ),
             onChanged: searchSubject,
+            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  color: colorBlack,
+                ),
           ),
         ),
         const VSpacer.xxxs(),

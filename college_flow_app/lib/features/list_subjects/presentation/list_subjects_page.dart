@@ -1,8 +1,4 @@
-import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
-import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
 import 'package:college_flow_app/core/service_locator_manager.dart';
-import 'package:college_flow_app/features/list_subjects/domain/entities/subject.dart';
-import 'package:college_flow_app/features/list_subjects/domain/usecase/get_subjects_list.dart';
 import 'package:college_flow_app/features/list_subjects/presentation/bloc/load_subject_list/load_subject_list_bloc.dart';
 import 'package:college_flow_app/features/list_subjects/presentation/subjects_page.dart';
 import 'package:college_flow_app/shared/error_page.dart';
@@ -38,10 +34,10 @@ class _ListSubjectsPageState extends State<ListSubjectsPage> {
       builder: (context, state) {
         return state.when(
           error: () => const ErrorPage(
-            description: "Não conseguimos carregar as matérias.",
+            description: "Não foi possível carregar as disciplinas",
           ),
           loading: () => const LoadingPage(
-            description: "Carregando matérias",
+            description: "Carregando disciplinas...",
           ),
           loaded: (subjectList) => SubjectsPage(
             subjectList: subjectList,
