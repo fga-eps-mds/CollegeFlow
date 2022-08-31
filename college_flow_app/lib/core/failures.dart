@@ -7,9 +7,9 @@ abstract class Failure extends Equatable {
   final Map<String, dynamic>? extraData;
 
   const Failure({
-    required this.code,
-    required this.title,
-    required this.message,
+    this.code,
+    this.title,
+    this.message,
     this.extraData,
   });
 
@@ -27,6 +27,15 @@ class UnhandledFailure extends Failure {
     required super.code,
     required super.title,
     required super.message,
+    super.extraData,
+  });
+}
+
+class ServerFailure extends Failure {
+  const ServerFailure({
+    super.code,
+    super.title,
+    super.message,
     super.extraData,
   });
 }
