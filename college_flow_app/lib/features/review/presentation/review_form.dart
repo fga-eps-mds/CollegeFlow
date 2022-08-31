@@ -1,4 +1,5 @@
 import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
+import 'package:college_flow_app/config/design_system/data/object_styles/object_styles.dart';
 import 'package:college_flow_app/features/review/presentation/widgets/textfields/flow_text_field.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
@@ -47,6 +48,7 @@ class _ReviewFormState extends State<ReviewForm> {
                       padding:
                           const EdgeInsets.symmetric(horizontal: spacingXXS),
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           const FlowTextField(
                             label: 'Nome do Professor Avaliado',
@@ -60,10 +62,43 @@ class _ReviewFormState extends State<ReviewForm> {
                             borderColor: colorSecondary,
                           ),
                           const VSpacer.xxs(),
-                          const FlowTextField(
-                            label: 'Descrição',
-                            hint: 'Insira uma Descrição para a avaliação',
-                            borderColor: colorSecondary,
+                          Text(
+                            'Descrição',
+                            style: Theme.of(context).textTheme.titleMedium,
+                            textAlign: TextAlign.start,
+                          ),
+                          const VSpacer.nano(),
+                          Container(
+                            height: 200,
+                            padding: const EdgeInsets.only(
+                              left: spacingNano,
+                              right: spacingNano,
+                              bottom: spacingNano,
+                            ),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(
+                                objectStyleBorderRadiusDefault,
+                              ),
+                              border: Border.all(
+                                color: colorSecondary,
+                                width: 1,
+                              ),
+                            ),
+                            child: TextField(
+                              //TODO: pass controller here
+                              decoration: InputDecoration(
+                                border: InputBorder.none,
+                                hintText:
+                                    'Insira uma Descrição para a avaliação',
+                                hintStyle: Theme.of(context)
+                                    .textTheme
+                                    .bodyMedium
+                                    ?.copyWith(color: colorDarkWhite),
+                              ),
+                              maxLines: null,
+                              expands: true,
+                              maxLength: 500,
+                            ),
                           ),
                           const VSpacer.xxs(),
                           Align(
