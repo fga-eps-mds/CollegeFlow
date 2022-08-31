@@ -1,6 +1,4 @@
-import 'package:college_flow_app/features/list_subjects/domain/entities/subject.dart';
-import 'package:college_flow_app/features/list_subjects/domain/usecase/get_subjects_list.dart';
-import 'package:college_flow_app/features/review/domain/entities/review.dart';
+import 'package:college_flow_app/features/subject/domain/entities/subject.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 

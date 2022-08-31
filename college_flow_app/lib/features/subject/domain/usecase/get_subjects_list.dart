@@ -1,5 +1,5 @@
 import 'package:college_flow_app/core/failures.dart';
-import 'package:college_flow_app/features/list_subjects/domain/entities/subject.dart';
+import 'package:college_flow_app/features/subject/domain/entities/subject.dart';
 import 'package:dartz/dartz.dart';
 
 abstract class GetSubjectList {

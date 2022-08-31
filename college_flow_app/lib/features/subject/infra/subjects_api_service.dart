@@ -1,4 +1,4 @@
-import 'package:college_flow_app/features/list_subjects/data/models/subject_model.dart';
+import 'package:college_flow_app/features/subject/data/models/subject_model.dart';
 import 'package:dio/dio.dart' hide Headers;
 import 'package:retrofit/retrofit.dart';
 

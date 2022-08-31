@@ -1,6 +1,6 @@
 import 'package:college_flow_app/core/injection_container.dart';
-import 'package:college_flow_app/features/list_subjects/domain/usecase/get_subjects_list.dart';
-import 'package:college_flow_app/features/list_subjects/infra/subjects_api_service.dart';
+import 'package:college_flow_app/features/subject/domain/usecase/get_subjects_list.dart';
+import 'package:college_flow_app/features/subject/infra/subjects_api_service.dart';
 import 'package:get_it/get_it.dart';
 
 class SubjectInjectionContainer implements InjectionContainer {
