@@ -1,5 +1,6 @@
 import 'package:college_flow_app/core/failures.dart';
 import 'package:college_flow_app/features/subject/domain/entities/subject.dart';
+import 'package:college_flow_app/features/subject/domain/repositories/subject_repository.dart';
 import 'package:dartz/dartz.dart';
 
 abstract class GetSubjectList {
@@ -7,17 +8,12 @@ abstract class GetSubjectList {
 }
 
 class GetSubjectListImpl implements GetSubjectList {
+  final SubjectRepository subjectRepository;
+
+  GetSubjectListImpl({required this.subjectRepository});
+
   @override
   Future<Either<Failure, List<Subject>>> call() async {
-    return Right(subjectList);
+    return await subjectRepository.getReviewList();
   }
 }
-
-//TODO(Mauricio-Machado): Remove mock for subjectList
-final List<Subject> subjectList = List.generate(
-  12,
-  (index) => Subject(
-    name: 'any_name $index',
-    code: 'any_code $index',
-  ),
-);
