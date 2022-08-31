@@ -3,7 +3,7 @@ import 'package:dio/dio.dart';
 class APIClient {
   final BaseOptions _baseOptions = BaseOptions(
     //TODO(Mauricio-Machado): Insert here env value
-    baseUrl: 'http://localhost:8000/api',
+    baseUrl: 'http://localhost:8000',
     connectTimeout: 5000,
     receiveTimeout: 3000,
   );
