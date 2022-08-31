@@ -31,15 +31,15 @@ Dívidas técnicas repontuadas
 
 # Retropectiva
 
-![Retrsopectiva]()
+![Retrsopectiva](../img/gerenciamento/Retrospectiva/Retrospectiva09.png)
 
 # Review
 
-- Objetivo Alcançado?
+- Objetivo Alcançado? Não, o front end ainda não está utilizando recursos do back end nem suas funções. Isso ocorreu pela má organização do time como um todo, faltando comunicação e planejamento necessário
 
-- Estimativa correta?
+- Estimativa correta? A estimativa de pontos ficou a baixo do comum, porém, como a ultima semana teve diversos impedimentos do time, não conseguimos atender a expectativa
 
-- Tarefas bem distribuidas?
+- Tarefas bem distribuidas? Sim, todos ficaram com pelo menos uma tarefa no trabalho
 
 # Quadro de Conhecimento
 
