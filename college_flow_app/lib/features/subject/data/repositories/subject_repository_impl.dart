@@ -1,10 +1,10 @@
 import 'package:college_flow_app/core/error_logger.dart';
 import 'package:college_flow_app/core/exceptions.dart';
 import 'package:college_flow_app/features/subject/data/datasources/subject_datasource.dart';
+import 'package:college_flow_app/features/subject/data/mappers/subject_mapper.dart';
 import 'package:college_flow_app/features/subject/domain/entities/subject.dart';
 import 'package:college_flow_app/core/failures.dart';
 import 'package:college_flow_app/features/subject/domain/repositories/subject_repository.dart';
-import 'package:college_flow_app/features/subject/mappers/subject_mapper.dart';
 import 'package:dartz/dartz.dart';
 
 class SubjectRepositoryImpl implements SubjectRepository {
@@ -15,9 +15,9 @@ class SubjectRepositoryImpl implements SubjectRepository {
   });
 
   @override
-  Future<Either<Failure, List<Subject>>> getReviewList() async {
+  Future<Either<Failure, List<Subject>>> getSubjects() async {
     try {
-      final model = await subjectDatasource.getSubjectList();
+      final model = await subjectDatasource.getSubjects();
       final result = model
           .map(
             (subjectModel) => SubjectMapper.toEntity(

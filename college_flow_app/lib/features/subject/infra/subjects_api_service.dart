@@ -15,5 +15,5 @@ abstract class SubjectAPIService {
   @Headers({
     'Content-type': 'application/json',
   })
-  Future<List<SubjectModel>> getReviewList();
+  Future<List<SubjectModel>> getSubjects();
 }

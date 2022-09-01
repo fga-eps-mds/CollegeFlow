@@ -14,6 +14,6 @@ class GetSubjectListImpl implements GetSubjectList {
 
   @override
   Future<Either<Failure, List<Subject>>> call() async {
-    return await subjectRepository.getReviewList();
+    return await subjectRepository.getSubjects();
   }
 }
