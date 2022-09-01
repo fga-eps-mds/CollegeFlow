@@ -1,6 +1,6 @@
 import 'package:college_flow_app/core/service_locator_manager.dart';
-import 'package:college_flow_app/features/list_subjects/presentation/bloc/load_subject_list/load_subject_list_bloc.dart';
-import 'package:college_flow_app/features/list_subjects/presentation/subjects_page.dart';
+import 'package:college_flow_app/features/subject/presentation/bloc/load_subject_list/load_subject_list_bloc.dart';
+import 'package:college_flow_app/features/subject/presentation/subjects_page.dart';
 import 'package:college_flow_app/shared/error_page.dart';
 import 'package:college_flow_app/shared/loading_page.dart';
 import 'package:flutter/material.dart';

@@ -1,11 +1,10 @@
 import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
-import 'package:college_flow_app/features/list_subjects/domain/entities/subject.dart';
-import 'package:college_flow_app/features/list_subjects/presentation/bloc/filter_subject_list/filter_subject_list_bloc.dart';
-import 'package:college_flow_app/features/list_subjects/widgets/searchbar.dart';
-import 'package:college_flow_app/features/list_subjects/widgets/subject_tile.dart';
+import 'package:college_flow_app/features/subject/domain/entities/subject.dart';
+import 'package:college_flow_app/features/subject/presentation/bloc/filter_subject_list/filter_subject_list_bloc.dart';
+import 'package:college_flow_app/features/subject/widgets/searchbar.dart';
+import 'package:college_flow_app/features/subject/widgets/subject_tile.dart';
 import 'package:college_flow_app/shared/widgets/gap.dart';
-import 'package:college_flow_app/features/list_subjects/widgets/list_subjects_card.dart';
 import 'package:college_flow_app/shared/widgets/loading.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
