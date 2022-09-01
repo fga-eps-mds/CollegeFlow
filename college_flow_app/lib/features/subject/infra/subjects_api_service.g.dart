@@ -16,7 +16,7 @@ class _SubjectAPIService implements SubjectAPIService {
   String? baseUrl;
 
   @override
-  Future<List<SubjectModel>> getReviewList() async {
+  Future<List<SubjectModel>> getSubjects() async {
     const _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{r'Content-type': 'application/json'};

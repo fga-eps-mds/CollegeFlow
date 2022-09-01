@@ -15,9 +15,9 @@ class SubjectRepositoryImpl implements SubjectRepository {
   });
 
   @override
-  Future<Either<Failure, List<Subject>>> getReviewList() async {
+  Future<Either<Failure, List<Subject>>> getSubjects() async {
     try {
-      final model = await subjectDatasource.getSubjectList();
+      final model = await subjectDatasource.getSubjects();
       final result = model
           .map(
             (subjectModel) => SubjectMapper.toEntity(
