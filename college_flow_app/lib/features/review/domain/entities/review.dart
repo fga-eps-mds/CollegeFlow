@@ -5,14 +5,14 @@ class Review extends Equatable {
   final String teacherName;
   final double score;
   final String title;
-  final String description;
+  final String? description;
 
   const Review({
     required this.voteCounter,
     required this.teacherName,
     required this.score,
     required this.title,
-    required this.description,
+    this.description,
   });
 
   @override
