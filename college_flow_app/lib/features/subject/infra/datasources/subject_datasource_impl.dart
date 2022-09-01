@@ -1,3 +1,4 @@
+import 'package:college_flow_app/core/error_logger.dart';
 import 'package:college_flow_app/core/exceptions.dart';
 import 'package:college_flow_app/features/subject/data/datasources/subject_datasource.dart';
 import 'package:college_flow_app/features/subject/data/models/subject_model.dart';
@@ -12,16 +13,22 @@ class SubjectDatasourceImpl implements SubjectDatasource {
   });
 
   @override
-  Future<List<SubjectModel>> getSubjectList() async {
+  Future<List<SubjectModel>> getSubjects() async {
     try {
-      final result = await apiService.getReviewList();
+      final result = await apiService.getSubjects();
       return result;
-    } on DioError {
-      throw const ServerException();
-    } catch (e) {
-      throw UnhandledException(
-        message: e.toString(),
+    } on DioError catch (e) {
+      FlowLogger.showError(
+          'SubjectDatasourceImpl - DioError', 'getSubjects', e);
+      throw ServerException(
+        code: e.response?.statusCode,
+        extraData: e.response?.data,
+        message: e.message,
       );
+    } catch (e) {
+      FlowLogger.showError(
+          'SubjectDatasourceImpl - General Error', 'getSubjects', e);
+      throw const UnhandledException();
     }
   }
 }
