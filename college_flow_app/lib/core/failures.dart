@@ -24,9 +24,9 @@ abstract class Failure extends Equatable {
 
 class UnhandledFailure extends Failure {
   const UnhandledFailure({
-    required super.code,
-    required super.title,
-    required super.message,
+    super.code,
+    super.title,
+    super.message,
     super.extraData,
   });
 }
