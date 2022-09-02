@@ -13,9 +13,13 @@ class ReviewRepositoryImpl implements ReviewRepository {
   ReviewRepositoryImpl({required this.reviewDatasource});
 
   @override
-  Future<Either<Failure, List<Review>>> getReviews() async {
+  Future<Either<Failure, List<Review>>> getReviews({
+    required String code,
+  }) async {
     try {
-      final model = await reviewDatasource.getReviews();
+      final model = await reviewDatasource.getReviews(
+        code: code,
+      );
       final result = model
           .map(
             (reviewModel) => ReviewMapper.toEntity(
@@ -25,7 +29,6 @@ class ReviewRepositoryImpl implements ReviewRepository {
           .toList();
       return Right(result);
     } on FlowException catch (e) {
-      FlowLogger.showError('SubjectRepositoryImpl', 'getReviewList', e);
       return Left(e.toFailure());
     }
   }

@@ -444,19 +444,20 @@ abstract class _loaded implements LoadReviewListState {
 
 /// @nodoc
 mixin _$LoadReviewListEvent {
+  String get code => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() loadList,
+    required TResult Function(String code) loadList,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? loadList,
+    TResult Function(String code)? loadList,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? loadList,
+    TResult Function(String code)? loadList,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -476,6 +477,10 @@ mixin _$LoadReviewListEvent {
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
+
+  @JsonKey(ignore: true)
+  $LoadReviewListEventCopyWith<LoadReviewListEvent> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -483,6 +488,7 @@ abstract class $LoadReviewListEventCopyWith<$Res> {
   factory $LoadReviewListEventCopyWith(
           LoadReviewListEvent value, $Res Function(LoadReviewListEvent) then) =
       _$LoadReviewListEventCopyWithImpl<$Res>;
+  $Res call({String code});
 }
 
 /// @nodoc
@@ -493,13 +499,28 @@ class _$LoadReviewListEventCopyWithImpl<$Res>
   final LoadReviewListEvent _value;
   // ignore: unused_field
   final $Res Function(LoadReviewListEvent) _then;
+
+  @override
+  $Res call({
+    Object? code = freezed,
+  }) {
+    return _then(_value.copyWith(
+      code: code == freezed
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
 }
 
 /// @nodoc
-abstract class _$$_LoadListCopyWith<$Res> {
+abstract class _$$_LoadListCopyWith<$Res>
+    implements $LoadReviewListEventCopyWith<$Res> {
   factory _$$_LoadListCopyWith(
           _$_LoadList value, $Res Function(_$_LoadList) then) =
       __$$_LoadListCopyWithImpl<$Res>;
+  @override
+  $Res call({String code});
 }
 
 /// @nodoc
@@ -512,51 +533,74 @@ class __$$_LoadListCopyWithImpl<$Res>
 
   @override
   _$_LoadList get _value => super._value as _$_LoadList;
+
+  @override
+  $Res call({
+    Object? code = freezed,
+  }) {
+    return _then(_$_LoadList(
+      code: code == freezed
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
 }
 
 /// @nodoc
 
 class _$_LoadList implements _LoadList {
-  const _$_LoadList();
+  const _$_LoadList({required this.code});
+
+  @override
+  final String code;
 
   @override
   String toString() {
-    return 'LoadReviewListEvent.loadList()';
+    return 'LoadReviewListEvent.loadList(code: $code)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_LoadList);
+        (other.runtimeType == runtimeType &&
+            other is _$_LoadList &&
+            const DeepCollectionEquality().equals(other.code, code));
   }
 
   @override
-  int get hashCode => runtimeType.hashCode;
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(code));
+
+  @JsonKey(ignore: true)
+  @override
+  _$$_LoadListCopyWith<_$_LoadList> get copyWith =>
+      __$$_LoadListCopyWithImpl<_$_LoadList>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() loadList,
+    required TResult Function(String code) loadList,
   }) {
-    return loadList();
+    return loadList(code);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? loadList,
+    TResult Function(String code)? loadList,
   }) {
-    return loadList?.call();
+    return loadList?.call(code);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? loadList,
+    TResult Function(String code)? loadList,
     required TResult orElse(),
   }) {
     if (loadList != null) {
-      return loadList();
+      return loadList(code);
     }
     return orElse();
   }
@@ -591,5 +635,12 @@ class _$_LoadList implements _LoadList {
 }
 
 abstract class _LoadList implements LoadReviewListEvent {
-  const factory _LoadList() = _$_LoadList;
+  const factory _LoadList({required final String code}) = _$_LoadList;
+
+  @override
+  String get code;
+  @override
+  @JsonKey(ignore: true)
+  _$$_LoadListCopyWith<_$_LoadList> get copyWith =>
+      throw _privateConstructorUsedError;
 }

@@ -5,7 +5,9 @@ import 'package:dartz/dartz.dart';
 import '../entities/review.dart';
 
 abstract class GetReviewList {
-  Future<Either<Failure, List<Review>>> call();
+  Future<Either<Failure, List<Review>>> call({
+    required String code,
+  });
 }
 
 class GetReviewListImpl implements GetReviewList {
@@ -14,7 +16,9 @@ class GetReviewListImpl implements GetReviewList {
   GetReviewListImpl({required this.reviewRepository});
 
   @override
-  Future<Either<Failure, List<Review>>> call() async {
-    return await reviewRepository.getReviews();
+  Future<Either<Failure, List<Review>>> call({
+    required String code,
+  }) async {
+    return await reviewRepository.getReviews(code: code);
   }
 }
