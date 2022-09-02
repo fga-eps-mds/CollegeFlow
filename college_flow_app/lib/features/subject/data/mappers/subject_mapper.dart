@@ -8,12 +8,18 @@ abstract class SubjectMapper {
       "Subject's name cannot be empty",
     );
     assert(
-      model.subjectCode.isNotEmpty,
+      model.code.isNotEmpty,
       "Subject's code cannot be empty",
     );
+    assert(
+      model.rating >= 0,
+      "Subject's rating cannot be smaller than 0",
+    );
+
     return Subject(
       name: model.name,
-      code: model.subjectCode,
+      code: model.code,
+      rating: model.rating,
     );
   }
 }
