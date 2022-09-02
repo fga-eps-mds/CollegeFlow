@@ -90,6 +90,7 @@ class _FlowTextFieldState extends State<FlowTextField> {
             ),
             const VSpacer.nano(),
             TextField(
+              style: Theme.of(context).textTheme.bodyMedium,
               controller: _controller,
               onChanged: (text) {
                 if (widget.onChanged != null) {

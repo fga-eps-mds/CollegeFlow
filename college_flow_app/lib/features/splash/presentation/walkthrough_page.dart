@@ -21,7 +21,7 @@ class WalkthroughPageState extends State<WalkthroughPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xff2C61F4),
+      backgroundColor: colorPrimary,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(
