@@ -4,7 +4,7 @@ import 'package:college_flow_app/features/review/domain/entities/review.dart';
 abstract class ReviewMapper {
   static Review toEntity({required ReviewModel model}) {
     assert(
-      model.teacherName.isNotEmpty,
+      model.professor.isNotEmpty,
       "Teacher name cannot be empty",
     );
 
@@ -14,21 +14,15 @@ abstract class ReviewMapper {
     );
 
     assert(
-      model.voteCounter > 0,
-      "Vote counter shouldn't be lower than 0",
-    );
-
-    assert(
-      model.score > 0,
+      model.rating >= 0,
       "Score shouldn't be lower than 0",
     );
 
     return Review(
-      voteCounter: model.voteCounter,
-      teacherName: model.teacherName,
-      score: model.score,
+      professor: model.professor,
+      score: model.rating,
       title: model.title,
-      description: model.description,
+      description: model.comment,
     );
   }
 }
