@@ -4,19 +4,27 @@ import 'package:college_flow_app/features/review/data/repositories/review_reposi
 import 'package:college_flow_app/features/review/domain/repositories/review_repository.dart';
 import 'package:college_flow_app/features/review/domain/usecases/get_review_lists.dart';
 import 'package:college_flow_app/features/review/infra/datasources/review_datasource_impl.dart';
+import 'package:college_flow_app/features/review/infra/review_api_service.dart';
 import 'package:get_it/get_it.dart';
 
 class ReviewInjectionContainer implements InjectionContainer {
   @override
   Future<void> inject(GetIt serviceLocator) async {
+    await injectServices(serviceLocator);
     await injectDatasources(serviceLocator);
     await injectRepositories(serviceLocator);
     await injectUsecases(serviceLocator);
   }
 
+  Future<void> injectServices(GetIt serviceLocator) async {
+    serviceLocator.registerFactory<ReviewAPIService>(
+      () => ReviewAPIService(serviceLocator()),
+    );
+  }
+
   Future<void> injectDatasources(GetIt serviceLocator) async {
     serviceLocator.registerFactory<ReviewDatasource>(
-      () => ReviewDatasourceImpl(),
+      () => ReviewDatasourceImpl(apiService: serviceLocator()),
     );
   }
 
