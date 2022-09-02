@@ -16,14 +16,14 @@ class _ReviewAPIService implements ReviewAPIService {
   String? baseUrl;
 
   @override
-  Future<List<GetReviewResponseModel>> getReviews({required code}) async {
+  Future<GetReviewResponseModel> getReviews({required code}) async {
     const _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{r'Content-type': 'application/json'};
     _headers.removeWhere((k, v) => v == null);
     final _data = <String, dynamic>{};
-    final _result = await _dio.fetch<List<dynamic>>(
-        _setStreamType<List<GetReviewResponseModel>>(Options(
+    final _result = await _dio.fetch<Map<String, dynamic>>(
+        _setStreamType<GetReviewResponseModel>(Options(
                 method: 'GET',
                 headers: _headers,
                 extra: _extra,
@@ -31,10 +31,7 @@ class _ReviewAPIService implements ReviewAPIService {
             .compose(_dio.options, '/subject/${code}',
                 queryParameters: queryParameters, data: _data)
             .copyWith(baseUrl: baseUrl ?? _dio.options.baseUrl)));
-    var value = _result.data!
-        .map((dynamic i) =>
-            GetReviewResponseModel.fromJson(i as Map<String, dynamic>))
-        .toList();
+    final value = GetReviewResponseModel.fromJson(_result.data!);
     return value;
   }
 

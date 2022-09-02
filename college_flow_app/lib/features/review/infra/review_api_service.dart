@@ -13,9 +13,7 @@ abstract class ReviewAPIService {
 
   @GET("/subject/{code}")
   @Headers({'Content-type': 'application/json'})
-  //TODO(Mauricio-Machado): When backend update change to
-  // GetReviewResponseModel without list
-  Future<List<GetReviewResponseModel>> getReviews({
+  Future<GetReviewResponseModel> getReviews({
     @Path("code") required String code,
   });
 }

@@ -30,7 +30,7 @@ class ReviewDatasourceImpl implements ReviewDatasource {
       final result = await apiService.getReviews(
         code: code,
       );
-      final reviews = result[0].reviews;
+      final reviews = result.reviews;
       return reviews;
     } on DioError catch (e) {
       FlowLogger.showError('ReviewDatasourceImpl - DioError', 'getReviews', e);
