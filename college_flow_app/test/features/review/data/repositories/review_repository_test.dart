@@ -10,8 +10,8 @@ import '../../mocks/review_entity_factory.dart';
 
 void main() {
   const String code = 'any_code';
-  late ReviewRepositoryImpl sut;
-  late ReviewDatasourceMock datasourceMock;
+  late final ReviewRepositoryImpl sut;
+  late final ReviewDatasourceMock datasourceMock;
 
   setUpAll(
     () {

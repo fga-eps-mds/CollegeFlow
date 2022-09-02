@@ -10,8 +10,8 @@ import '../../mocks/review_repository_mock.dart';
 
 void main() {
   const String code = 'any_code';
-  late GetReviewListImpl sut;
-  late ReviewRepositoryMock repositoryMock;
+  late final GetReviewListImpl sut;
+  late final ReviewRepositoryMock repositoryMock;
 
   setUpAll(() {
     repositoryMock = ReviewRepositoryMock();
