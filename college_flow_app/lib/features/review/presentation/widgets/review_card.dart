@@ -42,7 +42,7 @@ class _ReviewCardState extends State<ReviewCard> {
           ),
           const VSpacer.quarck(),
           Text(
-            widget.review.description ?? '',
+            widget.review.description,
             style: Theme.of(context).textTheme.bodySmall,
           ),
           const VSpacer.nano(),
@@ -53,7 +53,7 @@ class _ReviewCardState extends State<ReviewCard> {
               ),
               const HSpacer.nano(),
               TeacherTag(
-                teacherName: widget.review.teacherName,
+                teacherName: widget.review.professor,
               ),
             ],
           ),
