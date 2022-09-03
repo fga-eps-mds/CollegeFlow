@@ -1,15 +1,13 @@
 import 'package:equatable/equatable.dart';
 
 class Review extends Equatable {
-  final int voteCounter;
-  final String teacherName;
+  final String professor;
   final double score;
   final String title;
   final String description;
 
   const Review({
-    required this.voteCounter,
-    required this.teacherName,
+    required this.professor,
     required this.score,
     required this.title,
     required this.description,
@@ -17,8 +15,7 @@ class Review extends Equatable {
 
   @override
   List get props => [
-        voteCounter,
-        teacherName,
+        professor,
         score,
         title,
         description,

@@ -4,7 +4,8 @@ class SubjectModelFactory {
   static SubjectModel build() {
     return SubjectModel(
       name: 'any_name',
-      subjectCode: 'any_code',
+      code: 'any_code',
+      rating: 0.0,
     );
   }
 

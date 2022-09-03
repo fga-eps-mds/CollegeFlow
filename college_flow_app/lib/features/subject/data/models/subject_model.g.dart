@@ -8,5 +8,6 @@ part of 'subject_model.dart';
 
 SubjectModel _$SubjectModelFromJson(Map<String, dynamic> json) => SubjectModel(
       name: json['name'] as String,
-      subjectCode: json['subjectCode'] as String,
+      code: json['code'] as String,
+      rating: (json['rating'] as num).toDouble(),
     );
