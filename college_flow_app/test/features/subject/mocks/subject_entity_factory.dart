@@ -5,6 +5,7 @@ class SubjectEntityFactory {
     return const Subject(
       name: 'any_name',
       code: 'any_code',
+      rating: 0.0,
     );
   }
 

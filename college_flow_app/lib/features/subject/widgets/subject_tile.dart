@@ -49,8 +49,9 @@ class SubjectTile extends StatelessWidget {
       onTap: () => Navigator.of(context).pushNamed(
         FlowRoutes.reviewList,
         arguments: ReviewPageParams(
-          subjectCode: subject.code,
-          subjectName: subject.name,
+          code: subject.code,
+          name: subject.name,
+          rating: subject.rating,
         ),
       ),
     );

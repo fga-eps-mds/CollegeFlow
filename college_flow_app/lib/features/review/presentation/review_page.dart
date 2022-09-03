@@ -3,6 +3,7 @@ import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart'
 import 'package:college_flow_app/core/service_locator_manager.dart';
 import 'package:college_flow_app/config/routes/flow_routes.dart';
 import 'package:college_flow_app/features/review/presentation/bloc/load_review_list_bloc.dart';
+import 'package:college_flow_app/features/review/presentation/widgets/no_review_card.dart';
 import 'package:college_flow_app/features/review/presentation/widgets/review_card.dart';
 import 'package:college_flow_app/features/review/presentation/widgets/subject_card.dart';
 import 'package:college_flow_app/shared/error_page.dart';
@@ -14,12 +15,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ReviewPageParams {
-  final String subjectName;
-  final String subjectCode;
+  final String name;
+  final String code;
+  final double rating;
 
   const ReviewPageParams({
-    required this.subjectCode,
-    required this.subjectName,
+    required this.code,
+    required this.name,
+    required this.rating,
   });
 }
 
@@ -38,8 +41,6 @@ class ReviewPage extends StatefulWidget {
 }
 
 class _ReviewPageState extends State<ReviewPage> {
-  final double _scoreMean = 3.2;
-
   late final LoadReviewListBloc _loadReviewListBloc;
 
   @override
@@ -48,7 +49,11 @@ class _ReviewPageState extends State<ReviewPage> {
     _loadReviewListBloc = LoadReviewListBloc(
       getReviewList: ServiceLocatorManager.I.get(),
     );
-    _loadReviewListBloc.add(const LoadReviewListEvent.loadList());
+    _loadReviewListBloc.add(
+      LoadReviewListEvent.loadList(
+        code: widget.params.code,
+      ),
+    );
   }
 
   @override
@@ -80,9 +85,9 @@ class _ReviewPageState extends State<ReviewPage> {
                         delegate: SliverChildListDelegate(
                           [
                             SubjectCard(
-                              reviewScore: _scoreMean,
-                              subjectCode: widget.params.subjectCode,
-                              subjectName: widget.params.subjectName,
+                              reviewScore: widget.params.rating,
+                              subjectCode: widget.params.code,
+                              subjectName: widget.params.name,
                             ),
                             const VSpacer.xs(),
                             Padding(
@@ -104,26 +109,29 @@ class _ReviewPageState extends State<ReviewPage> {
                                     color: colorSecondary,
                                   ),
                                   const VSpacer.xxs(),
-                                  MediaQuery.removePadding(
-                                    context: context,
-                                    removeTop: true,
-                                    child: ListView.builder(
-                                      physics:
-                                          const NeverScrollableScrollPhysics(),
-                                      shrinkWrap: true,
-                                      itemCount: reviewList.length,
-                                      itemBuilder: (context, index) {
-                                        return Column(
-                                          children: [
-                                            ReviewCard(
-                                              review: reviewList[index],
-                                            ),
-                                            const VSpacer.xxxs(),
-                                          ],
-                                        );
-                                      },
+                                  if (reviewList.isEmpty)
+                                    const NoReviewsCard()
+                                  else
+                                    MediaQuery.removePadding(
+                                      context: context,
+                                      removeTop: true,
+                                      child: ListView.builder(
+                                        physics:
+                                            const NeverScrollableScrollPhysics(),
+                                        shrinkWrap: true,
+                                        itemCount: reviewList.length,
+                                        itemBuilder: (context, index) {
+                                          return Column(
+                                            children: [
+                                              ReviewCard(
+                                                review: reviewList[index],
+                                              ),
+                                              const VSpacer.xxxs(),
+                                            ],
+                                          );
+                                        },
+                                      ),
                                     ),
-                                  ),
                                   const VSpacer.sm(),
                                 ],
                               ),
