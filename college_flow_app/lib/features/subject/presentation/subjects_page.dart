@@ -4,6 +4,8 @@ import 'package:college_flow_app/features/subject/domain/entities/subject.dart';
 import 'package:college_flow_app/features/subject/presentation/bloc/filter_subject_list/filter_subject_list_bloc.dart';
 import 'package:college_flow_app/features/subject/widgets/searchbar.dart';
 import 'package:college_flow_app/features/subject/widgets/subject_tile.dart';
+import 'package:college_flow_app/shared/widgets/flow_icon.dart';
+import 'package:college_flow_app/shared/widgets/flow_icon_button.dart';
 import 'package:college_flow_app/shared/widgets/gap.dart';
 import 'package:college_flow_app/shared/widgets/loading.dart';
 import 'package:flutter/material.dart';
@@ -41,16 +43,22 @@ class _SubjectsPageState extends State<SubjectsPage> {
     return Scaffold(
       body: CustomScrollView(
         slivers: [
-          const SliverAppBar(
+          SliverAppBar(
             floating: true,
             snap: true,
             backgroundColor: colorPrimary,
             elevation: 0,
+            leading: FlowIconButton(
+              key: const ValueKey('subjectGoBackButton'),
+              icon: const FlowIcon.chevronLeft(),
+              onTap: Navigator.of(context).pop,
+            ),
           ),
           SliverList(
             delegate: SliverChildListDelegate(
               [
                 const ListSubjectsCard(
+                  key: ValueKey('listSubjectsHeader'),
                   title: "disciplinas",
                   description: "Acesse uma Disciplina e veja suas Avaliações",
                   textAlign: TextAlign.start,
@@ -96,6 +104,7 @@ class _SubjectsPageState extends State<SubjectsPage> {
                                   return Column(
                                     children: [
                                       SubjectTile(
+                                        key: ValueKey(filteredList[index].name),
                                         subject: filteredList[index],
                                       ),
                                       const VSpacer.xxxs(),

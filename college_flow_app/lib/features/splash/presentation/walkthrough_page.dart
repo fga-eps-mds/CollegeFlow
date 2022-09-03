@@ -34,6 +34,7 @@ class WalkthroughPageState extends State<WalkthroughPage> {
                   controller: _pageViewController,
                   children: const [
                     WalkthroughBasePage(
+                      key: ValueKey('OnboardingFirstStep'),
                       title: "Disciplinas",
                       description:
                           "Descubra tudo sobre as disciplinas que está cursando e ainda vai cursar!",
@@ -67,6 +68,7 @@ class WalkthroughPageState extends State<WalkthroughPage> {
                       onDotClicked: _togglePage,
                     ),
                     FlowIconButton(
+                      key: const ValueKey('skipOnboardingButton'),
                       icon: const FlowIcon.arrowRight(),
                       onTap: () {
                         Navigator.of(context).pushNamed(

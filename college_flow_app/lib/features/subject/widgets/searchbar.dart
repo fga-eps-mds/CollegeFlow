@@ -28,6 +28,7 @@ class SearchBar extends StatelessWidget {
         const VSpacer.quarck(),
         Expanded(
           child: TextFormField(
+            key: const ValueKey('searchTextFieldInput'),
             decoration: InputDecoration(
               enabledBorder: OutlineInputBorder(
                 borderSide:
