@@ -2,7 +2,7 @@ import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
 import 'package:college_flow_app/config/design_system/data/object_styles/object_styles.dart';
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
 import 'package:college_flow_app/config/routes/flow_routes.dart';
-import 'package:college_flow_app/features/review/presentation/review_page.dart';
+import 'package:college_flow_app/features/review/presentation/review_list_page.dart';
 import 'package:college_flow_app/features/subject/domain/entities/subject.dart';
 import 'package:college_flow_app/shared/widgets/flow_icon.dart';
 import 'package:flutter/material.dart';
