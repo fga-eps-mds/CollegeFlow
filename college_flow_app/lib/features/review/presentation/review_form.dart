@@ -1,7 +1,6 @@
 import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
-import 'package:college_flow_app/config/design_system/data/object_styles/object_styles.dart';
 import 'package:college_flow_app/features/review/presentation/widgets/textfields/flow_text_field.dart';
-import 'package:college_flow_app/features/review/presentation/widgets/textfields/flow_text_field_variant.dart';
+import 'package:college_flow_app/features/review/presentation/widgets/textfields/description_text_field.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
 import 'package:college_flow_app/config/routes/flow_routes.dart';
@@ -19,9 +18,7 @@ class ReviewForm extends StatefulWidget {
 }
 
 class _ReviewFormState extends State<ReviewForm> {
-  final _pageViewController = PageController();
-  final String _mockSubjectName = 'Avaliação';
-  final String _mockSubjectCode = 'Avalie uma Disciplina';
+  final String _mockDescription = 'Lorem ipsum dolor sit amet, consectetu!';
 
   @override
   Widget build(BuildContext context) {
@@ -35,8 +32,8 @@ class _ReviewFormState extends State<ReviewForm> {
         child: Column(
           children: [
             Header(
-              subjectCode: _mockSubjectCode,
-              subjectName: _mockSubjectName,
+              title: 'Avaliação',
+              description: _mockDescription,
             ),
             const VSpacer.xxs(),
             Padding(
@@ -57,7 +54,7 @@ class _ReviewFormState extends State<ReviewForm> {
                   ),
                   const VSpacer.xxs(),
                   const VSpacer.nano(),
-                  const FlowTextFieldVariant(
+                  const DescriptionFieldText(
                       label: 'Descrição',
                       hint: 'Insira uma Descrição para a avaliação',
                       borderColor: colorSecondary),
@@ -84,7 +81,7 @@ class _ReviewFormState extends State<ReviewForm> {
                         color: colorSecondary,
                       ),
                       onRatingUpdate: (rating) {
-                        print(rating);
+                        //TODO (Wengel): Configurar funcionamento da seleção das estrelas (pontuação).
                       },
                     ),
                   ),
@@ -102,14 +99,6 @@ class _ReviewFormState extends State<ReviewForm> {
           ],
         ),
       ),
-    );
-  }
-
-  void _togglePage(int page) {
-    _pageViewController.animateToPage(
-      page,
-      duration: const Duration(milliseconds: 200),
-      curve: Curves.easeIn,
     );
   }
 }
