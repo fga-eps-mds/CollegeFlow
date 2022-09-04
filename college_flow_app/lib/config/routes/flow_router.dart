@@ -1,4 +1,5 @@
 import 'package:college_flow_app/config/routes/flow_routes.dart';
+import 'package:college_flow_app/features/review/presentation/review_form.dart';
 import 'package:college_flow_app/features/review/presentation/review_page.dart';
 import 'package:college_flow_app/features/splash/presentation/walkthrough_page.dart';
 import 'package:college_flow_app/features/subject/presentation/list_subjects_page.dart';
@@ -21,6 +22,9 @@ abstract class FlowRouter {
         break;
       case FlowRoutes.subjectsList:
         page = const ListSubjectsPage();
+        break;
+      case FlowRoutes.reviewForm:
+        page = const ReviewForm();
         break;
       case FlowRoutes.mainPage:
       default:
