@@ -1,6 +1,5 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:college_flow_app/features/review/domain/entities/review.dart';
-import 'package:college_flow_app/features/review/domain/usecases/get_review_lists.dart';
 import 'package:college_flow_app/features/review/presentation/bloc/load_review_list_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';
 
