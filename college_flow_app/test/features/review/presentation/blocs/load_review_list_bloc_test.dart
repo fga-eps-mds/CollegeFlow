@@ -7,8 +7,6 @@ import '../../mocks/get_review_list_mock.dart';
 import '../../mocks/review_entity_factory.dart';
 
 void main() {
-  late final LoadReviewListBloc loadReviewListBloc;
-
   final GetReviewListMock getReviewListMock = GetReviewListMock();
 
   final List<Review> reviewList = ReviewEntityFactory.buildList();
