@@ -1,20 +1,19 @@
 import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
-import 'package:college_flow_app/features/review/presentation/widgets/review_score_tag.dart';
 import 'package:college_flow_app/shared/widgets/gap.dart';
 import 'package:flutter/material.dart';
 
 class Header extends StatelessWidget {
   const Header({
     Key? key,
-    required this.subjectCode,
-    required this.subjectName,
+    required this.title,
+    required this.description,
   }) : super(
           key: key,
         );
 
-  final String subjectName;
-  final String subjectCode;
+  final String title;
+  final String description;
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +28,7 @@ class Header extends StatelessWidget {
           Align(
             alignment: Alignment.centerLeft,
             child: Text(
-              subjectName,
+              title,
               style: Theme.of(context).textTheme.displaySmall?.copyWith(
                     color: colorWhite,
                   ),
@@ -43,7 +42,7 @@ class Header extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                subjectCode,
+                description,
                 style: Theme.of(context).textTheme.labelLarge?.copyWith(
                       color: colorWhite,
                     ),
