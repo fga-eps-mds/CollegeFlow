@@ -12,6 +12,8 @@ class ReviewModel {
   factory ReviewModel.fromJson(Map<String, dynamic> json) =>
       _$ReviewModelFromJson(json);
 
+  Map<String, dynamic> toJson() => _$ReviewModelToJson(this);
+
   ReviewModel({
     required this.rating,
     required this.professor,
