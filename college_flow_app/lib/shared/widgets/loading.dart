@@ -23,7 +23,7 @@ class FlowLoading extends StatefulWidget {
       );
 
   @override
-  _FlowLoadingState createState() => _FlowLoadingState();
+  State<FlowLoading> createState() => _FlowLoadingState();
 }
 
 class _FlowLoadingState extends State<FlowLoading>

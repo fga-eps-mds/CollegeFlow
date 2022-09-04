@@ -27,8 +27,6 @@ class FlowIcon extends StatelessWidget {
         key: key,
       );
 
-  //TODO(Mauricio_Machado): Remove this comment after documented this
-  //If we add icons outside of material ones the logic will nee refac
   @override
   Widget build(BuildContext context) {
     return _FlowIcon(

@@ -6,7 +6,6 @@ import '../../mocks/get_subjects_list_mock.dart';
 import '../../mocks/subject_entity_factory.dart';
 
 void main() {
-  late SubjectListBloc bloc;
   late GetSubjectsListMock getSubjectsListMock;
 
   SubjectListBloc makeBloc() => SubjectListBloc(
