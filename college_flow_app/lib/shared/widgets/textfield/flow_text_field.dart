@@ -29,12 +29,6 @@ class FlowTextField extends StatefulWidget {
 }
 
 class _FlowTextFieldState extends State<FlowTextField> {
-  final _baseBorder = const OutlineInputBorder(
-    borderSide: BorderSide(
-      color: colorWhite,
-    ),
-  );
-
   late final TextEditingController _textEditingController;
   late final GlobalKey<FormFieldState> _formFieldStateKey;
 
@@ -51,12 +45,12 @@ class _FlowTextFieldState extends State<FlowTextField> {
   void initState() {
     _formFieldStateKey = GlobalKey<FormFieldState>();
 
-    final _initialValue = TextEditingValue(text: widget.initialValue);
+    final initialValue = TextEditingValue(text: widget.initialValue);
 
     if (widget.controller != null) {
-      widget.controller!.value = _initialValue;
+      widget.controller!.value = initialValue;
     } else {
-      _textEditingController = TextEditingController.fromValue(_initialValue);
+      _textEditingController = TextEditingController.fromValue(initialValue);
     }
 
     super.initState();
