@@ -9,15 +9,15 @@ class FlowTextField extends StatefulWidget {
     required this.label,
     this.initialValue = '',
     this.onChanged,
-    this.placeholder,
+    this.hint,
     this.controller,
     this.borderColor = colorWhite,
-    this.isDark = false,
+    this.isDark = true,
   }) : super(key: key);
 
   final String label;
   final String initialValue;
-  final String? placeholder;
+  final String? hint;
   final TextEditingController? controller;
   final Color borderColor;
   final bool isDark;
@@ -80,16 +80,17 @@ class _FlowTextFieldState extends State<FlowTextField> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.only(left: spacingNano),
+              padding: const EdgeInsets.only(),
               child: Text(
                 widget.label,
-                style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                style: Theme.of(context).textTheme.titleMedium?.copyWith(
                       color: widget.isDark ? colorBlack : colorWhite,
                     ),
               ),
             ),
-            const VSpacer.quarck(),
+            const VSpacer.nano(),
             TextField(
+              style: Theme.of(context).textTheme.bodyMedium,
               controller: _controller,
               onChanged: (text) {
                 if (widget.onChanged != null) {
@@ -99,6 +100,10 @@ class _FlowTextFieldState extends State<FlowTextField> {
                 state.didChange(text);
               },
               decoration: InputDecoration(
+                hintText: widget.hint,
+                hintStyle: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                      color: colorDarkWhite,
+                    ),
                 contentPadding: const EdgeInsets.all(spacingNano),
                 focusedBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: widget.borderColor),
