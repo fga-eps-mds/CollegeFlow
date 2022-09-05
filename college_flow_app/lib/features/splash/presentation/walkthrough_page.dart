@@ -40,6 +40,7 @@ class WalkthroughPageState extends State<WalkthroughPage> {
                       imgPath: walkthrough01,
                     ),
                     WalkthroughBasePage(
+                      key: ValueKey('OnboardingSecondStep'),
                       title: "Avaliações",
                       description:
                           "Saiba o que os alunos estão achando de outras disciplinas em tempo real!",

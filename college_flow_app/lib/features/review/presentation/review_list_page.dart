@@ -162,6 +162,7 @@ class _ReviewPageState extends State<ReviewPage> {
                         child: Align(
                           alignment: Alignment.bottomCenter,
                           child: FlowButton(
+                            key: const ValueKey('CreateReviewButton'),
                             label: 'Criar avaliação',
                             suffixIcon: const FlowIcon.editComment(),
                             onTap: () => Navigator.of(context).pushNamed(
