@@ -19,7 +19,8 @@ mixin _$CreateReviewState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(Map<String, String> errors) error,
+    required TResult Function(Map<String, String> inputErrors) invalid,
+    required TResult Function() error,
     required TResult Function() loading,
     required TResult Function() sucess,
   }) =>
@@ -27,7 +28,8 @@ mixin _$CreateReviewState {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(Map<String, String> errors)? error,
+    TResult Function(Map<String, String> inputErrors)? invalid,
+    TResult Function()? error,
     TResult Function()? loading,
     TResult Function()? sucess,
   }) =>
@@ -35,7 +37,8 @@ mixin _$CreateReviewState {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(Map<String, String> errors)? error,
+    TResult Function(Map<String, String> inputErrors)? invalid,
+    TResult Function()? error,
     TResult Function()? loading,
     TResult Function()? sucess,
     required TResult orElse(),
@@ -44,6 +47,7 @@ mixin _$CreateReviewState {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
+    required TResult Function(_Invalid value) invalid,
     required TResult Function(_Error value) error,
     required TResult Function(_Loading value) loading,
     required TResult Function(_Sucess value) sucess,
@@ -52,6 +56,7 @@ mixin _$CreateReviewState {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
+    TResult Function(_Invalid value)? invalid,
     TResult Function(_Error value)? error,
     TResult Function(_Loading value)? loading,
     TResult Function(_Sucess value)? sucess,
@@ -60,6 +65,7 @@ mixin _$CreateReviewState {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
+    TResult Function(_Invalid value)? invalid,
     TResult Function(_Error value)? error,
     TResult Function(_Loading value)? loading,
     TResult Function(_Sucess value)? sucess,
@@ -126,7 +132,8 @@ class _$_Initial implements _Initial {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(Map<String, String> errors) error,
+    required TResult Function(Map<String, String> inputErrors) invalid,
+    required TResult Function() error,
     required TResult Function() loading,
     required TResult Function() sucess,
   }) {
@@ -137,7 +144,8 @@ class _$_Initial implements _Initial {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(Map<String, String> errors)? error,
+    TResult Function(Map<String, String> inputErrors)? invalid,
+    TResult Function()? error,
     TResult Function()? loading,
     TResult Function()? sucess,
   }) {
@@ -148,7 +156,8 @@ class _$_Initial implements _Initial {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(Map<String, String> errors)? error,
+    TResult Function(Map<String, String> inputErrors)? invalid,
+    TResult Function()? error,
     TResult Function()? loading,
     TResult Function()? sucess,
     required TResult orElse(),
@@ -163,6 +172,7 @@ class _$_Initial implements _Initial {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
+    required TResult Function(_Invalid value) invalid,
     required TResult Function(_Error value) error,
     required TResult Function(_Loading value) loading,
     required TResult Function(_Sucess value) sucess,
@@ -174,6 +184,7 @@ class _$_Initial implements _Initial {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
+    TResult Function(_Invalid value)? invalid,
     TResult Function(_Error value)? error,
     TResult Function(_Loading value)? loading,
     TResult Function(_Sucess value)? sucess,
@@ -185,6 +196,7 @@ class _$_Initial implements _Initial {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
+    TResult Function(_Invalid value)? invalid,
     TResult Function(_Error value)? error,
     TResult Function(_Loading value)? loading,
     TResult Function(_Sucess value)? sucess,
@@ -202,10 +214,167 @@ abstract class _Initial implements CreateReviewState {
 }
 
 /// @nodoc
+abstract class _$$_InvalidCopyWith<$Res> {
+  factory _$$_InvalidCopyWith(
+          _$_Invalid value, $Res Function(_$_Invalid) then) =
+      __$$_InvalidCopyWithImpl<$Res>;
+  $Res call({Map<String, String> inputErrors});
+}
+
+/// @nodoc
+class __$$_InvalidCopyWithImpl<$Res>
+    extends _$CreateReviewStateCopyWithImpl<$Res>
+    implements _$$_InvalidCopyWith<$Res> {
+  __$$_InvalidCopyWithImpl(_$_Invalid _value, $Res Function(_$_Invalid) _then)
+      : super(_value, (v) => _then(v as _$_Invalid));
+
+  @override
+  _$_Invalid get _value => super._value as _$_Invalid;
+
+  @override
+  $Res call({
+    Object? inputErrors = freezed,
+  }) {
+    return _then(_$_Invalid(
+      inputErrors: inputErrors == freezed
+          ? _value._inputErrors
+          : inputErrors // ignore: cast_nullable_to_non_nullable
+              as Map<String, String>,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$_Invalid implements _Invalid {
+  const _$_Invalid({required final Map<String, String> inputErrors})
+      : _inputErrors = inputErrors;
+
+  final Map<String, String> _inputErrors;
+  @override
+  Map<String, String> get inputErrors {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(_inputErrors);
+  }
+
+  @override
+  String toString() {
+    return 'CreateReviewState.invalid(inputErrors: $inputErrors)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_Invalid &&
+            const DeepCollectionEquality()
+                .equals(other._inputErrors, _inputErrors));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType, const DeepCollectionEquality().hash(_inputErrors));
+
+  @JsonKey(ignore: true)
+  @override
+  _$$_InvalidCopyWith<_$_Invalid> get copyWith =>
+      __$$_InvalidCopyWithImpl<_$_Invalid>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function(Map<String, String> inputErrors) invalid,
+    required TResult Function() error,
+    required TResult Function() loading,
+    required TResult Function() sucess,
+  }) {
+    return invalid(inputErrors);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function(Map<String, String> inputErrors)? invalid,
+    TResult Function()? error,
+    TResult Function()? loading,
+    TResult Function()? sucess,
+  }) {
+    return invalid?.call(inputErrors);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function(Map<String, String> inputErrors)? invalid,
+    TResult Function()? error,
+    TResult Function()? loading,
+    TResult Function()? sucess,
+    required TResult orElse(),
+  }) {
+    if (invalid != null) {
+      return invalid(inputErrors);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_Invalid value) invalid,
+    required TResult Function(_Error value) error,
+    required TResult Function(_Loading value) loading,
+    required TResult Function(_Sucess value) sucess,
+  }) {
+    return invalid(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_Invalid value)? invalid,
+    TResult Function(_Error value)? error,
+    TResult Function(_Loading value)? loading,
+    TResult Function(_Sucess value)? sucess,
+  }) {
+    return invalid?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_Invalid value)? invalid,
+    TResult Function(_Error value)? error,
+    TResult Function(_Loading value)? loading,
+    TResult Function(_Sucess value)? sucess,
+    required TResult orElse(),
+  }) {
+    if (invalid != null) {
+      return invalid(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _Invalid implements CreateReviewState {
+  const factory _Invalid({required final Map<String, String> inputErrors}) =
+      _$_Invalid;
+
+  Map<String, String> get inputErrors;
+  @JsonKey(ignore: true)
+  _$$_InvalidCopyWith<_$_Invalid> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
 abstract class _$$_ErrorCopyWith<$Res> {
   factory _$$_ErrorCopyWith(_$_Error value, $Res Function(_$_Error) then) =
       __$$_ErrorCopyWithImpl<$Res>;
-  $Res call({Map<String, String> errors});
 }
 
 /// @nodoc
@@ -216,88 +385,63 @@ class __$$_ErrorCopyWithImpl<$Res> extends _$CreateReviewStateCopyWithImpl<$Res>
 
   @override
   _$_Error get _value => super._value as _$_Error;
-
-  @override
-  $Res call({
-    Object? errors = freezed,
-  }) {
-    return _then(_$_Error(
-      errors: errors == freezed
-          ? _value._errors
-          : errors // ignore: cast_nullable_to_non_nullable
-              as Map<String, String>,
-    ));
-  }
 }
 
 /// @nodoc
 
 class _$_Error implements _Error {
-  const _$_Error({required final Map<String, String> errors})
-      : _errors = errors;
-
-  final Map<String, String> _errors;
-  @override
-  Map<String, String> get errors {
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_errors);
-  }
+  const _$_Error();
 
   @override
   String toString() {
-    return 'CreateReviewState.error(errors: $errors)';
+    return 'CreateReviewState.error()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_Error &&
-            const DeepCollectionEquality().equals(other._errors, _errors));
+        (other.runtimeType == runtimeType && other is _$_Error);
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(_errors));
-
-  @JsonKey(ignore: true)
-  @override
-  _$$_ErrorCopyWith<_$_Error> get copyWith =>
-      __$$_ErrorCopyWithImpl<_$_Error>(this, _$identity);
+  int get hashCode => runtimeType.hashCode;
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(Map<String, String> errors) error,
+    required TResult Function(Map<String, String> inputErrors) invalid,
+    required TResult Function() error,
     required TResult Function() loading,
     required TResult Function() sucess,
   }) {
-    return error(errors);
+    return error();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(Map<String, String> errors)? error,
+    TResult Function(Map<String, String> inputErrors)? invalid,
+    TResult Function()? error,
     TResult Function()? loading,
     TResult Function()? sucess,
   }) {
-    return error?.call(errors);
+    return error?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(Map<String, String> errors)? error,
+    TResult Function(Map<String, String> inputErrors)? invalid,
+    TResult Function()? error,
     TResult Function()? loading,
     TResult Function()? sucess,
     required TResult orElse(),
   }) {
     if (error != null) {
-      return error(errors);
+      return error();
     }
     return orElse();
   }
@@ -306,6 +450,7 @@ class _$_Error implements _Error {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
+    required TResult Function(_Invalid value) invalid,
     required TResult Function(_Error value) error,
     required TResult Function(_Loading value) loading,
     required TResult Function(_Sucess value) sucess,
@@ -317,6 +462,7 @@ class _$_Error implements _Error {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
+    TResult Function(_Invalid value)? invalid,
     TResult Function(_Error value)? error,
     TResult Function(_Loading value)? loading,
     TResult Function(_Sucess value)? sucess,
@@ -328,6 +474,7 @@ class _$_Error implements _Error {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
+    TResult Function(_Invalid value)? invalid,
     TResult Function(_Error value)? error,
     TResult Function(_Loading value)? loading,
     TResult Function(_Sucess value)? sucess,
@@ -341,12 +488,7 @@ class _$_Error implements _Error {
 }
 
 abstract class _Error implements CreateReviewState {
-  const factory _Error({required final Map<String, String> errors}) = _$_Error;
-
-  Map<String, String> get errors;
-  @JsonKey(ignore: true)
-  _$$_ErrorCopyWith<_$_Error> get copyWith =>
-      throw _privateConstructorUsedError;
+  const factory _Error() = _$_Error;
 }
 
 /// @nodoc
@@ -390,7 +532,8 @@ class _$_Loading implements _Loading {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(Map<String, String> errors) error,
+    required TResult Function(Map<String, String> inputErrors) invalid,
+    required TResult Function() error,
     required TResult Function() loading,
     required TResult Function() sucess,
   }) {
@@ -401,7 +544,8 @@ class _$_Loading implements _Loading {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(Map<String, String> errors)? error,
+    TResult Function(Map<String, String> inputErrors)? invalid,
+    TResult Function()? error,
     TResult Function()? loading,
     TResult Function()? sucess,
   }) {
@@ -412,7 +556,8 @@ class _$_Loading implements _Loading {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(Map<String, String> errors)? error,
+    TResult Function(Map<String, String> inputErrors)? invalid,
+    TResult Function()? error,
     TResult Function()? loading,
     TResult Function()? sucess,
     required TResult orElse(),
@@ -427,6 +572,7 @@ class _$_Loading implements _Loading {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
+    required TResult Function(_Invalid value) invalid,
     required TResult Function(_Error value) error,
     required TResult Function(_Loading value) loading,
     required TResult Function(_Sucess value) sucess,
@@ -438,6 +584,7 @@ class _$_Loading implements _Loading {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
+    TResult Function(_Invalid value)? invalid,
     TResult Function(_Error value)? error,
     TResult Function(_Loading value)? loading,
     TResult Function(_Sucess value)? sucess,
@@ -449,6 +596,7 @@ class _$_Loading implements _Loading {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
+    TResult Function(_Invalid value)? invalid,
     TResult Function(_Error value)? error,
     TResult Function(_Loading value)? loading,
     TResult Function(_Sucess value)? sucess,
@@ -505,7 +653,8 @@ class _$_Sucess implements _Sucess {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(Map<String, String> errors) error,
+    required TResult Function(Map<String, String> inputErrors) invalid,
+    required TResult Function() error,
     required TResult Function() loading,
     required TResult Function() sucess,
   }) {
@@ -516,7 +665,8 @@ class _$_Sucess implements _Sucess {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(Map<String, String> errors)? error,
+    TResult Function(Map<String, String> inputErrors)? invalid,
+    TResult Function()? error,
     TResult Function()? loading,
     TResult Function()? sucess,
   }) {
@@ -527,7 +677,8 @@ class _$_Sucess implements _Sucess {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(Map<String, String> errors)? error,
+    TResult Function(Map<String, String> inputErrors)? invalid,
+    TResult Function()? error,
     TResult Function()? loading,
     TResult Function()? sucess,
     required TResult orElse(),
@@ -542,6 +693,7 @@ class _$_Sucess implements _Sucess {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
+    required TResult Function(_Invalid value) invalid,
     required TResult Function(_Error value) error,
     required TResult Function(_Loading value) loading,
     required TResult Function(_Sucess value) sucess,
@@ -553,6 +705,7 @@ class _$_Sucess implements _Sucess {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
+    TResult Function(_Invalid value)? invalid,
     TResult Function(_Error value)? error,
     TResult Function(_Loading value)? loading,
     TResult Function(_Sucess value)? sucess,
@@ -564,6 +717,7 @@ class _$_Sucess implements _Sucess {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
+    TResult Function(_Invalid value)? invalid,
     TResult Function(_Error value)? error,
     TResult Function(_Loading value)? loading,
     TResult Function(_Sucess value)? sucess,
