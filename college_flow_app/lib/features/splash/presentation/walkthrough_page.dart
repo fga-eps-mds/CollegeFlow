@@ -1,12 +1,13 @@
 import 'package:college_flow_app/config/constants/assets_contants.dart';
 import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
-import 'package:college_flow_app/config/routes/flow_routes.dart';
 import 'package:college_flow_app/features/splash/presentation/widgets/walkthrough_base_page.dart';
-import 'package:college_flow_app/shared/widgets/flow_icon.dart';
-import 'package:college_flow_app/shared/widgets/flow_icon_button.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+
+import '../../../config/routes/flow_routes.dart';
+import '../../../shared/widgets/flow_icon.dart';
+import '../../../shared/widgets/flow_icon_button.dart';
 
 class WalkthroughPage extends StatefulWidget {
   const WalkthroughPage({Key? key}) : super(key: key);
@@ -44,13 +45,13 @@ class WalkthroughPageState extends State<WalkthroughPage> {
                       description:
                           "Saiba o que os alunos estão achando de outras disciplinas em tempo real!",
                       imgPath: walkthrough02,
-                      isFinalPage: true,
                     ),
                   ],
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 24),
+                padding: const EdgeInsets.symmetric(
+                    horizontal: spacingXXXS, vertical: spacingXS),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -66,14 +67,19 @@ class WalkthroughPageState extends State<WalkthroughPage> {
                       ),
                       onDotClicked: _togglePage,
                     ),
-                    FlowIconButton(
-                      icon: const FlowIcon.arrowRight(),
-                      onTap: () {
-                        Navigator.of(context).pushNamed(
-                          FlowRoutes.subjectsList,
-                        );
-                      },
-                    ),
+                    InkWell(
+                        child: Text(
+                          "Começar",
+                          style:
+                              Theme.of(context).textTheme.labelLarge?.copyWith(
+                                    color: colorWhite,
+                                  ),
+                        ),
+                        onTap: () {
+                          Navigator.of(context).pushNamed(
+                            FlowRoutes.subjectsList,
+                          );
+                        }),
                   ],
                 ),
               ),
@@ -84,8 +90,6 @@ class WalkthroughPageState extends State<WalkthroughPage> {
     );
   }
 
-  //TO DO (Luan): Configurar a navegação pela arrow. Avançar as páginas e quando chegar na última
-  //ir para a tela de list_subjects_page
   void _togglePage(int page) {
     _pageViewController.animateToPage(
       page,
