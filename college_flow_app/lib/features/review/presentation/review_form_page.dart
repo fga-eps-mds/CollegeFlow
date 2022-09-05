@@ -1,7 +1,11 @@
 import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
+import 'package:college_flow_app/core/service_locator_manager.dart';
+import 'package:college_flow_app/features/review/presentation/bloc/load_review_list_bloc.dart';
 import 'package:college_flow_app/features/review/presentation/cubit/create_review_cubit.dart';
 import 'package:college_flow_app/features/review/presentation/widgets/textfields/flow_text_field.dart';
 import 'package:college_flow_app/features/review/presentation/widgets/textfields/description_text_field.dart';
+import 'package:college_flow_app/shared/error_page.dart';
+import 'package:college_flow_app/shared/widgets/flow_icon_button.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -47,7 +51,9 @@ class _ReviewFormState extends State<ReviewForm> {
 
   @override
   void initState() {
-    _createReviewCubit = CreateReviewCubit();
+    _createReviewCubit = CreateReviewCubit(
+      createReview: ServiceLocatorManager.I.get(),
+    );
     super.initState();
   }
 
@@ -63,6 +69,12 @@ class _ReviewFormState extends State<ReviewForm> {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: colorPrimary,
+        leading: FlowIconButton(
+          style: const FlowIconButtonStyle.white(),
+          key: const ValueKey('subjectReviewListGoBack'),
+          icon: const FlowIcon.chevronLeft(),
+          onTap: Navigator.of(context).pop,
+        ),
       ),
       backgroundColor: colorWhite,
       body: SafeArea(
@@ -76,8 +88,25 @@ class _ReviewFormState extends State<ReviewForm> {
               const VSpacer.xxs(),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: spacingXXS),
-                child: BlocBuilder<CreateReviewCubit, CreateReviewState>(
+                child: BlocConsumer<CreateReviewCubit, CreateReviewState>(
                   bloc: _createReviewCubit,
+                  listener: (context, state) {
+                    state.whenOrNull(sucess: () async {
+                      ServiceLocatorManager.I.get<LoadReviewListBloc>().add(
+                            LoadReviewListEvent.loadList(
+                              code: widget.params.code,
+                            ),
+                          );
+                      Navigator.of(context).pop();
+                    }, error: () async {
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                        builder: (context) => const ErrorPage(
+                          description:
+                              'Erro ao enviar review!\nTente novamente mais tarde',
+                        ),
+                      ));
+                    });
+                  },
                   builder: (context, state) {
                     return Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -88,7 +117,7 @@ class _ReviewFormState extends State<ReviewForm> {
                           hint: 'Insira o nome do Professor',
                           borderColor: colorSecondary,
                           errorText: state.whenOrNull(
-                            error: (errors) => errors["nameError"] ?? '',
+                            invalid: (errors) => errors["nameError"] ?? '',
                           ),
                         ),
                         const VSpacer.xxxs(),
@@ -98,7 +127,7 @@ class _ReviewFormState extends State<ReviewForm> {
                           hint: 'Insira o Título para a avaliação',
                           borderColor: colorSecondary,
                           errorText: state.whenOrNull(
-                            error: (errors) => errors["titleError"] ?? '',
+                            invalid: (errors) => errors["titleError"] ?? '',
                           ),
                         ),
                         const VSpacer.xxxs(),
@@ -108,7 +137,8 @@ class _ReviewFormState extends State<ReviewForm> {
                           hint: 'Insira uma Descrição para a avaliação',
                           borderColor: colorSecondary,
                           errorText: state.whenOrNull(
-                            error: (errors) => errors["descriptionError"] ?? '',
+                            invalid: (errors) =>
+                                errors["descriptionError"] ?? '',
                           ),
                         ),
                         const VSpacer.xxxs(),
@@ -149,11 +179,12 @@ class _ReviewFormState extends State<ReviewForm> {
                             label: 'Enviar avaliação',
                             suffixIcon: const FlowIcon.editComment(),
                             onTap: () {
-                              _createReviewCubit.createReview(
+                              _createReviewCubit.sendReview(
                                 code: widget.params.code,
                                 name: _professorController.text,
                                 title: _titleController.text,
                                 description: _descriptionController.text,
+                                rating: rating,
                               );
                             }),
                       ],
