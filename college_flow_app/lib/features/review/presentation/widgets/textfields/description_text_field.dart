@@ -52,12 +52,12 @@ class _DescriptionFieldTextState extends State<DescriptionFieldText> {
   void initState() {
     _formFieldStateKey = GlobalKey<FormFieldState>();
 
-    final _initialValue = TextEditingValue(text: widget.initialValue);
+    final initialValue = TextEditingValue(text: widget.initialValue);
 
     if (widget.controller != null) {
-      widget.controller!.value = _initialValue;
+      widget.controller!.value = initialValue;
     } else {
-      _textEditingController = TextEditingController.fromValue(_initialValue);
+      _textEditingController = TextEditingController.fromValue(initialValue);
     }
 
     super.initState();
