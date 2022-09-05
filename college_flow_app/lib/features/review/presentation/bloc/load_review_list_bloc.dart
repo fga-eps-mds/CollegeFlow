@@ -30,6 +30,9 @@ class LoadReviewListBloc
               ),
             );
           },
+          reset: () {
+            emit(const LoadReviewListState.loading());
+          },
         );
       },
     );
