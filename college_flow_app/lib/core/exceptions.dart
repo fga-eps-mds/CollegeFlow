@@ -6,13 +6,13 @@ abstract class FlowException extends Equatable implements Exception {
   final int? code;
   final String? title;
   final String? message;
-  final Map<String, dynamic> extraData;
+  final Map<String, dynamic>? extraData;
 
   const FlowException({
-    required this.code,
-    required this.title,
-    required this.message,
-    required this.extraData,
+    this.code,
+    this.title,
+    this.message,
+    this.extraData,
   });
 
   @override
@@ -33,15 +33,34 @@ abstract class FlowException extends Equatable implements Exception {
 
 class UnhandledException extends FlowException {
   const UnhandledException({
-    required super.code,
-    required super.title,
-    required super.message,
-    required super.extraData,
+    super.code,
+    super.title,
+    super.message,
+    super.extraData,
   });
 
   @override
   Failure toFailure() {
     return UnhandledFailure(
+      code: code,
+      title: title,
+      message: message,
+      extraData: extraData,
+    );
+  }
+}
+
+class ServerException extends FlowException {
+  const ServerException({
+    super.code,
+    super.title,
+    super.message,
+    super.extraData,
+  });
+
+  @override
+  Failure toFailure() {
+    return ServerFailure(
       code: code,
       title: title,
       message: message,

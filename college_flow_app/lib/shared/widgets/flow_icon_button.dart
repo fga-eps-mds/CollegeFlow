@@ -50,10 +50,8 @@ class FlowIconButton extends StatelessWidget {
 class FlowIconButtonStyle {
   final Color color;
 
-  //TODO(Mauricio-Machado): define color for default style
-  const FlowIconButtonStyle({this.color = colorWhite});
+  const FlowIconButtonStyle({this.color = colorPrimary});
 
-  //TODO(Mauricio-Machado): More variants
   const FlowIconButtonStyle.secondary() : color = colorSecondary;
 
   const FlowIconButtonStyle.inactive() : color = colorDarkWhite;

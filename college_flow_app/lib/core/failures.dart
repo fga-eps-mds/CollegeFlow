@@ -4,13 +4,13 @@ abstract class Failure extends Equatable {
   final int? code;
   final String? title;
   final String? message;
-  final Map<String, dynamic> extraData;
+  final Map<String, dynamic>? extraData;
 
   const Failure({
-    required this.code,
-    required this.title,
-    required this.message,
-    required this.extraData,
+    this.code,
+    this.title,
+    this.message,
+    this.extraData,
   });
 
   @override
@@ -24,9 +24,18 @@ abstract class Failure extends Equatable {
 
 class UnhandledFailure extends Failure {
   const UnhandledFailure({
-    required super.code,
-    required super.title,
-    required super.message,
-    required super.extraData,
+    super.code,
+    super.title,
+    super.message,
+    super.extraData,
+  });
+}
+
+class ServerFailure extends Failure {
+  const ServerFailure({
+    super.code,
+    super.title,
+    super.message,
+    super.extraData,
   });
 }

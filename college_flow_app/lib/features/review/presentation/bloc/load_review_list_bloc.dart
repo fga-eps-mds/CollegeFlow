@@ -17,9 +17,10 @@ class LoadReviewListBloc
     on<LoadReviewListEvent>(
       (event, emit) async {
         await event.when(
-          loadList: () async {
-            await Future.delayed(const Duration(seconds: 3));
-            final reviewListOrFailure = await getReviewList();
+          loadList: (code) async {
+            final reviewListOrFailure = await getReviewList(
+              code: code,
+            );
             emit(
               reviewListOrFailure.fold(
                 (_) => const LoadReviewListState.error(),

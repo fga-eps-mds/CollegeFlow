@@ -1,6 +1,8 @@
 import 'package:college_flow_app/config/routes/flow_routes.dart';
+import 'package:college_flow_app/features/review/presentation/review_form.dart';
 import 'package:college_flow_app/features/review/presentation/review_page.dart';
 import 'package:college_flow_app/features/splash/presentation/walkthrough_page.dart';
+import 'package:college_flow_app/features/subject/presentation/list_subjects_page.dart';
 import 'package:college_flow_app/utils/helpers/navigator_helper.dart';
 import 'package:flutter/material.dart' hide Router;
 
@@ -10,7 +12,19 @@ abstract class FlowRouter {
 
     switch (settings.name) {
       case FlowRoutes.reviewList:
-        page = const ReviewPage();
+        if (settings.arguments == null) {
+          throw Exception("Review Page called with params null");
+        }
+        final params = settings.arguments as ReviewPageParams;
+        page = ReviewPage(
+          params: params,
+        );
+        break;
+      case FlowRoutes.subjectsList:
+        page = const ListSubjectsPage();
+        break;
+      case FlowRoutes.reviewForm:
+        page = const ReviewForm();
         break;
       case FlowRoutes.mainPage:
       default:
