@@ -126,6 +126,7 @@ class _ReviewPageState extends State<ReviewPage> {
                                       context: context,
                                       removeTop: true,
                                       child: ListView.builder(
+                                        reverse: true,
                                         physics:
                                             const NeverScrollableScrollPhysics(),
                                         shrinkWrap: true,
