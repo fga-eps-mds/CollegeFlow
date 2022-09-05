@@ -4,7 +4,7 @@ import 'package:college_flow_app/shared/widgets/gap.dart';
 import 'package:flutter/material.dart';
 
 class WalkthroughBasePage extends StatelessWidget {
-  WalkthroughBasePage({
+  const WalkthroughBasePage({
     Key? key,
     required this.title,
     required this.description,

@@ -33,7 +33,7 @@ class WalkthroughPageState extends State<WalkthroughPage> {
               Expanded(
                 child: PageView(
                   controller: _pageViewController,
-                  children: [
+                  children: const [
                     WalkthroughBasePage(
                       title: "Disciplinas",
                       description:
@@ -50,7 +50,8 @@ class WalkthroughPageState extends State<WalkthroughPage> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 24),
+                padding: const EdgeInsets.symmetric(
+                    horizontal: spacingXXXS, vertical: spacingXS),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -66,14 +67,19 @@ class WalkthroughPageState extends State<WalkthroughPage> {
                       ),
                       onDotClicked: _togglePage,
                     ),
-                    FlowIconButton(
-                      icon: const FlowIcon.arrowRight(),
-                      onTap: () {
-                        Navigator.of(context).pushNamed(
-                          FlowRoutes.subjectsList,
-                        );
-                      },
-                    ),
+                    InkWell(
+                        child: Text(
+                          "Começar",
+                          style:
+                              Theme.of(context).textTheme.labelLarge?.copyWith(
+                                    color: colorWhite,
+                                  ),
+                        ),
+                        onTap: () {
+                          Navigator.of(context).pushNamed(
+                            FlowRoutes.subjectsList,
+                          );
+                        }),
                   ],
                 ),
               ),
