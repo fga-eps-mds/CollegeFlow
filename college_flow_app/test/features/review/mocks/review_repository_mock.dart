@@ -15,12 +15,27 @@ class ReviewRepositoryMock extends Mock implements ReviewRepository {
         },
       );
 
+  When _mockCreateReview() => when(
+        () => createReview(
+          params: any(named: 'params'),
+        ),
+      );
+
   //Get Reviews
   void mockGetReviewsSucess() => _mockGetReviews().thenAnswer(
         (_) async =>
             Right<Failure, List<Review>>(ReviewEntityFactory.buildList()),
       );
+
   void mockGetReviewsFail() => _mockGetReviews().thenAnswer(
         (_) async => const Left<Failure, List<Review>>(failure),
+      );
+
+  //Create review
+  void mockCreateReviewSucess() =>
+      _mockCreateReview().thenAnswer((_) async => const None());
+
+  void mockCreateReviewFail() => _mockCreateReview().thenAnswer(
+        (_) async => const Some(UnhandledFailure()),
       );
 }
