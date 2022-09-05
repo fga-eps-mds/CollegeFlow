@@ -95,9 +95,7 @@ class _SubjectsPageState extends State<SubjectsPage> {
                                 itemBuilder: (context, index) {
                                   return Column(
                                     children: [
-                                      SubjectTile(
-                                        subject: filteredList[index],
-                                      ),
+                                      SubjectTile(subject: filteredList[index]),
                                       const VSpacer.xxxs(),
                                     ],
                                   );
