@@ -1,4 +1,5 @@
 import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
+import 'package:college_flow_app/config/design_system/data/icons/flow_icon_data.dart';
 import 'package:college_flow_app/core/service_locator_manager.dart';
 import 'package:college_flow_app/features/review/presentation/bloc/load_review_list_bloc.dart';
 import 'package:college_flow_app/features/review/presentation/cubit/create_review_cubit.dart';
@@ -71,7 +72,7 @@ class _ReviewFormState extends State<ReviewForm> {
         backgroundColor: colorPrimary,
         leading: FlowIconButton(
           key: const ValueKey('subjectReviewListGoBack'),
-          icon: const FlowIcon.chevronLeft(),
+          icon: FlowIconData.chevronLeft,
           onTap: Navigator.of(context).pop,
         ),
       ),

@@ -1,9 +1,11 @@
 import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
+import 'package:college_flow_app/config/design_system/data/icons/flow_icon_data.dart';
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
 import 'package:college_flow_app/features/subject/domain/entities/subject.dart';
 import 'package:college_flow_app/features/subject/presentation/bloc/filter_subject_list/filter_subject_list_bloc.dart';
 import 'package:college_flow_app/features/subject/widgets/searchbar.dart';
 import 'package:college_flow_app/features/subject/widgets/subject_tile.dart';
+import 'package:college_flow_app/shared/widgets/flow_icon_button.dart';
 import 'package:college_flow_app/shared/widgets/gap.dart';
 import 'package:college_flow_app/shared/widgets/loading.dart';
 import 'package:flutter/material.dart';
@@ -41,11 +43,16 @@ class _SubjectsPageState extends State<SubjectsPage> {
     return Scaffold(
       body: CustomScrollView(
         slivers: [
-          const SliverAppBar(
+          SliverAppBar(
             floating: true,
             snap: true,
             backgroundColor: colorPrimary,
             elevation: 0,
+            leading: FlowIconButton(
+              key: const ValueKey('subjectListGoBack'),
+              icon: FlowIconData.chevronLeft,
+              onTap: Navigator.of(context).pop,
+            ),
           ),
           SliverList(
             delegate: SliverChildListDelegate(

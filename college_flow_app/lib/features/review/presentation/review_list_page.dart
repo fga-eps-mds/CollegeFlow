@@ -1,4 +1,5 @@
 import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
+import 'package:college_flow_app/config/design_system/data/icons/flow_icon_data.dart';
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
 import 'package:college_flow_app/core/service_locator_manager.dart';
 import 'package:college_flow_app/config/routes/flow_routes.dart';
@@ -82,7 +83,7 @@ class _ReviewPageState extends State<ReviewPage> {
                         elevation: 0,
                         leading: FlowIconButton(
                           key: const ValueKey('subjectReviewListGoBack'),
-                          icon: const FlowIcon.chevronLeft(),
+                          icon: FlowIconData.chevronLeft,
                           onTap: () {
                             _loadReviewListBloc
                                 .add(const LoadReviewListEvent.reset());
