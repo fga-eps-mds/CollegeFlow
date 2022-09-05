@@ -1,6 +1,5 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:college_flow_app/features/review/domain/entities/review.dart';
-import 'package:college_flow_app/features/review/domain/usecases/get_review_lists.dart';
 import 'package:college_flow_app/features/review/presentation/bloc/load_review_list_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -8,8 +7,6 @@ import '../../mocks/get_review_list_mock.dart';
 import '../../mocks/review_entity_factory.dart';
 
 void main() {
-  late final LoadReviewListBloc loadReviewListBloc;
-
   final GetReviewListMock getReviewListMock = GetReviewListMock();
 
   final List<Review> reviewList = ReviewEntityFactory.buildList();

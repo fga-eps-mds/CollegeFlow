@@ -1,4 +1,3 @@
-import 'package:college_flow_app/core/exceptions.dart';
 import 'package:flutter/material.dart';
 
 class FlowLogger {

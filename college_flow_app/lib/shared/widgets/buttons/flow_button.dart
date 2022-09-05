@@ -142,15 +142,13 @@ class FlowButtonStyle {
   const FlowButtonStyle.primary()
       : backgroundColor = const FlowColorStyle(
           mainly: colorSecondary,
-          //TODO(Mauricio-Machado): Add styles to pressed and disabled
-          pressed: colorError,
-          disabled: colorLightError,
+          pressed: colorDarkSecondary,
+          disabled: colorLightSecondary,
         ),
         labelColor = const FlowColorStyle(
           mainly: colorWhite,
-          //TODO(Mauricio-Machado): Add styles to pressed and disabled
-          pressed: colorBlack,
-          disabled: colorBlack,
+          pressed: colorDarkWhite,
+          disabled: colorLightWhite,
         ),
         borderColor = const FlowColorStyle(
           mainly: colorPrimary,
@@ -161,20 +159,18 @@ class FlowButtonStyle {
   const FlowButtonStyle.whiteBorder()
       : backgroundColor = const FlowColorStyle(
           mainly: colorSecondary,
-          //TODO(Mauricio-Machado): Add styles to pressed and disabled
-          pressed: colorError,
-          disabled: colorLightError,
+          pressed: colorDarkSecondary,
+          disabled: colorLightSecondary,
         ),
         labelColor = const FlowColorStyle(
           mainly: colorWhite,
-          //TODO(Mauricio-Machado): Add styles to pressed and disabled
-          pressed: colorBlack,
-          disabled: colorBlack,
+          pressed: colorDarkWhite,
+          disabled: colorLightWhite,
         ),
         borderColor = const FlowColorStyle(
           mainly: colorWhite,
-          pressed: colorWhite,
-          disabled: colorWhite,
+          pressed: colorDarkWhite,
+          disabled: colorLightWhite,
         );
 }
 

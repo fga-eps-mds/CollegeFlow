@@ -444,42 +444,43 @@ abstract class _loaded implements LoadReviewListState {
 
 /// @nodoc
 mixin _$LoadReviewListEvent {
-  String get code => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String code) loadList,
+    required TResult Function() reset,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function(String code)? loadList,
+    TResult Function()? reset,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String code)? loadList,
+    TResult Function()? reset,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_LoadList value) loadList,
+    required TResult Function(_Reset value) reset,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_LoadList value)? loadList,
+    TResult Function(_Reset value)? reset,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_LoadList value)? loadList,
+    TResult Function(_Reset value)? reset,
     required TResult orElse(),
   }) =>
-      throw _privateConstructorUsedError;
-
-  @JsonKey(ignore: true)
-  $LoadReviewListEventCopyWith<LoadReviewListEvent> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -488,7 +489,6 @@ abstract class $LoadReviewListEventCopyWith<$Res> {
   factory $LoadReviewListEventCopyWith(
           LoadReviewListEvent value, $Res Function(LoadReviewListEvent) then) =
       _$LoadReviewListEventCopyWithImpl<$Res>;
-  $Res call({String code});
 }
 
 /// @nodoc
@@ -499,27 +499,13 @@ class _$LoadReviewListEventCopyWithImpl<$Res>
   final LoadReviewListEvent _value;
   // ignore: unused_field
   final $Res Function(LoadReviewListEvent) _then;
-
-  @override
-  $Res call({
-    Object? code = freezed,
-  }) {
-    return _then(_value.copyWith(
-      code: code == freezed
-          ? _value.code
-          : code // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
 }
 
 /// @nodoc
-abstract class _$$_LoadListCopyWith<$Res>
-    implements $LoadReviewListEventCopyWith<$Res> {
+abstract class _$$_LoadListCopyWith<$Res> {
   factory _$$_LoadListCopyWith(
           _$_LoadList value, $Res Function(_$_LoadList) then) =
       __$$_LoadListCopyWithImpl<$Res>;
-  @override
   $Res call({String code});
 }
 
@@ -581,6 +567,7 @@ class _$_LoadList implements _LoadList {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function(String code) loadList,
+    required TResult Function() reset,
   }) {
     return loadList(code);
   }
@@ -589,6 +576,7 @@ class _$_LoadList implements _LoadList {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function(String code)? loadList,
+    TResult Function()? reset,
   }) {
     return loadList?.call(code);
   }
@@ -597,6 +585,7 @@ class _$_LoadList implements _LoadList {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(String code)? loadList,
+    TResult Function()? reset,
     required TResult orElse(),
   }) {
     if (loadList != null) {
@@ -609,6 +598,7 @@ class _$_LoadList implements _LoadList {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_LoadList value) loadList,
+    required TResult Function(_Reset value) reset,
   }) {
     return loadList(this);
   }
@@ -617,6 +607,7 @@ class _$_LoadList implements _LoadList {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_LoadList value)? loadList,
+    TResult Function(_Reset value)? reset,
   }) {
     return loadList?.call(this);
   }
@@ -625,6 +616,7 @@ class _$_LoadList implements _LoadList {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_LoadList value)? loadList,
+    TResult Function(_Reset value)? reset,
     required TResult orElse(),
   }) {
     if (loadList != null) {
@@ -637,10 +629,111 @@ class _$_LoadList implements _LoadList {
 abstract class _LoadList implements LoadReviewListEvent {
   const factory _LoadList({required final String code}) = _$_LoadList;
 
-  @override
   String get code;
-  @override
   @JsonKey(ignore: true)
   _$$_LoadListCopyWith<_$_LoadList> get copyWith =>
       throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$_ResetCopyWith<$Res> {
+  factory _$$_ResetCopyWith(_$_Reset value, $Res Function(_$_Reset) then) =
+      __$$_ResetCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_ResetCopyWithImpl<$Res>
+    extends _$LoadReviewListEventCopyWithImpl<$Res>
+    implements _$$_ResetCopyWith<$Res> {
+  __$$_ResetCopyWithImpl(_$_Reset _value, $Res Function(_$_Reset) _then)
+      : super(_value, (v) => _then(v as _$_Reset));
+
+  @override
+  _$_Reset get _value => super._value as _$_Reset;
+}
+
+/// @nodoc
+
+class _$_Reset implements _Reset {
+  const _$_Reset();
+
+  @override
+  String toString() {
+    return 'LoadReviewListEvent.reset()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_Reset);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String code) loadList,
+    required TResult Function() reset,
+  }) {
+    return reset();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function(String code)? loadList,
+    TResult Function()? reset,
+  }) {
+    return reset?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String code)? loadList,
+    TResult Function()? reset,
+    required TResult orElse(),
+  }) {
+    if (reset != null) {
+      return reset();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_LoadList value) loadList,
+    required TResult Function(_Reset value) reset,
+  }) {
+    return reset(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_LoadList value)? loadList,
+    TResult Function(_Reset value)? reset,
+  }) {
+    return reset?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_LoadList value)? loadList,
+    TResult Function(_Reset value)? reset,
+    required TResult orElse(),
+  }) {
+    if (reset != null) {
+      return reset(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _Reset implements LoadReviewListEvent {
+  const factory _Reset() = _$_Reset;
 }

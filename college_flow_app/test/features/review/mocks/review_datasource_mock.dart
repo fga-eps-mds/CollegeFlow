@@ -10,11 +10,11 @@ class ReviewDatasourceMock extends Mock implements ReviewDatasource {
       );
 
   //Get Reviews
-  void mockFail() => _mockGetReviews().thenThrow(
+  void mockGetReviewsFail() => _mockGetReviews().thenThrow(
         const ServerException(),
       );
 
-  void mockSucess() => _mockGetReviews().thenAnswer(
+  void mockGetReviewsSucess() => _mockGetReviews().thenAnswer(
         (_) async => ReviewModelFactory.buildList(),
       );
 }

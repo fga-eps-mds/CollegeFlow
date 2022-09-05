@@ -5,8 +5,6 @@ import 'package:flutter_test/flutter_test.dart';
 import '../../mocks/subject_entity_factory.dart';
 
 void main() {
-  late FilterListBloc filterListBloc;
-
   final subjectList = SubjectEntityFactory.buildList();
 
   FilterListBloc makeBloc() => FilterListBloc(subjectList: subjectList);

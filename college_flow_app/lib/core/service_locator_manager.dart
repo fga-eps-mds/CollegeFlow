@@ -23,8 +23,6 @@ abstract class ServiceLocatorManager {
     dynamic param1,
     dynamic param2,
   });
-
-  //TODO(Mauricio-Machado): Study about implementing reset injections
 }
 
 class _ServiceLocatorManagerImpl implements ServiceLocatorManager {
