@@ -67,6 +67,7 @@ class WalkthroughPageState extends State<WalkthroughPage> {
                       onDotClicked: _togglePage,
                     ),
                     FlowIconButton(
+                      style: const FlowIconButtonStyle.primary(),
                       icon: const FlowIcon.arrowRight(),
                       onTap: () {
                         Navigator.of(context).pushNamed(

@@ -70,7 +70,6 @@ class _ReviewFormState extends State<ReviewForm> {
         elevation: 0,
         backgroundColor: colorPrimary,
         leading: FlowIconButton(
-          style: const FlowIconButtonStyle.white(),
           key: const ValueKey('subjectReviewListGoBack'),
           icon: const FlowIcon.chevronLeft(),
           onTap: Navigator.of(context).pop,

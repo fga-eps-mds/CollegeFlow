@@ -81,7 +81,6 @@ class _ReviewPageState extends State<ReviewPage> {
                         backgroundColor: colorPrimary,
                         elevation: 0,
                         leading: FlowIconButton(
-                          style: const FlowIconButtonStyle.white(),
                           key: const ValueKey('subjectReviewListGoBack'),
                           icon: const FlowIcon.chevronLeft(),
                           onTap: () {
