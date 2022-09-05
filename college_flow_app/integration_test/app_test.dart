@@ -4,10 +4,6 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:college_flow_app/main.dart';
 import 'package:flutter/material.dart';
 
-Future<void> addDelay(int ms) async {
-  await Future<void>.delayed(Duration(milliseconds: ms));
-}
-
 void main() {
   final binding = IntegrationTestWidgetsFlutterBinding.ensureInitialized();
   binding.framePolicy = LiveTestWidgetsFlutterBindingFramePolicy.fullyLive;
@@ -16,94 +12,115 @@ void main() {
     await ServiceLocatorManager.I.init();
   });
 
-  group("navigate to subject's list page", () {
-    testWidgets('Onboarding testing - skip onboarding flow',
-        (WidgetTester tester) async {
+  group("end to end test", () {
+    testWidgets('end to end test', (WidgetTester tester) async {
+      const subjectName = 'FÍSICA 1';
       await addDelay(1000);
       await tester.pumpWidget(const MyApp());
       await tester.pumpAndSettle();
-      await addDelay(1500);
-      await tester.tap(
-        find.byKey(const ValueKey('skipOnboardingButton')),
-      );
-      tester.printToConsole("Subject's list page opens");
-
-      await tester.pumpAndSettle();
-      await addDelay(1500);
-      //Verify if we are redirected to the subject's list page
-      expect(
-        find.byKey(const ValueKey('listSubjectsHeader')),
-        findsOneWidget,
-      );
-
-      //Go back to the onboarding flow
-      await tester.tap(
-        find.byKey(const ValueKey('subjectGoBackButton')),
-      );
-      await tester.pumpAndSettle();
-      await addDelay(1500);
-      expect(
-        find.byKey(
-          const ValueKey('OnboardingFirstStep'),
-        ),
-        findsOneWidget,
-      );
-    });
-
-    testWidgets('Onboarding testing - pass through onboarding flow',
-        (WidgetTester tester) async {
-      await addDelay(1000);
-      await tester.pumpWidget(const MyApp());
-      await tester.pumpAndSettle();
-      await addDelay(1500);
-      await tester.drag(
-        find.byKey(const ValueKey('OnboardingFirstStep')),
-        const Offset(-500.0, 0.0),
-      );
-      tester.printToConsole('Onboarding Second Step opens');
-      await tester.pumpAndSettle();
-
-      await addDelay(1500);
-
-      await tester.tap(
-        find.byKey(const ValueKey('finishOnboardingButton')),
-      );
-      tester.printToConsole("Subject's list page opens");
-
-      await tester.pumpAndSettle();
-
-      await addDelay(1500);
-
-      //Verify if we are redirected to the subject's list page
-      expect(
-        find.byKey(const ValueKey('listSubjectsHeader')),
-        findsOneWidget,
-      );
-    });
-    testWidgets('Search subject in subjectList', (WidgetTester tester) async {
-      await addDelay(1000);
-      await tester.pumpWidget(const MyApp());
-      await tester.pumpAndSettle();
-      await addDelay(500);
-      await tester.tap(
-        find.byKey(const ValueKey('skipOnboardingButton')),
-      );
-      tester.printToConsole("Subject's list page opens");
-
-      await tester.pumpAndSettle();
-      await tester.enterText(
-        find.byKey(const ValueKey('searchTextFieldInput')),
-        'engenharia e ambiente',
-      );
-      await tester.pumpAndSettle();
-
-      addDelay(2500);
-
-      //Verify if we are redirected to the subject's list page
-      expect(
-        find.byKey(const ValueKey('ENGENHARIA E AMBIENTE')),
-        findsOneWidget,
-      );
+      await _skipOnboardingFLow(tester);
+      await _searchSubject(tester, subjectName);
+      await _navigateToReviewList(tester, subjectName);
+      await _createReview(tester, subjectName);
+      await _goBackToOnboarding(tester);
+      await _dragOnboardingFlow(tester);
     });
   });
+}
+
+Future<void> addDelay(int ms) async {
+  await Future<void>.delayed(Duration(milliseconds: ms));
+}
+
+Future<void> _skipOnboardingFLow(WidgetTester tester) async {
+  await addDelay(1500);
+  await tester.tap(
+    find.byKey(const ValueKey('skipOnboardingButton')),
+  );
+  tester.printToConsole("Subject's list page opens");
+  await tester.pumpAndSettle();
+  await addDelay(1500);
+  //Verify if we are redirected to the subject's list page
+  expect(
+    find.byKey(const ValueKey('listSubjectsHeader')),
+    findsOneWidget,
+  );
+}
+
+Future<void> _searchSubject(WidgetTester tester, String subject) async {
+  await tester.enterText(
+    find.byKey(const ValueKey('searchTextFieldInput')),
+    subject,
+  );
+  await tester.pumpAndSettle();
+
+  await addDelay(1500);
+
+  //Verify if has the result we want
+  expect(
+    find.byKey(ValueKey(subject)),
+    findsOneWidget,
+  );
+}
+
+Future<void> _navigateToReviewList(
+  WidgetTester tester,
+  String subjectName,
+) async {
+  await tester.tap(
+    find.byKey(ValueKey(subjectName)),
+  );
+  await tester.pumpAndSettle();
+  await addDelay(4000);
+  expect(find.byKey(ValueKey('${subjectName}CardText')), findsOneWidget);
+}
+
+Future<void> _createReview(
+  WidgetTester tester,
+  String subjectName,
+) async {
+  await tester.tap(
+    find.byKey(const ValueKey('CreateReviewButton')),
+  );
+  await tester.pumpAndSettle();
+  await addDelay(1500);
+  await tester.enterText(
+      find.byKey(const ValueKey('ProfessorTextField')), 'Professor Test');
+  await tester.pumpAndSettle();
+  await tester.enterText(
+      find.byKey(const ValueKey('TitleTextField')), 'Title test');
+  await tester.pumpAndSettle();
+  await tester.enterText(
+      find.byKey(const ValueKey('DescriptionTextField')), 'Title test');
+  await tester.pumpAndSettle();
+  await addDelay(1500);
+  await tester.tap(
+    find.byKey(const ValueKey('SendReviewButton')),
+  );
+  await tester.pumpAndSettle();
+  await addDelay(3000);
+  expect(find.byKey(ValueKey('${subjectName}CardText')), findsOneWidget);
+}
+
+Future<void> _goBackToOnboarding(WidgetTester tester) async {
+  await tester.tap(
+    find.byKey(const ValueKey('subjectReviewListGoBack')),
+  );
+  await tester.pumpAndSettle();
+  await addDelay(1500);
+  await tester.tap(
+    find.byKey(const ValueKey('subjectGoBackButton')),
+  );
+  await tester.pumpAndSettle();
+  await addDelay(1500);
+}
+
+Future<void> _dragOnboardingFlow(WidgetTester tester) async {
+  await tester.drag(
+    find.byKey(const ValueKey('OnboardingFirstStep')),
+    const Offset(-500.0, 0.0),
+  );
+  await tester.pumpAndSettle();
+  await addDelay(1500);
+  expect(find.byKey(const ValueKey('OnboardingSecondStep')), findsOneWidget);
 }
