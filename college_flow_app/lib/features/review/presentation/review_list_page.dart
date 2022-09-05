@@ -11,6 +11,7 @@ import 'package:college_flow_app/shared/error_page.dart';
 import 'package:college_flow_app/shared/loading_page.dart';
 import 'package:college_flow_app/shared/widgets/buttons/flow_button.dart';
 import 'package:college_flow_app/shared/widgets/flow_icon.dart';
+import 'package:college_flow_app/shared/widgets/flow_icon_button.dart';
 import 'package:college_flow_app/shared/widgets/gap.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -47,9 +48,7 @@ class _ReviewPageState extends State<ReviewPage> {
   @override
   void initState() {
     super.initState();
-    _loadReviewListBloc = LoadReviewListBloc(
-      getReviewList: ServiceLocatorManager.I.get(),
-    );
+    _loadReviewListBloc = ServiceLocatorManager.I.get();
     _loadReviewListBloc.add(
       LoadReviewListEvent.loadList(
         code: widget.params.code,
@@ -76,11 +75,21 @@ class _ReviewPageState extends State<ReviewPage> {
                 children: [
                   CustomScrollView(
                     slivers: [
-                      const SliverAppBar(
+                      SliverAppBar(
                         floating: true,
                         snap: true,
                         backgroundColor: colorPrimary,
                         elevation: 0,
+                        leading: FlowIconButton(
+                          style: const FlowIconButtonStyle.white(),
+                          key: const ValueKey('subjectReviewListGoBack'),
+                          icon: const FlowIcon.chevronLeft(),
+                          onTap: () {
+                            _loadReviewListBloc
+                                .add(const LoadReviewListEvent.reset());
+                            Navigator.of(context).pop();
+                          },
+                        ),
                       ),
                       SliverList(
                         delegate: SliverChildListDelegate(
