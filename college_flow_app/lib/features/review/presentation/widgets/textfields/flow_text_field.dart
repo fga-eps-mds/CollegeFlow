@@ -1,5 +1,7 @@
 import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
+import 'package:college_flow_app/config/design_system/data/icons/sizes.dart';
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
+import 'package:college_flow_app/shared/widgets/flow_icon.dart';
 import 'package:college_flow_app/shared/widgets/gap.dart';
 import 'package:flutter/material.dart';
 
@@ -8,6 +10,7 @@ class FlowTextField extends StatefulWidget {
     Key? key,
     required this.label,
     this.initialValue = '',
+    this.errorText,
     this.onChanged,
     this.hint,
     this.controller,
@@ -17,6 +20,7 @@ class FlowTextField extends StatefulWidget {
 
   final String label;
   final String initialValue;
+  final String? errorText;
   final String? hint;
   final TextEditingController? controller;
   final Color borderColor;
@@ -31,6 +35,8 @@ class FlowTextField extends StatefulWidget {
 class _FlowTextFieldState extends State<FlowTextField> {
   late final TextEditingController _textEditingController;
   late final GlobalKey<FormFieldState> _formFieldStateKey;
+
+  bool get hasError => widget.errorText?.isNotEmpty == true;
 
   TextEditingController get _controller =>
       widget.controller ?? _textEditingController;
@@ -107,6 +113,22 @@ class _FlowTextFieldState extends State<FlowTextField> {
                 ),
               ),
             ),
+            const VSpacer.quarck(),
+            if (hasError)
+              Row(
+                children: [
+                  const FlowIcon.error(size: iconSizeSM, color: colorError),
+                  const HSpacer.quarck(),
+                  Expanded(
+                    child: Text(
+                      widget.errorText ?? '',
+                      style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                            color: colorError,
+                          ),
+                    ),
+                  )
+                ],
+              ),
           ],
         );
       },

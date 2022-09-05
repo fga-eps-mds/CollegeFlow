@@ -28,7 +28,7 @@ void main() {
       const expectedResult = Left<Failure, List<ReviewModel>>(
         ServerFailure(),
       );
-      datasourceMock.mockFail();
+      datasourceMock.mockGetReviewsFail();
 
       //* act
       final result = await sut.getReviews(code: code);
@@ -44,7 +44,7 @@ void main() {
       Function listEquality = const ListEquality().equals;
       final expectedResult = ReviewEntityFactory.buildList();
 
-      datasourceMock.mockSucess();
+      datasourceMock.mockGetReviewsSucess();
 
       //* act
       final result = await sut.getReviews(code: code);

@@ -6,8 +6,6 @@ import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../../../config/routes/flow_routes.dart';
-import '../../../shared/widgets/flow_icon.dart';
-import '../../../shared/widgets/flow_icon_button.dart';
 
 class WalkthroughPage extends StatefulWidget {
   const WalkthroughPage({Key? key}) : super(key: key);
@@ -68,6 +66,7 @@ class WalkthroughPageState extends State<WalkthroughPage> {
                       onDotClicked: _togglePage,
                     ),
                     InkWell(
+                        key: const ValueKey('startAppButton'),
                         child: Text(
                           "Começar",
                           style:

@@ -41,11 +41,13 @@ class Header extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.end,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
-                description,
-                style: Theme.of(context).textTheme.labelLarge?.copyWith(
-                      color: colorWhite,
-                    ),
+              Expanded(
+                child: Text(
+                  description,
+                  style: Theme.of(context).textTheme.labelLarge?.copyWith(
+                        color: colorWhite,
+                      ),
+                ),
               ),
             ],
           ),

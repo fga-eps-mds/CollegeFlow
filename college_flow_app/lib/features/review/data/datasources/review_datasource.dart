@@ -4,4 +4,9 @@ abstract class ReviewDatasource {
   Future<List<ReviewModel>> getReviews({
     required String code,
   });
+
+  Future<void> createReview({
+    required String code,
+    required ReviewModel reviewModel,
+  });
 }

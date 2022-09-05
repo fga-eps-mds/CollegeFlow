@@ -1,6 +1,8 @@
 import 'package:college_flow_app/config/design_system/data/colors/colors.dart';
+import 'package:college_flow_app/config/design_system/data/icons/sizes.dart';
 import 'package:college_flow_app/config/design_system/data/object_styles/object_styles.dart';
 import 'package:college_flow_app/config/design_system/data/spacing/spacing.dart';
+import 'package:college_flow_app/shared/widgets/flow_icon.dart';
 import 'package:college_flow_app/shared/widgets/gap.dart';
 import 'package:flutter/material.dart';
 
@@ -9,6 +11,7 @@ class DescriptionFieldText extends StatefulWidget {
     Key? key,
     required this.label,
     this.initialValue = '',
+    this.errorText,
     this.onChanged,
     this.hint,
     this.controller,
@@ -18,6 +21,7 @@ class DescriptionFieldText extends StatefulWidget {
 
   final String label;
   final String initialValue;
+  final String? errorText;
   final String? hint;
   final TextEditingController? controller;
   final Color borderColor;
@@ -30,14 +34,10 @@ class DescriptionFieldText extends StatefulWidget {
 }
 
 class _DescriptionFieldTextState extends State<DescriptionFieldText> {
-  final _baseBorder = const OutlineInputBorder(
-    borderSide: BorderSide(
-      color: colorWhite,
-    ),
-  );
-
   late final TextEditingController _textEditingController;
   late final GlobalKey<FormFieldState> _formFieldStateKey;
+
+  bool get hasError => widget.errorText?.isNotEmpty == true;
 
   TextEditingController get _controller =>
       widget.controller ?? _textEditingController;
@@ -52,12 +52,12 @@ class _DescriptionFieldTextState extends State<DescriptionFieldText> {
   void initState() {
     _formFieldStateKey = GlobalKey<FormFieldState>();
 
-    final _initialValue = TextEditingValue(text: widget.initialValue);
+    final initialValue = TextEditingValue(text: widget.initialValue);
 
     if (widget.controller != null) {
-      widget.controller!.value = _initialValue;
+      widget.controller!.value = initialValue;
     } else {
-      _textEditingController = TextEditingController.fromValue(_initialValue);
+      _textEditingController = TextEditingController.fromValue(initialValue);
     }
 
     super.initState();
@@ -128,6 +128,22 @@ class _DescriptionFieldTextState extends State<DescriptionFieldText> {
                 maxLength: 500,
               ),
             ),
+            const VSpacer.quarck(),
+            if (hasError)
+              Row(
+                children: [
+                  const FlowIcon.error(size: iconSizeSM, color: colorError),
+                  const HSpacer.quarck(),
+                  Expanded(
+                    child: Text(
+                      widget.errorText ?? '',
+                      style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                            color: colorError,
+                          ),
+                    ),
+                  )
+                ],
+              ),
           ],
         );
       },

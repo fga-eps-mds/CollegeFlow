@@ -25,4 +25,13 @@ abstract class ReviewMapper {
       description: model.comment,
     );
   }
+
+  static ReviewModel fromEntity({required Review review}) {
+    return ReviewModel(
+      rating: review.score,
+      professor: review.professor,
+      title: review.title,
+      comment: review.description,
+    );
+  }
 }

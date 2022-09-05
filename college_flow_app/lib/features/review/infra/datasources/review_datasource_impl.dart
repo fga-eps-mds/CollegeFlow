@@ -33,4 +33,28 @@ class ReviewDatasourceImpl implements ReviewDatasource {
       throw const UnhandledException();
     }
   }
+
+  @override
+  Future<void> createReview({
+    required String code,
+    required ReviewModel reviewModel,
+  }) async {
+    try {
+      await apiService.postReview(
+        code: code,
+        review: reviewModel,
+      );
+    } on DioError catch (e) {
+      FlowLogger.showError(
+          'ReviewDatasourceImpl - DioError', 'createReview', e);
+      throw ServerException(
+        code: e.response?.statusCode,
+        message: e.message,
+      );
+    } catch (e) {
+      FlowLogger.showError(
+          'ReviewDatasourceImpl - General Error', 'createReview', e);
+      throw const UnhandledException();
+    }
+  }
 }
