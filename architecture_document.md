@@ -6,19 +6,17 @@
 | :--------- | :----- | :-------------------- | :--------------- |
 | 07/06/2022 | 0.1    | Abertura do documento | Maurício Machado |
 | 26/06/2022 | 1.0    | Edição do documento   | Maurício Machado |
+| 05/09/2022 | 2.0    | Edição do documento   | Luan Melo        |
 
 ## 1. Introdução
 
 ### 1.1 Finalidade
 
-Este documento tem como objetivo descrever a arquitetura do collegeFlow app. Aqui será apresentada a interação do mobile com o backend e por sua vez o backend e a database. Esse documento oferece também uma visão geral arquitetural do
-sistema que será implementado, permitindo assim que os
-envolvidos no projeto conheçam como a aplicação será
-subdivida e quais serão as funções de cada componente.
+Este documento tem como objetivo descrever a arquitetura do collegeFlow app. Aqui será apresentada a interação do mobile com o backend e por sua vez o backend e a database. Esse documento oferece também uma visão geral arquitetural do sistema que será implementado, permitindo assim que os envolvidos no projeto conheçam como a aplicação será subdivida e quais serão as funções de cada componente.
 
 ### 1.2 Escopo
 
-O collegeFlow app consiste em um aplicativo para a UnB campus Gama. Sua intenção é facilitar a escolha de matérias através da experiência de outros usuários. Isso será feito mediante, listagem das matérias, apresentação de quais professores dão essa matéria e a respectiva avaliação do professor e da matéria. Além disso, é possível ver outros alunos que cursaram ou estão cursando a matéria para aumentar suas chances de um bom networking.
+O collegeFlow app consiste em um aplicativo para a UnB campus Gama. Sua intenção é facilitar a escolha de matérias através da experiência de outros usuários. Isso será feito mediante, listagem das matérias, apresentação de quais professores dão essa matéria e a respectiva avaliação do professor e da matéria.
 
 ## 2. Representação arquitetural
 
@@ -46,7 +44,7 @@ Sua função é contatar o backend e conseguir o dado cru para poder ser usado n
 
 ### Camada **DATA**
 
-Responsabilidade dessa camada é tratar o dado cru que é obtido pelos datasources. Esse dado cru é então trasnformado nas models através de serialização - exemplo, [json_serializable](https://fga-eps-mds.github.io/CollegeFlow/). Esse processo também pode ser analisado de outro ponto onde levamos informação da aplicação para o backend. Nesse ponto teremos a deserialização dos dados.
+Responsabilidade dessa camada é tratar o dado cru que é obtido pelos datasources. Esse dado cru é então transformado nas models através de serialização - exemplo, [json_serializable](https://fga-eps-mds.github.io/CollegeFlow/). Esse processo também pode ser analisado de outro ponto onde levamos informação da aplicação para o backend. Nesse ponto teremos a deserialização dos dados.
 
 Essa camada possui também a implementação das abstrações da camada de domain. A camada data depende da domain mas o inverso não é verdade.
 
