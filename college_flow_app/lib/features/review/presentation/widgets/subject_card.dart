@@ -31,6 +31,7 @@ class SubjectCard extends StatelessWidget {
           Align(
             alignment: Alignment.centerLeft,
             child: Text(
+              key: ValueKey('${subjectName}CardText'),
               subjectName,
               style: Theme.of(context).textTheme.displaySmall?.copyWith(
                     color: colorWhite,

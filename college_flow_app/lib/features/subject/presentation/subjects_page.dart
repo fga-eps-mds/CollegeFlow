@@ -49,7 +49,7 @@ class _SubjectsPageState extends State<SubjectsPage> {
             backgroundColor: colorPrimary,
             elevation: 0,
             leading: FlowIconButton(
-              key: const ValueKey('subjectListGoBack'),
+              key: const ValueKey('subjectGoBackButton'),
               icon: FlowIconData.chevronLeft,
               onTap: Navigator.of(context).pop,
             ),
@@ -58,6 +58,7 @@ class _SubjectsPageState extends State<SubjectsPage> {
             delegate: SliverChildListDelegate(
               [
                 const ListSubjectsCard(
+                  key: ValueKey('listSubjectsHeader'),
                   title: "disciplinas",
                   description: "Acesse uma Disciplina e veja suas Avaliações",
                   textAlign: TextAlign.start,
@@ -102,7 +103,10 @@ class _SubjectsPageState extends State<SubjectsPage> {
                                 itemBuilder: (context, index) {
                                   return Column(
                                     children: [
-                                      SubjectTile(subject: filteredList[index]),
+                                      SubjectTile(
+                                        key: ValueKey(filteredList[index].name),
+                                        subject: filteredList[index],
+                                      ),
                                       const VSpacer.xxxs(),
                                     ],
                                   );

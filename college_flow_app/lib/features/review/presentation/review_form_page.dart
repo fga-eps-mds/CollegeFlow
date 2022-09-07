@@ -112,6 +112,7 @@ class _ReviewFormState extends State<ReviewForm> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         FlowTextField(
+                          key: const ValueKey('ProfessorTextField'),
                           controller: _professorController,
                           label: 'Nome do Professor Avaliado',
                           hint: 'Insira o nome do Professor',
@@ -122,6 +123,7 @@ class _ReviewFormState extends State<ReviewForm> {
                         ),
                         const VSpacer.xxxs(),
                         FlowTextField(
+                          key: const ValueKey('TitleTextField'),
                           controller: _titleController,
                           label: 'Título',
                           hint: 'Insira o Título para a avaliação',
@@ -132,6 +134,7 @@ class _ReviewFormState extends State<ReviewForm> {
                         ),
                         const VSpacer.xxxs(),
                         DescriptionFieldText(
+                          key: const ValueKey('DescriptionTextField'),
                           controller: _descriptionController,
                           label: 'Descrição',
                           hint: 'Insira uma Descrição para a avaliação',
@@ -172,6 +175,7 @@ class _ReviewFormState extends State<ReviewForm> {
                         ),
                         const VSpacer.xxs(),
                         FlowButton(
+                            key: const ValueKey('SendReviewButton'),
                             isLoading: state.maybeWhen(
                               orElse: () => false,
                               loading: () => true,

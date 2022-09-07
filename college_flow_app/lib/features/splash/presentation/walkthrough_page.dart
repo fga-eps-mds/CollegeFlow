@@ -33,12 +33,14 @@ class WalkthroughPageState extends State<WalkthroughPage> {
                   controller: _pageViewController,
                   children: const [
                     WalkthroughBasePage(
+                      key: ValueKey('OnboardingFirstStep'),
                       title: "Disciplinas",
                       description:
                           "Descubra tudo sobre as disciplinas que está cursando e ainda vai cursar!",
                       imgPath: walkthrough01,
                     ),
                     WalkthroughBasePage(
+                      key: ValueKey('OnboardingSecondStep'),
                       title: "Avaliações",
                       description:
                           "Saiba o que os alunos estão achando de outras disciplinas em tempo real!",
@@ -66,7 +68,7 @@ class WalkthroughPageState extends State<WalkthroughPage> {
                       onDotClicked: _togglePage,
                     ),
                     InkWell(
-                        key: const ValueKey('startAppButton'),
+                        key: const ValueKey('skipOnboardingButton'),
                         child: Text(
                           "Começar",
                           style:
