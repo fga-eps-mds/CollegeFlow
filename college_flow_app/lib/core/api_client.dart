@@ -2,8 +2,7 @@ import 'package:dio/dio.dart';
 
 class APIClient {
   final BaseOptions _baseOptions = BaseOptions(
-    //TODO(Mauricio-Machado): Insert here env value
-    baseUrl: 'http://localhost:8000',
+    baseUrl: 'https://college-flow.herokuapp.com',
     connectTimeout: 5000,
     receiveTimeout: 3000,
   );
