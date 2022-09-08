@@ -20,12 +20,10 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 class ReviewPageParams {
   final String name;
   final String code;
-  final double rating;
 
   const ReviewPageParams({
     required this.code,
     required this.name,
-    required this.rating,
   });
 }
 
@@ -70,7 +68,7 @@ class _ReviewPageState extends State<ReviewPage> {
           loading: () => const LoadingPage(
             description: 'Carregando avaliações',
           ),
-          loaded: (reviewList) {
+          loaded: (rating, reviewList) {
             return Scaffold(
               body: Stack(
                 children: [
@@ -95,7 +93,7 @@ class _ReviewPageState extends State<ReviewPage> {
                         delegate: SliverChildListDelegate(
                           [
                             SubjectCard(
-                              reviewScore: widget.params.rating,
+                              reviewScore: rating.toString(),
                               subjectCode: widget.params.code,
                               subjectName: widget.params.name,
                             ),

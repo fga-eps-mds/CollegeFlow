@@ -51,7 +51,6 @@ class SubjectTile extends StatelessWidget {
         arguments: ReviewPageParams(
           code: subject.code,
           name: subject.name,
-          rating: subject.rating,
         ),
       ),
     );

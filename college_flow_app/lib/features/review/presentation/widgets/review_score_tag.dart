@@ -14,7 +14,7 @@ class ReviewScoreTag extends StatelessWidget {
           key: key,
         );
 
-  final double reviewScore;
+  final String reviewScore;
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,7 @@ class ReviewScoreTag extends StatelessWidget {
       child: Row(
         children: [
           Text(
-            '$reviewScore',
+            reviewScore,
             style: const TextStyle(
               fontFamily: 'OctinCollege',
               fontWeight: FontWeight.w600,

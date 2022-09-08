@@ -16,7 +16,7 @@ class SubjectCard extends StatelessWidget {
 
   final String subjectName;
   final String subjectCode;
-  final double reviewScore;
+  final String reviewScore;
 
   @override
   Widget build(BuildContext context) {
