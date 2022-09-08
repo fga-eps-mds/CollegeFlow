@@ -18,26 +18,30 @@ class TeacherTag extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 24,
       padding: const EdgeInsets.symmetric(
         horizontal: spacingNano,
+        vertical: spacingQuarck,
       ),
       decoration: BoxDecoration(
         color: colorSecondary,
         borderRadius: BorderRadius.circular(
-          objectStyleBorderRadiusPill,
+          objectStyleBorderRadiusLarge,
         ),
       ),
       child: Row(
         children: [
           const FlowIcon.professorTag(),
           const HSpacer.quarck(),
-          Text(
-            teacherName,
-            style: const TextStyle(
-              fontFamily: 'OctinCollege',
-              fontWeight: FontWeight.w600,
-              fontSize: 14,
+          Expanded(
+            child: Text(
+              teacherName,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              style: const TextStyle(
+                fontFamily: 'OctinCollege',
+                fontWeight: FontWeight.w600,
+                fontSize: 14,
+              ),
             ),
           ),
         ],
