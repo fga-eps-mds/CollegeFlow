@@ -4,15 +4,19 @@
 <!--     <a href="https://app.travis-ci.com/github/fga-eps-mds/2022-1-PokeRanking" alt="Status da build" >
         <img src="https://app.travis-ci.com/fga-eps-mds/2022-1-PokeRanking.svg?branch=main" />
     </a>
-    <a href="https://codeclimate.com/github/fga-eps-mds/2022-1-PokeRanking" alt="Manutenibilidade" >
-        <img src="https://api.codeclimate.com/v1/badges/c6ad709789de6e0bfc0b/maintainability" />
+     -->
+    <a href="http://isitmaintained.com/project/fga-eps-mds/CollegeFlow" alt="Porcentagem de issues abertas" >
+        <img src="http://isitmaintained.com/badge/open/fga-eps-mds/CollegeFlow.svg" />
     </a>
-    <a href="https://isitmaintained.com/project/fga-eps-mds/2022-1-PokeRanking" alt="Porcentagem de issues abertas" >
-        <img src="http://isitmaintained.com/badge/open/fga-eps-mds/2022-1-PokeRanking.svg" />
+    <a href="http://isitmaintained.com/project/fga-eps-mds/CollegeFlow" alt="Tempo médio para fechar uma issue" >
+        <img src="http://isitmaintained.com/badge/resolution/fga-eps-mds/CollegeFlow.svg" />
     </a>
-    <a href="https://isitmaintained.com/project/fga-eps-mds/2022-1-PokeRanking" alt="Tempo médio para fechar uma issue" >
-        <img src="http://isitmaintained.com/badge/resolution/fga-eps-mds/2022-1-PokeRanking.svg" />
-    </a> -->
+    <a href="https://codeclimate.com/github/fga-eps-mds/CollegeFlow/test_coverage" alt="Cobertura de testes" >
+        <img src="https://api.codeclimate.com/v1/badges/fc1622134752d483b441/test_coverage" />
+    </a>
+     <a href="https://codeclimate.com/github/fga-eps-mds/CollegeFlow/maintainability" alt="Manutenibilidade" >
+        <img src="https://api.codeclimate.com/v1/badges/fc1622134752d483b441/maintainability" />
+    </a>
     <a href="https://opensource.org/licenses/MIT" alt="Licença: GPL v3" >
         <img src="https://img.shields.io/badge/License-MIT-blue.svg" />
     </a>
