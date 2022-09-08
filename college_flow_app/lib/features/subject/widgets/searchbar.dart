@@ -30,6 +30,12 @@ class SearchBar extends StatelessWidget {
           child: TextFormField(
             key: const ValueKey('searchTextFieldInput'),
             decoration: InputDecoration(
+              focusedBorder: OutlineInputBorder(
+                borderSide:
+                    const BorderSide(color: colorSecondary, width: spacingAtom),
+                borderRadius:
+                    BorderRadius.circular(objectStyleBorderRadiusPill),
+              ),
               enabledBorder: OutlineInputBorder(
                 borderSide:
                     const BorderSide(color: colorSecondary, width: spacingAtom),
