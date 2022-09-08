@@ -1,8 +1,9 @@
 import 'package:college_flow_app/core/exceptions.dart';
 import 'package:college_flow_app/features/review/data/datasources/review_datasource.dart';
 import 'package:college_flow_app/features/review/data/mappers/review_mapper.dart';
-import 'package:college_flow_app/features/review/domain/entities/review.dart';
+import 'package:college_flow_app/features/review/data/mappers/review_response_mapper.dart';
 import 'package:college_flow_app/core/failures.dart';
+import 'package:college_flow_app/features/review/domain/entities/review_response.dart';
 import 'package:college_flow_app/features/review/domain/params/create_review_params.dart';
 import 'package:college_flow_app/features/review/domain/repositories/review_repository.dart';
 import 'package:dartz/dartz.dart';
@@ -13,20 +14,14 @@ class ReviewRepositoryImpl implements ReviewRepository {
   ReviewRepositoryImpl({required this.reviewDatasource});
 
   @override
-  Future<Either<Failure, List<Review>>> getReviews({
+  Future<Either<Failure, ReviewResponse>> getReviews({
     required String code,
   }) async {
     try {
       final model = await reviewDatasource.getReviews(
         code: code,
       );
-      final result = model
-          .map(
-            (reviewModel) => ReviewMapper.toEntity(
-              model: reviewModel,
-            ),
-          )
-          .toList();
+      final result = ReviewResponseMapper.toEntity(model: model);
       return Right(result);
     } on FlowException catch (e) {
       return Left(e.toFailure());
