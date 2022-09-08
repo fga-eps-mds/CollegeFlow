@@ -32,7 +32,7 @@ O atual documento propõe apresentar o projeto College Flow, evidenciando o cont
 
 ### 1.2 Escopo
 
-O projeto objetiva auxiliar os alunos de graduação da UnB Campus Gama, do curso de Engenharia de software, na escolha de matérias, facilitando ao aluno manter a aderência ao fluxo da faculdade, se organizar para o semestre e fazer essas escolhas de acordo com os seus interesses. O projeto contará com telas iniciais de apresentação do projeto ao usuário e permitirá que esses realizem avaliações das matérias do curso com os professores relacionados.
+O projeto objetiva auxiliar os estudantes na escolha de matérias, facilitando ao aluno manter a aderência ao fluxo da faculdade, se organizar para o semestre e fazer essas escolhas de acordo com os seus interesses. O projeto contará com telas iniciais de apresentação do projeto ao usuário e permitirá que esses realizem avaliações das matérias do curso com os professores relacionados.
 Todo o produto será desenvolvido em uma aplicação mobile, com objetivo de que os alunos da UnB Campus Gama, do curso de Engenharia de software, tenham o maior rendimento possível em suas escolhas para o semestre.
 
 ### 1.3 Definições, acrônimos e abreviações
@@ -61,7 +61,6 @@ O documento está dividido da seguinte forma:
 | Recursos do produto                            | Expõe com mais detalhes quais são as funcionalidades do produto               |
 | Restrições                                     | Exibe as limitações tanto do próprio produto quanto também do desenvolvimento |
 | Requisitos do Produto                          | Detalha as exigências a serem satisfeitas pelo produto                        |
-|                                                |                                                                               |
 
 ## **2. Posicionamento**
 
