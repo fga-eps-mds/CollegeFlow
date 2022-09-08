@@ -1,6 +1,7 @@
 import 'package:college_flow_app/core/error_logger.dart';
 import 'package:college_flow_app/core/exceptions.dart';
 import 'package:college_flow_app/features/review/data/datasources/review_datasource.dart';
+import 'package:college_flow_app/features/review/data/models/get_review_response_model.dart';
 import 'package:college_flow_app/features/review/data/models/review_model.dart';
 import 'package:college_flow_app/features/review/infra/review_api_service.dart';
 import 'package:dio/dio.dart';
@@ -11,15 +12,14 @@ class ReviewDatasourceImpl implements ReviewDatasource {
   ReviewDatasourceImpl({required this.apiService});
 
   @override
-  Future<List<ReviewModel>> getReviews({
+  Future<GetReviewResponseModel> getReviews({
     required String code,
   }) async {
     try {
       final result = await apiService.getReviews(
         code: code,
       );
-      final reviews = result.reviews;
-      return reviews;
+      return result;
     } on DioError catch (e) {
       FlowLogger.showError('ReviewDatasourceImpl - DioError', 'getReviews', e);
       throw ServerException(
