@@ -1,4 +1,4 @@
-# Planning da Sprint 8
+# Planning da Sprint 10
 
 - Período : 30/08 a 05/08
 
