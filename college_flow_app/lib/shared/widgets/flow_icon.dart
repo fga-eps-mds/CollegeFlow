@@ -185,6 +185,20 @@ class FlowIcon extends StatelessWidget {
     this.color = colorBlack,
   })  : icon = FlowIconData.error,
         super(key: key);
+
+  const FlowIcon.close({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = colorBlack,
+  })  : icon = FlowIconData.close,
+        super(key: key);
+
+  const FlowIcon.warning({
+    Key? key,
+    this.size = iconSizeDefault,
+    this.color = colorBlack,
+  })  : icon = FlowIconData.warning,
+        super(key: key);
 }
 
 class _FlowIcon extends StatelessWidget {
