@@ -20,6 +20,7 @@
 | 31/07/22 | 1.5    | Alteração na seção de requisitos do produto e ajuste na seção visão geral do produto | [Lucas Gabriel](https://github.com/lucasgabriel-2) | [Mauricio Machado Fernandes Filho](https://github.com/MauricioMachadoFF), [Luan Melo Queiroz](https://github.com/Luanmq) e [Lucas de Lima Spinosa dos Santos](https://github.com/LucasSpinosa) |
 | 31/07/22 | 1.6    | Alteração na seção de requisitos do produto | [Lucas Gabriel](https://github.com/lucasgabriel-2) | [Mauricio Machado Fernandes Filho](https://github.com/MauricioMachadoFF), [Luan Melo Queiroz](https://github.com/Luanmq) e [Lucas de Lima Spinosa dos Santos](https://github.com/LucasSpinosa) |
 | 03/08/22 | 1.7    | Alteração na seção de requisitos do produto | [Lucas Gabriel](https://github.com/lucasgabriel-2) | [Mauricio Machado Fernandes Filho](https://github.com/MauricioMachadoFF), [Luan Melo Queiroz](https://github.com/Luanmq) e [Lucas de Lima Spinosa dos Santos](https://github.com/LucasSpinosa) |
+| 06/09/22 | 1.8    | Alterações em todo documento, devido à atualização no escopo do projeto | [Lucas Gabriel](https://github.com/lucasgabriel-2) | [Mauricio Machado Fernandes Filho](https://github.com/MauricioMachadoFF), [Luan Melo Queiroz](https://github.com/Luanmq) e [Lucas de Lima Spinosa dos Santos](https://github.com/LucasSpinosa) |
 
 ## **1. Introdução**
 
@@ -31,8 +32,8 @@ O atual documento propõe apresentar o projeto College Flow, evidenciando o cont
 
 ### 1.2 Escopo
 
-O projeto objetiva auxiliar os alunos de graduação da UnB Campus Gama na escolha de matérias, facilitando ao aluno manter a aderência ao fluxo da faculdade, se organizar para o semestre e fazer essas escolhas de acordo com os seus interesses. O projeto também conta com apresentação e avaliação dos docentes da instituição e um espaço para facilitar o networking com outros discentes.
-Todo o produto será desenvolvido em uma aplicação mobile, com objetivo de que os alunos da UnB Campus Gama tenham o maior rendimento possível em suas escolhas para o semestre.
+O projeto objetiva auxiliar os estudantes na escolha de matérias, facilitando ao aluno manter a aderência ao fluxo da faculdade, se organizar para o semestre e fazer essas escolhas de acordo com os seus interesses. O projeto contará com telas iniciais de apresentação do projeto ao usuário e permitirá que esses realizem avaliações das matérias do curso com os professores relacionados.
+Todo o produto será desenvolvido em uma aplicação mobile, com objetivo de que os alunos da UnB Campus Gama, do curso de Engenharia de software, tenham o maior rendimento possível em suas escolhas para o semestre.
 
 ### 1.3 Definições, acrônimos e abreviações
 
@@ -60,13 +61,12 @@ O documento está dividido da seguinte forma:
 | Recursos do produto                            | Expõe com mais detalhes quais são as funcionalidades do produto               |
 | Restrições                                     | Exibe as limitações tanto do próprio produto quanto também do desenvolvimento |
 | Requisitos do Produto                          | Detalha as exigências a serem satisfeitas pelo produto                        |
-|                                                |                                                                               |
 
 ## **2. Posicionamento**
 
 ### 2.1 Oportunidade de negócios
 
-Um grande desafio enfrentado pelos estudantes da UnB é o período de matrículas em disciplinas, em que ele deve escolher qual irá cursar durante o período letivo e, além disso, a opção de professor que irá lecioná-la.
+Um grande desafio enfrentado pelos estudantes do curso de Engenharia de Software da UnB é o período de matrículas em disciplinas, em que ele deve escolher qual irá cursar durante o período letivo e, além disso, a opção de professor que irá lecioná-la.
 
 Porém, apesar de importante, nota-se que essa decisão é feita com base em poucas informações, não se tendo conhecimento da didática do professor ou dificuldade da disciplina em si.
 
@@ -76,11 +76,11 @@ O College Flow busca solucionar o problema criando um ambiente em que alunos pod
 
 | Problema                                                                                                                | Afeta                        | Impactos                                                                                                                                                                                                                                 | Solução                                                                                                                                                                                                    |
 | ----------------------------------------------------------------------------------------------------------------------- | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Falta de maiores informações sobre disciplinas ofertadas e seus docentes durante o período de matrícula em disciplinas. | Os alunos da UnB Campus Gama | Escolha de disciplinas mal-otimizada, levando à maior chance reprovações, trancamentos e sobrecarga do aluno. Tudo isso agrava um outro problema já existente: vagas em escassez, pois um trancamento significa uma oportunidade perdida | Criar um ambiente confortável para alunos que já cursaram as disciplinas deixarem suas avaliações, críticas e comentários sobre o professor, dificuldades que passaram e indicações de materiais de estudo |
+| Falta de maiores informações sobre disciplinas ofertadas e seus docentes durante o período de matrícula em disciplinas. | Os alunos do curso de Engenharia de Software da UnB Campus Gama | Escolha de disciplinas mal-otimizada, levando à maior chance reprovações, trancamentos e sobrecarga do aluno. Tudo isso agrava um outro problema já existente: vagas em escassez, pois um trancamento significa uma oportunidade perdida | Criar um ambiente confortável para alunos que já cursaram as disciplinas deixarem suas avaliações, críticas e comentários sobre o professor e a disciplina|
 
 ### 2.3 Descrição da posição do produto
 
-O produto poderá se posicionar no mercado como uma plataforma online útil para a comunidade da UnB Campus Gama, auxiliando e facilitando a vida de estudantes e também do corpo docente, que poderiam usar os relatos como base para se aperfeiçoarem, tudo isso em um ambiente seguro e confortável para ambas as partes.
+O produto poderá se posicionar no mercado como uma plataforma online útil para a comunidade do curso de Engenharia de Software da UnB Campus Gama, auxiliando e facilitando a vida de estudantes e também do corpo docente, que poderão usar os relatos como base para se aperfeiçoarem, tudo isso em um ambiente seguro e confortável para ambas as partes.
 
 ## **3. Descrição das Partes Interessadas e dos Usuários**
 
@@ -95,13 +95,11 @@ O produto poderá se posicionar no mercado como uma plataforma online útil para
 
 | Nome                           | Descrição                                                                                       |
 | :----------------------------- | :---------------------------------------------------------------------------------------------- |
-| Alunos da UnB Campus Gama      | Pesquisar informações sobre disciplinas e relatar experiências com as mesmas e seus professores |
+| Alunos do curso de Engenharia de Software da UnB Campus Gama      | Pesquisar informações sobre disciplinas e relatar experiências com as mesmas e seus professores |
 | Professores da UnB Campus Gama | Visualizar as avaliações postadas na plataforma                                                 |
-| Administrador da Plataforma    | Validar reviews e gerenciar usuários, banindo ou bloqueando aqueles que violam os termos de uso |
-
 ### 3.3 Ambiente dos Usuários
 
-O usuário poderá utilizar o aplicativo em um dispositivo móvel com sistema Android ou IOS.
+O usuário poderá utilizar o aplicativo em um dispositivo móvel com sistema Android.
 
 ### 3.4 Perfis das Partes Interessadas
 
@@ -125,7 +123,7 @@ O usuário poderá utilizar o aplicativo em um dispositivo móvel com sistema An
 
 | Descrição                 | Responsabilidades                                                                                             | Critérios de Sucesso                                                                                                                                              | Envolvimento |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
-| Alunos da Unb Campus Gama | Relatar suas experiências com os docentes e disciplinas, avaliar a dificuldade das matérias cursadas por eles | Conseguir pesquisar mais sobre as disciplinas e seus professores, adquirindo assim mais informações para fazer de forma otimizada suas matrículas para o semestre | Alto         |
+| Alunos do curso de Engenharia de Software da Unb Campus Gama | Relatar suas experiências com os docentes e disciplinas, avaliar a dificuldade das matérias cursadas por eles | Conseguir pesquisar mais sobre as disciplinas e seus professores, adquirindo assim mais informações para fazer de forma otimizada suas matrículas para o semestre | Alto         |
 
 #### 3.5.2 Professores
 
@@ -145,69 +143,47 @@ Embora tenha certo grau de utilidade, nota-se que essa abordagem possui problema
 
 ### 4.1 Perspectiva do Produto
 
-O projeto tem como objetivo auxiliar os alunos da UnB Campus Gama na escolha de disciplinas. Para isso, serão apresentadas informações acerca dos cursos e suas disciplinas, avaliações de professores e uma forma de realizar networking com alunos cursando a mesma disciplina, além de disponibilizar uma área com a resposta para algumas perguntas frequentes.
-
+O projeto tem como objetivo auxiliar os alunos do curso de Engenharia de Software da UnB Campus Gama na escolha de disciplinas. Para isso, serão apresentadas as matérias presentes no fluxo de Engenharia de Software e avaliações de matérias com os professores relacionados geradas pela comunidade universitária.
 ### 4.2 Resumo das capacidades
 
 |                            Benefício para o Usuário                            |                                                                           Recursos de suporte                                                                           |
 | :----------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|    O aluno poderá realizar escolhas de disciplinas de forma mais consciente    |                                                            A aplicação fornecerá dados sobre as disciplinas                                                             |
-|      O aluno poderá escrever feedbacks sobre as suas matérias/professores      |                                              A aplicação terá uma ferramenta na página de visão da matéria ou do professor                                              |
-|                O aluno poderá obter feedback sobre professores                 | A aplicação fornecerá a possibilidade de alunos que já cursaram a disciplina avaliarem os professores e fazerem comentários que ficarão disponíveis para futuros alunos |
-| Facilidade de networking entre os alunos que estão cursando a mesma disciplina |                                        Os alunos poderão disponibilizar seus e-mails para que outros usuários entrem em contato                                         |
+|    O aluno poderá realizar escolhas de disciplinas e professores de forma mais consciente    |                                                            A aplicação apresentará avaliações realizadas pela comunidade universitária sobre as disciplinas com o professor relacionado a essa                                                           |
+|      O aluno poderá escrever feedbacks sobre as suas matérias/professores      |                                              A aplicação terá uma ferramenta na página de visão da matéria                                             |
 |                      O professor poderá receber feedbacks                      |                         A aplicação permitirá comentários de alunos que já cursaram a disciplina, os quais ficarão disponíveis para os docentes                         |
 
 ### 4.3 Funções do Produto
 
-O produto tem a função de auxiliar os alunos da UnB campus Gama na tarefa de escolher as matérias e maximizar as chances de bons resultados. Para isso, contará com comentários de outros usuários, possibilidade de networking, além de permitir que professores também melhorem seu desempenho. As funcionalidades da plataforma são:
+O produto tem a função de auxiliar os alunos do curso de Engenharia de Software da UnB campus Gama na tarefa de escolher as matérias e maximizar as chances de bons resultados. Para isso, contará com comentários de outros usuários, além de permitir que professores também melhorem seu desempenho. As funcionalidades da plataforma são:
 
-• edição de perfil</br>
-• descrição de cursos e matérias</br>
-• seção de perguntas frequentes</br>
 • avaliações de disciplinas e docentes</br>
-• ranking</br>
-• busca por cursos e disciplinas
+• busca por disciplinas
 
 ### 4.4 Suposições e dependências
 
 •O usuário deverá possuir um celular com acesso à internet para poder ter acesso à aplicação.\
-•A aplicação mobile será utilizada por alunos e professores da UnB Campus Gama.\
+•A aplicação mobile será utilizada por alunos e professores do curso de Engenharia de Software da UnB Campus Gama.\
 •O usuário poderá realizar avaliações de forma anônima (para sua segurança), evitando que muitos deixem de fazer comentários por medo de pressão no ambiente acadêmico.\
 •A aplicação mobile irá ajudar ao aluno a obter melhores resultados durante o curso e aos professores a melhorarem sua didática por meio de feedbacks.
 
 ## **5. Recursos do Produto**
 
-### 5.1 Filtrar Pesquisa
+### 5.1 Filtrar Disciplinas
 
-Os usuários podem pesquisar com mais eficiência utilizando critérios como tags, semestre, curso, etc.
+Os usuários podem pesquisar com eficiência por disciplinas presente no fluxo do curso de Engenharia de Software da UnB Campus Gama.
+### 5.2 Avaliar Disciplina e Professor
 
-### 5.2 Avaliar Comentários
-
-Os usuários podem avaliar as postagens de forma positiva ou negativa, adicionando pontos ou removendo-os.
-
+O usuário pode avaliar a disciplina e o professor, em um sistema de 0 a 5 estrelas, em que quanto maior o número de estrelas melhor foi a experiência e a aprendizagem ao realizar a disciplina.
 ### 5.3 Manter Anonimato
 
-Caso deseje, o usuário pode postar suas opiniões, porém mantendo sua identidade em segredo.
-
-### 5.4 Avaliar Disciplina e Professor
-
-O usuário pode avaliar a disciplina em termos de dificuldade, em um sistema de 0 a 5 estrelas, em que quanto mais alto a dificuldade, maior o número de estrelas. De mesmo modo, pode também avaliar o respectivo docente.
-
-### 5.5 Visualizar Ranking
-
-O usuário pode contemplar quais são as disciplinas e professores mais bem avaliados na plataforma.
-
-### 5.6 Visualizar Perfis
-
-O usuário pode ver informações de outros perfis, como opção de curso, histórico de disciplinas e semestre atual.
-
+Os usuários podem postar suas opiniões, porém mantendo sua identidade em segredo.
 ## **6. Restrições**
 
 • O design deve ser simples e com bom aspecto permitindo ao usuário uma navegação pelo aplicativo de forma intuitiva.
 
 • Deve ser implementado utilizando Flutter no Front-end e Node.js no Back-end.
 
-• O aplicativo poderá ser acessado em celulares Android ou IOS com acesso à internet.
+• O aplicativo poderá ser acessado em celulares Android com acesso à internet.
 
 • O aplicativo deve estar pronto até o fim do período letivo
 
@@ -227,30 +203,30 @@ Lista de requisitos
 | ID   | Requisito                                                                                                                                                   | Prioridade |
 | :--- | :---------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------- |
 | RF1  | Deve ser possível que o usuário veja informações a respeito da função do aplicativo antes de se registrar                                                   | Must       |
-| RF2  | Deve ser possível realizar o CRUD de usuário                                                                                                                | Must       |
-| RF3  | Deve ser possível realizar a troca de senha caso o usuário a esqueça                                                                                        | Must       |
-| RF4  | Deve ser possível a criação de três tipos diferentes de perfil (aluno, professor e administrador)                                                           | Must       |
-| RF5  | Deve ser possível que o aluno registre as disciplinas já realizadas e as em andamento                                                                       | Should     |
-| RF6  | Deve ser possível que o professor registre as disciplinas que estão sendo ministradas por ele                                                               | Should     |
-| RF7  | Deve ser possível visualizar informações do perfil do usuário                                                                                               | Should     |
-| RF8  | A visualização do perfil deve ser diferente para proprietário e para visitantes por meio da função de ocultar e mostrar informações                         | Could      |
-| RF9  | Deve ser possível ver os curso disponíveis na UnB campus Gama                                                                                               | Must       |
-| RF10  | Deve ser possível visualizar a descrição e informações sobre o curso                                                                                        | Must       |
-| RF11 | Deve ser possível visualizar os fluxos disponíveis para um curso                                                                                            | Could      |
+| RF2  | Deve ser possível realizar o CRUD de usuário                                                                                                                | Won't      |
+| RF3  | Deve ser possível realizar a troca de senha caso o usuário a esqueça                                                                                        | Won't      |
+| RF4  | Deve ser possível a criação de três tipos diferentes de perfil (aluno, professor e administrador)                                                           | Won't      |
+| RF5  | Deve ser possível que o aluno registre as disciplinas já realizadas e as em andamento                                                                       | Won't      |
+| RF6  | Deve ser possível que o professor registre as disciplinas que estão sendo ministradas por ele                                                               | Won't      |
+| RF7  | Deve ser possível visualizar informações do perfil do usuário                                                                                               | Won't      |
+| RF8  | A visualização do perfil deve ser diferente para proprietário e para visitantes por meio da função de ocultar e mostrar informações                         | Won't      |
+| RF9  | Deve ser possível ver os curso disponíveis na UnB campus Gama                                                                                               | Won't      |
+| RF10 | Deve ser possível visualizar a descrição e informações sobre o curso                                                                                        | Won't      |
+| RF11 | Deve ser possível visualizar os fluxos disponíveis para um curso                                                                                            | Won't      |
 | RF12 | Deve ser possível fazer busca por disciplina na página de disciplinas                                                                                       | Must       |
-| RF13 | Deve ser possível filtrar as disciplinas por semestre e curso                                                                                               | Should     |
-| RF14 | Deve ser possível visualizar a descrição e informações sobre a disciplina                                                                                   | Must       |
-| RF15 | Deve ser possível favoritar uma disciplina                                                                                                                  | Could      |
-| RF16 | Deve ser possível acessar na página da disciplina ao ranking dos professores que a ministram (ranking baseado na nota do professor apenas nessa disciplina) | Must       |
-| RF17 | Deve ser possível acessar a lista de alunos cursando a disciplina                                                                                           | Should     |
-| RF18 | Deve ser possível buscar por um aluno na lista de alunos cursando a disciplina                                                                              | Should     |
+| RF13 | Deve ser possível filtrar as disciplinas por semestre e curso                                                                                               | Won't      |
+| RF14 | Deve ser possível visualizar a descrição e informações sobre a disciplina                                                                                   | Won't      |
+| RF15 | Deve ser possível favoritar uma disciplina                                                                                                                  | Won't      |
+| RF16 | Deve ser possível acessar na página da disciplina ao ranking dos professores que a ministram (ranking baseado na nota do professor apenas nessa disciplina) | Won't      |
+| RF17 | Deve ser possível acessar a lista de alunos cursando a disciplina                                                                                           | Won't      |
+| RF18 | Deve ser possível buscar por um aluno na lista de alunos cursando a disciplina                                                                              | Won't      |
 | RF19 | Deve ser possível realizar o CRUD de avaliação da disciplina com o professor relacionado                                                                    | Must       |
-| RF20 | Deve ser possível realizar denúncias de avaliações com possível conteúdo ofensivo                                                                           | Must       |
-| RF21 | Deve ser possível que um usuário administrador verifique as denúncias realizadas por outros usuários                                                        | Must       |
-| RF22 | Deve ser possível que os usuários ganhem títulos por avaliações das disciplinas                                                                             | Should     |
-| RF23 | Deve ser possível acessar ao ranking de disciplinas                                                                                                         | Must       |
-| RF24 | Deve ser possível visualizar o FAQ                                                                                                                          | Should     |
-| RF25 | Deve ser possível que o usuário tenha acesso a notícias da UnB                                                                                              | Should     |
+| RF20 | Deve ser possível realizar denúncias de avaliações com possível conteúdo ofensivo                                                                           | Won't      |
+| RF21 | Deve ser possível que um usuário administrador verifique as denúncias realizadas por outros usuários                                                        | Won't      |
+| RF22 | Deve ser possível que os usuários ganhem títulos por avaliações das disciplinas                                                                             | Won't      |
+| RF23 | Deve ser possível acessar ao ranking de disciplinas                                                                                                         | Won't      |
+| RF24 | Deve ser possível visualizar o FAQ                                                                                                                          | Won't      |
+| RF25 | Deve ser possível que o usuário tenha acesso a notícias da UnB                                                                                              | Won't      |
 | RNF1 | O software deve ser desenvolvido com Flutter no Front-end e Node.js no Back-end                                                                             | Must       |
 | RNF2 | O software deve ser desenvolvido para ambiente mobile                                                                                                       | Must       |
 | RNF3 | O software deve ter uma interface simples e intuitiva                                                                                                       | Must       |
