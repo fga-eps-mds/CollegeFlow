@@ -1,4 +1,3 @@
-import 'package:collection/collection.dart';
 import 'package:college_flow_app/core/failures.dart';
 import 'package:college_flow_app/features/review/domain/entities/review_response.dart';
 import 'package:college_flow_app/features/review/domain/usecases/get_review_lists.dart';
@@ -39,8 +38,6 @@ void main() {
       'Should return List of Reviews when repository succedes',
       () async {
         //arrange?
-        Function listEquality = const ListEquality().equals;
-
         final expectedResult = Right(ReviewResponseFactory.build());
 
         repositoryMock.mockGetReviewsSucess();
