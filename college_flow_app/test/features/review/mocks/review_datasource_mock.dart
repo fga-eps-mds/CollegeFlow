@@ -2,7 +2,7 @@ import 'package:college_flow_app/core/exceptions.dart';
 import 'package:college_flow_app/features/review/data/datasources/review_datasource.dart';
 import 'package:mocktail/mocktail.dart';
 
-import 'review_model_factory.dart';
+import 'get_review_response_model_factory.dart';
 
 class ReviewDatasourceMock extends Mock implements ReviewDatasource {
   When _mockGetReviews() => when(
@@ -15,6 +15,6 @@ class ReviewDatasourceMock extends Mock implements ReviewDatasource {
       );
 
   void mockGetReviewsSucess() => _mockGetReviews().thenAnswer(
-        (_) async => ReviewModelFactory.buildList(),
+        (_) async => GetReviewResponseModelFactory.build(),
       );
 }

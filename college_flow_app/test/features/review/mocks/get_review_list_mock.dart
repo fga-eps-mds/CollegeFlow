@@ -1,5 +1,5 @@
 import 'package:college_flow_app/core/failures.dart';
-import 'package:college_flow_app/features/review/domain/entities/review.dart';
+import 'package:college_flow_app/features/review/domain/entities/review_response.dart';
 import 'package:college_flow_app/features/review/domain/usecases/get_review_lists.dart';
 import 'package:dartz/dartz.dart';
 import 'package:mocktail/mocktail.dart';
@@ -11,12 +11,12 @@ class GetReviewListMock extends Mock implements GetReviewList {
 
   //Get Reviews
   void mockFail() => _mockGetReviews().thenAnswer(
-        (_) async => const Left<Failure, List<Review>>(UnhandledFailure()),
+        (_) async => const Left<Failure, ReviewResponse>(UnhandledFailure()),
       );
   void mockSuccess({
-    required List<Review> reviewList,
+    required ReviewResponse reviewResponse,
   }) =>
       _mockGetReviews().thenAnswer(
-        (_) async => Right<Failure, List<Review>>(reviewList),
+        (_) async => Right<Failure, ReviewResponse>(reviewResponse),
       );
 }
