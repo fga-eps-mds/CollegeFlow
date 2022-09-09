@@ -26,6 +26,6 @@ class ReviewAPIServiceMock extends Mock implements ReviewAPIService {
   void mockGeneralFail() => _mockGetReviews().thenThrow(error);
 
   void mockSucess() => _mockGetReviews().thenAnswer(
-        (_) async => GetReviewResponseFactory.build(),
+        (_) async => GetReviewResponseModelFactory.build(),
       );
 }

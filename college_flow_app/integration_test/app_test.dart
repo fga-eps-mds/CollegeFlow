@@ -14,7 +14,7 @@ void main() {
 
   group("end to end test", () {
     testWidgets('end to end test', (WidgetTester tester) async {
-      const subjectName = 'FÍSICA 1';
+      const subjectName = 'Teste';
       await addDelay(1000);
       await tester.pumpWidget(const MyApp());
       await tester.pumpAndSettle();
@@ -98,7 +98,12 @@ Future<void> _createReview(
     find.byKey(const ValueKey('SendReviewButton')),
   );
   await tester.pumpAndSettle();
-  await addDelay(3000);
+  await addDelay(1500);
+  await tester.tap(
+    find.byKey(const ValueKey('ConfirmCreateReviewButton')),
+  );
+  await tester.pumpAndSettle();
+  await addDelay(1500);
   expect(find.byKey(ValueKey('${subjectName}CardText')), findsOneWidget);
 }
 

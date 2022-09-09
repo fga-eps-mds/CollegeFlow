@@ -3,8 +3,6 @@ import 'package:college_flow_app/features/review/domain/entities/review_response
 import 'package:college_flow_app/features/review/domain/repositories/review_repository.dart';
 import 'package:dartz/dartz.dart';
 
-import '../entities/review.dart';
-
 abstract class GetReviewList {
   Future<Either<Failure, ReviewResponse>> call({
     required String code,

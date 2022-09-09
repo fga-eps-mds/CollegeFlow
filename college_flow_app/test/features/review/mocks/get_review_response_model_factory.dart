@@ -2,9 +2,10 @@ import 'package:college_flow_app/features/review/data/models/get_review_response
 
 import 'review_model_factory.dart';
 
-class GetReviewResponseFactory {
+class GetReviewResponseModelFactory {
   static GetReviewResponseModel build() {
     return GetReviewResponseModel(
+      rating: 0.0,
       reviews: ReviewModelFactory.buildList(),
     );
   }

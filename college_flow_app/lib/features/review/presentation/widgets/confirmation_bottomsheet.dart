@@ -64,6 +64,7 @@ class ConfirmationBottomsheet extends StatelessWidget {
               const HSpacer.xxxs(),
               Expanded(
                 child: FlowButton(
+                  key: const ValueKey('ConfirmCreateReviewButton'),
                   label: 'Continuar',
                   onTap: onTap,
                   style: const FlowButtonStyle.primary(),
