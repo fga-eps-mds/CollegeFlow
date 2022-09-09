@@ -3,8 +3,8 @@ import 'package:college_flow_app/core/exceptions.dart';
 import 'package:college_flow_app/features/review/infra/datasources/review_datasource_impl.dart';
 import 'package:flutter_test/flutter_test.dart';
 
+import '../../mocks/get_review_response_model_factory.dart';
 import '../../mocks/review_api_service_mock.dart';
-import '../../mocks/review_model_factory.dart';
 
 void main() {
   late final ReviewDatasourceImpl sut;
@@ -61,15 +61,17 @@ void main() {
     test('Should return list of review model when request succedes', () async {
       //arrange?
       Function listEquality = const ListEquality().equals;
-      final expectedResult = ReviewModelFactory.buildList();
+      final expectedResult = GetReviewResponseModelFactory.build();
       api.mockSucess();
 
       //* act
       final result = await sut.getReviews(code: code);
 
       //assert
-      result.map(
-        (subjects) => expect(listEquality(subjects, expectedResult), true),
+      expect(result.rating, expectedResult.rating);
+      result.reviews.map(
+        (subjects) =>
+            expect(listEquality(subjects, expectedResult.reviews), true),
       );
     });
   });
