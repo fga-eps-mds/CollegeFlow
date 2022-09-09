@@ -7,7 +7,7 @@
 | 07/06/2022 | 0.1    | Abertura do documento         | Maurício Machado |
 | 26/06/2022 | 1.0    | Edição do documento           | Maurício Machado |
 | 05/09/2022 | 2.0    | Edição do documento           | Luan Melo        |
-| 05/09/2022 | 2.1    | Edição do escopo do documento | Lucas Macedo     |
+| 05/09/2022 | 3.0    | Edição do escopo do documento | Lucas Macedo     |
 
 ## 1. Introdução
 
@@ -115,7 +115,8 @@ A implementação do Software será realizado por etapas, visando a utilização
 
 ### 4.2 Diagrama de Casos de Uso
 
-![Diagrama de casos de uso para projeto CollegeFlow](./img/architecture/usecases_diagram.png)
+![ANTIGO - Diagrama de casos de uso para projeto CollegeFlow](./img/architecture/usecases_diagram.png)
+![NOVO - Diagrama de casos de uso para projeto CollegeFlow](./img/architecture/new-usecases_diagram.png)
 
 ## Referências
 
