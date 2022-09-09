@@ -23,7 +23,7 @@ class FlowButton extends FlowButtonBase {
     this.isExpanded = true,
     this.isDisabled = false,
     this.isLoading = false,
-    this.style = const FlowButtonStyle.primary(),
+    this.style = const FlowButtonStyle.secondary(),
   })  : assert(
           !(suffixIcon != null && prefixIcon != null),
           'Cannot provide both a preffixIcon and  suffixIcon',
@@ -93,11 +93,11 @@ class _FlowButtonState extends State<FlowButton> {
                       const HSpacer.nano(),
                       Text(
                         widget.label,
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontFamily: 'OctinCollege',
                           fontWeight: FontWeight.w900,
                           fontSize: 24,
-                          color: colorWhite,
+                          color: widget.style.labelColor.mainly,
                         ),
                       ),
                       const HSpacer.nano(),
@@ -139,7 +139,7 @@ class FlowButtonStyle {
         borderColor: borderColor ?? this.borderColor,
       );
 
-  const FlowButtonStyle.primary()
+  const FlowButtonStyle.secondary()
       : backgroundColor = const FlowColorStyle(
           mainly: colorSecondary,
           pressed: colorDarkSecondary,
@@ -171,6 +171,40 @@ class FlowButtonStyle {
           mainly: colorWhite,
           pressed: colorDarkWhite,
           disabled: colorLightWhite,
+        );
+
+  const FlowButtonStyle.primary()
+      : backgroundColor = const FlowColorStyle(
+          mainly: colorPrimary,
+          pressed: colorDarkPrimary,
+          disabled: colorLightPrimary,
+        ),
+        labelColor = const FlowColorStyle(
+          mainly: colorWhite,
+          pressed: colorDarkWhite,
+          disabled: colorLightWhite,
+        ),
+        borderColor = const FlowColorStyle(
+          mainly: colorPrimary,
+          pressed: colorDarkPrimary,
+          disabled: colorLightPrimary,
+        );
+
+  const FlowButtonStyle.white()
+      : backgroundColor = const FlowColorStyle(
+          mainly: colorDarkWhite,
+          pressed: colorDarkWhite,
+          disabled: colorDarkWhite,
+        ),
+        labelColor = const FlowColorStyle(
+          mainly: colorBlack,
+          pressed: colorDarkBlack,
+          disabled: colorLightBlack,
+        ),
+        borderColor = const FlowColorStyle(
+          mainly: colorDarkWhite,
+          pressed: colorDarkWhite,
+          disabled: colorDarkWhite,
         );
 }
 

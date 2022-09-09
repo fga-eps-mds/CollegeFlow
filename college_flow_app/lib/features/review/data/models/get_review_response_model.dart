@@ -5,6 +5,7 @@ part 'get_review_response_model.g.dart';
 
 @JsonSerializable(createToJson: false)
 class GetReviewResponseModel {
+  final double rating;
   final List<ReviewModel> reviews;
 
   factory GetReviewResponseModel.fromJson(Map<String, dynamic> json) =>
@@ -12,5 +13,6 @@ class GetReviewResponseModel {
 
   GetReviewResponseModel({
     required this.reviews,
+    required this.rating,
   });
 }

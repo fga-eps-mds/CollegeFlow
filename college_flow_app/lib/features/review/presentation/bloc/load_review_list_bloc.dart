@@ -24,8 +24,9 @@ class LoadReviewListBloc
             emit(
               reviewListOrFailure.fold(
                 (_) => const LoadReviewListState.error(),
-                (reviewList) => LoadReviewListState.loaded(
-                  reviewList: reviewList,
+                (reviewResponse) => LoadReviewListState.loaded(
+                  rating: reviewResponse.rating,
+                  reviewList: reviewResponse.reviews,
                 ),
               ),
             );

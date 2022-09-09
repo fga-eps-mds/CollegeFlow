@@ -65,4 +65,6 @@ class FlowIconButtonStyle {
   const FlowIconButtonStyle.inactive() : color = colorDarkWhite;
 
   const FlowIconButtonStyle.primary() : color = colorPrimary;
+
+  const FlowIconButtonStyle.black() : color = colorBlack;
 }

@@ -20,21 +20,21 @@ mixin _$LoadReviewListState {
   TResult when<TResult extends Object?>({
     required TResult Function() error,
     required TResult Function() loading,
-    required TResult Function(List<Review> reviewList) loaded,
+    required TResult Function(double rating, List<Review> reviewList) loaded,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? error,
     TResult Function()? loading,
-    TResult Function(List<Review> reviewList)? loaded,
+    TResult Function(double rating, List<Review> reviewList)? loaded,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? error,
     TResult Function()? loading,
-    TResult Function(List<Review> reviewList)? loaded,
+    TResult Function(double rating, List<Review> reviewList)? loaded,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -42,21 +42,21 @@ mixin _$LoadReviewListState {
   TResult map<TResult extends Object?>({
     required TResult Function(_Error value) error,
     required TResult Function(_Loading value) loading,
-    required TResult Function(_loaded value) loaded,
+    required TResult Function(_Loaded value) loaded,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_Error value)? error,
     TResult Function(_Loading value)? loading,
-    TResult Function(_loaded value)? loaded,
+    TResult Function(_Loaded value)? loaded,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Error value)? error,
     TResult Function(_Loading value)? loading,
-    TResult Function(_loaded value)? loaded,
+    TResult Function(_Loaded value)? loaded,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -120,7 +120,7 @@ class _$_Error implements _Error {
   TResult when<TResult extends Object?>({
     required TResult Function() error,
     required TResult Function() loading,
-    required TResult Function(List<Review> reviewList) loaded,
+    required TResult Function(double rating, List<Review> reviewList) loaded,
   }) {
     return error();
   }
@@ -130,7 +130,7 @@ class _$_Error implements _Error {
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? error,
     TResult Function()? loading,
-    TResult Function(List<Review> reviewList)? loaded,
+    TResult Function(double rating, List<Review> reviewList)? loaded,
   }) {
     return error?.call();
   }
@@ -140,7 +140,7 @@ class _$_Error implements _Error {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? error,
     TResult Function()? loading,
-    TResult Function(List<Review> reviewList)? loaded,
+    TResult Function(double rating, List<Review> reviewList)? loaded,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -154,7 +154,7 @@ class _$_Error implements _Error {
   TResult map<TResult extends Object?>({
     required TResult Function(_Error value) error,
     required TResult Function(_Loading value) loading,
-    required TResult Function(_loaded value) loaded,
+    required TResult Function(_Loaded value) loaded,
   }) {
     return error(this);
   }
@@ -164,7 +164,7 @@ class _$_Error implements _Error {
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_Error value)? error,
     TResult Function(_Loading value)? loading,
-    TResult Function(_loaded value)? loaded,
+    TResult Function(_Loaded value)? loaded,
   }) {
     return error?.call(this);
   }
@@ -174,7 +174,7 @@ class _$_Error implements _Error {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Error value)? error,
     TResult Function(_Loading value)? loading,
-    TResult Function(_loaded value)? loaded,
+    TResult Function(_Loaded value)? loaded,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -230,7 +230,7 @@ class _$_Loading implements _Loading {
   TResult when<TResult extends Object?>({
     required TResult Function() error,
     required TResult Function() loading,
-    required TResult Function(List<Review> reviewList) loaded,
+    required TResult Function(double rating, List<Review> reviewList) loaded,
   }) {
     return loading();
   }
@@ -240,7 +240,7 @@ class _$_Loading implements _Loading {
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? error,
     TResult Function()? loading,
-    TResult Function(List<Review> reviewList)? loaded,
+    TResult Function(double rating, List<Review> reviewList)? loaded,
   }) {
     return loading?.call();
   }
@@ -250,7 +250,7 @@ class _$_Loading implements _Loading {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? error,
     TResult Function()? loading,
-    TResult Function(List<Review> reviewList)? loaded,
+    TResult Function(double rating, List<Review> reviewList)? loaded,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -264,7 +264,7 @@ class _$_Loading implements _Loading {
   TResult map<TResult extends Object?>({
     required TResult Function(_Error value) error,
     required TResult Function(_Loading value) loading,
-    required TResult Function(_loaded value) loaded,
+    required TResult Function(_Loaded value) loaded,
   }) {
     return loading(this);
   }
@@ -274,7 +274,7 @@ class _$_Loading implements _Loading {
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_Error value)? error,
     TResult Function(_Loading value)? loading,
-    TResult Function(_loaded value)? loaded,
+    TResult Function(_Loaded value)? loaded,
   }) {
     return loading?.call(this);
   }
@@ -284,7 +284,7 @@ class _$_Loading implements _Loading {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Error value)? error,
     TResult Function(_Loading value)? loading,
-    TResult Function(_loaded value)? loaded,
+    TResult Function(_Loaded value)? loaded,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -299,27 +299,32 @@ abstract class _Loading implements LoadReviewListState {
 }
 
 /// @nodoc
-abstract class _$$_loadedCopyWith<$Res> {
-  factory _$$_loadedCopyWith(_$_loaded value, $Res Function(_$_loaded) then) =
-      __$$_loadedCopyWithImpl<$Res>;
-  $Res call({List<Review> reviewList});
+abstract class _$$_LoadedCopyWith<$Res> {
+  factory _$$_LoadedCopyWith(_$_Loaded value, $Res Function(_$_Loaded) then) =
+      __$$_LoadedCopyWithImpl<$Res>;
+  $Res call({double rating, List<Review> reviewList});
 }
 
 /// @nodoc
-class __$$_loadedCopyWithImpl<$Res>
+class __$$_LoadedCopyWithImpl<$Res>
     extends _$LoadReviewListStateCopyWithImpl<$Res>
-    implements _$$_loadedCopyWith<$Res> {
-  __$$_loadedCopyWithImpl(_$_loaded _value, $Res Function(_$_loaded) _then)
-      : super(_value, (v) => _then(v as _$_loaded));
+    implements _$$_LoadedCopyWith<$Res> {
+  __$$_LoadedCopyWithImpl(_$_Loaded _value, $Res Function(_$_Loaded) _then)
+      : super(_value, (v) => _then(v as _$_Loaded));
 
   @override
-  _$_loaded get _value => super._value as _$_loaded;
+  _$_Loaded get _value => super._value as _$_Loaded;
 
   @override
   $Res call({
+    Object? rating = freezed,
     Object? reviewList = freezed,
   }) {
-    return _then(_$_loaded(
+    return _then(_$_Loaded(
+      rating: rating == freezed
+          ? _value.rating
+          : rating // ignore: cast_nullable_to_non_nullable
+              as double,
       reviewList: reviewList == freezed
           ? _value._reviewList
           : reviewList // ignore: cast_nullable_to_non_nullable
@@ -330,10 +335,13 @@ class __$$_loadedCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_loaded implements _loaded {
-  const _$_loaded({required final List<Review> reviewList})
+class _$_Loaded implements _Loaded {
+  const _$_Loaded(
+      {required this.rating, required final List<Review> reviewList})
       : _reviewList = reviewList;
 
+  @override
+  final double rating;
   final List<Review> _reviewList;
   @override
   List<Review> get reviewList {
@@ -343,35 +351,38 @@ class _$_loaded implements _loaded {
 
   @override
   String toString() {
-    return 'LoadReviewListState.loaded(reviewList: $reviewList)';
+    return 'LoadReviewListState.loaded(rating: $rating, reviewList: $reviewList)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_loaded &&
+            other is _$_Loaded &&
+            const DeepCollectionEquality().equals(other.rating, rating) &&
             const DeepCollectionEquality()
                 .equals(other._reviewList, _reviewList));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(_reviewList));
+      runtimeType,
+      const DeepCollectionEquality().hash(rating),
+      const DeepCollectionEquality().hash(_reviewList));
 
   @JsonKey(ignore: true)
   @override
-  _$$_loadedCopyWith<_$_loaded> get copyWith =>
-      __$$_loadedCopyWithImpl<_$_loaded>(this, _$identity);
+  _$$_LoadedCopyWith<_$_Loaded> get copyWith =>
+      __$$_LoadedCopyWithImpl<_$_Loaded>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() error,
     required TResult Function() loading,
-    required TResult Function(List<Review> reviewList) loaded,
+    required TResult Function(double rating, List<Review> reviewList) loaded,
   }) {
-    return loaded(reviewList);
+    return loaded(rating, reviewList);
   }
 
   @override
@@ -379,9 +390,9 @@ class _$_loaded implements _loaded {
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? error,
     TResult Function()? loading,
-    TResult Function(List<Review> reviewList)? loaded,
+    TResult Function(double rating, List<Review> reviewList)? loaded,
   }) {
-    return loaded?.call(reviewList);
+    return loaded?.call(rating, reviewList);
   }
 
   @override
@@ -389,11 +400,11 @@ class _$_loaded implements _loaded {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? error,
     TResult Function()? loading,
-    TResult Function(List<Review> reviewList)? loaded,
+    TResult Function(double rating, List<Review> reviewList)? loaded,
     required TResult orElse(),
   }) {
     if (loaded != null) {
-      return loaded(reviewList);
+      return loaded(rating, reviewList);
     }
     return orElse();
   }
@@ -403,7 +414,7 @@ class _$_loaded implements _loaded {
   TResult map<TResult extends Object?>({
     required TResult Function(_Error value) error,
     required TResult Function(_Loading value) loading,
-    required TResult Function(_loaded value) loaded,
+    required TResult Function(_Loaded value) loaded,
   }) {
     return loaded(this);
   }
@@ -413,7 +424,7 @@ class _$_loaded implements _loaded {
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_Error value)? error,
     TResult Function(_Loading value)? loading,
-    TResult Function(_loaded value)? loaded,
+    TResult Function(_Loaded value)? loaded,
   }) {
     return loaded?.call(this);
   }
@@ -423,7 +434,7 @@ class _$_loaded implements _loaded {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Error value)? error,
     TResult Function(_Loading value)? loading,
-    TResult Function(_loaded value)? loaded,
+    TResult Function(_Loaded value)? loaded,
     required TResult orElse(),
   }) {
     if (loaded != null) {
@@ -433,12 +444,15 @@ class _$_loaded implements _loaded {
   }
 }
 
-abstract class _loaded implements LoadReviewListState {
-  const factory _loaded({required final List<Review> reviewList}) = _$_loaded;
+abstract class _Loaded implements LoadReviewListState {
+  const factory _Loaded(
+      {required final double rating,
+      required final List<Review> reviewList}) = _$_Loaded;
 
+  double get rating;
   List<Review> get reviewList;
   @JsonKey(ignore: true)
-  _$$_loadedCopyWith<_$_loaded> get copyWith =>
+  _$$_LoadedCopyWith<_$_Loaded> get copyWith =>
       throw _privateConstructorUsedError;
 }
 

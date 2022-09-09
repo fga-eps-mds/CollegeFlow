@@ -7,6 +7,7 @@ class LoadReviewListState with _$LoadReviewListState {
   const factory LoadReviewListState.loading() = _Loading;
 
   const factory LoadReviewListState.loaded({
+    required double rating,
     required List<Review> reviewList,
-  }) = _loaded;
+  }) = _Loaded;
 }

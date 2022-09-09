@@ -49,11 +49,13 @@ class _ReviewCardState extends State<ReviewCard> {
           Row(
             children: [
               ReviewScoreTag(
-                reviewScore: widget.review.score,
+                reviewScore: widget.review.score.toString(),
               ),
               const HSpacer.nano(),
-              TeacherTag(
-                teacherName: widget.review.professor,
+              Expanded(
+                child: TeacherTag(
+                  teacherName: widget.review.professor,
+                ),
               ),
             ],
           ),

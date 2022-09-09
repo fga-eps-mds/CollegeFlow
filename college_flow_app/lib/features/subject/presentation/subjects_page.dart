@@ -40,91 +40,103 @@ class _SubjectsPageState extends State<SubjectsPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: CustomScrollView(
-        slivers: [
-          SliverAppBar(
-            floating: true,
-            snap: true,
-            backgroundColor: colorPrimary,
-            elevation: 0,
-            leading: FlowIconButton(
-              key: const ValueKey('subjectGoBackButton'),
-              icon: FlowIconData.chevronLeft,
-              onTap: Navigator.of(context).pop,
+    return GestureDetector(
+      onTap: _onUnfocus,
+      child: Scaffold(
+        body: CustomScrollView(
+          slivers: [
+            SliverAppBar(
+              floating: true,
+              snap: true,
+              backgroundColor: colorPrimary,
+              elevation: 0,
+              leading: FlowIconButton(
+                key: const ValueKey('subjectGoBackButton'),
+                icon: FlowIconData.chevronLeft,
+                onTap: Navigator.of(context).pop,
+              ),
             ),
-          ),
-          SliverList(
-            delegate: SliverChildListDelegate(
-              [
-                const ListSubjectsCard(
-                  key: ValueKey('listSubjectsHeader'),
-                  title: "disciplinas",
-                  description: "Acesse uma Disciplina e veja suas Avaliações",
-                  textAlign: TextAlign.start,
-                ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: spacingXXS,
+            SliverList(
+              delegate: SliverChildListDelegate(
+                [
+                  const ListSubjectsCard(
+                    key: ValueKey('listSubjectsHeader'),
+                    title: "disciplinas",
+                    description: "Acesse uma Disciplina e veja suas Avaliações",
+                    textAlign: TextAlign.start,
                   ),
-                  child: Column(
-                    children: [
-                      const VSpacer.xxs(),
-                      SearchBar(
-                        searchSubject: (String query) {
-                          _onSearchSubject(
-                            query: query,
-                            subjectList: widget.subjectList,
-                          );
-                        },
-                      ),
-                      const VSpacer.xxs(),
-                      BlocBuilder<FilterListBloc, FilterListState>(
-                        bloc: filterListBloc,
-                        builder: (context, state) {
-                          return state.when(
-                            noResults: () => const Center(
-                              child: Text(
-                                'Sem resultados',
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: spacingXXS,
+                    ),
+                    child: Column(
+                      children: [
+                        const VSpacer.xxs(),
+                        SearchBar(
+                          searchSubject: (String query) {
+                            _onSearchSubject(
+                              query: query,
+                              subjectList: widget.subjectList,
+                            );
+                          },
+                        ),
+                        const VSpacer.xxs(),
+                        BlocBuilder<FilterListBloc, FilterListState>(
+                          bloc: filterListBloc,
+                          builder: (context, state) {
+                            return state.when(
+                              noResults: () => const Center(
+                                child: Text(
+                                  'Sem resultados',
+                                ),
                               ),
-                            ),
-                            loading: () => const FlowLoading(
-                              maxHeight: spacingMD,
-                              maxWidth: spacingMD,
-                            ),
-                            filteredList: (filteredList) =>
-                                MediaQuery.removePadding(
-                              context: context,
-                              removeTop: true,
-                              child: ListView.builder(
-                                physics: const NeverScrollableScrollPhysics(),
-                                shrinkWrap: true,
-                                itemCount: filteredList.length,
-                                itemBuilder: (context, index) {
-                                  return Column(
-                                    children: [
-                                      SubjectTile(
-                                        key: ValueKey(filteredList[index].name),
-                                        subject: filteredList[index],
-                                      ),
-                                      const VSpacer.xxxs(),
-                                    ],
-                                  );
-                                },
+                              loading: () => const FlowLoading(
+                                maxHeight: spacingMD,
+                                maxWidth: spacingMD,
                               ),
-                            ),
-                          );
-                        },
-                      ),
-                    ],
+                              filteredList: (filteredList) =>
+                                  MediaQuery.removePadding(
+                                context: context,
+                                removeTop: true,
+                                child: ListView.builder(
+                                  physics: const NeverScrollableScrollPhysics(),
+                                  shrinkWrap: true,
+                                  itemCount: filteredList.length,
+                                  itemBuilder: (context, index) {
+                                    return Column(
+                                      children: [
+                                        SubjectTile(
+                                          key: ValueKey(
+                                              filteredList[index].name),
+                                          subject: filteredList[index],
+                                        ),
+                                        const VSpacer.xxxs(),
+                                      ],
+                                    );
+                                  },
+                                ),
+                              ),
+                            );
+                          },
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
+  }
+
+  void _onUnfocus() {
+    final FocusScopeNode currentFocus = FocusScope.of(context);
+
+    if (!currentFocus.hasPrimaryFocus) {
+      currentFocus.unfocus();
+    }
   }
 
   void _onSearchSubject({

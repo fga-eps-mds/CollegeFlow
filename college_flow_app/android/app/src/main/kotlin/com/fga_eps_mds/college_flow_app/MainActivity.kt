@@ -1,4 +1,4 @@
-package com.example.college_flow_app
+package com.fga_eps_mds.college_flow_app
 
 import io.flutter.embedding.android.FlutterActivity
 

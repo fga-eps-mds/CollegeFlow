@@ -12,4 +12,5 @@ GetReviewResponseModel _$GetReviewResponseModelFromJson(
       reviews: (json['reviews'] as List<dynamic>)
           .map((e) => ReviewModel.fromJson(e as Map<String, dynamic>))
           .toList(),
+      rating: (json['rating'] as num).toDouble(),
     );
