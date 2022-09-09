@@ -116,7 +116,10 @@ A implementação do Software será realizado por etapas, visando a utilização
 ### 4.2 Diagrama de Casos de Uso
 
 ![ANTIGO - Diagrama de casos de uso para projeto CollegeFlow](./img/architecture/usecases_diagram.png)
+
 ![NOVO - Diagrama de casos de uso para projeto CollegeFlow](./img/architecture/new-usecases_diagram.png)
+
+- tendo em vista a complexidade do projeto em relação ao semestre, o projeto sofreu alteração no escopo do projeto
 
 ## Referências
 
