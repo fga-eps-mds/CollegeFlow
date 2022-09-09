@@ -2,11 +2,12 @@
 
 ## Histórico de revisão
 
-| Data       | Versão | Modificação           | Autor            |
-| :--------- | :----- | :-------------------- | :--------------- |
-| 07/06/2022 | 0.1    | Abertura do documento | Maurício Machado |
-| 26/06/2022 | 1.0    | Edição do documento   | Maurício Machado |
-| 05/09/2022 | 2.0    | Edição do documento   | Luan Melo        |
+| Data       | Versão | Modificação                   | Autor            |
+| :--------- | :----- | :---------------------------- | :--------------- |
+| 07/06/2022 | 0.1    | Abertura do documento         | Maurício Machado |
+| 26/06/2022 | 1.0    | Edição do documento           | Maurício Machado |
+| 05/09/2022 | 2.0    | Edição do documento           | Luan Melo        |
+| 05/09/2022 | 2.1    | Edição do escopo do documento | Lucas Macedo     |
 
 ## 1. Introdução
 
@@ -106,7 +107,11 @@ A implementação do Software será realizado por etapas, visando a utilização
 
 ### 4.1 Diagrama de Classe
 
-![Diagrama de classes para projeto CollegeFlow](./img/architecture/class_diagram.png)
+![ANTIGO - Diagrama de classes para projeto CollegeFlow](./img/architecture/class_diagram.png)
+
+![NOVO - Diagrama de classes para projeto CollegeFlow](./img/architecture/new-diagram-class.png)
+
+- tendo em vista a complexidade do projeto em relação ao semestre, o projeto sofreu alteração no escopo do projeto
 
 ### 4.2 Diagrama de Casos de Uso
 
