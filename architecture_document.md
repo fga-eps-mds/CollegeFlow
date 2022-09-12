@@ -109,7 +109,7 @@ A implementação do Software será realizado por etapas, visando a utilização
 
 ![ANTIGO - Diagrama de classes para projeto CollegeFlow](./img/architecture/class_diagram.png)
 
-![NOVO - Diagrama de classes para projeto CollegeFlow](./img/architecture/new-diagram-class.png)
+![NOVO - Diagrama de classes para projeto CollegeFlow](./img/architecture/new-class-diagram.png)
 
 - tendo em vista a complexidade do projeto em relação ao semestre, o projeto sofreu alteração no escopo do projeto
 
@@ -117,7 +117,7 @@ A implementação do Software será realizado por etapas, visando a utilização
 
 ![ANTIGO - Diagrama de casos de uso para projeto CollegeFlow](./img/architecture/usecases_diagram.png)
 
-![NOVO - Diagrama de casos de uso para projeto CollegeFlow](./img/architecture/new-usecases_diagram.png)
+![NOVO - Diagrama de casos de uso para projeto CollegeFlow](./img/architecture/new-usecases-diagram.png)
 
 - tendo em vista a complexidade do projeto em relação ao semestre, o projeto sofreu alteração no escopo do projeto
 
