@@ -26,25 +26,18 @@
 
 ## Pontos Positivos
 
-- Comunuicação por issues
 - Bom entendimento da solução a ser desenvolvida
-- Gitflow posto em prática
-- Bom uso do kanban
 
 ## Pontos Negativos
 
-- Pouca proatividade(MDS)
-- Membro sobrecarregado(Durval- MDS
-- Desevolvedor Thiago não poderá ajudar a equipe
+- Pouca proatividade
 - Atraso paras as dailys
 
 ## Pontos de Melhoria
 
 - Manter foco durante a daily
-- Melhorar a comunicação entre MDS e Product Owner
 - Melhorar as descrições das issues
-- melhorar a organização de tarefas em grupo
-- Não utilizar papel na Review e Retrospectiva
+- Melhorar a organização de tarefas em grupo
 
 # Quadro de Conhecimento
 
