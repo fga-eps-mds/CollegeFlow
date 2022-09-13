@@ -15,7 +15,7 @@ O College Flow é um aplicativo mobile cuja função é auxiliar os alunos de gr
         <img src="img/team/mauricio.png" alt="..." class="img-thumbnail image">
             <div class="middle">
               <div class="text">
-                Mauricio Machado
+              <a href="https://github.com/MauricioMachadoFF">Mauricio Machado</a>
               </div>
             </div>
     </div>
@@ -23,7 +23,7 @@ O College Flow é um aplicativo mobile cuja função é auxiliar os alunos de gr
       <img src="img/team/Lmacedo.png" alt="..." class="img-thumbnail image">
         <div class="middle">
           <div class="text">
-            Lucas Macedo
+            <a href="https://github.com/Luckx98">Lucas Macedo</a>
           </div>
         </div>
     </div>
@@ -31,7 +31,7 @@ O College Flow é um aplicativo mobile cuja função é auxiliar os alunos de gr
       <img src="img/team/Lspinosa.png" alt="..." class="img-thumbnail image">
         <div class="middle">
           <div class="text">
-            Lucas de Lima
+            <a href="http://github.com/LucasSpinosa">Lucas Spinosa</a>
           </div>
         </div>
     </div>
@@ -39,7 +39,7 @@ O College Flow é um aplicativo mobile cuja função é auxiliar os alunos de gr
       <img src="img/team/luan.png" alt="..." class="img-thumbnail image">
         <div class="middle">
           <div class="text">
-            Luan Melo
+            <a href="https://github.com/Luanmq">Luan Melo</a>
           </div>
         </div>
     </div>
@@ -49,7 +49,7 @@ O College Flow é um aplicativo mobile cuja função é auxiliar os alunos de gr
       <img src="img/team/Wengel.png" alt="..." class="img-thumbnail image">    
           <div class="middle">
             <div class="text">
-              Wengel Rodrigues
+              <a href="https://github.com/Wengel-Rodrigues">Wengel Rodrigues</a>
             </div>
           </div>
     </div>
@@ -57,7 +57,7 @@ O College Flow é um aplicativo mobile cuja função é auxiliar os alunos de gr
         <img src="img/team/Lgabriel.png" alt="..." class="img-thumbnail image">
             <div class="middle">
               <div class="text">
-                Lucas Gabriel
+                <a href="https://github.com/lucasgabriel-2">Lucas Gabriel</a>
               </div>
             </div>
     </div>
@@ -65,7 +65,7 @@ O College Flow é um aplicativo mobile cuja função é auxiliar os alunos de gr
       <img src="img/team/rapha.png" alt="..." class="img-thumbnail image">
         <div class="middle">
           <div class="text">
-            Raphaela Guimarães
+            <a href="https://github.com/raphaiela">Raphaela Guimarães</a>
           </div>
         </div>
     </div>
