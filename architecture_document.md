@@ -107,7 +107,11 @@ A implementação do Software será realizado por etapas, visando a utilização
 
 ### 4.1 Diagrama de Classe
 
+### 4.1.1 **_ANTIGO_**
+
 ![ANTIGO - Diagrama de classes para projeto CollegeFlow](./img/architecture/class_diagram.png)
+
+### 4.1.2 **_NOVO_**
 
 ![NOVO - Diagrama de classes para projeto CollegeFlow](./img/architecture/new-class-diagram.png)
 
@@ -115,7 +119,11 @@ A implementação do Software será realizado por etapas, visando a utilização
 
 ### 4.2 Diagrama de Casos de Uso
 
+### 4.2.1 **_ANTIGO_**
+
 ![ANTIGO - Diagrama de casos de uso para projeto CollegeFlow](./img/architecture/usecases_diagram.png)
+
+### 4.2.2 **_NOVO_**
 
 ![NOVO - Diagrama de casos de uso para projeto CollegeFlow](./img/architecture/new-usecases-diagram.png)
 
@@ -123,11 +131,10 @@ A implementação do Software será realizado por etapas, visando a utilização
 
 ## Referências
 
-Documentação do Node.js. Disponível em: <https://nodejs.org/en/docs/>. Acesso em 25 de julho de 2022.
-Documentação Flutter. Disponível em <https://docs.flutter.dev>. Acesso em 25 de julho de 2022.
-MVC com node.js. Disponível em: <https://irias.com.br/blog/mvc-conceito-e-exemplo-em-node-js/>. Acesso em 25 de julho de 2022.
-Clean architecture in flutter part 1. Disponível em: <https://irias.com.br/blog/mvc-conceito-e-exemplo-em-node-js/>.
-Imprivng workflow with clean architectue. Disponível em: <https://irias.com.br/blog/mvc-conceito-e-exemplo-em-node-js/>.
-Express js documentação. Disponível em <https://expressjs.com/en/starter/basic-routing.html>. Acesso em 25 de julho de 2022.
-
-[1] - Andrew Pinkham. Livro. Disponível em: <https://django-unleashed.com>. Acesso em: 12 de setembro de 2019.
+- [1] - Documentação do Node.js. Disponível em: <https://nodejs.org/en/docs/>. Acesso em 25 de julho de 2022.
+- [2] - Documentação Flutter. Disponível em <https://docs.flutter.dev>. Acesso em 25 de julho de 2022.
+- [3] - MVC com node.js. Disponível em: <https://irias.com.br/blog/mvc-conceito-e-exemplo-em-node-js/>. Acesso em 25 de julho de 2022.
+- [4] - Clean architecture in flutter part 1. Disponível em: <https://irias.com.br/blog/mvc-conceito-e-exemplo-em-node-js/>.
+- [5] - Imprivng workflow with clean architectue. Disponível em: <https://irias.com.br/blog/mvc-conceito-e-exemplo-em-node-js/>.
+- [6] - Express js documentação. Disponível em <https://expressjs.com/en/starter/basic-routing.html>. Acesso em 25 de julho de 2022.
+- [7] - Andrew Pinkham. Livro. Disponível em: <https://django-unleashed.com>. Acesso em: 12 de setembro de 2019.

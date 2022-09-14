@@ -1,4 +1,4 @@
-# Planning da Sprint 8
+# Planning da Sprint 11
 
 - Período : 08/08 a 12/08
 
