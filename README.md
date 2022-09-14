@@ -33,6 +33,9 @@ Segue o link da documentação do projeto
     <a href="https://fga-eps-mds.github.io/CollegeFlow/"><strong>College Flow Docs</strong></a> <img src=".github/images/logo-college-flow-background.png" width="20" height="20" />
 </p>
 <br>
+<p align="center"> 
+    <a href="https://youtu.be/rtqEOswljBM"><strong>Vídeo da release 2</strong></a> <img src=".github/images/logo-college-flow-background.png" width="20" height="20" />
+</p> 
 <br>
 
 ## 💻 Tecnologias utilizadas
