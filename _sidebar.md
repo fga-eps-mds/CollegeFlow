@@ -1,11 +1,11 @@
 ﻿﻿<!-- docs/_sidebar.md -->
 
 - [**Home**](home.md)
-  <!-- - [**Post Mortem**](postmortem.md) -->
-  <!-- - [**Visão de Produto**](#) -->
+- [**Post Mortem**](postmortem.md)
+    <!-- - [**Visão de Produto**](#) -->
 
-    <!-- - [Termo de Abertura](project_charter.md) -->
-    <!-- - [Estrutura Analítica do Projeto](wbs.md) -->
+      <!-- - [Termo de Abertura](project_charter.md) -->
+      <!-- - [Estrutura Analítica do Projeto](wbs.md) -->
 
   - [Documento de Visão](vision_document.md)
   - [Documento de Arquitetura](architecture_document.md)
