@@ -2,10 +2,12 @@
 
 ## Histórico de revisão
 
-| Data       | Versão | Modificação         | Autor            |
-| :--------- | :----- | :------------------ | :--------------- |
-| 07/06/2022 | 0.1    | ---                 | Maurício Machado |
-| 07/06/2022 | 1.0    | Edição do documento | Lucas Macedo     |
+| Data       | Versão | Modificação                                      | Autor                                                   |
+| :--------- | :----- | :----------------------------------------------- | :------------------------------------------------------ |
+| 07/06/2022 | 0.1    | ------------------------------------------------ | [Maurício Machado](https://github.com/MauricioMachadoFF)|
+| 07/06/2022 | 1.0    | Edição do documento                              | [Lucas Macedo](https://github.com/Luckx98)              |
+| 07/06/2022 | 1.1    | Escrita das tecnologias de FrontEnd do documento | [Maurício Machado](https://github.com/MauricioMachadoFF)|
+
 
 # Introdução
 
