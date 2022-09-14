@@ -29,20 +29,14 @@
 
 ## Pontos Positivos
 
-- Boa comunicação entre a equipe
 - Aprendizado da equipe
-- Atrasados lembraram de trazer chocolate
 
 ## Pontos Negativos
 
-- Auto confiança excessiva de EPS
-- MDS não leram a descrição das issues
-- Durval sobrecarregado
 - Divisão ineficiente de tarefas
-- Atrasos nas dailys (Membros chegando atrasados)
-- Dificuldade em manter um debate saudável (MDS)
+- Atrasos nas dailys
 
-## pontos de Melhoria
+## Pontos de Melhoria
 
 - Diminuir o tempo gasto com reunioes
 - Dividir melhoras as tarefas
