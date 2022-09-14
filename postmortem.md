@@ -17,21 +17,32 @@ O College Flow será um aplicativo voltado para estudantes do campus FGA da UnB,
 
 <!-- # Metodologia e Processo
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros. -->
 
 # Tecnologias utilizadas
 
-## Tecnologias utilizadas no backend
+<!-- ## Tecnologias utilizadas no backend
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros. -->
 
-## Tecnologias utilizadas no frontend
+## Tecnologias utilizadas no mobile
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+Para desenvolvimento mobile, a equipe utilizou do framework flutter juntamente de emuladores (IOS e Android). Para os emuladores no android foi necessário baixar o android studio.
+Vale ressltar o uso de pacotes de grande relevância para nossa aplicação são eles:
+
+- Retrofit: Geração de código para cliente dio.
+- Dio: Realização de requisições HTTP.
+- Freezed: Geração de código para classes (models) e para padrão BLoC.
+- BLoC: Gerenciamento de estados da aplicação.
+- Equatable: Auxilia na escrita do override de operadores de comparação
+- Get_It: Localizador de serviços.
+- Flutter_rating_bar: Estrelas para geração de avaliações.
 
 ## Tecnologias utilizadas na configuração dos ambientes
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros. -->
+Desenvolvimento em sistemas operacionais unix (MacOs e Linux).
+Utilização de flutter na versão 3.0.4. Além disso, para facilitar o gerenciamento de versões do flutter usamos o fvm (Flutter Version Management).
+Para escrita de documentos usamos as seguintes IDEs: VsCode e IntelliJ.
 
 # Sentimentos da Equipe
 
