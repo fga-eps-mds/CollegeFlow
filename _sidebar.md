@@ -2,10 +2,8 @@
 
 - [**Home**](home.md)
 - [**Post Mortem**](postmortem.md)
-    <!-- - [**Visão de Produto**](#) -->
 
-      <!-- - [Termo de Abertura](project_charter.md) -->
-      <!-- - [Estrutura Analítica do Projeto](wbs.md) -->
+- [**Visão de Produto**](#)
 
   - [Documento de Visão](vision_document.md)
   - [Documento de Arquitetura](architecture_document.md)
@@ -13,6 +11,8 @@
   - [Guia de Estilo e Identidade Visual](style_guide.md)
   - [Protótipo](prototype.md)
   - [Estudos](studies.md)
+    <!-- - [Termo de Abertura](project_charter.md) -->
+    <!-- - [Estrutura Analítica do Projeto](wbs.md) -->
     <!-- - [Canvas](canvas.md) -->
     <!-- - [Roadmap do Produto](product_roadmap.md) -->
 
