@@ -6,7 +6,8 @@
 | :--------- | :----- | :----------------------------------------------- | :------------------------------------------------------ |
 | 07/06/2022 | 0.1    | ------------------------------------------------ | [Maurício Machado](https://github.com/MauricioMachadoFF)|
 | 07/06/2022 | 1.0    | Edição do documento                              | [Lucas Macedo](https://github.com/Luckx98)              |
-| 07/06/2022 | 1.1    | Escrita das tecnologias de FrontEnd do documento | [Maurício Machado](https://github.com/MauricioMachadoFF)|
+| 07/06/2022 | 1.1    | Escrita das tecnologias de FrontEnd no documento | [Maurício Machado](https://github.com/MauricioMachadoFF)|
+| 07/06/2022 | 1.2    | Escrita das tecnologias de Backend no documento  | [Lucas Spinosa](http://github.com/LucasSpinosa)         |
 
 
 # Introdução
@@ -23,14 +24,20 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finib
 
 # Tecnologias utilizadas
 
-<!-- ## Tecnologias utilizadas no backend
+## Tecnologias utilizadas no backend
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros. -->
+Para desenvolvimento do backend da aplicação, foi utilizado Node.js. Com relação ao banco de dados, foi escolhido o MongoDB Atlas devido à sua facilidade de integração com a linguagem citada anteriormente e por ser salvo em nuvem.
+
+Dentre os módulos de Node.js utilizados, vale destacar:
+
+- Express: Criação de servidores e requisições.
+- Mongoose: Conexão com o banco de dados e criação de models.
+- Jest e Supertest: Criação de testes unitários.
 
 ## Tecnologias utilizadas no mobile
 
 Para desenvolvimento mobile, a equipe utilizou do framework flutter juntamente de emuladores (IOS e Android). Para os emuladores no android foi necessário baixar o android studio.
-Vale ressltar o uso de pacotes de grande relevância para nossa aplicação são eles:
+Vale ressaltar o uso de pacotes de grande relevância para nossa aplicação são eles:
 
 - Retrofit: Geração de código para cliente dio.
 - Dio: Realização de requisições HTTP.
@@ -42,9 +49,14 @@ Vale ressltar o uso de pacotes de grande relevância para nossa aplicação são
 
 ## Tecnologias utilizadas na configuração dos ambientes
 
-Desenvolvimento em sistemas operacionais unix (MacOs e Linux).
-Utilização de flutter na versão 3.0.4. Além disso, para facilitar o gerenciamento de versões do flutter usamos o fvm (Flutter Version Management).
-Para escrita de documentos usamos as seguintes IDEs: VsCode e IntelliJ.
+- Desenvolvimento em sistemas operacionais unix (MacOs e Linux).
+
+- Utilização de flutter na versão 3.0.4. Além disso, para facilitar o gerenciamento de versões do flutter usamos o fvm (Flutter Version Management).
+
+- Para escrita de documentos usamos as seguintes IDEs: VsCode e IntelliJ.
+
+- Para criação de ambientes de desenvolvimento: Docker e Docker Compose.
+
 
 # Sentimentos da Equipe
 
@@ -67,7 +79,7 @@ Segue abaixo as perguntas elaboradas:
 - [1] - No começo do projeto, tive a missão de ser o scrum master da equipe além de desenvolvedor. No começo, obtive bastante dificuldade em representar esse papel, visto que não levo muito jeito em organizar minhas coisas, porém, acredito que ao final consegui desenvolver um trabalho incrível tendo o apoio do time como um todo. Mesmo com o projeto bem corrido de tempo, aprendi a trabalhar melhor em equipe e gerir ritos comuns de sprint.
 - [2] - Pude ver meu desenvolvimento ao decorrer do projeto, correndo atrás de assuntos do qual não sabia como nem começar e avançar conforme o decorrer do tempo.
 - [3] - Além do mencionado do papel de Scrum Master, acredito que ter o contato com uma nova linguagem (como o flutter) e aprender o básico para gerir um projeto do zero.
-- [4] - Como toddo projeto, teve seus pontos baixos e altos, mas acredito que tenha sido uma experiência bastante importante para minha vida e carreira.
+- [4] - Como todo projeto, teve seus pontos baixos e altos, mas acredito que tenha sido uma experiência bastante importante para minha vida e carreira.
 - [5] - O time como um todo pecou na comunicação interna, onde vários momentos deixamos para resolver alguns problemas durante reuniões de planning. Porém, acredito que todos deram o seu máximo para a execução do projeto. Incrível a oportunidade de trabalhar com todos e conhece-los.
 
 ## Maurício Machado
