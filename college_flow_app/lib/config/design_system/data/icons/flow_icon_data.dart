@@ -2,25 +2,36 @@ import 'package:college_flow_app/config/design_system/data/icons/gallery.dart';
 import 'package:flutter/material.dart';
 
 enum FlowIconData {
-  close,
-  delete,
-  add,
-  home,
+  arrowLeft,
+  arrowRight,
+  settings,
+  checkFilled,
+  checkOutlined,
+  chevronRight,
   chevronLeft,
-  registerStudent,
-  registerAdmin,
-  registerProfessor,
+  search,
+  filter,
+  likeFilled,
+  likeOutlined,
+  star,
+  courses,
+  editComment,
+  copyLink,
+  rank,
+  book,
+  home,
+  user,
+  professorTag,
+  error,
+  close,
+  warning,
 }
 
 extension IconParsing on FlowIconData {
   String? toPath(double size) {
     switch (this) {
-      case FlowIconData.registerAdmin:
-        return IconPaths.registerAdminIcon.path;
-      case FlowIconData.registerStudent:
-        return IconPaths.registerStudentIcon.path;
-      case FlowIconData.registerProfessor:
-        return IconPaths.registeProfessorIcon.path;
+      case FlowIconData.professorTag:
+        return IconPaths.professorTagIcon.path;
       default:
         return null;
     }
@@ -28,16 +39,50 @@ extension IconParsing on FlowIconData {
 
   IconData? toIconData() {
     switch (this) {
-      case FlowIconData.home:
-        return Icons.home_rounded;
-      case FlowIconData.close:
-        return Icons.close_rounded;
-      case FlowIconData.delete:
-        return Icons.delete_rounded;
-      case FlowIconData.add:
-        return Icons.add_rounded;
+      case FlowIconData.arrowLeft:
+        return Icons.arrow_back;
+      case FlowIconData.arrowRight:
+        return Icons.arrow_forward;
+      case FlowIconData.settings:
+        return Icons.settings;
+      case FlowIconData.checkOutlined:
+        return Icons.check_circle_outline_outlined;
+      case FlowIconData.checkFilled:
+        return Icons.check_circle_sharp;
       case FlowIconData.chevronLeft:
-        return Icons.chevron_left_rounded;
+        return Icons.chevron_left;
+      case FlowIconData.chevronRight:
+        return Icons.chevron_right;
+      case FlowIconData.search:
+        return Icons.search;
+      case FlowIconData.filter:
+        return Icons.filter_list_sharp;
+      case FlowIconData.likeFilled:
+        return Icons.favorite_border_sharp;
+      case FlowIconData.likeOutlined:
+        return Icons.favorite_sharp;
+      case FlowIconData.star:
+        return Icons.star;
+      case FlowIconData.book:
+        return Icons.book_sharp;
+      case FlowIconData.home:
+        return Icons.home_sharp;
+      case FlowIconData.rank:
+        return Icons.bar_chart_sharp;
+      case FlowIconData.copyLink:
+        return Icons.link;
+      case FlowIconData.user:
+        return Icons.person_sharp;
+      case FlowIconData.editComment:
+        return Icons.message_sharp;
+      case FlowIconData.courses:
+        return Icons.view_column_sharp;
+      case FlowIconData.error:
+        return Icons.error_outline_sharp;
+      case FlowIconData.close:
+        return Icons.close;
+      case FlowIconData.warning:
+        return Icons.warning;
       default:
         return null;
     }
