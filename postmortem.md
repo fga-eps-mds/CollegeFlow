@@ -1,16 +1,3 @@
-# Post Mortem
-
-## Histórico de revisão
-
-| Data       | Versão | Modificação                                      | Autor                                                    |
-| :--------- | :----- | :----------------------------------------------- | :------------------------------------------------------- |
-| 07/06/2022 | 0.1    | ------------------------------------------------ | [Maurício Machado](https://github.com/MauricioMachadoFF) |
-| 07/06/2022 | 1.0    | Edição do documento                              | [Lucas Macedo](https://github.com/Luckx98)               |
-| 07/06/2022 | 1.1    | Escrita das tecnologias de FrontEnd no documento | [Maurício Machado](https://github.com/MauricioMachadoFF) |
-| 07/06/2022 | 1.2    | Escrita das tecnologias de Backend no documento  | [Lucas Spinosa](http://github.com/LucasSpinosa)          |
-
-# Introdução# Post Mortem
-
 ## Histórico de revisão
 
 | Data       | Versão | Modificação                                      | Autor                                                    |
@@ -19,7 +6,9 @@
 | 12/09/2022 | 1.0    | Edição do documento                              | [Lucas Macedo](https://github.com/Luckx98)               |
 | 14/09/2022 | 1.1    | Escrita das tecnologias de FrontEnd no documento | [Maurício Machado](https://github.com/MauricioMachadoFF) |
 | 14/09/2022 | 1.2    | Escrita das tecnologias de Backend no documento  | [Lucas Spinosa](http://github.com/LucasSpinosa)          |
-| 14/09/2022 | 1.3   | Escrita da metodologia e processos               | [Lucas Macedo](https://github.com/Luckx98)               |
+| 14/09/2022 | 1.3    | Escrita da metodologia e processos               | [Lucas Macedo](https://github.com/Luckx98)               |
+| 14/09/2022 | 1.4    | Alteração na seção de tecnologias de Backend     | [Lucas Spinosa](http://github.com/LucasSpinosa)          |
+
 
 # Introdução
 
@@ -43,7 +32,7 @@ Quanto ao Extreme Programming, utilizamos principalmente a programação pareada
 
 ## Tecnologias utilizadas no backend
 
-Para desenvolvimento do backend da aplicação, foi utilizado Node.js. Com relação ao banco de dados, foi escolhido o MongoDB Atlas devido à sua facilidade de integração com a linguagem citada anteriormente e por ser salvo em nuvem.
+Para desenvolvimento do backend da aplicação, foi utilizado Node.js. Com relação ao banco de dados, foi escolhido o MongoDB Atlas devido à sua facilidade de integração com a linguagem citada anteriormente e por ser salvo em nuvem. Por fim, foi utilizado o Heroku para fazer o deploy do código por ser uma plataforma convenientemente simples e fácil de ser operada.
 
 Dentre os módulos de Node.js utilizados, vale destacar:
 
