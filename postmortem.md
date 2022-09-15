@@ -19,7 +19,7 @@
 | 12/09/2022 | 1.0    | Edição do documento                              | [Lucas Macedo](https://github.com/Luckx98)               |
 | 14/09/2022 | 1.1    | Escrita das tecnologias de FrontEnd no documento | [Maurício Machado](https://github.com/MauricioMachadoFF) |
 | 14/09/2022 | 1.2    | Escrita das tecnologias de Backend no documento  | [Lucas Spinosa](http://github.com/LucasSpinosa)          |
-| 14/09/2022 | 1.2    | Escrita da metodologia e processos               | [Lucas Macedo](https://github.com/Luckx98)               |
+| 14/09/2022 | 1.3   | Escrita da metodologia e processos               | [Lucas Macedo](https://github.com/Luckx98)               |
 
 # Introdução
 
@@ -37,7 +37,7 @@ O Scrum mostrou seu poder principalmente nas áreas de produtividade e de revis�
 
 Quanto ao Extreme Programming, utilizamos principalmente a programação pareada, em que a cada planning nós discutiamos quem iria parear com quem, para ter mais fluxo de conhecimento. Com tudo, houveram algumas falhas de comunicação entre a equipe e alinhamento, assim exigindo muitas vezes debater sobre assuntos umas vez ja discutidos e outras mudanças;
 
-- _Pontos Negativos_: A comunicação em geral foi algo que precisavamos melhorar muito no trabalho, principalmente na reta final com o desfoco de alguns membros devido ao aumento da carga horaria em otras materias. Falta de alinhamento o que impactou na diminuição do escopo do projeto.
+- _Pontos Negativos_: A comunicação em geral foi algo que precisavamos melhorar muito no trabalho, principalmente na reta final com o desfoco de alguns membros devido ao aumento da carga horaria em outras materias. Falta de alinhamento o que impactou na diminuição do escopo do projeto.
 
 # Tecnologias utilizadas
 
@@ -149,8 +149,6 @@ Segue abaixo as perguntas elaboradas:
 # Conclusão
 
 Foi a primeira experiencia da equipe em um projeto ágil, assim havendo algumas inseguranças e medos durante o semestre. Com isso, como podemos notar nas notas dos sentimentos da equipe, essa matéria proporcionou vários aprendizados e mudanças que nos fizeram melhores programadores em geral. Mesmo havendo algumas dificuldades e estresses em relação o projeto e a outros membros, fora ter ocorrido mudanças ao longo do projeto e do escopo, como equipe, estamos orgulhosos do nosso produto e temos a sensação de dever cumprido.
-
-Este documento é uma reflexão do time, realizada na fase de finalização do projeto, para concretizar as lições aprendidas e permitir que projetos futuros similares possam ser facilitados.
 
 # Escopo do Projeto
 
@@ -164,7 +162,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finib
 
 ## Tecnologias utilizadas no backend
 
-Para desenvolvimento do backend da aplicação, foi utilizado Node.js. Com relação ao banco de dados, foi escolhido o MongoDB Atlas devido à sua facilidade de integração com a linguagem citada anteriormente e por ser salvo em nuvem.
+Para desenvolvimento do backend da aplicação, foi utilizado Node.js. Com relação ao banco de dados, foi escolhido o MongoDB Atlas devido à sua facilidade de integração com a linguagem citada anteriormente e por ser salvo em nuvem. 
 
 Dentre os módulos de Node.js utilizados, vale destacar:
 
@@ -187,7 +185,7 @@ Vale ressaltar o uso de pacotes de grande relevância para nossa aplicação sã
 
 ## Tecnologias utilizadas na configuração dos ambientes
 
-- Desenvolvimento em sistemas operacionais unix (MacOs e Linux).
+- Desenvolvimento em sistemas operacionais MacOs e Linux.
 
 - Utilização de flutter na versão 3.0.4. Além disso, para facilitar o gerenciamento de versões do flutter usamos o fvm (Flutter Version Management).
 
@@ -269,4 +267,4 @@ Segue abaixo as perguntas elaboradas:
 
 # Conclusão
 
-Foi a primeira experiencia da equipe em um projeto ágil, assim havendo algumas inseguranças e medos durante o semestre. Com isso, como podemos notar nas notas dos sentimentos da equipe, essa matéria proporcionou vários aprendizados e mudanças que nos fizeram melhores programadores em geral. Mesmo havendo algumas dificuldades e estresses em relação o projeto e a outros membros, fora ter ocorrido mudanças ao longo do projeto e do escopo, como equipe, estamos orgulhosos do nosso produto e temos a sensação de dever cumprido.
+Foi a primeira experiencia da equipe em um projeto ágil, assim havendo algumas inseguranças e medos durante o semestre. Com isso, como podemos notar nas notas dos sentimentos da equipe, essa matéria proporcionou vários aprendizados e mudanças que nos fizeram melhores programadores em geral. Mesmo havendo algumas dificuldades e estresses em relação ao projeto e aos outros membros", fora ter ocorrido mudanças ao longo do projeto e do escopo, como equipe, estamos orgulhosos do nosso produto e temos a sensação de dever cumprido.
