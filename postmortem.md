@@ -1,11 +1,15 @@
 # Post Mortem
-
 ## Histórico de revisão
 
-| Data       | Versão | Modificação         | Autor            |
-| :--------- | :----- | :------------------ | :--------------- |
-| 07/06/2022 | 0.1    | ---                 | Maurício Machado |
-| 07/06/2022 | 1.0    | Edição do documento | Lucas Macedo     |
+| Data       | Versão | Modificação                                      | Autor                                                    |
+| :--------- | :----- | :----------------------------------------------- | :------------------------------------------------------- |
+| 07/06/2022 | 0.1    | Criação do documento                             | [Maurício Machado](https://github.com/MauricioMachadoFF) |
+| 12/09/2022 | 1.0    | Edição do documento                              | [Lucas Macedo](https://github.com/Luckx98)               |
+| 14/09/2022 | 1.1    | Escrita das tecnologias de FrontEnd no documento | [Maurício Machado](https://github.com/MauricioMachadoFF) |
+| 14/09/2022 | 1.2    | Escrita das tecnologias de Backend no documento  | [Lucas Spinosa](http://github.com/LucasSpinosa)          |
+| 14/09/2022 | 1.3    | Escrita da metodologia e processos               | [Lucas Macedo](https://github.com/Luckx98)               |
+| 14/09/2022 | 1.4    | Alteração na seção de tecnologias de Backend     | [Lucas Spinosa](http://github.com/LucasSpinosa)          |
+
 
 # Introdução
 
@@ -15,23 +19,50 @@ Este documento é uma reflexão do time, realizada na fase de finalização do p
 
 O College Flow será um aplicativo voltado para estudantes do campus FGA da UnB, com o intuito de ajudar na hora de realizar matrícula em matérias. O escopo principal consistia em abranger todos os estudantes do campus, contando com um sistema de login e autenticação, onde poderiam avaliar professores e matérias conforme cursavam. Porém, devido ao semestre ser bastante corrido e apertado, sendo apenas de 3 meses, o time resolveu reduzir para um escopo de realização mais rápida e simples. O novo escopo acabou se tornando apenas um aplicativo de reviews de matérias e abrangendo apenas as matérias do curso de Engenharia de Software.
 
-<!-- # Metodologia e Processo
+# Metodologia e Processo
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+Nosso grupo optou, seguindo os conselhos da professora e dos monitores, utilizar um método misto entre o Scrum e o XP Programming, na sua grande parte, principalmente na Realese 2, os método foram seguidos corretamente, em que, todos os grupos conseguiram captar os conceitos base dessas metodologias, e suas importancias para o desenvolvimento de um grande escopo como o nosso.
+
+O Scrum mostrou seu poder principalmente nas áreas de produtividade e de revisão, em que a cada sprint alocamos algumas issues nas etapas do kanban, aumentando a nossa produtividade em geral. Mantemos os ritos no mesmo dia, geralmente era toda terça feira, onde a primeira 1 hora era destinado aos ritos de retrospectiva e review, e depois havia o momento de planning da nova sprint. Tentamos manter as dailys sendo diárias via discord, porém, com o decorrer da semana de forma complicada, optamos por deixar a daily ser escrita. Porém, com esse formato, acabou que impactou na comunicação do grupo, as vezes não sendo tão explicadas e muitas vezes deixavamos pra resolver assuntos importantes em reuniões.
+
+Quanto ao Extreme Programming, utilizamos principalmente a programação pareada, em que a cada planning nós discutiamos quem iria parear com quem, para ter mais fluxo de conhecimento. Com tudo, houveram algumas falhas de comunicação entre a equipe e alinhamento, assim exigindo muitas vezes debater sobre assuntos umas vez ja discutidos e outras mudanças;
+
+- _Pontos Negativos_: A comunicação em geral foi algo que precisavamos melhorar muito no trabalho, principalmente na reta final com o desfoco de alguns membros devido ao aumento da carga horaria em outras materias. Falta de alinhamento o que impactou na diminuição do escopo do projeto.
 
 # Tecnologias utilizadas
 
 ## Tecnologias utilizadas no backend
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+Para desenvolvimento do backend da aplicação, foi utilizado Node.js. Com relação ao banco de dados, foi escolhido o MongoDB Atlas devido à sua facilidade de integração com a linguagem citada anteriormente e por ser salvo em nuvem. Por fim, foi utilizado o Heroku para fazer o deploy do código por ser uma plataforma convenientemente simples e fácil de ser operada.
 
-## Tecnologias utilizadas no frontend
+Dentre os módulos de Node.js utilizados, vale destacar:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros.
+- Express: Criação de servidores e requisições.
+- Mongoose: Conexão com o banco de dados e criação de models.
+- Jest e Supertest: Criação de testes unitários.
+
+## Tecnologias utilizadas no mobile
+
+Para desenvolvimento mobile, a equipe utilizou do framework flutter juntamente de emuladores (IOS e Android). Para os emuladores no android foi necessário baixar o android studio.
+Vale ressaltar o uso de pacotes de grande relevância para nossa aplicação são eles:
+
+- Retrofit: Geração de código para cliente dio.
+- Dio: Realização de requisições HTTP.
+- Freezed: Geração de código para classes (models) e para padrão BLoC.
+- BLoC: Gerenciamento de estados da aplicação.
+- Equatable: Auxilia na escrita do override de operadores de comparação
+- Get_It: Localizador de serviços.
+- Flutter_rating_bar: Estrelas para geração de avaliações.
 
 ## Tecnologias utilizadas na configuração dos ambientes
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis massa purus, finibus vel massa non, consectetur congue neque. In hac habitasse platea dictumst. Nam dolor est, condimentum in efficitur et, sagittis non sem. Nunc sed libero tempor, ornare lacus at, fringilla ante. Sed luctus eros nec purus commodo, vel maximus ipsum convallis. Aenean et nisi vitae nibh faucibus aliquam. Proin egestas nec tortor at blandit. Aenean mauris ex, tincidunt et imperdiet eu, mattis auctor eros. -->
+- Desenvolvimento em sistemas operacionais MacOs e Linux.
+
+- Utilização de flutter na versão 3.0.4. Além disso, para facilitar o gerenciamento de versões do flutter usamos o fvm (Flutter Version Management).
+
+- Para escrita de documentos usamos as seguintes IDEs: VsCode e IntelliJ.
+
+- Para criação de ambientes de desenvolvimento: Docker e Docker Compose.
 
 # Sentimentos da Equipe
 
@@ -54,7 +85,7 @@ Segue abaixo as perguntas elaboradas:
 - [1] - No começo do projeto, tive a missão de ser o scrum master da equipe além de desenvolvedor. No começo, obtive bastante dificuldade em representar esse papel, visto que não levo muito jeito em organizar minhas coisas, porém, acredito que ao final consegui desenvolver um trabalho incrível tendo o apoio do time como um todo. Mesmo com o projeto bem corrido de tempo, aprendi a trabalhar melhor em equipe e gerir ritos comuns de sprint.
 - [2] - Pude ver meu desenvolvimento ao decorrer do projeto, correndo atrás de assuntos do qual não sabia como nem começar e avançar conforme o decorrer do tempo.
 - [3] - Além do mencionado do papel de Scrum Master, acredito que ter o contato com uma nova linguagem (como o flutter) e aprender o básico para gerir um projeto do zero.
-- [4] - Como toddo projeto, teve seus pontos baixos e altos, mas acredito que tenha sido uma experiência bastante importante para minha vida e carreira.
+- [4] - Como todo projeto, teve seus pontos baixos e altos, mas acredito que tenha sido uma experiência bastante importante para minha vida e carreira.
 - [5] - O time como um todo pecou na comunicação interna, onde vários momentos deixamos para resolver alguns problemas durante reuniões de planning. Porém, acredito que todos deram o seu máximo para a execução do projeto. Incrível a oportunidade de trabalhar com todos e conhece-los.
 
 ## Maurício Machado
@@ -107,4 +138,4 @@ Segue abaixo as perguntas elaboradas:
 
 # Conclusão
 
-Foi a primeira experiencia da equipe em um projeto ágil, assim havendo algumas inseguranças e medos durante o semestre. Com isso, como podemos notar nas notas dos sentimentos da equipe, essa matéria proporcionou vários aprendizados e mudanças que nos fizeram melhores programadores em geral. Mesmo havendo algumas dificuldades e estresses em relação o projeto e a outros membros, fora ter ocorrido mudanças ao longo do projeto e do escopo, como equipe, estamos orgulhosos do nosso produto e temos a sensação de dever cumprido.
+Foi a primeira experiencia da equipe em um projeto ágil, assim havendo algumas inseguranças e medos durante o semestre. Com isso, como podemos notar nas notas dos sentimentos da equipe, essa matéria proporcionou vários aprendizados e mudanças que nos fizeram melhores programadores em geral. Mesmo havendo algumas dificuldades e estresses em relação ao projeto e aos outros membros, fora ter ocorrido mudanças ao longo do projeto e do escopo, como equipe, estamos orgulhosos do nosso produto e temos a sensação de dever cumprido.
