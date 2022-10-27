@@ -29,13 +29,13 @@
 O projeto tem o intuito de ajudar os estudantes da UnB do campus do Gama a realizar matricula nas suas disciplinas, onde será possível ver avaliações de disciplinas e seus professores para que possam tomar a melhor decisão com base na opinião de outros alunos.
 
 <p align="center">
-Segue o link da documentação do projeto
-    <a href="https://fga-eps-mds.github.io/CollegeFlow/"><strong>College Flow Docs</strong></a> <img src=".github/images/logo-college-flow-background.png" width="20" height="20" />
+    <a href="https://fga-eps-mds.github.io/CollegeFlow/"><strong>Documentação</strong></a>
+     | 
+     <a href="https://play.google.com/store/apps/details?id=com.fga_eps_mds.college_flow_app"><strong>Download da versão parcial </strong></a>
+     | 
+     <a href="https://youtu.be/rtqEOswljBM"><strong>Apresentação</strong></a>
 </p>
-<br>
-<p align="center"> 
-    <a href="https://youtu.be/rtqEOswljBM"><strong>Vídeo da release 2</strong></a> <img src=".github/images/logo-college-flow-background.png" width="20" height="20" />
-</p> 
+
 <br>
 
 ## 💻 Tecnologias utilizadas
